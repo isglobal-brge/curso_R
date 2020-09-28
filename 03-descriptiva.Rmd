@@ -1,0 +1,90 @@
+# Estadística descriptiva 
+
+Ahora empezaremos a ver la potencia de R. No sólo se hacen librerías para el análisis estadístico de datos, también se hacen librerías para visualizar resultados de forma gráfica, hacer análisis descriptivos rápidos o crear tablas de artículos de forma sencilla. Algunas de estas librerías las iremos viendo durante el curso. Empecemos con algunas librerías para resumir de forma rápida nuestras variables. Para ello necesitamos instalar las siguientes librerías que iremos viendo a lo largo del curso
+
+```{r eval=FALSE}
+install.packages("summarytools", "compareGroups")
+```
+
+
+## Variables categóricas
+
+La librería `summarytools` es muy potente. Por ejemplo, podemos obtener un resumen para las variables categóricas (por ejemplo para saber cuantos casos y controles tenemos) con la función `freq()` 
+
+```{r}
+library(summarytools)
+freq(multicentric$status)
+```
+
+Notemos que antes hay que cargar la librería para que R encuentre la función `freq()`, no es suficiente con instalar la librería, luego hay que cargarla. También vemos que esta función no describe las variables categóricas (ver warning). 
+
+Podemos evitar que salgan los missings (NA) y hacer más compacta la tabla con la instrucción
+
+```{r}
+freq(multicentric$status, report.nas = FALSE, headings = FALSE)
+```
+
+Si queremos que lo haga para todas las variables categóricas, funciona así de simple
+
+```{r}
+freq(multicentric, report.nas = FALSE, headings = FALSE)
+```
+
+## Tabla de contingencia
+
+Para crear una tabla de contingencia y ver cómo se distribuyen los casos y controles según su infección por vph podríamos usar la función `ctable()`
+
+```{r}
+ctable(multicentric$status, multicentric$vph, prop="r")
+```
+
+el argumento `prop` nos sirve para indicar si queremos las proporciones por fila ('r') o columna ('c'). Podmeos eliminar la columna de missings indicando que el argumento `useNA` sea "no"
+
+```{r}
+ctable(multicentric$status, multicentric$vph, useNA="no", prop="r")
+```
+
+
+## Variables continuas
+
+Para las variables continuas podemos usar la función `descr()`. Por ejemplo, si queremos ver los principales estadísticos de la variable edad de la primera relación sexual (variable `edad1sex`) escribiríamos
+
+```{r}
+descr(multicentric$edad1sex)
+```
+
+Una de las principales ventajas de R es que usa un lenguaje de programación orientado a objetos. En palabras sencillas, esto implica que una misma función se puede aplicar a distintos tipos de objetos y la función ya sabe qué hacer. En este caso, si aplicamos la función `desrc()` a toda nuestra base de datos, lo que hace es buscar todas las variables continuas, y resumirlas.
+
+
+
+```{r warning=TRUE}
+descr(multicentric)
+```
+
+
+Si queremos tener esta descriptiva según una segunda variable categórica como es habitual en la mayoría de análisis estadísticos (por ejemplo entre grupos de comparación o para casos y controles) podemos hacerlo también. Supongamos que queremos tener una descriptiva de las variables categóricas según la variable caso-control (`status`). Para ello, deberíamos usar la función `stby()` e indicar en el argumento `INDICES` nuestra variable por la que queremos separar los análisis.
+
+
+```{r}
+stby(multicentric, INDICES = multicentric$status,
+     FUN = descr, stats = "common", transpose = TRUE)
+```
+
+El argumento `stats="common"` lo ponemos para que saque menos estadísticos (sólo los más comunes), pero si no ponemos nada los saca todos y el argumento `transpose = TRUE` sirve para trasnponer la tabla de resultados.
+
+
+NOTA: cuando hablemos de informes reproducibles y  de Rmarkdown veremos que estas tablas quedarán mucho mejor cuando mostremos nuestros resultados con HTML o incluso PDFs o documentos Word ... pero eso será al final del curso. 
+
+
+Podríamos pensar que este tipo de descriptivas también las obtenemos con SPSS o Stata, pero .... tenemos más opciones que nos facilitan mucho la vida como estadísticos. En este caso, podemos resumir toda nuestra base de datos (tanto variables continuas como categóricas) con la función `dfSummary()` y obtendríamos este output 
+
+```{r , eval=FALSE}
+dfSummary(multicentric)
+```
+
+
+```{r , echo=FALSE}
+print(dfSummary(multicentric, graph.magnif = 0.75), method = 'render')
+```
+
+

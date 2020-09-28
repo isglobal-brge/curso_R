@@ -1,0 +1,21 @@
+--- 
+title: "Curso de R"
+author: "Juan R González"
+date: "`r Sys.Date()`"
+site: bookdown::bookdown_site
+output: bookdown::html_gitbook
+documentclass: book
+encoding: latin1
+---
+
+
+ 
+```{r include=FALSE}
+knitr::opts_chunk$set(cache=T, warning=FALSE, message=FALSE, fig.path = "fig/", comment = "")
+options(scipen = 0)
+```
+
+
+# Introducción
+
+Este bookdown sirven como notas para el curso [Análisis descriptivo y estadística básica en estudios biomédicos con R y Rmarkdown ](https://www.iisaragon.es/event/curso-analisis-descriptivo-y-estadistica-basica-en-estudios-biomedicos-con-r-y-rmarkdown-edicion-2020-iacs/) impartido en el [Insituto Aragonés de Ciencias de la Salud](https://www.iacs.es/) 

@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>3 Creación de variables | Curso de R</title>
+  <meta name="description" content="3 Creación de variables | Curso de R" />
+  <meta name="generator" content="bookdown 0.20 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="3 Creación de variables | Curso de R" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="3 Creación de variables | Curso de R" />
+  
+  
+  
+
+<meta name="author" content="Juan R González" />
+
+
+<meta name="date" content="2020-09-25" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="importar-datos-a-r.html"/>
+<link rel="next" href="estadística-descriptiva.html"/>
+<script src="libs/header-attrs-2.3/header-attrs.js"></script>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
+
+
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Aprendizaje Automático 1</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Introducción</a></li>
+<li class="chapter" data-level="2" data-path="importar-datos-a-r.html"><a href="importar-datos-a-r.html"><i class="fa fa-check"></i><b>2</b> Importar datos a R</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="importar-datos-a-r.html"><a href="importar-datos-a-r.html#directorio-de-trabajo"><i class="fa fa-check"></i><b>2.1</b> Directorio de trabajo</a></li>
+<li class="chapter" data-level="2.2" data-path="importar-datos-a-r.html"><a href="importar-datos-a-r.html#importar-datos-de-texto"><i class="fa fa-check"></i><b>2.2</b> Importar datos de texto</a></li>
+<li class="chapter" data-level="2.3" data-path="importar-datos-a-r.html"><a href="importar-datos-a-r.html#manejo-de-datos-recodificación-y-transformación"><i class="fa fa-check"></i><b>2.3</b> Manejo de datos: recodificación y transformación</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="creación-de-variables.html"><a href="creación-de-variables.html"><i class="fa fa-check"></i><b>3</b> Creación de variables</a></li>
+<li class="chapter" data-level="4" data-path="estadística-descriptiva.html"><a href="estadística-descriptiva.html"><i class="fa fa-check"></i><b>4</b> Estadística descriptiva</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="estadística-descriptiva.html"><a href="estadística-descriptiva.html#variables-categóricas"><i class="fa fa-check"></i><b>4.1</b> Variables categóricas</a></li>
+<li class="chapter" data-level="4.2" data-path="estadística-descriptiva.html"><a href="estadística-descriptiva.html#tabla-de-contingencia"><i class="fa fa-check"></i><b>4.2</b> Tabla de contingencia</a></li>
+<li class="chapter" data-level="4.3" data-path="estadística-descriptiva.html"><a href="estadística-descriptiva.html#variables-continuas"><i class="fa fa-check"></i><b>4.3</b> Variables continuas</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Curso de R</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="creación-de-variables" class="section level1" number="3">
+<h1><span class="header-section-number">3</span> Creación de variables</h1>
+<p>Para crear una nueva variable, por ejemplo la edad de la primera relación sexual menos 18, tendríamos que escribir</p>
+<div class="sourceCode" id="cb23"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb23-1"><a href="creación-de-variables.html#cb23-1"></a>multicentric<span class="op">$</span>edad1sex2 &lt;-<span class="st"> </span>multicentric<span class="op">$</span>edad1sex <span class="op">-</span><span class="st"> </span><span class="dv">18</span></span></code></pre></div>
+<p>Donde a la izquierda de <code>&lt;-</code> se pone el nombre de la nueva variable que queremos añadir a <code>multicentric</code> (por eso se pone el <code>$</code>) y a la derecha la operación que queremos hacer. NOTA: el símbolo <code>&lt;-</code> es como un <code>=</code> pero este último se usa para los argumentos de una función (lo veremos más adelante).</p>
+<p>Esta forma de escribir es muy larga y complicada, sobre todo para los nuevos usuarios de R, y puede introducir errores fácilmente. Es por ello que podemos trabajar con una serie de librerías que facilitan llevar a cabo estas operaciones. Estas liberías forman parte de los desarrolladores de RStudio y son un compendio de funciones para el análisis científico de datos (Data Science). Si queremos usar estas funciones, debemos instalar las librerías de tydiverse [<a href="https://www.tidyverse.org/" class="uri">https://www.tidyverse.org/</a>] ejecutando:</p>
+<div class="sourceCode" id="cb24"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb24-1"><a href="creación-de-variables.html#cb24-1"></a><span class="kw">install.packages</span>(tidiverse)</span></code></pre></div>
+<p>Después debemos cargar estas librerías con</p>
+<div class="sourceCode" id="cb25"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb25-1"><a href="creación-de-variables.html#cb25-1"></a><span class="kw">library</span>(tidyverse)</span></code></pre></div>
+<p>Ahora, para crear una nueva variable basta con usar la función <code>mutate()</code> que tiene el primer argumento el nombre de nuestra base datos y luego la fórmula que queremos aplicar para calcular la nueva variable. Nos fijamos que ya no es necesario el uso de <code>$</code> y la instrucción se lee de forma más intuitiva.</p>
+<div class="sourceCode" id="cb26"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb26-1"><a href="creación-de-variables.html#cb26-1"></a>multicentric &lt;-<span class="st"> </span><span class="kw">mutate</span>(multicentric, <span class="dt">edad1sex2 =</span> edad1sex <span class="op">-</span><span class="st"> </span><span class="dv">18</span>)</span></code></pre></div>
+<p>Si ahora damos un vistazo a las variables que hay en <code>multicentric</code> veremos que al final se ha añadido una nueva variable (<code>edad1sex2</code>) que es la que hemos creado</p>
+<div class="sourceCode" id="cb27"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb27-1"><a href="creación-de-variables.html#cb27-1"></a><span class="kw">str</span>(multicentric)</span></code></pre></div>
+<pre><code>&#39;data.frame&#39;:	2910 obs. of  22 variables:
+ $ ident    : int  10001 10002 10003 10004 10005 10006 10007 10008 10009 10010 ...
+ $ pais     : chr  &quot;Brasil&quot; &quot;Brasil&quot; &quot;Brasil&quot; &quot;Brasil&quot; ...
+ $ status   : chr  &quot;Control&quot; &quot;Caso&quot; &quot;Control&quot; &quot;Caso&quot; ...
+ $ edad     : int  64 51 48 49 41 45 51 42 58 76 ...
+ $ niveledu : chr  &quot;primaria&quot; &quot;primaria&quot; &quot;ninguno&quot; &quot;ninguno&quot; ...
+ $ fumar    : chr  &quot;ex-fumador&quot; &quot;fumador&quot; &quot;fumador&quot; &quot;no fumador&quot; ...
+ $ edad1sex : int  16 17 14 23 23 18 29 19 22 27 ...
+ $ regcompa : int  2 1 2 1 1 1 1 2 1 1 ...
+ $ totcompa : chr  &quot;2-3&quot; &quot;1&quot; &quot;2-3&quot; &quot;1&quot; ...
+ $ ets      : chr  &quot;si&quot; &quot;si&quot; &quot;no&quot; &quot;no&quot; ...
+ $ co       : chr  &quot;no&quot; &quot;no&quot; &quot;no&quot; &quot;no&quot; ...
+ $ edinico  : int  NA NA NA NA NA 22 30 32 NA NA ...
+ $ edfinco  : int  NA NA NA NA NA 38 38 32 NA NA ...
+ $ durco    : int  NA NA NA NA NA 14 8 1 NA NA ...
+ $ condon   : chr  &quot;no&quot; &quot;no&quot; &quot;no&quot; &quot;no&quot; ...
+ $ embara   : chr  &quot;si&quot; &quot;si&quot; &quot;si&quot; &quot;si&quot; ...
+ $ edademba : int  16 17 14 23 24 18 29 20 22 30 ...
+ $ nembara  : int  9 13 11 13 3 5 1 7 8 2 ...
+ $ pap      : chr  &quot;si&quot; &quot;si&quot; &quot;no&quot; &quot;no&quot; ...
+ $ edad1pap : int  40 45 NA NA 30 33 45 NA 42 38 ...
+ $ vph      : chr  &quot;negativo&quot; &quot;positivo&quot; &quot;positivo&quot; &quot;positivo&quot; ...
+ $ edad1sex2: num  -2 -1 -4 5 5 0 11 1 4 9 ...</code></pre>
+<p>En biomedicina a veces interesa recodificar nuevas variables según varios criterios. Veamos algunos ejemplos</p>
+<ul>
+<li>Recodificar una variable continua en una categórica que toma valores superiores o inferiores a un valor. Ejemplo: edad de primera relación sexual antes o despues de 18 años</li>
+</ul>
+<div class="sourceCode" id="cb29"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb29-1"><a href="creación-de-variables.html#cb29-1"></a>multicentric &lt;-<span class="st"> </span><span class="kw">mutate</span>(multicentric, <span class="dt">edad1sex3 =</span> <span class="kw">ifelse</span>(edad1sex <span class="op">&lt;=</span><span class="dv">18</span>, <span class="dv">0</span> , <span class="dv">1</span>))</span>
+<span id="cb29-2"><a href="creación-de-variables.html#cb29-2"></a><span class="kw">table</span>(multicentric<span class="op">$</span>edad1sex3)</span></code></pre></div>
+<pre><code>
+   0    1 
+1379 1510 </code></pre>
+<ul>
+<li>Recodificar una variable continua en cuartiles. Ejemplo: edad de primera relación sexual en cuartiles</li>
+</ul>
+<div class="sourceCode" id="cb31"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb31-1"><a href="creación-de-variables.html#cb31-1"></a>multicentric &lt;-<span class="st"> </span><span class="kw">mutate</span>(multicentric, <span class="dt">edad1sex4 =</span> <span class="kw">cut</span>(edad1sex, <span class="kw">quantile</span>(edad1sex, <span class="dt">na.rm=</span><span class="ot">TRUE</span>)))</span>
+<span id="cb31-2"><a href="creación-de-variables.html#cb31-2"></a><span class="kw">table</span>(multicentric<span class="op">$</span>edad1sex4)</span></code></pre></div>
+<pre><code>
+ (5,16] (16,19] (19,22] (22,52] 
+    736     872     596     684 </code></pre>
+<ul>
+<li>Recodificar una variable según unos puntos de corte y ponerles una etiqueta. Ejemplo: edad de primera relación sexual antes de los 14, entre los 15 y 18 (ambos incluidos) y más de los 18 (19 o más)</li>
+</ul>
+<div class="sourceCode" id="cb33"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb33-1"><a href="creación-de-variables.html#cb33-1"></a>multicentric &lt;-<span class="st"> </span><span class="kw">mutate</span>(multicentric, <span class="dt">edad1sex5 =</span> <span class="kw">cut</span>(edad1sex, <span class="kw">c</span>(<span class="op">-</span><span class="ot">Inf</span>, <span class="dv">14</span>, <span class="dv">18</span>, <span class="ot">Inf</span>),</span>
+<span id="cb33-2"><a href="creación-de-variables.html#cb33-2"></a>                                                     <span class="dt">labels=</span><span class="kw">c</span>(<span class="st">&quot;&lt;14&quot;</span>, <span class="st">&quot;15-18&quot;</span>, <span class="st">&quot;19+&quot;</span>)))</span>
+<span id="cb33-3"><a href="creación-de-variables.html#cb33-3"></a><span class="kw">table</span>(multicentric<span class="op">$</span>edad1sex5)</span></code></pre></div>
+<pre><code>
+  &lt;14 15-18   19+ 
+  257  1122  1510 </code></pre>
+<p>También podemos filtrar una base de datos para hacer unos análisis específicos. Supongamos que queremos describir nuestros controles. Más adelante veremos cómo realizar estos análisis descriptivos, pero ahora aprendamos a cómo crear una nueva base de datos (en R un nuevo objeto) que más tarde resumiremos. Para ello utilizaremos la función <code>filter()</code>. Sabemos que el estado Caso/Control se encuentra en la variable <code>status</code> por eso escribimos</p>
+<div class="sourceCode" id="cb35"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb35-1"><a href="creación-de-variables.html#cb35-1"></a>controles &lt;-<span class="st"> </span><span class="kw">filter</span>(multicentric, status<span class="op">==</span><span class="st">&quot;Control&quot;</span>)</span>
+<span id="cb35-2"><a href="creación-de-variables.html#cb35-2"></a><span class="kw">dim</span>(controles)</span></code></pre></div>
+<pre><code>[1] 1421   25</code></pre>
+<p>Usamos <code>==</code> para poner una condición de igualdad. Para otras condiciones deberemos usar</p>
+<p><img src="figures/transform-logical.png" /></p>
+<p>Por ejemplo, si queremos seleccionar a los casos que hayan tenido una infección por VPH (variable <code>vph)</code> deberíamos hacer</p>
+<div class="sourceCode" id="cb37"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb37-1"><a href="creación-de-variables.html#cb37-1"></a>casos.vph &lt;-<span class="st"> </span><span class="kw">filter</span>(multicentric, status<span class="op">==</span><span class="st">&quot;Caso&quot;</span> <span class="op">&amp;</span><span class="st"> </span>vph<span class="op">==</span><span class="st">&quot;positivo&quot;</span>)</span>
+<span id="cb37-2"><a href="creación-de-variables.html#cb37-2"></a><span class="kw">dim</span>(casos.vph)</span></code></pre></div>
+<pre><code>[1] 1190   25</code></pre>
+
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="importar-datos-a-r.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="estadística-descriptiva.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/isglobal-brge/Aprendizaje_Automatico_1/tree/master/docs01-lectura_datos.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["_main.pdf", "_main.epub"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>
