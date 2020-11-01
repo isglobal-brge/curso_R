@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>6 Regresión lineal | Curso de R</title>
+  <meta name="description" content="6 Regresión lineal | Curso de R" />
+  <meta name="generator" content="bookdown 0.20 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="6 Regresión lineal | Curso de R" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="6 Regresión lineal | Curso de R" />
+  
+  
+  
+
+<meta name="author" content="Juan R González" />
+
+
+<meta name="date" content="2020-11-01" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="pruebas-de-hipótesis.html"/>
+<link rel="next" href="regresión-logística.html"/>
+<script src="libs/header-attrs-2.3/header-attrs.js"></script>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
+
+
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Aprendizaje Automático 1</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Introducción</a></li>
+<li class="chapter" data-level="2" data-path="importar.html"><a href="importar.html"><i class="fa fa-check"></i><b>2</b> Importar datos a R</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="importar.html"><a href="importar.html#directorio-de-trabajo"><i class="fa fa-check"></i><b>2.1</b> Directorio de trabajo</a></li>
+<li class="chapter" data-level="2.2" data-path="importar.html"><a href="importar.html#importar-datos-de-texto"><i class="fa fa-check"></i><b>2.2</b> Importar datos de texto</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="manejo-de-datos.html"><a href="manejo-de-datos.html"><i class="fa fa-check"></i><b>3</b> Manejo de datos</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="manejo-de-datos.html"><a href="manejo-de-datos.html#visualización-de-datos"><i class="fa fa-check"></i><b>3.1</b> Visualización de datos</a></li>
+<li class="chapter" data-level="3.2" data-path="manejo-de-datos.html"><a href="manejo-de-datos.html#creación-de-variables"><i class="fa fa-check"></i><b>3.2</b> Creación de variables</a></li>
+<li class="chapter" data-level="3.3" data-path="manejo-de-datos.html"><a href="manejo-de-datos.html#recodificación-de-variables"><i class="fa fa-check"></i><b>3.3</b> Recodificación de variables</a></li>
+<li class="chapter" data-level="3.4" data-path="manejo-de-datos.html"><a href="manejo-de-datos.html#filtrado-de-datos"><i class="fa fa-check"></i><b>3.4</b> Filtrado de datos</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="estadística-descriptiva.html"><a href="estadística-descriptiva.html"><i class="fa fa-check"></i><b>4</b> Estadística descriptiva</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="estadística-descriptiva.html"><a href="estadística-descriptiva.html#variables-categóricas"><i class="fa fa-check"></i><b>4.1</b> Variables categóricas</a></li>
+<li class="chapter" data-level="4.2" data-path="estadística-descriptiva.html"><a href="estadística-descriptiva.html#tabla-de-contingencia"><i class="fa fa-check"></i><b>4.2</b> Tabla de contingencia</a></li>
+<li class="chapter" data-level="4.3" data-path="estadística-descriptiva.html"><a href="estadística-descriptiva.html#variables-continuas"><i class="fa fa-check"></i><b>4.3</b> Variables continuas</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="pruebas-de-hipótesis.html"><a href="pruebas-de-hipótesis.html"><i class="fa fa-check"></i><b>5</b> Pruebas de Hipótesis</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="pruebas-de-hipótesis.html"><a href="pruebas-de-hipótesis.html#prueba-de-hipótesis-para-la-media-mu-de-una-población-normal"><i class="fa fa-check"></i><b>5.1</b> Prueba de hipótesis para la media, <span class="math inline">\(\mu\)</span>, de una población normal</a>
+<ul>
+<li class="chapter" data-level="" data-path="pruebas-de-hipótesis.html"><a href="pruebas-de-hipótesis.html#ejemplo"><i class="fa fa-check"></i>Ejemplo</a></li>
+</ul></li>
+<li class="chapter" data-level="5.2" data-path="pruebas-de-hipótesis.html"><a href="pruebas-de-hipótesis.html#prueba-de-hipótesis-para-la-proporción-p-de-una-población"><i class="fa fa-check"></i><b>5.2</b> Prueba de hipótesis para la proporción <span class="math inline">\(p\)</span> de una población</a>
+<ul>
+<li class="chapter" data-level="5.2.1" data-path="pruebas-de-hipótesis.html"><a href="pruebas-de-hipótesis.html#prueba-de-wald"><i class="fa fa-check"></i><b>5.2.1</b> Prueba de Wald</a></li>
+<li class="chapter" data-level="5.2.2" data-path="pruebas-de-hipótesis.html"><a href="pruebas-de-hipótesis.html#prueba-chi2-de-pearson"><i class="fa fa-check"></i><b>5.2.2</b> Prueba <span class="math inline">\(\Chi^2\)</span> de Pearson</a></li>
+<li class="chapter" data-level="" data-path="pruebas-de-hipótesis.html"><a href="pruebas-de-hipótesis.html#ejemplo-1"><i class="fa fa-check"></i>Ejemplo</a></li>
+<li class="chapter" data-level="5.2.3" data-path="pruebas-de-hipótesis.html"><a href="pruebas-de-hipótesis.html#prueba-binomial-exacta"><i class="fa fa-check"></i><b>5.2.3</b> Prueba binomial exacta</a></li>
+</ul></li>
+<li class="chapter" data-level="5.3" data-path="pruebas-de-hipótesis.html"><a href="pruebas-de-hipótesis.html#prueba-de-hipótesis-para-la-razón-de-varianzas-sigma_12-sigma_22"><i class="fa fa-check"></i><b>5.3</b> Prueba de hipótesis para la razón de varianzas <span class="math inline">\(\sigma_1^2 / \sigma_2^2\)</span></a>
+<ul>
+<li class="chapter" data-level="" data-path="pruebas-de-hipótesis.html"><a href="pruebas-de-hipótesis.html#ejemplo-2"><i class="fa fa-check"></i>Ejemplo</a></li>
+</ul></li>
+<li class="chapter" data-level="5.4" data-path="pruebas-de-hipótesis.html"><a href="pruebas-de-hipótesis.html#prueba-de-hipótesis-para-la-igualdad-de-medias-mu_a-mu_b"><i class="fa fa-check"></i><b>5.4</b> Prueba de hipótesis para la igualdad de medias <span class="math inline">\(\mu_A = \mu_B\)</span></a>
+<ul>
+<li class="chapter" data-level="" data-path="pruebas-de-hipótesis.html"><a href="pruebas-de-hipótesis.html#ejemplo-3"><i class="fa fa-check"></i>Ejemplo</a></li>
+</ul></li>
+<li class="chapter" data-level="5.5" data-path="pruebas-de-hipótesis.html"><a href="pruebas-de-hipótesis.html#prueba-de-hipótesis-para-la-igualdad-de-más-de-dos-medias-anova"><i class="fa fa-check"></i><b>5.5</b> Prueba de hipótesis para la igualdad de más de dos medias (ANOVA)</a>
+<ul>
+<li class="chapter" data-level="" data-path="pruebas-de-hipótesis.html"><a href="pruebas-de-hipótesis.html#ejemplo-4"><i class="fa fa-check"></i>Ejemplo</a></li>
+</ul></li>
+<li class="chapter" data-level="5.6" data-path="pruebas-de-hipótesis.html"><a href="pruebas-de-hipótesis.html#prueba-de-hipótesis-para-la-igualdad-de-proporciones-p_a-p_b"><i class="fa fa-check"></i><b>5.6</b> Prueba de hipótesis para la igualdad de proporciones <span class="math inline">\(p_A = p_B\)</span></a>
+<ul>
+<li class="chapter" data-level="" data-path="pruebas-de-hipótesis.html"><a href="pruebas-de-hipótesis.html#ejemplo-5"><i class="fa fa-check"></i>Ejemplo</a></li>
+</ul></li>
+<li class="chapter" data-level="5.7" data-path="pruebas-de-hipótesis.html"><a href="pruebas-de-hipótesis.html#pruebas-no-paramétricas"><i class="fa fa-check"></i><b>5.7</b> Pruebas no paramétricas</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="regresión-lineal.html"><a href="regresión-lineal.html"><i class="fa fa-check"></i><b>6</b> Regresión lineal</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="regresión-lineal.html"><a href="regresión-lineal.html#preliminares"><i class="fa fa-check"></i><b>6.1</b> Preliminares</a></li>
+<li class="chapter" data-level="6.2" data-path="regresión-lineal.html"><a href="regresión-lineal.html#conceptos-básicos"><i class="fa fa-check"></i><b>6.2</b> Conceptos básicos</a>
+<ul>
+<li class="chapter" data-level="6.2.1" data-path="regresión-lineal.html"><a href="regresión-lineal.html#modelo-lineal-simple"><i class="fa fa-check"></i><b>6.2.1</b> Modelo lineal simple</a></li>
+<li class="chapter" data-level="6.2.2" data-path="regresión-lineal.html"><a href="regresión-lineal.html#regresión-lineal-multivariante"><i class="fa fa-check"></i><b>6.2.2</b> Regresión lineal multivariante</a></li>
+</ul></li>
+<li class="chapter" data-level="6.3" data-path="regresión-lineal.html"><a href="regresión-lineal.html#ajuste-de-un-modelo-lineal"><i class="fa fa-check"></i><b>6.3</b> Ajuste de un modelo lineal</a>
+<ul>
+<li class="chapter" data-level="6.3.1" data-path="regresión-lineal.html"><a href="regresión-lineal.html#interpretación-de-coeficientes"><i class="fa fa-check"></i><b>6.3.1</b> Interpretación de coeficientes</a></li>
+</ul></li>
+<li class="chapter" data-level="6.4" data-path="regresión-lineal.html"><a href="regresión-lineal.html#inferencia-en-el-contexto-de-regresión"><i class="fa fa-check"></i><b>6.4</b> Inferencia en el contexto de regresión</a></li>
+<li class="chapter" data-level="6.5" data-path="regresión-lineal.html"><a href="regresión-lineal.html#asunciones-de-un-modelo-de-regresión"><i class="fa fa-check"></i><b>6.5</b> Asunciones de un modelo de regresión</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="regresión-logística.html"><a href="regresión-logística.html"><i class="fa fa-check"></i><b>7</b> Regresión logística</a>
+<ul>
+<li class="chapter" data-level="7.1" data-path="regresión-logística.html"><a href="regresión-logística.html#interpretacdión-de-los-coeficientes-de-regresión"><i class="fa fa-check"></i><b>7.1</b> Interpretacdión de los coeficientes de regresión</a></li>
+<li class="chapter" data-level="7.2" data-path="regresión-logística.html"><a href="regresión-logística.html#creación-de-modelos"><i class="fa fa-check"></i><b>7.2</b> Creación de modelos</a></li>
+<li class="chapter" data-level="7.3" data-path="regresión-logística.html"><a href="regresión-logística.html#selección-paso-a-paso-stepwise"><i class="fa fa-check"></i><b>7.3</b> Selección paso a paso (stepwise)</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Curso de R</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="regresión-lineal" class="section level1" number="6">
+<h1><span class="header-section-number">6</span> Regresión lineal</h1>
+<p>Esta sección presenta la regresión lineal, el método de regresión paramétrica que usamos cuando la variable de resultado o respuesta es continua. Cuando el resultado es binario, utilizamos la regresión logística, tema que veremos en la sección siguiente.</p>
+<div id="preliminares" class="section level2" number="6.1">
+<h2><span class="header-section-number">6.1</span> Preliminares</h2>
+<p>¿Qué son los modelos? Los modelos simplifican la realidad con fines de comprensión o predicción. Si bien pueden ser herramientas poderosas, debemos tener en cuenta que, después de todo, no son la realidad. En consecuencia, como se dice que dijo el estadístico George Box, “Todos los modelos son incorrectos, pero algunos son útiles”.</p>
+<p>En términos generales, el modelado estadístico tiene estos dos objetivos a veces divergentes:</p>
+<ol style="list-style-type: decimal">
+<li><p><em>Descripción</em>: usar un modelo para describir la relación entre una variable de resultado de interés y una o más variables predictoras.</p></li>
+<li><p><em>Predicción</em>: uso de un modelo para predecir instancias desconocidas de la variable de resultado de manera que se minimice el error predictivo fuera de la muestra.</p></li>
+</ol>
+<p>En el modelado, es posible centrarse en la descripción e ignorar la predicción, y viceversa. Por ejemplo, muchos algoritmos de aprendizaje automático son cajas negras: crean modelos que hacen un buen trabajo de predicción, pero son difíciles, si no imposibles, de interpretar y, en consecuencia, a menudo no nos ayudan a comprender las relaciones entre variables. La regresión lineal puede no ser la técnica más sofisticada, pero si se usa correctamente, su precisión predictiva compara bien con otros algoritmos más avanzados que veremos en este curso. Además, ofrece información descriptiva, en forma de coeficientes para cada variable, que son de gran utilida. La regresión lineal hace un buen trabajo con <em>tanto</em> descripción como predicción. En este capítulo aprenderemos estos usos de la regresión lineal.</p>
+</div>
+<div id="conceptos-básicos" class="section level2" number="6.2">
+<h2><span class="header-section-number">6.2</span> Conceptos básicos</h2>
+<p>Comencemos por presentar brevemente el modelo lineal junto con algunos de los conceptos y terminología que usaremos a lo largo del curso.</p>
+<p>Un modelo lineal es <em>paramétrico</em> porque asumimos que la relación entre dos variables es lineal y puede ser definida por los <em>parámetros</em> de una recta (el <em>intercept</em> y la pendiente). Comenzaremos considerando un modelo lineal simple. En la siguiente figura podemos observar cómo existe una relación lineal entre la dosis de chocolate consumida y el nivel de felicidad reportado por una muestra de individuos seleccionados al azar en una población de Barcelona. Los puntos negros muestran los datos observados para cada individuo y los blancos representan a la felicidad que tendría cada individuo según la dosis de chocolate que reporta tomar.</p>
+<div class="figure">
+<img src="figures/reg_lin.png" alt="" />
+<p class="caption">Regresión lineal simple</p>
+</div>
+<div id="modelo-lineal-simple" class="section level3" number="6.2.1">
+<h3><span class="header-section-number">6.2.1</span> Modelo lineal simple</h3>
+<p>Un modelo lineal simple tiene un resultado (outcome, variable predictiva - en nuestro ejemplo la felicidad), <span class="math inline">\(y\)</span>, y un predictor, <span class="math inline">\(x\)</span> (el consumo de chocolate en nuestro ejemplo). Está definido por la siguiente ecuación.</p>
+<p><span class="math display">\[
+y_i = \beta_0 + \beta_1x_i + \epsilon_i,
+\]</span></p>
+<p>donde <span class="math inline">\(i = 1, \ldots, n.\)</span></p>
+<p>El subíndice en esta ecuación, <span class="math inline">\(i\)</span>, indexa las observaciones <span class="math inline">\(n\)</span> en el conjunto de datos. (Pensemos en <span class="math inline">\(i\)</span> como un número de fila que corresponde a los datos de un individuo). La ecuación se puede leer de la siguiente manera: el valor de la <span class="math inline">\(i\)</span>-ésima variable resultado, <span class="math inline">\(y_i\)</span>, está definido por una <em>intercept</em>, <span class="math inline">\(\beta_0\)</span>, más una pendiente, <span class="math inline">\(\beta_1\)</span>, multiplicada por la variable predictora <span class="math inline">\(i\)</span>-ésima, <span class="math inline">\(x_i\)</span>. Estos elementos definen la parte <em>sistemática</em> o <em>determinista</em> del modelo. Sin embargo, debido a que el mundo es incierto y contiene aleatoriedad, sabemos que el modelo será incorrecto (estará sujeto a error). Para describir completamente los datos, necesitamos un término de error, <span class="math inline">\(\epsilon_i\)</span>, que también está indexado por fila. El término de error es la parte <em>estocástica</em> o <em>aleatoria</em> del modelo. <span class="math inline">\(\epsilon_i\)</span> mide la distancia entre los valores ajustados o esperados del modelo — calculados a partir de la parte determinista del modelo — y los valores reales. Los errores en un modelo lineal, también conocidos como residuales del modelo, son la parte de los datos que permanece sin explicar por la parte determinista del modelo. Uno de los supuestos clave de un modelo lineal es que los residuos se distribuyen normalmente con media = 0 y varianza = <span class="math inline">\(\sigma^2\)</span>, que denotamos, en notación matricial, como <span class="math inline">\(N (0, \sigma ^ 2)\)</span>.</p>
+</div>
+<div id="regresión-lineal-multivariante" class="section level3" number="6.2.2">
+<h3><span class="header-section-number">6.2.2</span> Regresión lineal multivariante</h3>
+<p>Podemos agregar predictores adicionales, <span class="math inline">\(p\)</span>, a un modelo lineal simple, convirtiéndolo en un modelo lineal multivariante, que definimos de la siguiente manera:</p>
+<p><span class="math display">\[
+y_i = \beta_0 + \beta_1 x_ {i1} + \cdots + \beta_p x_ {ip} + \varepsilon_i,
+\]</span></p>
+<p>donde <span class="math inline">\(i = 1, \ldots, n\)</span> y <span class="math inline">\(p = 1, \ldots, p.\)</span> En esta ecuación <span class="math inline">\(y_i\)</span> es nuevamente la variable resultado <span class="math inline">\(i\)</span>-ésima, <span class="math inline">\(\beta_0\)</span> es la <em>intercept</em>, <span class="math inline">\(\beta_1\)</span> es el coeficiente de la primera variable predictora, <span class="math inline">\(x_{1}\)</span>, <span class="math inline">\(\beta_p\)</span> es el coeficiente de la variable predictora <span class="math inline">\(p\)</span>-ésima, <span class="math inline">\(x_{p}\)</span>, y <span class="math inline">\(\epsilon_i\)</span> representa la parte estocástica del modelo, los residuos, indexados por fila. La parte determinista del modelo se puede resumir como <span class="math inline">\(X \beta\)</span>, una matriz <span class="math inline">\(p\)</span> x <span class="math inline">\(n\)</span>, que llamaremos el “predictor lineal”.</p>
+</div>
+</div>
+<div id="ajuste-de-un-modelo-lineal" class="section level2" number="6.3">
+<h2><span class="header-section-number">6.3</span> Ajuste de un modelo lineal</h2>
+<p>Para ajustar un modelo lineal usamos la función <code>lm()</code>. (La función <code>glm()</code> también se ajusta a un modelo lineal por defecto, definido por <code>family = gaussian</code>. Usaremos<code>glm()</code> para ajustar una regresión logística, con<code>family = binomial</code>).</p>
+<p>Por ejemplo, usemos el conjunto de datos <code>mtcars</code> que está por defecto en R, para averiguar si el consumo de combustible (mpg) está correlacionado con el peso del coche (wt). En R deberíamos ejecutar:</p>
+<div class="sourceCode" id="cb108"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb108-1"><a href="regresión-lineal.html#cb108-1"></a><span class="kw">data</span>(mtcars)</span>
+<span id="cb108-2"><a href="regresión-lineal.html#cb108-2"></a>simple_model &lt;-<span class="st"> </span><span class="kw">lm</span>(mpg <span class="op">~</span><span class="st"> </span>wt, <span class="dt">data =</span> mtcars)</span>
+<span id="cb108-3"><a href="regresión-lineal.html#cb108-3"></a><span class="kw">summary</span>(simple_model)</span></code></pre></div>
+<pre><code>
+Call:
+lm(formula = mpg ~ wt, data = mtcars)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-4.5432 -2.3647 -0.1252  1.4096  6.8727 
+
+Coefficients:
+            Estimate Std. Error t value Pr(&gt;|t|)    
+(Intercept)  37.2851     1.8776  19.858  &lt; 2e-16 ***
+wt           -5.3445     0.5591  -9.559 1.29e-10 ***
+---
+Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
+
+Residual standard error: 3.046 on 30 degrees of freedom
+Multiple R-squared:  0.7528,	Adjusted R-squared:  0.7446 
+F-statistic: 91.38 on 1 and 30 DF,  p-value: 1.294e-10</code></pre>
+<p>La ecuación del modelo es: <span class="math inline">\(\widehat {mpg} = 37.285 - 5.344wt\)</span>. Notemos que el ajuste del modelo viene dado por el Adjusted R-squared (versión ajustada del R-cuadrado, <span class="math inline">\(R^2\)</span>, que tiene en cuenta el número de variables y que nos servirá para comparar modelos con distinto número de variables). En este caso el modelo tiene un <span class="math inline">\(R^2\)</span> de 0.74, lo que nos indica que la variable <code>wt</code> (ó <code>wt_centered</code>) explica un 74% de la variabilidad de <code>mpg</code>.</p>
+<p>El modelo se puede utilizar para calcular valores ajustados para coches individuales en el conjunto de datos. Por ejemplo, el valor ajustado para el Mazda RX4, <span class="math inline">\(\widehat {mpg_1}\)</span>, se puede derivar de la ecuación del modelo, <span class="math inline">\(\beta_0 + \beta_1 x_ {i1}\)</span>: 37.29 - 5.34 x 2.62 = 23.28. (El valor <em>real</em> del Mazda RX4, calculado a partir del modelo, sería: 37.29 - 5.34 x 2.62 + 2.28 = 21). El modelo también se puede utilizar para la predicción. ¿Cuál sería el mpg para un coche que pesa 5000 libras? Según el modelo: 37,29 - 5,34 x 5 = 10.56.</p>
+<div id="interpretación-de-coeficientes" class="section level3" number="6.3.1">
+<h3><span class="header-section-number">6.3.1</span> Interpretación de coeficientes</h3>
+<p>¿Cómo interpretamos la salida de la función <code>lm()</code>? Comencemos con el modelo simple de mpg.</p>
+<ul>
+<li><strong>intercept</strong>: 37.29 representa el valor predicho de mpg cuando wt es 0. Dado que wt no puede ser igual a 0. El <em>intercept</em> no es interpretable en este modelo. Para hacerlo interpretable, necesitamos centrar la variable wt en 0, lo que podemos hacer fácilmente restando la media de wt de cada observación (<span class="math inline">\(x_ {centrado} = x - \ bar {x}\)</span>). Esta es una transformación lineal que cambiará la escala del predictor y, por lo tanto, <span class="math inline">\(\beta_0\)</span> también, pero no el ajuste del modelo: <span class="math inline">\(\beta_1\)</span> permanecerá igual (-5,34) al igual que RSS (278,32). Después de la transformación, el peso promedio del coche es 0 y el <em>intercept</em> representa las millas por galón pronosticadas para coches de peso promedio.</li>
+</ul>
+<div class="sourceCode" id="cb110"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb110-1"><a href="regresión-lineal.html#cb110-1"></a>mtcars &lt;-<span class="st"> </span><span class="kw">mutate</span>(mtcars, <span class="dt">wt_centered =</span> wt <span class="op">-</span><span class="st"> </span><span class="kw">mean</span>(wt))</span>
+<span id="cb110-2"><a href="regresión-lineal.html#cb110-2"></a>simple_model &lt;-<span class="st"> </span><span class="kw">lm</span>(mpg <span class="op">~</span><span class="st"> </span>wt_centered, <span class="dt">data =</span> mtcars)</span>
+<span id="cb110-3"><a href="regresión-lineal.html#cb110-3"></a><span class="kw">summary</span>(simple_model)</span></code></pre></div>
+<pre><code>
+Call:
+lm(formula = mpg ~ wt_centered, data = mtcars)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-4.5432 -2.3647 -0.1252  1.4096  6.8727 
+
+Coefficients:
+            Estimate Std. Error t value Pr(&gt;|t|)    
+(Intercept)  20.0906     0.5384  37.313  &lt; 2e-16 ***
+wt_centered  -5.3445     0.5591  -9.559 1.29e-10 ***
+---
+Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
+
+Residual standard error: 3.046 on 30 degrees of freedom
+Multiple R-squared:  0.7528,	Adjusted R-squared:  0.7446 
+F-statistic: 91.38 on 1 and 30 DF,  p-value: 1.294e-10</code></pre>
+<p>Ahora el <em>intercept</em>, 20.09, es significativa y representa el valor predicho de mpg cuando wt_centered es 0 — es decir, cuando wt es promedio.</p>
+<p>Hay dos formas de interpretar los coeficientes de las variables en un modelo lineal:</p>
+<ol style="list-style-type: decimal">
+<li><p><em>Contrafactual</em>: el coeficiente representa el cambio predicho en el resultado asociado con un aumento de 1 unidad en el predictor, mientras se mantienen constantes los demás predictores (en el caso multivariable).</p></li>
+<li><p><em>Predictivo</em>: el coeficiente representa la diferencia pronosticada en el resultado entre dos grupos que difieren en 1 unidad en el predictor, mientras se mantienen constantes los otros predictores.</p></li>
+</ol>
+<p>Normalmente los coeficientes del modelo se suelen interpretar de acuerdo con el paradigma contrafáctico. Por lo tanto,</p>
+<ul>
+<li><em>wt_centered</em>: -5.34 representa el cambio previsto en el resultado, mpg, asociado con un aumento de 1 unidad en wt_centered.</li>
+</ul>
+<p>Agreguemos un segundo predictor al modelo, una versión binaria de caballos de fuerza (hp_bin), que definiremos como 0 para valores de hp que están por debajo del promedio y 1 para valores mayores o iguales que el promedio.</p>
+<div class="sourceCode" id="cb112"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb112-1"><a href="regresión-lineal.html#cb112-1"></a>mtcars &lt;-<span class="st"> </span><span class="kw">mutate</span>(mtcars, <span class="dt">hp_bin =</span> <span class="kw">ifelse</span>(hp <span class="op">&lt;</span><span class="st"> </span><span class="kw">mean</span>(hp), <span class="dv">0</span>, <span class="dv">1</span>))</span>
+<span id="cb112-2"><a href="regresión-lineal.html#cb112-2"></a></span>
+<span id="cb112-3"><a href="regresión-lineal.html#cb112-3"></a>multivariable_model &lt;-<span class="st"> </span><span class="kw">lm</span>(mpg <span class="op">~</span><span class="st"> </span>wt_centered <span class="op">+</span><span class="st"> </span>hp_bin , <span class="dt">data =</span> mtcars)</span>
+<span id="cb112-4"><a href="regresión-lineal.html#cb112-4"></a></span>
+<span id="cb112-5"><a href="regresión-lineal.html#cb112-5"></a><span class="kw">summary</span>(multivariable_model)</span></code></pre></div>
+<pre><code>
+Call:
+lm(formula = mpg ~ wt_centered + hp_bin, data = mtcars)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-3.2845 -2.2699 -0.3736  1.3854  6.5109 
+
+Coefficients:
+            Estimate Std. Error t value Pr(&gt;|t|)    
+(Intercept)  21.6489     0.8132  26.622  &lt; 2e-16 ***
+wt_centered  -4.1683     0.7096  -5.875 2.25e-06 ***
+hp_bin       -3.3243     1.3693  -2.428   0.0216 *  
+---
+Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
+
+Residual standard error: 2.824 on 29 degrees of freedom
+Multiple R-squared:  0.7946,	Adjusted R-squared:  0.7804 
+F-statistic: 56.09 on 2 and 29 DF,  p-value: 1.08e-10</code></pre>
+<p>Este modelo multivariante es una mejora con respecto al modelo simple ya que tiene un <span class="math inline">\(R^2\)</span> ajustado de 0.78 que es mayor que el del modelo simple.</p>
+<ul>
+<li><p><strong>intercept</strong>: 21,65 representa el mpg predicho cuando los predictores continuos o binarios son iguales a 0 o (no aplicable en este caso) cuando las variables de los factores están en su nivel de referencia. El <em>intercept</em> es el mpg pronosticado por el modelo para autos de peso promedio que tienen caballos de fuerza por debajo del promedio.</p></li>
+<li><p><em>wt_centered</em>: -4,17 representa el cambio previsto en mpg asociado con un aumento de 1 unidad en wt_centered (digamos, de 1 a 2) mientras se mantiene constante el otro predictor, hp_bin. <em>Los coeficientes de regresión multivariable capturan cómo el resultado varía de manera única con un predictor dado, después de tener en cuenta los efectos de todos los demás predictores.</em> En la práctica, esto significa que el coeficiente que describe la relación entre mpg y wt_centrado se ha promediado en los niveles hp_bin, por lo que es igual en cada nivel de hp_bin.</p></li>
+<li><p><em>hp_bin</em>: -3.32 representa el cambio previsto en mpg asociado con un aumento de 1 unidad en hp_bin (de 0 a 1) mientras se mantiene constante el otro predictor, wt_centered.</p></li>
+</ul>
+</div>
+</div>
+<div id="inferencia-en-el-contexto-de-regresión" class="section level2" number="6.4">
+<h2><span class="header-section-number">6.4</span> Inferencia en el contexto de regresión</h2>
+<p>Además de las estimaciones de coeficientes para cada variable predictora (incluido el <em>intercept</em>), la salida de <code>lm ()</code> (usando <code>summary ()</code>) contiene la siguiente información: “Error estándar”, “valor t” y “Pr (&gt; | t |)” (el valor p). Repasemos estos conceptos.</p>
+<p>Recordemos que la inferencia estadística nos permite estimar las características de la población a partir de las propiedades de una muestra. Por lo general, queremos saber si una diferencia o una relación que observamos en una muestra es verdadera en la población — es “estadísticamente significativa” — o es probable que se deba al azar. En el contexto de la regresión, queremos saber específicamente si la pendiente de la recta de regresión, <span class="math inline">\(\beta\)</span>, que resume la relación de una variable con el resultado es diferente de 0. ¿Existe una relación positiva o negativa? En el paradigma frecuentista, respondemos a esta pregunta utilizando pruebas estadísticas basadas en test de hipótesis.</p>
+<p>De otros cursos sabemos que una prueba de hipótesis se basa en plantear una “hipótesis nula”, <span class="math inline">\(H_0\)</span>. En la regresión, <span class="math inline">\(H_0\)</span> corresponde a que la pendiente de la recta de regresión, <span class="math inline">\(\beta\)</span>, es 0. Una pendiente de 0 significa que un predictor no tiene efecto o no tiene relación con el resultado. <code>R</code> calcula automáticamente una prueba de hipótesis para <span class="math inline">\(\beta\)</span> usando el estadístico t, definido como:</p>
+<p><span class="math display">\[
+t = \frac {\beta - 0} {SE (\beta)}
+\]</span></p>
+<p>El estadístico <span class="math inline">\(t\)</span> para una muestra sigue la distribución <span class="math inline">\(t\)</span> de Student con n - 2 grados de libertad. Para la regresión lineal multivariante, el estadístico <span class="math inline">\(t\)</span>sigue la distribución <span class="math inline">\(t\)</span> de Student con $n - k - 1 $ grados de libertad, donde <span class="math inline">\(k\)</span> representa el número de predictores en el modelo. Se utiliza la distribución <span class="math inline">\(t\)</span> porque es más conservadora que una distribución normal cuando <span class="math inline">\(n\)</span> es pequeño ya que en ese caso no podemos asumir el teorema central del límite que nos permitiría determinar que la distribución del estadístico sigue una distribución normal. La distribución <span class="math inline">\(t\)</span> de Student tiene una cola más pesada pero converge a la normal cuando <span class="math inline">\(n\)</span> aumenta (por encima de aproximadamente <span class="math inline">\(n\)</span>= 30).</p>
+<p>En nuestro ejemplo podemos ver que el p-valor asociado tanto a la variable <code>wt_centered</code> y <code>hp_bin</code> son &lt;0.05, por lo que podríamos concluir que ambas variables son estadísticamente significativas y son necesarias incluirlas en el modelo para explicar el consumo del coche (variable <code>mpg</code>)</p>
+</div>
+<div id="asunciones-de-un-modelo-de-regresión" class="section level2" number="6.5">
+<h2><span class="header-section-number">6.5</span> Asunciones de un modelo de regresión</h2>
+<p>Los resultados de la regresión solo son precisos si se dan un conjunto de supuestos (en orden de importancia):<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a></p>
+<ol style="list-style-type: decimal">
+<li><p><em>Validez de los datos</em> para responder a la pregunta de investigación.</p></li>
+<li><p><em>Linealidad de la relación</em> entre el resultado y las variables predictoras.</p></li>
+<li><p><em>Independencia de los errores</em> (en particular, sin correlación entre errores consecutivos como en el caso de los datos de series de tiempo).</p></li>
+<li><p><em>Varianza igual de errores</em> (homocedasticidad).</p></li>
+<li><p><em>Normalidad de errores.</em></p></li>
+</ol>
+<p>La mayoría de estos problemas no son fatales y se pueden solucionar mejorando el modelo, seleccionando variables diferentes o adicionales o utilizando una distribución de modelización diferente (los conocidos como modelos lineales generalizados o GLMs). Los gráficos de residuos son la mejor herramienta para evaluar si se han cumplido los supuestos del modelo.</p>
+<p>No entraremos demasiado en detalle en todas las pruebas que hay para comprabar estas asunciones, pero mediante el siguiente gráfico podemos determinar si podemos usar nuestro modelo o no para realizar predicciones</p>
+<div class="sourceCode" id="cb114"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb114-1"><a href="regresión-lineal.html#cb114-1"></a><span class="kw">par</span>(<span class="dt">mfrow=</span><span class="kw">c</span>(<span class="dv">2</span>,<span class="dv">2</span>))</span>
+<span id="cb114-2"><a href="regresión-lineal.html#cb114-2"></a><span class="kw">plot</span>(multivariable_model)</span></code></pre></div>
+<p><img src="fig/unnamed-chunk-64-1.png" width="672" /></p>
+<p>La instrucción <code>par(mfrow=c(2,2))</code> es necesaria para que obtengamos un panel con los cuatro gráficos que devuelve la función <code>plot</code> [Veremos este concepto más en detalle cuando hablemos de cómo realizar gráficos con R].</p>
+</div>
+</div>
+<div class="footnotes">
+<hr />
+<ol start="1">
+<li id="fn1"><p>De Gelman y Hill (2007). <em>Análisis de datos mediante regresión y modelos jerárquicos / multinivel</em>. Cambridge: Cambridge UP.<a href="regresión-lineal.html#fnref1" class="footnote-back">↩︎</a></p></li>
+</ol>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="pruebas-de-hipótesis.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="regresión-logística.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/isglobal-brge/Aprendizaje_Automatico_1/tree/master/docs05-modelos_regresion.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["_main.pdf", "_main.epub"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

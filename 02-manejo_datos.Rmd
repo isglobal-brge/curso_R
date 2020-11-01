@@ -89,7 +89,7 @@ Esta forma de escribir es muy larga y complicada, sobre todo para los nuevos usu
 
 
 ```{r eval=FALSE}
-install.packages(tidiverse)
+install.packages(tidyverse)
 ```
 
 Después debemos cargar estas librerías con
@@ -137,6 +137,20 @@ multicentric <- mutate(multicentric, edad1sex5 = cut(edad1sex, c(-Inf, 14, 18, I
                                                      labels=c("<14", "15-18", "19+")))
 table(multicentric$edad1sex5)
 ```
+
+
+- Recodificar una variable con ciertas categorías en otras. Ejemplo: no-fumadoras y ex-fumadoras en una categoría 'No' y fumadoras en 'Si'
+
+```{r}
+multicentric <- mutate(multicentric,
+                       fumarNewCat = recode(fumar, 
+                                           "no fumador" = "No",
+                                           "ex-fumador" = "No",
+                                           "fumador" = "Si"))
+table(multicentric$fumar)
+table(multicentric$fumarNewCat)
+```
+
 
 ## Filtrado de datos
 También podemos filtrar una base de datos para hacer unos análisis específicos en un subgrupo de individuos. Supongamos que queremos describir nuestros controles. Para ello utilizaremos la función `filter()`. Sabemos que el estado Caso/Control se encuentra en la variable `status` por eso escribimos

@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Curso de R</title>
-  <meta name="description" content="Curso de R" />
+  <title>2 Importar datos a R | Curso de R</title>
+  <meta name="description" content="2 Importar datos a R | Curso de R" />
   <meta name="generator" content="bookdown 0.20 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Curso de R" />
+  <meta property="og:title" content="2 Importar datos a R | Curso de R" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Curso de R" />
+  <meta name="twitter:title" content="2 Importar datos a R | Curso de R" />
   
   
   
@@ -31,8 +31,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-
-<link rel="next" href="importar.html"/>
+<link rel="prev" href="index.html"/>
+<link rel="next" href="manejo-de-datos.html"/>
 <script src="libs/header-attrs-2.3/header-attrs.js"></script>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -224,66 +224,58 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="header">
-<h1 class="title">Curso de R</h1>
-<p class="author"><em>Juan R González</em></p>
-<p class="date"><em>2020-11-01</em></p>
+<div id="importar" class="section level1" number="2">
+<h1><span class="header-section-number">2</span> Importar datos a R</h1>
+<p>Rstudio posee una pestaña en el Entorno (panel derecho-arriba, recordad la primera lección) y un botón que nos permite importar datasets de distintos formatos (ver figura). Esta es una forma sencilla de importar datos, pero siempre es recomendable importar archivos usando código (scripts) que nos permite compartir flujos de trabajo y análisis entre investigadores. En ese botón vemos que podemos importar datos de distintos tipos</p>
+<div class="figure">
+<img src="figures/manual_import.png" alt="" />
+<p class="caption">Importar archivos</p>
 </div>
-<div id="introducción" class="section level1" number="1">
-<h1><span class="header-section-number">1</span> Introducción</h1>
-<p>Este bookdown sirven como notas para el curso <a href="https://www.iisaragon.es/event/curso-analisis-descriptivo-y-estadistica-basica-en-estudios-biomedicos-con-r-y-rmarkdown-edicion-2020-iacs/">Análisis descriptivo y estadística básica en estudios biomédicos con R y Rmarkdown</a> impartido en el <a href="https://www.iacs.es/">Insituto Aragonés de Ciencias de la Salud</a></p>
-<p>El contenido del curso tiene los siguientes temas:</p>
+<p>Fijémosnos que los dos primeros menus hablan de importar ficheros de texto. También podemos importar ficheros de Excel, y de otros softwares como SPSS, SAS o Stata.</p>
+<p>Los ejemplos para este curso (y en general se suele hacer así) utilizará datos en formato texto. En este formato disponemos de las variables en columnas y los individuos o unidades de análisis en filas. NOTA: Si se dispone de datos en formato Excel o SPSS se pueden exportar de forma sencilla a texto. Este formato es muy útil ya que estamos acostumbrados a visualizar datos en formato tabular; es decir, como una tabla.</p>
+<p>Podemos pensar que dependiendo de como se separen las observaciones tenemos distintos tipos de datos tabulares, pero en realidad su estructura es similar: variables en columnas y las observaciones de un individuo separadas por una marca o carácter. Este carácter puede ser un espacio, un tabulador, una coma, punto y coma etc… El formato tabular mas extendido es el CSV, donde las observaciones están separadas por comas, pero en este curso usaremos datos en formato texto separados por tabuladores que también es un formato muy extendido (TSV).</p>
+<div id="directorio-de-trabajo" class="section level2" number="2.1">
+<h2><span class="header-section-number">2.1</span> Directorio de trabajo</h2>
+<p>Para las clases y los ejercicios usaremos varios conjuntos de datos que disponemos en varios ficheros que pueden bajarse de la carpeta XXX del Moodle de la asignatura. Se recomienda crear un proyecto y crear una carpeta “datos” donde poner estos datasets que vamos a usar de ejemplo (ver video).</p>
+<p>Si no queréis trabajar con proyectos, recordemos que tneéis que cambiar el directorio de trabajo allí donde hayáis bajado los datos de Moodle. Recordad que esto lo podéis hacer con el menu de Rstudio</p>
+<div class="figure">
+<img src="figures/setwd.png" alt="" />
+<p class="caption">Archivo de trabajo</p>
+</div>
+<p>O bien (recomendado) podéis hacerlo escribiendo una instrucción en el script. Como yo tengo la carpeta “datos” en el directorio <strong>C:/Juan/cursos/R_Zaragoza/material_curso_online</strong>) escribiría:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="importar.html#cb1-1"></a><span class="kw">setwd</span>(<span class="st">&quot;C:/Juan/cursos/R_Zaragoza/material_curso_online&quot;</span>)</span></code></pre></div>
+</div>
+<div id="importar-datos-de-texto" class="section level2" number="2.2">
+<h2><span class="header-section-number">2.2</span> Importar datos de texto</h2>
+<p>Una vez tenemos el directorio de trabajo establecido ilustraremos como importar, por ejemplo, el fichero de datos “multicentric.txt” que recoge información sobre un estudio multicéntrico de casos y controles para estudiar factores pronóstico del cáncer de cervix. Estos serían los pasos que tendríamos que llevar a cabo</p>
 <ul>
-<li>Modulo I: El entorno R y estadística descriptiva
-<ul>
-<li>Tema 1: Introducción a R - Rstudio (2 horas)
-<ul>
-<li>Inicio R: instalando R y Rstudio</li>
-<li>Lectura de datos en R</li>
-</ul></li>
-<li>Tema 2: Análisis descriptivo</li>
-</ul></li>
-<li>Modulo II: Inferencia estadística y modelos
-<ul>
-<li>Tema 3: Análisis inferencial
-<ul>
-<li>Contrastes de hipótesis</li>
-<li>Tests paramétricos: t-test, ANOVA, Chi-cuadrado</li>
-<li>Tests no paramétricos: Wilcoxon, Kruskall-Wallis, Fisher</li>
-</ul></li>
-<li>Tema 4: Modelos de regresión
-<ul>
-<li>Regresión lineal</li>
-<li>Regresión logística</li>
-</ul></li>
-</ul></li>
-<li>Módulo III: Visualización
-<ul>
-<li>Tema 5: Tablas y Gráficos
-<ul>
-<li>Funciones Básicas de R</li>
-<li>Lattice</li>
-<li>ggplot2</li>
-</ul></li>
-</ul></li>
-<li>Módulo IV: Investigación reproducible
-<ul>
-<li>Tema 6: Knitr</li>
-<li>Tema 7: R Mardown</li>
-<li>Tema 8: Creación de reportes estadísticos usando librerías R</li>
-</ul></li>
+<li>Indicamos que queremos importar unos datos</li>
 </ul>
-<p>Este material está licenciado bajo una <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</p>
-<p><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFgAAAAfCAMAAABUFvrSAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IB2cksfwAAAW5QTFRF////////////////7+/v39/f1tXV09bS0tXS0tXR0dTR0dTQ0NTQ0NPPz9PPztLOztHNzdHNzdHMz8/PzdDMzNDMzNDLzM/Ly8/Ly8/Ky87Kys3Jyc3Jyc3IyMzIyMzHx8vHxsrGxsrFxcnFxcnExMnExMjDw8jDxMfDw8fCwsfCwcXAwMXAwMW/wMS/v8S+v8O+vsO+vsK9vcK9vcK8v7+/vMG8vMG7vMC8u8C7u8C6ur+6ur+5ub65ub64uL23t7y2tru1tbq0tLqztLmzs7iysrixsrexsbewsbawsLavsLWvr7Wur7SusLOvrrStrrOtr7KvrbOsrLKrr6+vq7Gqn6OenqCdn5+flpmWk5iTkZSRkZORj4+PiYyJhIaEhIWEgoWCgICAfX98fH98eXx5cHJvcHBwYGBgXV5dUFFQUFBQQ0RDQEBAPj8+NTY1MjMxMDAwKSkpKCkoICAgGxsbEBAQDg4ODQ4NAAAAlzoSDQAAAAN0Uk5TAAoO5yEBUwAAAvhJREFUeNq1lutX2kAQxWmXFDVGYy1EIjQ2VZDiu1CsRQQURYvV+qSKj6II8rANYOT+9z0JqIASo9Y5ydkP2f2d2Ts7d2N4jRcJgwEIBwO+SbdTFGw8ZzZz1n5BdLgnfLPBcCT6fW1jY3P78QEYEA76PWMu0W5lGbrNZGrrYNg+u+ga9fgVcmxtY/NJZAOCfs+IY4Bn6eN8RdlEJX9Ed1uFIfdnfzC8uBJbv5tyqqhMLKa0wQHPiEOwMInLW4Eu9xmzfdDtmQ0uLK3cSXmvBBTS6QJQ2tMC+8YcgpnOApAzSa83mZEBZIff2odGfYFQJNqc8s4VchQhhFA5XO1pgCddAxaFKyeNpBpxGSgNmwXXxMxcWE25fkkJGUIIoExESQPsFnkmC0gUuQmjBGQZq+j2BEKR5dUGLVLIvbkGkxxSrcHO92wCkIyENJL3u+2O8Zng/FJsvR5cRF0GFIqtwaKVvoTcSxrCKOOS7hPdXwLhxUYtUFC+Z6AKQgpoDRZ6joEkaYo4cMQKril/KLLcCE4TVYmqFmkNsK0rD9lIiDdXKCSrwwEhREae6Ve0WIiuPg3M0xVlW171BBe21CGjbLbSYR0c/To3H409TQquHTggREKZ8pbjEiRqqxxXtWjjRLdvLrzUAK4Vr5qwZvEsJsCrzExWF9Tk9gIm84e74BRyRN9xeyS4vkHSmg1yK4Wxt5yUIClDayn0t3SteLWq3RQvjQrN31O87e2dEiBl0tJDJmTrykImN8dtq6AOpIw8Y3OMf2s+bvptU+hJqFrc1yCfpmZDkWYX0mv0H9WWpvS2tH6w8z27e58JJVi7c2ImuNBkQvrBOOWZc0CqsyFKtU3+97OuaQBnXGe90RuTMvCHtpziuWCcmDvPm64m+t2vlmuq/YHqqwnGCcfs1l+mCcbSmgtSe8iDGQNnPEsnrq//fZrltXS4tk3oAOPvT2tPF91uMrXTDNv340JrjQ4hbsHAxeE0z1ksHD99eKFdl0dl/P//Cl+9EPcfS+yBAoqk3eUAAAAASUVORK5CYII=" /></p>
+<p><img src="figures/load_data_1.png" /></p>
+<p>En el navegador que se abre buscamos la carpeta “datos” y seleccionamos el archivo “multicentric.txt” [NOTA: si no hemos hecho bien el proyecto o cambiado el directorio de trabajo, podemos navegar hasta buscar la carpeta donde hayamos bajado los datos]. A continuación nos aparecerá este cuadro</p>
+<p><img src="figures/load_data_2.png" /></p>
+<p>Abajo a la derecha se puede ver cómo nos quedarán nuestros datos cuando se importen. Fijémonos que el nombre de las variables que estaban en la primera fila, no se han importado correctamente y que R ha puesto como nombre de las variables V1, V2, V3, …. Esto ocurre porque por defecto (parte izquierda) la opción “heading” es “No”. Debemos cambiarlo a “Yes” cuando tengamos datos con los nombres de las variables en la primera fila (esto es lo habitual).</p>
+<p><img src="figures/load_data_3.png" /></p>
+<p>Si los datos de texto estuvieran separados por otra cosa que no fuesen tabuladores, no veríamos columnas. En ese caso debems cambiar el delimitador usando la opción “Separator”. Cuando hacemos click sobre el botón “Import” los datos se cargan como un objeto de R que se llama “multicentric”. Este nombre se puede cambiar en la caja “Name” que hay arriba a la izquierda. A parte de que se carge el dataset como un objeto de R, también se abren los datos como si fuese SPSS:</p>
+<p><img src="figures/load_data_4.png" /></p>
+<p>Ahora, una vez hemos cargado nuestros datos, podemos abrir un script de R y empezar a hacer análisis con ellos. Ahora podéis abrir un script nuevo y empezar a escribir y ejecutar las instrucciones que se detallan a continuación. Recordemos que se puede hacer mediante el menu <strong>File &gt; New File &gt; R Script</strong>. Un script, podría quedar entonces de la siguiente manera tras pedir que R importe los datos multicentric.txt</p>
+<p><img src="figures/script.png" /></p>
+<p>Lo primero que vemos es que tras el simbolo <code>#</code> el texto está en verde. Eso indica que esa parte no es código de R y no se ejecutará. Esto es recomendable para ir indicando qué hacen los siguientes comandos (compartir código entre investigadores). Las instrucciones que vemos en el script y que se repiten abajo, también sirven para importar datos utilizando comandos de R y no el menú como hemos visto anteriormente. Primero cambio el directorio de trabajo (si no estoy donde tengo la carpeta de datos es necesario)</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="importar.html#cb2-1"></a><span class="co"># Cambio el directorio de trabajo </span></span>
+<span id="cb2-2"><a href="importar.html#cb2-2"></a><span class="kw">setwd</span>(<span class="st">&quot;C:/Juan/cursos/R_Zaragoza/material_curso_online&quot;</span>)</span></code></pre></div>
+<p>y luego cargo los datos</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="importar.html#cb3-1"></a><span class="co"># Importo los datos</span></span>
+<span id="cb3-2"><a href="importar.html#cb3-2"></a>multicentric &lt;-<span class="st"> </span><span class="kw">read.delim</span>(<span class="st">&quot;datos/multicentric.txt&quot;</span>)</span></code></pre></div>
 
+</div>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-
-<a href="importar.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="index.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="manejo-de-datos.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -314,7 +306,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/isglobal-brge/Aprendizaje_Automatico_1/tree/master/docsindex.Rmd",
+"link": "https://github.com/isglobal-brge/Aprendizaje_Automatico_1/tree/master/docs01-lectura_datos.Rmd",
 "text": "Edit"
 },
 "history": {

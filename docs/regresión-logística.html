@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>7 Regresión logística | Curso de R</title>
+  <meta name="description" content="7 Regresión logística | Curso de R" />
+  <meta name="generator" content="bookdown 0.20 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="7 Regresión logística | Curso de R" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="7 Regresión logística | Curso de R" />
+  
+  
+  
+
+<meta name="author" content="Juan R González" />
+
+
+<meta name="date" content="2020-11-01" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="regresión-lineal.html"/>
+
+<script src="libs/header-attrs-2.3/header-attrs.js"></script>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
+
+
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Aprendizaje Automático 1</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Introducción</a></li>
+<li class="chapter" data-level="2" data-path="importar.html"><a href="importar.html"><i class="fa fa-check"></i><b>2</b> Importar datos a R</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="importar.html"><a href="importar.html#directorio-de-trabajo"><i class="fa fa-check"></i><b>2.1</b> Directorio de trabajo</a></li>
+<li class="chapter" data-level="2.2" data-path="importar.html"><a href="importar.html#importar-datos-de-texto"><i class="fa fa-check"></i><b>2.2</b> Importar datos de texto</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="manejo-de-datos.html"><a href="manejo-de-datos.html"><i class="fa fa-check"></i><b>3</b> Manejo de datos</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="manejo-de-datos.html"><a href="manejo-de-datos.html#visualización-de-datos"><i class="fa fa-check"></i><b>3.1</b> Visualización de datos</a></li>
+<li class="chapter" data-level="3.2" data-path="manejo-de-datos.html"><a href="manejo-de-datos.html#creación-de-variables"><i class="fa fa-check"></i><b>3.2</b> Creación de variables</a></li>
+<li class="chapter" data-level="3.3" data-path="manejo-de-datos.html"><a href="manejo-de-datos.html#recodificación-de-variables"><i class="fa fa-check"></i><b>3.3</b> Recodificación de variables</a></li>
+<li class="chapter" data-level="3.4" data-path="manejo-de-datos.html"><a href="manejo-de-datos.html#filtrado-de-datos"><i class="fa fa-check"></i><b>3.4</b> Filtrado de datos</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="estadística-descriptiva.html"><a href="estadística-descriptiva.html"><i class="fa fa-check"></i><b>4</b> Estadística descriptiva</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="estadística-descriptiva.html"><a href="estadística-descriptiva.html#variables-categóricas"><i class="fa fa-check"></i><b>4.1</b> Variables categóricas</a></li>
+<li class="chapter" data-level="4.2" data-path="estadística-descriptiva.html"><a href="estadística-descriptiva.html#tabla-de-contingencia"><i class="fa fa-check"></i><b>4.2</b> Tabla de contingencia</a></li>
+<li class="chapter" data-level="4.3" data-path="estadística-descriptiva.html"><a href="estadística-descriptiva.html#variables-continuas"><i class="fa fa-check"></i><b>4.3</b> Variables continuas</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="pruebas-de-hipótesis.html"><a href="pruebas-de-hipótesis.html"><i class="fa fa-check"></i><b>5</b> Pruebas de Hipótesis</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="pruebas-de-hipótesis.html"><a href="pruebas-de-hipótesis.html#prueba-de-hipótesis-para-la-media-mu-de-una-población-normal"><i class="fa fa-check"></i><b>5.1</b> Prueba de hipótesis para la media, <span class="math inline">\(\mu\)</span>, de una población normal</a>
+<ul>
+<li class="chapter" data-level="" data-path="pruebas-de-hipótesis.html"><a href="pruebas-de-hipótesis.html#ejemplo"><i class="fa fa-check"></i>Ejemplo</a></li>
+</ul></li>
+<li class="chapter" data-level="5.2" data-path="pruebas-de-hipótesis.html"><a href="pruebas-de-hipótesis.html#prueba-de-hipótesis-para-la-proporción-p-de-una-población"><i class="fa fa-check"></i><b>5.2</b> Prueba de hipótesis para la proporción <span class="math inline">\(p\)</span> de una población</a>
+<ul>
+<li class="chapter" data-level="5.2.1" data-path="pruebas-de-hipótesis.html"><a href="pruebas-de-hipótesis.html#prueba-de-wald"><i class="fa fa-check"></i><b>5.2.1</b> Prueba de Wald</a></li>
+<li class="chapter" data-level="5.2.2" data-path="pruebas-de-hipótesis.html"><a href="pruebas-de-hipótesis.html#prueba-chi2-de-pearson"><i class="fa fa-check"></i><b>5.2.2</b> Prueba <span class="math inline">\(\Chi^2\)</span> de Pearson</a></li>
+<li class="chapter" data-level="" data-path="pruebas-de-hipótesis.html"><a href="pruebas-de-hipótesis.html#ejemplo-1"><i class="fa fa-check"></i>Ejemplo</a></li>
+<li class="chapter" data-level="5.2.3" data-path="pruebas-de-hipótesis.html"><a href="pruebas-de-hipótesis.html#prueba-binomial-exacta"><i class="fa fa-check"></i><b>5.2.3</b> Prueba binomial exacta</a></li>
+</ul></li>
+<li class="chapter" data-level="5.3" data-path="pruebas-de-hipótesis.html"><a href="pruebas-de-hipótesis.html#prueba-de-hipótesis-para-la-razón-de-varianzas-sigma_12-sigma_22"><i class="fa fa-check"></i><b>5.3</b> Prueba de hipótesis para la razón de varianzas <span class="math inline">\(\sigma_1^2 / \sigma_2^2\)</span></a>
+<ul>
+<li class="chapter" data-level="" data-path="pruebas-de-hipótesis.html"><a href="pruebas-de-hipótesis.html#ejemplo-2"><i class="fa fa-check"></i>Ejemplo</a></li>
+</ul></li>
+<li class="chapter" data-level="5.4" data-path="pruebas-de-hipótesis.html"><a href="pruebas-de-hipótesis.html#prueba-de-hipótesis-para-la-igualdad-de-medias-mu_a-mu_b"><i class="fa fa-check"></i><b>5.4</b> Prueba de hipótesis para la igualdad de medias <span class="math inline">\(\mu_A = \mu_B\)</span></a>
+<ul>
+<li class="chapter" data-level="" data-path="pruebas-de-hipótesis.html"><a href="pruebas-de-hipótesis.html#ejemplo-3"><i class="fa fa-check"></i>Ejemplo</a></li>
+</ul></li>
+<li class="chapter" data-level="5.5" data-path="pruebas-de-hipótesis.html"><a href="pruebas-de-hipótesis.html#prueba-de-hipótesis-para-la-igualdad-de-más-de-dos-medias-anova"><i class="fa fa-check"></i><b>5.5</b> Prueba de hipótesis para la igualdad de más de dos medias (ANOVA)</a>
+<ul>
+<li class="chapter" data-level="" data-path="pruebas-de-hipótesis.html"><a href="pruebas-de-hipótesis.html#ejemplo-4"><i class="fa fa-check"></i>Ejemplo</a></li>
+</ul></li>
+<li class="chapter" data-level="5.6" data-path="pruebas-de-hipótesis.html"><a href="pruebas-de-hipótesis.html#prueba-de-hipótesis-para-la-igualdad-de-proporciones-p_a-p_b"><i class="fa fa-check"></i><b>5.6</b> Prueba de hipótesis para la igualdad de proporciones <span class="math inline">\(p_A = p_B\)</span></a>
+<ul>
+<li class="chapter" data-level="" data-path="pruebas-de-hipótesis.html"><a href="pruebas-de-hipótesis.html#ejemplo-5"><i class="fa fa-check"></i>Ejemplo</a></li>
+</ul></li>
+<li class="chapter" data-level="5.7" data-path="pruebas-de-hipótesis.html"><a href="pruebas-de-hipótesis.html#pruebas-no-paramétricas"><i class="fa fa-check"></i><b>5.7</b> Pruebas no paramétricas</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="regresión-lineal.html"><a href="regresión-lineal.html"><i class="fa fa-check"></i><b>6</b> Regresión lineal</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="regresión-lineal.html"><a href="regresión-lineal.html#preliminares"><i class="fa fa-check"></i><b>6.1</b> Preliminares</a></li>
+<li class="chapter" data-level="6.2" data-path="regresión-lineal.html"><a href="regresión-lineal.html#conceptos-básicos"><i class="fa fa-check"></i><b>6.2</b> Conceptos básicos</a>
+<ul>
+<li class="chapter" data-level="6.2.1" data-path="regresión-lineal.html"><a href="regresión-lineal.html#modelo-lineal-simple"><i class="fa fa-check"></i><b>6.2.1</b> Modelo lineal simple</a></li>
+<li class="chapter" data-level="6.2.2" data-path="regresión-lineal.html"><a href="regresión-lineal.html#regresión-lineal-multivariante"><i class="fa fa-check"></i><b>6.2.2</b> Regresión lineal multivariante</a></li>
+</ul></li>
+<li class="chapter" data-level="6.3" data-path="regresión-lineal.html"><a href="regresión-lineal.html#ajuste-de-un-modelo-lineal"><i class="fa fa-check"></i><b>6.3</b> Ajuste de un modelo lineal</a>
+<ul>
+<li class="chapter" data-level="6.3.1" data-path="regresión-lineal.html"><a href="regresión-lineal.html#interpretación-de-coeficientes"><i class="fa fa-check"></i><b>6.3.1</b> Interpretación de coeficientes</a></li>
+</ul></li>
+<li class="chapter" data-level="6.4" data-path="regresión-lineal.html"><a href="regresión-lineal.html#inferencia-en-el-contexto-de-regresión"><i class="fa fa-check"></i><b>6.4</b> Inferencia en el contexto de regresión</a></li>
+<li class="chapter" data-level="6.5" data-path="regresión-lineal.html"><a href="regresión-lineal.html#asunciones-de-un-modelo-de-regresión"><i class="fa fa-check"></i><b>6.5</b> Asunciones de un modelo de regresión</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="regresión-logística.html"><a href="regresión-logística.html"><i class="fa fa-check"></i><b>7</b> Regresión logística</a>
+<ul>
+<li class="chapter" data-level="7.1" data-path="regresión-logística.html"><a href="regresión-logística.html#interpretacdión-de-los-coeficientes-de-regresión"><i class="fa fa-check"></i><b>7.1</b> Interpretacdión de los coeficientes de regresión</a></li>
+<li class="chapter" data-level="7.2" data-path="regresión-logística.html"><a href="regresión-logística.html#creación-de-modelos"><i class="fa fa-check"></i><b>7.2</b> Creación de modelos</a></li>
+<li class="chapter" data-level="7.3" data-path="regresión-logística.html"><a href="regresión-logística.html#selección-paso-a-paso-stepwise"><i class="fa fa-check"></i><b>7.3</b> Selección paso a paso (stepwise)</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Curso de R</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="regresión-logística" class="section level1" number="7">
+<h1><span class="header-section-number">7</span> Regresión logística</h1>
+<p>Hasta ahora, nuestra variable de resultado era continua. Pero si la variable de resultado es binaria (0/1, “No”/“Sí”). La regresión logística se introduce en el contexto de la epidemiología como un modelo de regresión que extiende el modelo lineal cuando nuestra variable respuesta es binaria.</p>
+<p>Desafortunadamente, debemos afrontar nuevas complicaciones cuando trabajamos con regresión logística, lo que hace que estos modelos sean inherentemente más difíciles de interpretar que los modelos lineales. Las complicaciones surgen del hecho de que con la regresión logística modelamos la probabilidad de que <span class="math inline">\(y\)</span> = 1, y la probabilidad siempre se escala entre 0 y 1. Pero el predictor lineal, <span class="math inline">\(X_i \beta\)</span>, oscila entre <span class="math inline">\(\pm \infty\)</span> (donde <span class="math inline">\(X\)</span> representa todos los predictores del modelo). Esta diferencia de escala requiere transformar la variable de resultado, lo cual se logra con la función logit:</p>
+<p><span class="math display">\[
+\text{logit}(x) = \text{log}\left( \frac{x}{1-x} \right)
+\]</span></p>
+<p>La función logit asigna el rango del resultado (0,1) al rango del predictor lineal <span class="math inline">\((-\infty, +\infty)\)</span>. El resultado transformado, <span class="math inline">\(\text{logit} (x)\)</span>, se expresa en logaritmos de probabilidades (<span class="math inline">\(\frac{x}{1-x}\)</span> se conoce como probabilidades del resultado - razón de odds en inglés - momios en castellano). Así que el modelo también se puede escribir como:</p>
+<p><span class="math display">\[\text{Pr}(y_i = 1) = p_i\]</span></p>
+<p><span class="math display">\[\text{logit}(p_i) =  X_i\beta\]</span></p>
+<p>Las probabilidades logarítmicas (e.g. el log-odds) no tienen interpretación (que no sea el signo y la magnitud) y deben transformarse nuevamente en cantidades interpretables, ya sea en <em>probabilidades</em>, usando el logit inverso, o en <em>razones de probabilidades</em>, mediante el uso de la función exponencial.</p>
+<p>Dado que este no es un curso de estadística, asumimos que el estudiante está familiarizado con este tipo de regresión. No obstante, usaremos un ejemplo que ayude a la interpretación de resultados para aquellos alumnos que desconozca o no recuerden bien esta metodología.</p>
+<div id="interpretacdión-de-los-coeficientes-de-regresión" class="section level2" number="7.1">
+<h2><span class="header-section-number">7.1</span> Interpretacdión de los coeficientes de regresión</h2>
+<p>Mientras que en regresión lineal <span class="math inline">\(\beta_1\)</span> se corresponde con el cambio promedio en <span class="math inline">\(Y\)</span> asociado a un incremento de una unidad en <span class="math inline">\(X\)</span>, en regresión logística <span class="math inline">\(\beta_1\)</span> es el valor que indica cuanto cambia el logaritmo de odds cuando <span class="math inline">\(X\)</span> se incrementa en una unidad, o equivalentemente, multiplica los odds por <span class="math inline">\(e^{\beta_1}\)</span> (donde <span class="math inline">\(e\)</span> es la función exponencial). La cantidad con la que <span class="math inline">\(p_i\)</span> cambia debido a un cambio en <span class="math inline">\(X\)</span> dependerá del valor actual de <span class="math inline">\(X\)</span>, pero independientemente de ello, si <span class="math inline">\(\beta_1\)</span> es positivo, entonces aumentar <span class="math inline">\(X\)</span> provocará un aumento de p(X). El “intercept” <span class="math inline">\(\beta_0\)</span> corresponde con el resultado predicho para el nivel de referencia.</p>
+<p>Los parámetros del modelo pueden estimarse con la función <code>glm</code> (modelo lineal generalizado) indicando que la familia que estamos modelando es la binomial. Esto es importante, ya que si no indicamos nada, esta función <code>glm</code> realizará una estimación de los parámetros asumento que nuestra variable resultado (0/1) es continua (regresión lineal).</p>
+<p>Veamos como estimar un modelo con nuestros datos del estudio multicéntrico para cáncer cervical. Este es un estudio de casos y controles que se debe analizar mediante regresión logística ya que nuestra variable resultado, tener cáncer, es binaria (Control/Caso). Recordemos cómo cargar los datos en R</p>
+<div class="sourceCode" id="cb115"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb115-1"><a href="regresión-logística.html#cb115-1"></a>multicentric &lt;-<span class="st"> </span><span class="kw">read.delim</span>(<span class="st">&quot;datos/multicentric.txt&quot;</span>)</span></code></pre></div>
+<p>Antes de empezar a realizar análisis debemos asegurarnos que nuestra variable binaria está codificada 0/1, o que almenos tiene las categorías en el orden que nos asegure que estamos modelando la probabilidad del evento que nos interesa, que en este caso es ser caso (tener cáncer). Podemos verlo haciendo una tabla</p>
+<div class="sourceCode" id="cb116"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb116-1"><a href="regresión-logística.html#cb116-1"></a><span class="kw">table</span>(multicentric<span class="op">$</span>status)</span></code></pre></div>
+<pre><code>
+   Caso Control 
+   1489    1421 </code></pre>
+<p>Vemos que la primera categoría es <code>Caso</code> (ya que se ordena alfanuméricamente) por lo que si estimáramos un modelo de regresión logística unsando esta variable como variable dependiente, los coeficientes del modelo nos estarían cuantificando cuál es el efecto de ser control respecto a caso. Es por ello que debemos recodificar nuestra variable y es aconsejable tener dicha información como 0/1. Recodermos que esta recodificación la podemos hacer de la siguiente forma tal y como vimos en la clase de manejo de datos</p>
+<div class="sourceCode" id="cb118"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb118-1"><a href="regresión-logística.html#cb118-1"></a>multicentric &lt;-<span class="st"> </span><span class="kw">mutate</span>(multicentric,</span>
+<span id="cb118-2"><a href="regresión-logística.html#cb118-2"></a>                       <span class="dt">casocon =</span> <span class="kw">recode</span>(status,</span>
+<span id="cb118-3"><a href="regresión-logística.html#cb118-3"></a>                                        <span class="st">&quot;Caso&quot;</span> =<span class="st"> </span><span class="dv">1</span>,</span>
+<span id="cb118-4"><a href="regresión-logística.html#cb118-4"></a>                                        <span class="st">&quot;Control&quot;</span> =<span class="st"> </span><span class="dv">0</span>))</span></code></pre></div>
+<p>Ahora nuestra variable dependiente será <code>casocon</code>. Supongamos que queremos ver si la edad de la primera relación sexual es un factor asociado a tener cáncer cervival. El modelo sería</p>
+<div class="sourceCode" id="cb119"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb119-1"><a href="regresión-logística.html#cb119-1"></a>modelo_simple &lt;-<span class="st"> </span><span class="kw">glm</span>(casocon <span class="op">~</span><span class="st"> </span>edad1sex, <span class="dt">data=</span>multicentric, <span class="dt">family=</span>binomial)</span>
+<span id="cb119-2"><a href="regresión-logística.html#cb119-2"></a><span class="kw">summary</span>(modelo_simple)</span></code></pre></div>
+<pre><code>
+Call:
+glm(formula = casocon ~ edad1sex, family = binomial, data = multicentric)
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-1.8585  -1.1882   0.8876   1.0830   2.5406  
+
+Coefficients:
+             Estimate Std. Error z value Pr(&gt;|z|)    
+(Intercept)  2.033107   0.176122   11.54   &lt;2e-16 ***
+edad1sex    -0.100383   0.008782  -11.43   &lt;2e-16 ***
+---
+Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 4002.6  on 2888  degrees of freedom
+Residual deviance: 3857.5  on 2887  degrees of freedom
+  (21 observations deleted due to missingness)
+AIC: 3861.5
+
+Number of Fisher Scoring iterations: 4</code></pre>
+<p>De la misma forma que para el modelo lineal tenemos un test para saber si esta variable está asociada con la variable dependiente, en la regresión logística también podemos calular un p-valor para determinar si el coeficiente es distinto de 0 o no. En este caso, el p-valor es &lt;0.05 (columna <code>Pr(&gt;|z|)</code>) por lo que podríamos concluir que la edad de la primera relación sexual se asocia con la probabilidad de tener cáncer cervical. En particular, el riesgo de tener cáncer cervical desciende un 10% (exp(-0.1)=0.90) por cada año que se retrasa la primera relación sexual. <strong>NOTA</strong>: debería hablarse de razón de odds (OR) y no de riesgo, pero cuando la incidencia del evento es pequeña la OR puede interpretarse como un riesgo relativo).</p>
+<p>Ahora podemos añadir otra variable y hacer un modelo multivariante como para el caso de la regresión lineal. Introduzcamos en el modelo la variable infección por papiloma virus (variable <code>vph</code>). En este caso el modelo sería:</p>
+<div class="sourceCode" id="cb121"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb121-1"><a href="regresión-logística.html#cb121-1"></a>modelo_multivariable &lt;-<span class="st"> </span><span class="kw">glm</span>(casocon <span class="op">~</span><span class="st"> </span>edad1sex <span class="op">+</span><span class="st"> </span>vph, <span class="dt">data=</span>multicentric, <span class="dt">family=</span>binomial)</span>
+<span id="cb121-2"><a href="regresión-logística.html#cb121-2"></a><span class="kw">summary</span>(modelo_multivariable)</span></code></pre></div>
+<pre><code>
+Call:
+glm(formula = casocon ~ edad1sex + vph, family = binomial, data = multicentric)
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-2.2560  -0.4014   0.4593   0.4995   2.6573  
+
+Coefficients:
+            Estimate Std. Error z value Pr(&gt;|z|)    
+(Intercept) -1.63312    0.30665  -5.326 1.01e-07 ***
+edad1sex    -0.04447    0.01417  -3.138   0.0017 ** 
+vphpositivo  4.45194    0.14433  30.845  &lt; 2e-16 ***
+---
+Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 3355.2  on 2423  degrees of freedom
+Residual deviance: 1556.8  on 2421  degrees of freedom
+  (486 observations deleted due to missingness)
+AIC: 1562.8
+
+Number of Fisher Scoring iterations: 5</code></pre>
+<p>En este caso, ambas variables son estadísticamente signifcativas porque el p-valor asociado es &lt;0.05 en los dos casos. Ahora la pregunta es. ¿Cuál de estos dos modelos es mejor? Para esta pregunta no usamos el <span class="math inline">\(R^2\)</span> si no que usamos el criterio de información de Akaike (AIC)</p>
+<p><span class="math display">\[\mathrm {AIC} = - 2 \ln(L) + 2k\]</span></p>
+<p>que nos cuatifica la verosimilitud (<span class="math inline">\(L\)</span>) de cada modelo penalizando por el número de varibles (<span class="math inline">\(k\)</span>) ya que la introducción de variables mejora el ajuste por el mero hecho de considerar más información.</p>
+<p>El AIC menor indicaría mejor modelo. Esto lo podemos hacer con R mediante:</p>
+<div class="sourceCode" id="cb123"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb123-1"><a href="regresión-logística.html#cb123-1"></a><span class="kw">AIC</span>(modelo_simple)</span></code></pre></div>
+<pre><code>[1] 3861.472</code></pre>
+<div class="sourceCode" id="cb125"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb125-1"><a href="regresión-logística.html#cb125-1"></a><span class="kw">AIC</span>(modelo_multivariable)</span></code></pre></div>
+<pre><code>[1] 1562.839</code></pre>
+<p>Podemos ver que el modelo con dos variables ajusta mucho mejor a los datos. Ahora bien ¿qué ocurriría si introducimos más variables? ¿Cómo seleccionamos aquellas variables más relevantes? Estas preguntas tendrán respuesta en la siguiente sección</p>
+</div>
+<div id="creación-de-modelos" class="section level2" number="7.2">
+<h2><span class="header-section-number">7.2</span> Creación de modelos</h2>
+<p>¿Cómo sabemos qué variables (independientes) deben incluirse en un modelo? La respuesta sencilla es: a menudo no lo sabemos. Aquí hay algunas reglas generales cuando se piensa en la selección de variables:</p>
+<ul>
+<li><p><em>Piensa en los datos</em>. ¿Qué variables tiene sentido incluir dada la situación? ¿Alguna literatura publicada ofrece orientación? Si estamos en modo descriptivo, es posible que solo nos interesen determinadas variables y utilicemos las demás como controles. Si estamos en modo predictivo, incluimos todas las variables que, por razones aditivas, podrían ser importantes para predecir el resultado. Sin embargo, esta es una guía muy general, ya que diferentes contextos exigen diferentes enfoques para el ajuste del modelo.</p></li>
+<li><p><em>Incluir términos cuadráticos si hay evidencia de gráficos bivariados de una relación no lineal entre predictor y resultado.</em> En general, no incluimos términos polinomiales con grados superiores a 2. Para hacerlo, se corre el riesgo de sobreajuste (término del que hablaremos más tarde).</p></li>
+<li><p><em>Buscar posibles interacciones entre variables con los efectos principales más grandes.</em> En general, no incluimos interacciones de orden superior (mayores que 2) a menos que tengamos una razón lógica y podamos explicarla. También hay que tener en cuenta que las interacciones son bastante difíciles de explicar.</p></li>
+<li><p><em>Considerar combinar predictores separados en un solo predictor — un “puntaje total” — obtenido al sumarlos o promediarlos.</em></p></li>
+<li><p><em>Simplicidad.</em> Los modelos sencillos son casi siempre mejores — son más interpretables y tienden a tener menor variación (<em>principio de parsimonia</em>).</p></li>
+</ul>
+</div>
+<div id="selección-paso-a-paso-stepwise" class="section level2" number="7.3">
+<h2><span class="header-section-number">7.3</span> Selección paso a paso (stepwise)</h2>
+<p>La técnica tradicional en estadística para seleccionar variables es <em>selección paso a paso</em> (o <em>stepwise</em> en inglés).</p>
+<p>Con <em>selección hacia adelante</em> comenzamos con un modelo nulo (solo contiene el <em>intercept</em>) y agregamos una variable a la vez. Si la variable agregada mejora el modelo, la mantenemos y agregamos otra. Continuamos hasta que se hayan probado todas las variables como podemos ver en la siguiente figura:</p>
+<div class="figure">
+<img src="figures/fwd_stepwise.png" style="width:40.0%" alt="" />
+<p class="caption">Selección hacia adelante</p>
+</div>
+<p>Con <em>selección hacia atrás</em> comenzamos con un modelo completo (todos los términos disponibles) y eliminamos variables en serie (una a una). Si el modelo es mejor después de eliminar una variable, lo dejamos fuera. Continuamos hasta que se hayan probado todas las variables como podemos ver en la siguiente figura:</p>
+<div class="figure">
+<img src="figures/bwd_stepwise.png" style="width:40.0%" alt="" />
+<p class="caption">Selección hacia atrás</p>
+</div>
+<p><em>Selección hacia adelante seguida de selección hacia atrás (saltos)</em>. Consiste en ir realizando en cada paso una selección hacia adelante o hacia atrás en función del mejor paso que podamos hacer.</p>
+<p>Desafortunadamente, estos procedimientos de ajuste manual son defectuosos. Dependen del orden en el que se agregan o excluyen las variables y, a menudo, no seleccionarán el mejor modelo. Además, por ejemplo, supongamos que tenemos una base de datos con <span class="math inline">\(k\)</span> = 13 variables predictoras, lo que significa que hay <span class="math inline">\(2^k\)</span> o 8192 modelos posibles que podríamos ajustar y eso sin tener encuenta la posible introducción de interacciones o términos polinómicos. Este es un espacio extremadamente grande para buscar el mejor modelo, y la búsqueda es computacionalmente costosa y requiere mucho tiempo. Realizar tal búsqueda manualmente sería prácticamente imposible.</p>
+<p>Se han desarrollado algoritmos para buscar en el espacio de modelos de manera eficiente el modelo óptimo. Sin embargo, desde el principio conviene tener cuidado con la selección automática de variables. <em>La elección de variables no debe ser un proceso mecánico.</em> Debemos, en cambio, buscar comprender el proceso de generación de datos. De hecho, el mayor beneficio de la selección manual por pasos consiste menos en producir un buen modelo que en la comprensión obtenida al ajustar muchos modelos y ver, mediante prueba y error, qué predictores son más reactivos con el resultado. Especialmente cuando se trata de descripción, los algoritmos de selección automática de variables son solo herramientas para explorar sus datos y pensar en modelos.</p>
+<p>La función <code>step ()</code> en R base automatiza la selección de variables paso a paso usando AIC. Primero tenemos que definir nuestro modelo completo, es decir, el modelo con las variables que queremos usar para la selección de variables. En nuestro caso supongamos que queremos ver qué variables son importantes entre, infección por papiloma virus, edad de la primera relación sexual, ser fumador, nivel educativo, uso de contraceptivos orales y el pais de origen. El modelo sería entonces</p>
+<div class="sourceCode" id="cb127"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb127-1"><a href="regresión-logística.html#cb127-1"></a>mod &lt;-<span class="st"> </span><span class="kw">glm</span>(casocon <span class="op">~</span><span class="st"> </span>vph <span class="op">+</span><span class="st"> </span>edad1sex <span class="op">+</span><span class="st"> </span>fumar <span class="op">+</span><span class="st"> </span>niveledu <span class="op">+</span><span class="st"> </span>co <span class="op">+</span><span class="st"> </span>pais, </span>
+<span id="cb127-2"><a href="regresión-logística.html#cb127-2"></a>           <span class="dt">data =</span> multicentric, <span class="dt">family=</span><span class="st">&quot;binomial&quot;</span>)</span></code></pre></div>
+<p>Ahora con la función <code>step</code> podemos hacer, por ejemplo, la selección automática por el método backward de la siguiente forma:</p>
+<div class="sourceCode" id="cb128"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb128-1"><a href="regresión-logística.html#cb128-1"></a>modF &lt;-<span class="st"> </span><span class="kw">step</span>(mod, <span class="dt">trace =</span> F, <span class="dt">direction =</span> <span class="st">&quot;backward&quot;</span>)</span>
+<span id="cb128-2"><a href="regresión-logística.html#cb128-2"></a><span class="kw">summary</span>(modF)</span></code></pre></div>
+<pre><code>
+Call:
+glm(formula = casocon ~ vph + edad1sex + fumar + niveledu + pais, 
+    family = &quot;binomial&quot;, data = multicentric)
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-2.6353  -0.3658   0.2662   0.4879   3.1635  
+
+Coefficients:
+                      Estimate Std. Error z value Pr(&gt;|z|)    
+(Intercept)           -1.29712    0.44815  -2.894 0.003799 ** 
+vphpositivo            4.64396    0.15804  29.385  &lt; 2e-16 ***
+edad1sex              -0.04765    0.01628  -2.927 0.003426 ** 
+fumarfumador          -0.01603    0.35946  -0.045 0.964435    
+fumarno fumador       -0.74681    0.28200  -2.648 0.008090 ** 
+niveleduprimaria      -0.36957    0.19984  -1.849 0.064409 .  
+niveledusecundaria    -1.03821    0.24651  -4.212 2.53e-05 ***
+niveleduticnico       -1.08495    0.50825  -2.135 0.032788 *  
+niveleduuniversitario -2.12402    0.60953  -3.485 0.000493 ***
+paisColombia           0.67612    0.31797   2.126 0.033473 *  
+paisEspaia             1.65083    0.32244   5.120 3.06e-07 ***
+paisFilipinas          1.17099    0.26442   4.428 9.49e-06 ***
+paisMarruecos         -0.13458    0.29181  -0.461 0.644661    
+paisPeri               0.60008    0.28748   2.087 0.036855 *  
+paisTailandia          0.86177    0.25125   3.430 0.000604 ***
+---
+Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 3355.2  on 2423  degrees of freedom
+Residual deviance: 1474.7  on 2409  degrees of freedom
+  (486 observations deleted due to missingness)
+AIC: 1504.7
+
+Number of Fisher Scoring iterations: 5</code></pre>
+<p>en el objeto <code>modF</code> tenemos el modelo final. Vemos que se han seleccionado todas las variables menos uso de contraceptivos orales que si la inluyéramos en el modelo veríamos que no estadísticamente signifativa.</p>
+<p>Para los modelos lineales, esta función sirve de la misma forma. Basta con remplazar el modelo <code>glm</code> por <code>lm</code>.</p>
+
+</div>
+</div>
+
+
+
+
+
+
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="regresión-lineal.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/isglobal-brge/Aprendizaje_Automatico_1/tree/master/docs05-modelos_regresion.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["_main.pdf", "_main.epub"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

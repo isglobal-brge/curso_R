@@ -22,6 +22,34 @@ options(scipen = 0)
 Este bookdown sirven como notas para el curso [Análisis descriptivo y estadística básica en estudios biomédicos con R y Rmarkdown ](https://www.iisaragon.es/event/curso-analisis-descriptivo-y-estadistica-basica-en-estudios-biomedicos-con-r-y-rmarkdown-edicion-2020-iacs/) impartido en el [Insituto Aragonés de Ciencias de la Salud](https://www.iacs.es/)
 
 
+El contenido del curso tiene los siguientes temas:
+
+- Modulo I: El entorno R y estadística descriptiva 
+     + Tema 1: Introducción a R - Rstudio (2 horas)
+         + Inicio R: instalando R y Rstudio
+         + Lectura de datos en R
+     + Tema 2: Análisis descriptivo
+     
+- Modulo II: Inferencia estadística y modelos
+     + Tema 3: Análisis inferencial
+         + Contrastes de hipótesis
+         + Tests paramétricos: t-test, ANOVA, Chi-cuadrado
+         + Tests no paramétricos: Wilcoxon, Kruskall-Wallis, Fisher
+     + Tema 4: Modelos de regresión
+         + Regresión lineal
+         + Regresión logística
+
+- Módulo III: Visualización
+     + Tema 5: Tablas y Gráficos
+         + Funciones Básicas de R
+         + Lattice
+         + ggplot2
+- Módulo IV: Investigación reproducible
+     + Tema 6: Knitr
+     + Tema 7: R Mardown
+     + Tema 8: Creación de reportes estadísticos usando librerías R
+
+
 Este material está licenciado bajo una [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/).
 
 

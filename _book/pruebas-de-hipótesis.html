@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>5 Pruebas de Hipótesis | Curso de R</title>
+  <meta name="description" content="5 Pruebas de Hipótesis | Curso de R" />
+  <meta name="generator" content="bookdown 0.20 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="5 Pruebas de Hipótesis | Curso de R" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="5 Pruebas de Hipótesis | Curso de R" />
+  
+  
+  
+
+<meta name="author" content="Juan R González" />
+
+
+<meta name="date" content="2020-10-29" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="estadística-descriptiva.html"/>
+
+<script src="libs/header-attrs-2.3/header-attrs.js"></script>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
+
+
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Aprendizaje Automático 1</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Introducción</a></li>
+<li class="chapter" data-level="2" data-path="importar.html"><a href="importar.html"><i class="fa fa-check"></i><b>2</b> Importar datos a R</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="importar.html"><a href="importar.html#directorio-de-trabajo"><i class="fa fa-check"></i><b>2.1</b> Directorio de trabajo</a></li>
+<li class="chapter" data-level="2.2" data-path="importar.html"><a href="importar.html#importar-datos-de-texto"><i class="fa fa-check"></i><b>2.2</b> Importar datos de texto</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="manejo-de-datos.html"><a href="manejo-de-datos.html"><i class="fa fa-check"></i><b>3</b> Manejo de datos</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="manejo-de-datos.html"><a href="manejo-de-datos.html#visualización-de-datos"><i class="fa fa-check"></i><b>3.1</b> Visualización de datos</a></li>
+<li class="chapter" data-level="3.2" data-path="manejo-de-datos.html"><a href="manejo-de-datos.html#creación-de-variables"><i class="fa fa-check"></i><b>3.2</b> Creación de variables</a></li>
+<li class="chapter" data-level="3.3" data-path="manejo-de-datos.html"><a href="manejo-de-datos.html#recodificación-de-variables"><i class="fa fa-check"></i><b>3.3</b> Recodificación de variables</a></li>
+<li class="chapter" data-level="3.4" data-path="manejo-de-datos.html"><a href="manejo-de-datos.html#filtrado-de-datos"><i class="fa fa-check"></i><b>3.4</b> Filtrado de datos</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="estadística-descriptiva.html"><a href="estadística-descriptiva.html"><i class="fa fa-check"></i><b>4</b> Estadística descriptiva</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="estadística-descriptiva.html"><a href="estadística-descriptiva.html#variables-categóricas"><i class="fa fa-check"></i><b>4.1</b> Variables categóricas</a></li>
+<li class="chapter" data-level="4.2" data-path="estadística-descriptiva.html"><a href="estadística-descriptiva.html#tabla-de-contingencia"><i class="fa fa-check"></i><b>4.2</b> Tabla de contingencia</a></li>
+<li class="chapter" data-level="4.3" data-path="estadística-descriptiva.html"><a href="estadística-descriptiva.html#variables-continuas"><i class="fa fa-check"></i><b>4.3</b> Variables continuas</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="pruebas-de-hipótesis.html"><a href="pruebas-de-hipótesis.html"><i class="fa fa-check"></i><b>5</b> Pruebas de Hipótesis</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="pruebas-de-hipótesis.html"><a href="pruebas-de-hipótesis.html#prueba-de-hipótesis-para-mu-de-una-población-normal"><i class="fa fa-check"></i><b>5.1</b> Prueba de hipótesis para <span class="math inline">\(\mu\)</span> de una población normal</a>
+<ul>
+<li class="chapter" data-level="" data-path="pruebas-de-hipótesis.html"><a href="pruebas-de-hipótesis.html#ejemplo"><i class="fa fa-check"></i>Ejemplo</a></li>
+</ul></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Curso de R</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="pruebas-de-hipótesis" class="section level1" number="5">
+<h1><span class="header-section-number">5</span> Pruebas de Hipótesis</h1>
+<p>En la siguiente figura podemos observar un esquema general de cómo abordar un problema científico desde un punto de vista estadístico. Partimos de una pregunta científica que nos planteamos sobre nuestra población de estudio. Esta pregunta debe ser <em>traducida</em> a una pregunta estadística que nos permita saber cómo abordarla desde un punto de vista matemático o estadístico.</p>
+<div class="figure">
+<img src="figures/schemeStatistics.jpg" style="height:12cm" alt="" />
+<p class="caption">Esquema investigación científica</p>
+</div>
+<p>Por ejemplo, imaginemos que estamos interesados en saber si el consumo de aspirina reduce el riesgo de sufrir un infarto de miocardio. Hay un método muy sencillo de saber qué problema necesitamos abordar desde un punto de vista estadístico a partir de nuestra pregunta científica y es conocer la naturaleza de nuestros datos. En este caso, nuestra variable resultado sería sufrir o no un infarto, por lo que estaríamos ante una variable binaria. Este tipo de variables se resumen con la frecuencia relativa o proporciones. De esta forma, la pregunta estadística se traduciría cómo: ¿La proporción de personas que sufren un infarto es igual en aquellas personas que toman aspirina que en las que no toma?</p>
+<p>Para contestar a esta pregunta, el método científico nos indica que debemos tomar una muestra aleatoria (para garantizar representatividad de nuestra problación) que describiremos con métodos descriptivos vistos en el tema anterior. También podemos realizar un experimento o diseñar un estudio que nos permita contestar a nuestra pregunta cienífica. Existen muchos tipos de diseños, que se suponen que son familiares para el alumno.</p>
+<p>Para nuestro ejemplo podríamos, entre otras opciones, diseñar un estudio en el que estudiáramos personas que han sufrido un infarto y otro grupo control de la misma edad y sexo a los que preguntaríamos si han tomado o no aspirina durante los últimos años (diseño caso-control). Entonces, podríamos compararla proporción de infartos entre las personas que toman y no toman aspirina. Empezaríamos por mostrar estas diferencias de forma visual con, por ejemplo, un gráfico de barras (que es como se visualizan las variables categóricas). Ahora nuestra siguiente pregunta sería saber si las diferencias que observamos son reales o son debidas al azar (es decir, por no estudiar toda la población y si una muestra aleatoria). Para demostrar que estas diferencias son reales (e.g estadísticamente significativas) debemos realizar lo que se conoce como inferencia estadística, que en este caso correspondería a una prueba de hipótesis.</p>
+<p>En el caso que nuestra pregunta científica esté asociada a una variable continua se abordaría de la misma forma. La única diferencia es que la prueba de hipótesis planteada sería distinta. Por ejemplo, supongamos que queremos saber si el consumo de café aumenta la tensión arterial. En ese caso, nuestra variable resultado es tensión arterial, que al ser continua se resume con la media. Así pues, nuestra pregunta estadística sería: ¿La media de tensión arterial es igual en los consumidores de café que en los que no consumen?</p>
+<p>En consecuencia, las pruebas que nos planteamos para comparar ambos grupos (A y B) en cada ejemplo sería</p>
+<p><span class="math display">\[H_0: p_A = p_B\]</span></p>
+<p>y</p>
+<p><span class="math display">\[H_0: \bar{x}_A = \bar{x}_B\]</span></p>
+<p>respectivamente.</p>
+<p>Una vez planteadas las pruebas de hipótesis, basta con usar un software estadístico para calcular el <strong>p-valor</strong> que es la medida que nos indica si las diferencias observadas en nuestra muestra son reales o son debidas al azar. En otras palabras, demostramos si las diferencias observadas son <strong>estadísticamente significativas</strong>. Como decimos, el proceso para determinar esta significación estadística se basa en el cálculo del p-valor, y consideraremos que las diferencias serán estadísticamente significativas si el p-valor<span class="math inline">\(&lt;0.05\)</span> y no cuando ocurra lo contrario.</p>
+<p>A este valor de <span class="math inline">\(0.05\)</span> se le conoce como el nivel de significación estadística (<span class="math inline">\(\alpha\)</span>) y es el valor que asumimos como riesgo a equivocarnos cuando las diferencias no son reales. En la siguiente figura podemos ver un resumen del tipo de errores que podemos cometer cuando llevamos a cabo una prueba de hipótesis</p>
+<p><img src="figures/errores.png" style="height:8cm" alt="Tipos de errores en una prueba de hipótesis" />
+A modo de resumen podríamos decir que los pasos en un proceso de investigación serían:</p>
+<ul>
+<li>Formular hipotesis nula (y alternativa)</li>
+<li>Decidir el nivel de significanza estadística (<span class="math inline">\(\alpha\)</span>)</li>
+<li>Eligir un test estadístico a utilizarse (que dependerá del tipo de variable que estudiemos)</li>
+<li>Calcular el p-valor con ese test y decidir si rechazamos <span class="math inline">\(H_0\)</span> o no.</li>
+</ul>
+<p>Para entender un poco mejor este procedimiento, podems compararlo con el simil de un jurado. Es importante notar que siempre partimos de la hipótesis nula y que queremos dar evidencias a partir de nuestros datos, nunca hacemos lo contrario, al igual que pasa en un juicio</p>
+<div class="figure">
+<img src="figures/simil_jurado.png" style="height:8cm" alt="" />
+<p class="caption">Símil del jurado en pruebas de hipótesis</p>
+</div>
+<p>A continuación explicaremos cómo llevar a cabo estas pruebas de hipótesis con R en función de nuestra variable de interés para las siguientes pruebas.</p>
+<p>En este capítulo se muestran las funciones que hay disponibles en R para realizar prueba de hipótesis para:</p>
+<ol style="list-style-type: decimal">
+<li>la media <span class="math inline">\(\mu\)</span>,</li>
+<li>la proporción <span class="math inline">\(p\)</span>,</li>
+<li>la varianza <span class="math inline">\(\sigma^2\)</span>,</li>
+<li>la diferencia de medias <span class="math inline">\(\mu_1-\mu_2\)</span> para muestras independientes y dependientes (o pareadas),</li>
+<li>la diferencia de proporciones <span class="math inline">\(p_1 - p_2\)</span>, y</li>
+<li>la razón de varianzas <span class="math inline">\(\sigma_1^2 / \sigma_2^2\)</span>.</li>
+</ol>
+<p>Para ilustrar estos cálculos usaremos la base de datos <code>multicentric.txt</code> que hemos trabajado en capítulos anteriores. Para ello, recordemos que primero debemos cargar los datos en R tal y como se ha descrito en el capítulo @ref{importar}, o bien con el menú o bien con la siguiente instrucción.</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="pruebas-de-hipótesis.html#cb1-1"></a>multicentric &lt;-<span class="st"> </span><span class="kw">read.delim</span>(<span class="st">&quot;datos/multicentric.txt&quot;</span>)</span></code></pre></div>
+<p>NOTA: recordad que para que esta instrucción funcione debéis cambiar el directorio de trabajo a la carpeta que contenga este fichero.</p>
+<div id="prueba-de-hipótesis-para-mu-de-una-población-normal" class="section level2" number="5.1">
+<h2><span class="header-section-number">5.1</span> Prueba de hipótesis para <span class="math inline">\(\mu\)</span> de una población normal</h2>
+<p>Para realizar este tipo de prueba se puede usar la función <code>t.test</code> que tiene la siguiente estructura.</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="pruebas-de-hipótesis.html#cb2-1"></a><span class="kw">t.test</span>(x, <span class="dt">y =</span> <span class="ot">NULL</span>,</span>
+<span id="cb2-2"><a href="pruebas-de-hipótesis.html#cb2-2"></a>       <span class="dt">alternative =</span> <span class="kw">c</span>(<span class="st">&quot;two.sided&quot;</span>, <span class="st">&quot;less&quot;</span>, <span class="st">&quot;greater&quot;</span>),</span>
+<span id="cb2-3"><a href="pruebas-de-hipótesis.html#cb2-3"></a>       <span class="dt">mu =</span> <span class="dv">0</span>, <span class="dt">paired =</span> <span class="ot">FALSE</span>, <span class="dt">var.equal =</span> <span class="ot">FALSE</span>,</span>
+<span id="cb2-4"><a href="pruebas-de-hipótesis.html#cb2-4"></a>       <span class="dt">conf.level =</span> <span class="fl">0.95</span>, ...)</span></code></pre></div>
+<p>Los argumentos a definir dentro de <code>t.test</code> para hacer la prueba son:</p>
+<ul>
+<li><code>x</code>: vector numérico con los datos.</li>
+<li><code>alternative</code>: tipo de hipótesis alterna. Los valores disponibles son <code>"two.sided"</code> cuando la hipótesis alterna es <span class="math inline">\(\neq\)</span>, <code>"less"</code> para el caso <span class="math inline">\(&lt;\)</span> y <code>"greater"</code> para <span class="math inline">\(&gt;\)</span>.</li>
+<li><code>mu</code>: valor de referencia de la prueba.</li>
+<li><code>conf.level</code>: nivel de confianza para reportar el intervalo de confianza asociado (opcional).</li>
+</ul>
+<div id="ejemplo" class="section level3 unnumbered" number="">
+<h3>Ejemplo</h3>
+<p>Supongamos que queremos saber si la edad de la primera relación sexual es a los 18 años. Lo primero que debemos hacer es comprobar si los datos siguene una distribución normal. Para ello usaremos una libería que tiene una batería de 10 pruebas distintas que se llama <code>nortest</code>. Para usarla, primero hay que instalarla</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="pruebas-de-hipótesis.html#cb3-1"></a><span class="kw">install.packages</span>(<span class="st">&quot;nortest&quot;</span>)</span></code></pre></div>
+<p>y luego podemos evaluar si la variable es normal usando cualquiera de los tests implementados, de la siguiente forma</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="pruebas-de-hipótesis.html#cb4-1"></a><span class="kw">library</span>(nortest)   </span>
+<span id="cb4-2"><a href="pruebas-de-hipótesis.html#cb4-2"></a><span class="kw">lillie.test</span>(multicentric<span class="op">$</span>edad1sex)</span></code></pre></div>
+<pre><code>
+	Lilliefors (Kolmogorov-Smirnov) normality test
+
+data:  multicentric$edad1sex
+D = 0.12136, p-value &lt; 2.2e-16</code></pre>
+<p>Nosotros hemos usado la prueba de Lilliefors (Kolmogorov-Smirnov) pero se pueden usar otras como la de Anderson-Darling (función <code>ad.test</code>) o Shapiro-Francia (función <code>sf.test</code>) entre muchas otras.</p>
+<p>Podemos ver que rechazamos la hipóteisis nula de normalidad ($p&lt;0.05), por lo que necesitmos solventar este problema. Normalmente esto se hace transformando los datos usando la transformación logarítmica. Luego volvemos a testar la normalidad para ver si podemos aplicar el test para la media. Para ello crearemos primero una nueva variable que llamaremos <code>edad1sex2</code>.</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="pruebas-de-hipótesis.html#cb6-1"></a><span class="kw">library</span>(tidyverse)</span>
+<span id="cb6-2"><a href="pruebas-de-hipótesis.html#cb6-2"></a>multicentric &lt;-<span class="st"> </span><span class="kw">mutate</span>(multicentric, <span class="dt">edad1sex2 =</span> <span class="kw">log</span>(edad1sex))</span></code></pre></div>
+<p>y ahora aplicamos el test a la nueva variable</p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb7-1"><a href="pruebas-de-hipótesis.html#cb7-1"></a><span class="kw">lillie.test</span>(multicentric<span class="op">$</span>edad1sex2)</span></code></pre></div>
+<pre><code>
+	Lilliefors (Kolmogorov-Smirnov) normality test
+
+data:  multicentric$edad1sex2
+D = 0.088069, p-value &lt; 2.2e-16</code></pre>
+
+</div>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="estadística-descriptiva.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/isglobal-brge/Aprendizaje_Automatico_1/tree/master/docs04-pruebas_hipótesis.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["_main.pdf", "_main.epub"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

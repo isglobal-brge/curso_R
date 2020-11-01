@@ -1,4 +1,4 @@
-# Importar datos a R
+# Importar datos a R {#importar}
 
 
 Rstudio posee una pestaña en el Entorno (panel derecho-arriba, recordad la primera lección) y un botón que nos permite importar datasets de distintos formatos (ver figura). Esta es una forma sencilla de importar datos, pero siempre es recomendable importar archivos usando código (scripts) que nos permite compartir flujos de trabajo y análisis entre investigadores. En ese botón vemos que podemos importar datos de distintos tipos
@@ -25,7 +25,7 @@ Si no queréis trabajar con proyectos, recordemos que tneéis que cambiar el dir
 
 O bien (recomendado) podéis hacerlo escribiendo una instrucción en el script. Como yo tengo la carpeta "datos" en el directorio **C:/Juan/cursos/R_Zaragoza/material_curso_online**) escribiría:
 
-``` {r}
+``` {r, eval=FALSE}
 setwd("C:/Juan/cursos/R_Zaragoza/material_curso_online")
 ```
 
