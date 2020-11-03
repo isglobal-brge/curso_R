@@ -24,7 +24,7 @@
 <meta name="author" content="Juan R González" />
 
 
-<meta name="date" content="2020-11-01" />
+<meta name="date" content="2020-11-03" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -610,11 +610,25 @@ alternative hypothesis: true location shift is not equal to 0</code></pre>
 
 data:  edad1sex by fumar
 Kruskal-Wallis chi-squared = 31.373, df = 2, p-value = 1.54e-07</code></pre>
-<p>De nuevo obtendríamos un valor similar al test paramétrico. Esto ocurre porque tenemos una base de datos con muchos casos, y los test paramétricos suelen funcionar bien. <strong>IMPORANTE:</strong> Los test no paramétricos muestras su mejor potencia cuando las bases de datos son pequeñas</p>
+<p>Al igual que con ANOVA, debemos realizar tests a posteriori para ver entre qué grupos hay differencias utilizando un métodos no paramétrico. Esto lo podemos hacer con el test de Nemenyi que está implementado en la librería <code>DescTools</code> que primero debemos instalar con la instrucción <code>install.packages("DescTools")</code>. Al igual que en el caso del ANOVA, usaremos el método propuesto por Tukey. La instrucción es la siguiente. Notemos que la variable grupal (argumento <code>g</code>) debe ser factor, por eso usamos la función <code>as.factor()</code>:</p>
+<div class="sourceCode" id="cb106"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb106-1"><a href="pruebas-de-hipótesis.html#cb106-1"></a><span class="kw">library</span>(DescTools)</span>
+<span id="cb106-2"><a href="pruebas-de-hipótesis.html#cb106-2"></a>pvals &lt;-<span class="st"> </span><span class="kw">NemenyiTest</span>(<span class="dt">x =</span> multicentric<span class="op">$</span>edad1sex,</span>
+<span id="cb106-3"><a href="pruebas-de-hipótesis.html#cb106-3"></a>                     <span class="dt">g =</span> <span class="kw">as.factor</span>(multicentric<span class="op">$</span>fumar), <span class="dt">dist=</span><span class="st">&quot;tukey&quot;</span>)</span>
+<span id="cb106-4"><a href="pruebas-de-hipótesis.html#cb106-4"></a>pvals</span></code></pre></div>
+<pre><code>
+ Nemenyi&#39;s test of multiple comparisons for independent samples (tukey)  
+
+                      mean.rank.diff   pval    
+fumador-ex-fumador         -70.27367 0.6121    
+no fumador-ex-fumador      184.23356 0.0046 ** 
+no fumador-fumador         254.50724  3e-06 ***
+---
+Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1</code></pre>
+<p>De nuevo obtendríamos un valor similar al test paramétrico. Esto ocurre porque tenemos una base de datos con muchos casos, y los test paramétricos suelen funcionar bien. <strong>IMPORANTE:</strong> Los test no paramétricos muestras su mejor potencia cuando las bases de datos son pequeñas.</p>
 <p>Finalmente, el test de Chi-cuadrado que hemos calculado para testar</p>
 <p><span class="math display">\[H_0: p_{\text{controles}}  = p_{\text{casos}}\]</span></p>
 <p>también tiene su versión no paramétrica en el test de Fisher. Este test es necesario no sólo cuando hay poco tamaño muestral, si no que también cuando hay pocos casos en algunas de las celdas de la tabla de contingencia. Este test podríamos calcularlo con esta función:</p>
-<div class="sourceCode" id="cb106"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb106-1"><a href="pruebas-de-hipótesis.html#cb106-1"></a><span class="kw">fisher.test</span>(multicentric<span class="op">$</span>vph, multicentric<span class="op">$</span>status)</span></code></pre></div>
+<div class="sourceCode" id="cb108"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb108-1"><a href="pruebas-de-hipótesis.html#cb108-1"></a><span class="kw">fisher.test</span>(multicentric<span class="op">$</span>vph, multicentric<span class="op">$</span>status)</span></code></pre></div>
 <pre><code>
 	Fisher&#39;s Exact Test for Count Data
 

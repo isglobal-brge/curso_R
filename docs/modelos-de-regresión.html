@@ -24,7 +24,7 @@
 <meta name="author" content="Juan R González" />
 
 
-<meta name="date" content="2020-11-01" />
+<meta name="date" content="2020-11-03" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -262,9 +262,9 @@ y_i = \beta_0 + \beta_1 x_ {i1} + \cdots + \beta_p x_ {ip} + \varepsilon_i,
 <h3><span class="header-section-number">6.1.3</span> Ajuste de un modelo lineal</h3>
 <p>Para ajustar un modelo lineal usamos la función <code>lm()</code>. (La función <code>glm()</code> también se ajusta a un modelo lineal por defecto, definido por <code>family = gaussian</code>. Usaremos<code>glm()</code> para ajustar una regresión logística, con<code>family = binomial</code>).</p>
 <p>Por ejemplo, usemos el conjunto de datos <code>mtcars</code> que está por defecto en R, para averiguar si el consumo de combustible (mpg) está correlacionado con el peso del coche (wt). En R deberíamos ejecutar:</p>
-<div class="sourceCode" id="cb108"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb108-1"><a href="modelos-de-regresión.html#cb108-1"></a><span class="kw">data</span>(mtcars)</span>
-<span id="cb108-2"><a href="modelos-de-regresión.html#cb108-2"></a>simple_model &lt;-<span class="st"> </span><span class="kw">lm</span>(mpg <span class="op">~</span><span class="st"> </span>wt, <span class="dt">data =</span> mtcars)</span>
-<span id="cb108-3"><a href="modelos-de-regresión.html#cb108-3"></a><span class="kw">summary</span>(simple_model)</span></code></pre></div>
+<div class="sourceCode" id="cb110"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb110-1"><a href="modelos-de-regresión.html#cb110-1"></a><span class="kw">data</span>(mtcars)</span>
+<span id="cb110-2"><a href="modelos-de-regresión.html#cb110-2"></a>simple_model &lt;-<span class="st"> </span><span class="kw">lm</span>(mpg <span class="op">~</span><span class="st"> </span>wt, <span class="dt">data =</span> mtcars)</span>
+<span id="cb110-3"><a href="modelos-de-regresión.html#cb110-3"></a><span class="kw">summary</span>(simple_model)</span></code></pre></div>
 <pre><code>
 Call:
 lm(formula = mpg ~ wt, data = mtcars)
@@ -292,9 +292,9 @@ F-statistic: 91.38 on 1 and 30 DF,  p-value: 1.294e-10</code></pre>
 <ul>
 <li><em>intercept</em>: 37.29 representa el valor predicho de mpg cuando wt es 0. Dado que wt no puede ser igual a 0. El <em>intercept</em> no es interpretable en este modelo. Para hacerlo interpretable, necesitamos centrar la variable wt en 0, lo que podemos hacer fácilmente restando la media de wt de cada observación (<span class="math inline">\(x_ {centrado} = x - \ bar {x}\)</span>). Esta es una transformación lineal que cambiará la escala del predictor y, por lo tanto, <span class="math inline">\(\beta_0\)</span> también, pero no el ajuste del modelo: <span class="math inline">\(\beta_1\)</span> permanecerá igual (-5,34) al igual que RSS (278,32). Después de la transformación, el peso promedio del coche es 0 y el <em>intercept</em> representa las millas por galón pronosticadas para coches de peso promedio.</li>
 </ul>
-<div class="sourceCode" id="cb110"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb110-1"><a href="modelos-de-regresión.html#cb110-1"></a>mtcars &lt;-<span class="st"> </span><span class="kw">mutate</span>(mtcars, <span class="dt">wt_centered =</span> wt <span class="op">-</span><span class="st"> </span><span class="kw">mean</span>(wt))</span>
-<span id="cb110-2"><a href="modelos-de-regresión.html#cb110-2"></a>simple_model &lt;-<span class="st"> </span><span class="kw">lm</span>(mpg <span class="op">~</span><span class="st"> </span>wt_centered, <span class="dt">data =</span> mtcars)</span>
-<span id="cb110-3"><a href="modelos-de-regresión.html#cb110-3"></a><span class="kw">summary</span>(simple_model)</span></code></pre></div>
+<div class="sourceCode" id="cb112"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb112-1"><a href="modelos-de-regresión.html#cb112-1"></a>mtcars &lt;-<span class="st"> </span><span class="kw">mutate</span>(mtcars, <span class="dt">wt_centered =</span> wt <span class="op">-</span><span class="st"> </span><span class="kw">mean</span>(wt))</span>
+<span id="cb112-2"><a href="modelos-de-regresión.html#cb112-2"></a>simple_model &lt;-<span class="st"> </span><span class="kw">lm</span>(mpg <span class="op">~</span><span class="st"> </span>wt_centered, <span class="dt">data =</span> mtcars)</span>
+<span id="cb112-3"><a href="modelos-de-regresión.html#cb112-3"></a><span class="kw">summary</span>(simple_model)</span></code></pre></div>
 <pre><code>
 Call:
 lm(formula = mpg ~ wt_centered, data = mtcars)
@@ -324,11 +324,11 @@ F-statistic: 91.38 on 1 and 30 DF,  p-value: 1.294e-10</code></pre>
 <li><em>wt_centered</em>: -5.34 representa el cambio previsto en el resultado, mpg, asociado con un aumento de 1 unidad en wt_centered.</li>
 </ul>
 <p>Agreguemos un segundo predictor al modelo, una versión binaria de caballos de fuerza (hp_bin), que definiremos como 0 para valores de hp que están por debajo del promedio y 1 para valores mayores o iguales que el promedio.</p>
-<div class="sourceCode" id="cb112"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb112-1"><a href="modelos-de-regresión.html#cb112-1"></a>mtcars &lt;-<span class="st"> </span><span class="kw">mutate</span>(mtcars, <span class="dt">hp_bin =</span> <span class="kw">ifelse</span>(hp <span class="op">&lt;</span><span class="st"> </span><span class="kw">mean</span>(hp), <span class="dv">0</span>, <span class="dv">1</span>))</span>
-<span id="cb112-2"><a href="modelos-de-regresión.html#cb112-2"></a></span>
-<span id="cb112-3"><a href="modelos-de-regresión.html#cb112-3"></a>multivariable_model &lt;-<span class="st"> </span><span class="kw">lm</span>(mpg <span class="op">~</span><span class="st"> </span>wt_centered <span class="op">+</span><span class="st"> </span>hp_bin , <span class="dt">data =</span> mtcars)</span>
-<span id="cb112-4"><a href="modelos-de-regresión.html#cb112-4"></a></span>
-<span id="cb112-5"><a href="modelos-de-regresión.html#cb112-5"></a><span class="kw">summary</span>(multivariable_model)</span></code></pre></div>
+<div class="sourceCode" id="cb114"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb114-1"><a href="modelos-de-regresión.html#cb114-1"></a>mtcars &lt;-<span class="st"> </span><span class="kw">mutate</span>(mtcars, <span class="dt">hp_bin =</span> <span class="kw">ifelse</span>(hp <span class="op">&lt;</span><span class="st"> </span><span class="kw">mean</span>(hp), <span class="dv">0</span>, <span class="dv">1</span>))</span>
+<span id="cb114-2"><a href="modelos-de-regresión.html#cb114-2"></a></span>
+<span id="cb114-3"><a href="modelos-de-regresión.html#cb114-3"></a>multivariable_model &lt;-<span class="st"> </span><span class="kw">lm</span>(mpg <span class="op">~</span><span class="st"> </span>wt_centered <span class="op">+</span><span class="st"> </span>hp_bin , <span class="dt">data =</span> mtcars)</span>
+<span id="cb114-4"><a href="modelos-de-regresión.html#cb114-4"></a></span>
+<span id="cb114-5"><a href="modelos-de-regresión.html#cb114-5"></a><span class="kw">summary</span>(multivariable_model)</span></code></pre></div>
 <pre><code>
 Call:
 lm(formula = mpg ~ wt_centered + hp_bin, data = mtcars)
@@ -378,8 +378,8 @@ t = \frac {\beta - 0} {SE (\beta)}
 </ol>
 <p>La mayoría de estos problemas no son fatales y se pueden solucionar mejorando el modelo, seleccionando variables diferentes o adicionales o utilizando una distribución de modelización diferente (los conocidos como modelos lineales generalizados o GLMs). Los gráficos de residuos son la mejor herramienta para evaluar si se han cumplido los supuestos del modelo.</p>
 <p>No entraremos demasiado en detalle en todas las pruebas que hay para comprabar estas asunciones, pero mediante el siguiente gráfico podemos determinar si podemos usar nuestro modelo o no para realizar predicciones</p>
-<div class="sourceCode" id="cb114"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb114-1"><a href="modelos-de-regresión.html#cb114-1"></a><span class="kw">par</span>(<span class="dt">mfrow=</span><span class="kw">c</span>(<span class="dv">2</span>,<span class="dv">2</span>))</span>
-<span id="cb114-2"><a href="modelos-de-regresión.html#cb114-2"></a><span class="kw">plot</span>(multivariable_model)</span></code></pre></div>
+<div class="sourceCode" id="cb116"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb116-1"><a href="modelos-de-regresión.html#cb116-1"></a><span class="kw">par</span>(<span class="dt">mfrow=</span><span class="kw">c</span>(<span class="dv">2</span>,<span class="dv">2</span>))</span>
+<span id="cb116-2"><a href="modelos-de-regresión.html#cb116-2"></a><span class="kw">plot</span>(multivariable_model)</span></code></pre></div>
 <p><img src="fig/unnamed-chunk-64-1.png" width="672" /></p>
 <p>La instrucción <code>par(mfrow=c(2,2))</code> es necesaria para que obtengamos un panel con los cuatro gráficos que devuelve la función <code>plot</code> [Veremos este concepto más en detalle cuando hablemos de cómo realizar gráficos con R].</p>
 <p>En el gráfico podemos observar como este modelo tiene problema con los residuos ya que el gráfico de QQ-plot nos indicaría que hay tres observaciones (17, 18 y 20) que son valores no esperados en la cola de una distribución normal. Esto coincide con el gráfico de los residuos contra los valores predichos donde estas observaciones tiene un valor de residuo por encima de 2 que se consideraría el límite superior de normalidad. Sin embaro estos puntos no se pueden considerar como puntos influyentes según el gráfico de residuos contra Leverage. Estos resultados sugerirían re-estimar el modelo haciendo una transformación de la variable respuesta (generalmente el logaritmo) que garantice la linealidad del modelo y/o la normalidad de los residuos.</p>
@@ -402,20 +402,20 @@ t = \frac {\beta - 0} {SE (\beta)}
 <p>Mientras que en regresión lineal <span class="math inline">\(\beta_1\)</span> se corresponde con el cambio promedio en <span class="math inline">\(Y\)</span> asociado a un incremento de una unidad en <span class="math inline">\(X\)</span>, en regresión logística <span class="math inline">\(\beta_1\)</span> es el valor que indica cuanto cambia el logaritmo de odds cuando <span class="math inline">\(X\)</span> se incrementa en una unidad, o equivalentemente, multiplica los odds por <span class="math inline">\(e^{\beta_1}\)</span> (donde <span class="math inline">\(e\)</span> es la función exponencial). La cantidad con la que <span class="math inline">\(p_i\)</span> cambia debido a un cambio en <span class="math inline">\(X\)</span> dependerá del valor actual de <span class="math inline">\(X\)</span>, pero independientemente de ello, si <span class="math inline">\(\beta_1\)</span> es positivo, entonces aumentar <span class="math inline">\(X\)</span> provocará un aumento de p(X). El “intercept” <span class="math inline">\(\beta_0\)</span> corresponde con el resultado predicho para el nivel de referencia.</p>
 <p>Los parámetros del modelo pueden estimarse con la función <code>glm</code> (modelo lineal generalizado) indicando que la familia que estamos modelando es la binomial. Esto es importante, ya que si no indicamos nada, esta función <code>glm</code> realizará una estimación de los parámetros asumento que nuestra variable resultado (0/1) es continua (regresión lineal).</p>
 <p>Veamos como estimar un modelo con nuestros datos del estudio multicéntrico para cáncer cervical. Este es un estudio de casos y controles que se debe analizar mediante regresión logística ya que nuestra variable resultado, tener cáncer, es binaria (Control/Caso). Recordemos cómo cargar los datos en R</p>
-<div class="sourceCode" id="cb115"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb115-1"><a href="modelos-de-regresión.html#cb115-1"></a>multicentric &lt;-<span class="st"> </span><span class="kw">read.delim</span>(<span class="st">&quot;datos/multicentric.txt&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb117"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb117-1"><a href="modelos-de-regresión.html#cb117-1"></a>multicentric &lt;-<span class="st"> </span><span class="kw">read.delim</span>(<span class="st">&quot;datos/multicentric.txt&quot;</span>)</span></code></pre></div>
 <p>Antes de empezar a realizar análisis debemos asegurarnos que nuestra variable binaria está codificada 0/1, o que almenos tiene las categorías en el orden que nos asegure que estamos modelando la probabilidad del evento que nos interesa, que en este caso es ser caso (tener cáncer). Podemos verlo haciendo una tabla</p>
-<div class="sourceCode" id="cb116"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb116-1"><a href="modelos-de-regresión.html#cb116-1"></a><span class="kw">table</span>(multicentric<span class="op">$</span>status)</span></code></pre></div>
+<div class="sourceCode" id="cb118"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb118-1"><a href="modelos-de-regresión.html#cb118-1"></a><span class="kw">table</span>(multicentric<span class="op">$</span>status)</span></code></pre></div>
 <pre><code>
    Caso Control 
    1489    1421 </code></pre>
 <p>Vemos que la primera categoría es <code>Caso</code> (ya que se ordena alfanuméricamente) por lo que si estimáramos un modelo de regresión logística unsando esta variable como variable dependiente, los coeficientes del modelo nos estarían cuantificando cuál es el efecto de ser control respecto a caso. Es por ello que debemos recodificar nuestra variable y es aconsejable tener dicha información como 0/1. Recodermos que esta recodificación la podemos hacer de la siguiente forma tal y como vimos en la clase de manejo de datos</p>
-<div class="sourceCode" id="cb118"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb118-1"><a href="modelos-de-regresión.html#cb118-1"></a>multicentric &lt;-<span class="st"> </span><span class="kw">mutate</span>(multicentric,</span>
-<span id="cb118-2"><a href="modelos-de-regresión.html#cb118-2"></a>                       <span class="dt">casocon =</span> <span class="kw">recode</span>(status,</span>
-<span id="cb118-3"><a href="modelos-de-regresión.html#cb118-3"></a>                                        <span class="st">&quot;Caso&quot;</span> =<span class="st"> </span><span class="dv">1</span>,</span>
-<span id="cb118-4"><a href="modelos-de-regresión.html#cb118-4"></a>                                        <span class="st">&quot;Control&quot;</span> =<span class="st"> </span><span class="dv">0</span>))</span></code></pre></div>
+<div class="sourceCode" id="cb120"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb120-1"><a href="modelos-de-regresión.html#cb120-1"></a>multicentric &lt;-<span class="st"> </span><span class="kw">mutate</span>(multicentric,</span>
+<span id="cb120-2"><a href="modelos-de-regresión.html#cb120-2"></a>                       <span class="dt">casocon =</span> <span class="kw">recode</span>(status,</span>
+<span id="cb120-3"><a href="modelos-de-regresión.html#cb120-3"></a>                                        <span class="st">&quot;Caso&quot;</span> =<span class="st"> </span><span class="dv">1</span>,</span>
+<span id="cb120-4"><a href="modelos-de-regresión.html#cb120-4"></a>                                        <span class="st">&quot;Control&quot;</span> =<span class="st"> </span><span class="dv">0</span>))</span></code></pre></div>
 <p>Ahora nuestra variable dependiente será <code>casocon</code>. Supongamos que queremos ver si la edad de la primera relación sexual es un factor asociado a tener cáncer cervival. El modelo sería</p>
-<div class="sourceCode" id="cb119"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb119-1"><a href="modelos-de-regresión.html#cb119-1"></a>modelo_simple &lt;-<span class="st"> </span><span class="kw">glm</span>(casocon <span class="op">~</span><span class="st"> </span>edad1sex, <span class="dt">data=</span>multicentric, <span class="dt">family=</span>binomial)</span>
-<span id="cb119-2"><a href="modelos-de-regresión.html#cb119-2"></a><span class="kw">summary</span>(modelo_simple)</span></code></pre></div>
+<div class="sourceCode" id="cb121"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb121-1"><a href="modelos-de-regresión.html#cb121-1"></a>modelo_simple &lt;-<span class="st"> </span><span class="kw">glm</span>(casocon <span class="op">~</span><span class="st"> </span>edad1sex, <span class="dt">data=</span>multicentric, <span class="dt">family=</span>binomial)</span>
+<span id="cb121-2"><a href="modelos-de-regresión.html#cb121-2"></a><span class="kw">summary</span>(modelo_simple)</span></code></pre></div>
 <pre><code>
 Call:
 glm(formula = casocon ~ edad1sex, family = binomial, data = multicentric)
@@ -442,8 +442,8 @@ Number of Fisher Scoring iterations: 4</code></pre>
 <p>De la misma forma que para el modelo lineal tenemos un test para saber si esta variable está asociada con la variable dependiente, en la regresión logística también podemos calular un p-valor para determinar si el coeficiente es distinto de 0 o no. En este caso, el p-valor es &lt;0.05 (columna <code>Pr(&gt;|z|)</code>) por lo que podríamos concluir que la edad de la primera relación sexual se asocia con la probabilidad de tener cáncer cervical. En particular, el riesgo de tener cáncer cervical desciende un 10% (exp(-0.1)=0.90) por cada año que se retrasa la primera relación sexual.</p>
 <p><strong>NOTA</strong>: debería hablarse de razón de odds (OR) y no de riesgo, pero cuando la incidencia del evento es pequeña la OR puede interpretarse como un riesgo relativo).</p>
 <p>Ahora podemos añadir otra variable y hacer un modelo multivariante como para el caso de la regresión lineal. Introduzcamos en el modelo la variable infección por papiloma virus (variable <code>vph</code>). En este caso el modelo sería:</p>
-<div class="sourceCode" id="cb121"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb121-1"><a href="modelos-de-regresión.html#cb121-1"></a>modelo_multivariable &lt;-<span class="st"> </span><span class="kw">glm</span>(casocon <span class="op">~</span><span class="st"> </span>edad1sex <span class="op">+</span><span class="st"> </span>vph, <span class="dt">data=</span>multicentric, <span class="dt">family=</span>binomial)</span>
-<span id="cb121-2"><a href="modelos-de-regresión.html#cb121-2"></a><span class="kw">summary</span>(modelo_multivariable)</span></code></pre></div>
+<div class="sourceCode" id="cb123"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb123-1"><a href="modelos-de-regresión.html#cb123-1"></a>modelo_multivariable &lt;-<span class="st"> </span><span class="kw">glm</span>(casocon <span class="op">~</span><span class="st"> </span>edad1sex <span class="op">+</span><span class="st"> </span>vph, <span class="dt">data=</span>multicentric, <span class="dt">family=</span>binomial)</span>
+<span id="cb123-2"><a href="modelos-de-regresión.html#cb123-2"></a><span class="kw">summary</span>(modelo_multivariable)</span></code></pre></div>
 <pre><code>
 Call:
 glm(formula = casocon ~ edad1sex + vph, family = binomial, data = multicentric)
@@ -472,9 +472,9 @@ Number of Fisher Scoring iterations: 5</code></pre>
 <p><span class="math display">\[\mathrm {AIC} = - 2 \ln(L) + 2k\]</span></p>
 <p>que nos cuatifica la verosimilitud (<span class="math inline">\(L\)</span>) de cada modelo penalizando por el número de varibles (<span class="math inline">\(k\)</span>) ya que la introducción de variables mejora el ajuste por el mero hecho de considerar más información.</p>
 <p>El AIC menor indicaría mejor modelo. Esto lo podemos hacer con R mediante:</p>
-<div class="sourceCode" id="cb123"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb123-1"><a href="modelos-de-regresión.html#cb123-1"></a><span class="kw">AIC</span>(modelo_simple)</span></code></pre></div>
+<div class="sourceCode" id="cb125"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb125-1"><a href="modelos-de-regresión.html#cb125-1"></a><span class="kw">AIC</span>(modelo_simple)</span></code></pre></div>
 <pre><code>[1] 3861.472</code></pre>
-<div class="sourceCode" id="cb125"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb125-1"><a href="modelos-de-regresión.html#cb125-1"></a><span class="kw">AIC</span>(modelo_multivariable)</span></code></pre></div>
+<div class="sourceCode" id="cb127"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb127-1"><a href="modelos-de-regresión.html#cb127-1"></a><span class="kw">AIC</span>(modelo_multivariable)</span></code></pre></div>
 <pre><code>[1] 1562.839</code></pre>
 <p>Podemos ver que el modelo con dos variables ajusta mucho mejor a los datos. Ahora bien ¿qué ocurriría si introducimos más variables? ¿Cómo seleccionamos aquellas variables más relevantes? Estas preguntas tendrán respuesta en la siguiente sección</p>
 </div>
@@ -506,11 +506,11 @@ Number of Fisher Scoring iterations: 5</code></pre>
 <p>Desafortunadamente, estos procedimientos de ajuste manual son defectuosos. Dependen del orden en el que se agregan o excluyen las variables y, a menudo, no seleccionarán el mejor modelo. Además, por ejemplo, supongamos que tenemos una base de datos con <span class="math inline">\(k\)</span> = 13 variables predictoras, lo que significa que hay <span class="math inline">\(2^k\)</span> o 8192 modelos posibles que podríamos ajustar y eso sin tener encuenta la posible introducción de interacciones o términos polinómicos. Este es un espacio extremadamente grande para buscar el mejor modelo, y la búsqueda es computacionalmente costosa y requiere mucho tiempo. Realizar tal búsqueda manualmente sería prácticamente imposible.</p>
 <p>Se han desarrollado algoritmos para buscar en el espacio de modelos de manera eficiente el modelo óptimo. Sin embargo, desde el principio conviene tener cuidado con la selección automática de variables. <em>La elección de variables no debe ser un proceso mecánico.</em> Debemos, en cambio, buscar comprender el proceso de generación de datos. De hecho, el mayor beneficio de la selección manual por pasos consiste menos en producir un buen modelo que en la comprensión obtenida al ajustar muchos modelos y ver, mediante prueba y error, qué predictores son más reactivos con el resultado. Especialmente cuando se trata de descripción, los algoritmos de selección automática de variables son solo herramientas para explorar sus datos y pensar en modelos.</p>
 <p>La función <code>step ()</code> en R base automatiza la selección de variables paso a paso usando AIC. Primero tenemos que definir nuestro modelo completo, es decir, el modelo con las variables que queremos usar para la selección de variables. En nuestro caso supongamos que queremos ver qué variables son importantes entre, infección por papiloma virus, edad de la primera relación sexual, ser fumador, nivel educativo, uso de contraceptivos orales y el pais de origen. El modelo sería entonces</p>
-<div class="sourceCode" id="cb127"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb127-1"><a href="modelos-de-regresión.html#cb127-1"></a>mod &lt;-<span class="st"> </span><span class="kw">glm</span>(casocon <span class="op">~</span><span class="st"> </span>vph <span class="op">+</span><span class="st"> </span>edad1sex <span class="op">+</span><span class="st"> </span>fumar <span class="op">+</span><span class="st"> </span>niveledu <span class="op">+</span><span class="st"> </span>co <span class="op">+</span><span class="st"> </span>pais, </span>
-<span id="cb127-2"><a href="modelos-de-regresión.html#cb127-2"></a>           <span class="dt">data =</span> multicentric, <span class="dt">family=</span><span class="st">&quot;binomial&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb129"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb129-1"><a href="modelos-de-regresión.html#cb129-1"></a>mod &lt;-<span class="st"> </span><span class="kw">glm</span>(casocon <span class="op">~</span><span class="st"> </span>vph <span class="op">+</span><span class="st"> </span>edad1sex <span class="op">+</span><span class="st"> </span>fumar <span class="op">+</span><span class="st"> </span>niveledu <span class="op">+</span><span class="st"> </span>co <span class="op">+</span><span class="st"> </span>pais, </span>
+<span id="cb129-2"><a href="modelos-de-regresión.html#cb129-2"></a>           <span class="dt">data =</span> multicentric, <span class="dt">family=</span><span class="st">&quot;binomial&quot;</span>)</span></code></pre></div>
 <p>Ahora con la función <code>step</code> podemos hacer, por ejemplo, la selección automática por el método backward de la siguiente forma:</p>
-<div class="sourceCode" id="cb128"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb128-1"><a href="modelos-de-regresión.html#cb128-1"></a>modF &lt;-<span class="st"> </span><span class="kw">step</span>(mod, <span class="dt">trace =</span> F, <span class="dt">direction =</span> <span class="st">&quot;backward&quot;</span>)</span>
-<span id="cb128-2"><a href="modelos-de-regresión.html#cb128-2"></a><span class="kw">summary</span>(modF)</span></code></pre></div>
+<div class="sourceCode" id="cb130"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb130-1"><a href="modelos-de-regresión.html#cb130-1"></a>modF &lt;-<span class="st"> </span><span class="kw">step</span>(mod, <span class="dt">trace =</span> F, <span class="dt">direction =</span> <span class="st">&quot;backward&quot;</span>)</span>
+<span id="cb130-2"><a href="modelos-de-regresión.html#cb130-2"></a><span class="kw">summary</span>(modF)</span></code></pre></div>
 <pre><code>
 Call:
 glm(formula = casocon ~ vph + edad1sex + fumar + niveledu + pais, 
