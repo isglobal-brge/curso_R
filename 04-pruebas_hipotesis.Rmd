@@ -397,7 +397,7 @@ kruskal.test(edad1sex~fumar, data=multicentric)
 ```
 
 
-Al igual que con ANOVA, debemos realizar tests a posteriori para ver entre qué grupos hay differencias utilizando un métodos no paramétrico. Esto lo podemos hacer con el test de Nemenyi que está implementado en la librería `DescTools` que primero debemos instalar con la instrucción `install.packages("DescTools")`. Al igual que en el caso del ANOVA, usaremos el método propuesto por Tukey. La instrucción es la siguiente. Notemos que la variable grupal (argumento `g`) debe ser factor, por eso usamos la función `as.factor()`:
+Al igual que con ANOVA, debemos realizar tests a posteriori para ver entre qué grupos hay differencias. Para el caso no paramétrico, esto lo podemos hacer con el test de Nemenyi que está implementado en la librería `DescTools` que primero debemos instalar con la instrucción `install.packages("DescTools")`. Al igual que en el caso del ANOVA, usaremos el método propuesto por Tukey. La instrucción es la siguiente. Notemos que la variable grupal (argumento `g`) debe ser factor, por eso usamos la función `as.factor()`:
 
 ```{r nemenyi}
 library(DescTools)
