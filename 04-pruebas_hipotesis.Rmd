@@ -150,7 +150,7 @@ Este test se llevará a cabo cuando nuestra pregunta científica se interese por
 Existen varias pruebas para testar si la propoción $p$ de una distribución binomial (porque tenemos $n$ individuos que siguen una Bernoulli de parámetro $p$) sigue un valor predeterminado.
 
 1. Prueba de [Wald](https://en.wikipedia.org/wiki/Wald_test),
-2. Prueba $\Chi^2$ de [Pearson](https://en.wikipedia.org/wiki/Pearson%27s_chi-squared_test#Fairness_of_dice),
+2. Prueba $\chi^2$ de [Pearson](https://en.wikipedia.org/wiki/Pearson%27s_chi-squared_test#Fairness_of_dice),
 3. Prueba [binomial exacta](https://en.wikipedia.org/wiki/Binomial_test).
 
 ### Prueba de Wald
@@ -164,7 +164,7 @@ donde $\hat{p}$ es la proporción muestral calculada como el cociente entre el n
 Para realizar esta prueba en R no hay una función y debemos escribir la líneas de código para obtener el estadístico y el valor-P de la prueba. Dado que estamos en un curso introductorio, obviaremos esta solución que aunque no es compleja, requiere escribir algo de código en R y no usar una función
 
 
-### Prueba $\Chi^2$ de Pearson
+### Prueba $\chi^2$ de Pearson
 Esta prueba también require de un tamaño muestral $n$ grande. Para realizar los cálculos se usa la función `prop.test` que tiene la siguiente estructura.
 
 ```{r, eval=FALSE}

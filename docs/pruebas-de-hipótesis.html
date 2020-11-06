@@ -24,7 +24,7 @@
 <meta name="author" content="Juan R González" />
 
 
-<meta name="date" content="2020-11-03" />
+<meta name="date" content="2020-11-06" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -162,7 +162,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="5.2" data-path="pruebas-de-hipótesis.html"><a href="pruebas-de-hipótesis.html#prueba-de-hipótesis-para-la-proporción-p-de-una-población"><i class="fa fa-check"></i><b>5.2</b> Prueba de hipótesis para la proporción <span class="math inline">\(p\)</span> de una población</a>
 <ul>
 <li class="chapter" data-level="5.2.1" data-path="pruebas-de-hipótesis.html"><a href="pruebas-de-hipótesis.html#prueba-de-wald"><i class="fa fa-check"></i><b>5.2.1</b> Prueba de Wald</a></li>
-<li class="chapter" data-level="5.2.2" data-path="pruebas-de-hipótesis.html"><a href="pruebas-de-hipótesis.html#prueba-chi2-de-pearson"><i class="fa fa-check"></i><b>5.2.2</b> Prueba <span class="math inline">\(\Chi^2\)</span> de Pearson</a></li>
+<li class="chapter" data-level="5.2.2" data-path="pruebas-de-hipótesis.html"><a href="pruebas-de-hipótesis.html#prueba-chi2-de-pearson"><i class="fa fa-check"></i><b>5.2.2</b> Prueba <span class="math inline">\(\chi^2\)</span> de Pearson</a></li>
 <li class="chapter" data-level="" data-path="pruebas-de-hipótesis.html"><a href="pruebas-de-hipótesis.html#ejemplo-1"><i class="fa fa-check"></i>Ejemplo</a></li>
 <li class="chapter" data-level="5.2.3" data-path="pruebas-de-hipótesis.html"><a href="pruebas-de-hipótesis.html#prueba-binomial-exacta"><i class="fa fa-check"></i><b>5.2.3</b> Prueba binomial exacta</a></li>
 </ul></li>
@@ -340,7 +340,7 @@ mean of x
 <p>Existen varias pruebas para testar si la propoción <span class="math inline">\(p\)</span> de una distribución binomial (porque tenemos <span class="math inline">\(n\)</span> individuos que siguen una Bernoulli de parámetro <span class="math inline">\(p\)</span>) sigue un valor predeterminado.</p>
 <ol style="list-style-type: decimal">
 <li>Prueba de <a href="https://en.wikipedia.org/wiki/Wald_test">Wald</a>,</li>
-<li>Prueba <span class="math inline">\(\Chi^2\)</span> de <a href="https://en.wikipedia.org/wiki/Pearson%27s_chi-squared_test#Fairness_of_dice">Pearson</a>,</li>
+<li>Prueba <span class="math inline">\(\chi^2\)</span> de <a href="https://en.wikipedia.org/wiki/Pearson%27s_chi-squared_test#Fairness_of_dice">Pearson</a>,</li>
 <li>Prueba <a href="https://en.wikipedia.org/wiki/Binomial_test">binomial exacta</a>.</li>
 </ol>
 <div id="prueba-de-wald" class="section level3" number="5.2.1">
@@ -352,7 +352,7 @@ donde <span class="math inline">\(\hat{p}\)</span> es la proporción muestral ca
 <p>Para realizar esta prueba en R no hay una función y debemos escribir la líneas de código para obtener el estadístico y el valor-P de la prueba. Dado que estamos en un curso introductorio, obviaremos esta solución que aunque no es compleja, requiere escribir algo de código en R y no usar una función</p>
 </div>
 <div id="prueba-chi2-de-pearson" class="section level3" number="5.2.2">
-<h3><span class="header-section-number">5.2.2</span> Prueba <span class="math inline">\(\Chi^2\)</span> de Pearson</h3>
+<h3><span class="header-section-number">5.2.2</span> Prueba <span class="math inline">\(\chi^2\)</span> de Pearson</h3>
 <p>Esta prueba también require de un tamaño muestral <span class="math inline">\(n\)</span> grande. Para realizar los cálculos se usa la función <code>prop.test</code> que tiene la siguiente estructura.</p>
 <div class="sourceCode" id="cb75"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb75-1"><a href="pruebas-de-hipótesis.html#cb75-1"></a><span class="kw">prop.test</span>(x, n, <span class="dt">p =</span> <span class="ot">NULL</span>,</span>
 <span id="cb75-2"><a href="pruebas-de-hipótesis.html#cb75-2"></a>          <span class="dt">alternative =</span> <span class="kw">c</span>(<span class="st">&quot;two.sided&quot;</span>, <span class="st">&quot;less&quot;</span>, <span class="st">&quot;greater&quot;</span>),</span>
