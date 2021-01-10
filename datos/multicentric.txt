@@ -1898,694 +1898,694 @@ ident	pais	status	edad	niveledu	fumar	edad1sex	regcompa	totcompa	ets	co	edinico	
 11897	Tailandia	Caso	41	primaria	no fumador	23	1	1	si	si	25	27	2	no	si	23	3	si	33	positivo
 11898	Tailandia	Caso	39	ninguno	no fumador	17	1	2-3	no	si	19	20	1	no	si	17	2	si	39	positivo
 11899	Tailandia	Caso	70	primaria	ex-fumador	19	1	1	si	no	NA	NA	NA	no	si	19	1	si	70	positivo
-11900	Peri	Caso	54	secundaria	no fumador	9	3	2-3	NA	si	21	21	1	no	si	20	10	si	26	positivo
-11901	Peri	Control	64	primaria	no fumador	23	1	1	no	no	NA	NA	NA	no	si	24	6	si	35	positivo
-11902	Peri	Caso	42	secundaria	no fumador	19	1	1	no	si	20	32	8	no	si	19	2	si	21	positivo
-11903	Peri	Caso	47	primaria	no fumador	21	2	2-3	no	no	NA	NA	NA	no	si	23	6	si	35	positivo
-11904	Peri	Control	69	primaria	no fumador	23	1	1	no	no	NA	NA	NA	no	si	23	11	si	65	negativo
-11905	Peri	Caso	41	ticnico	no fumador	15	3	2-3	no	si	24	41	5	no	si	19	8	si	24	positivo
-11906	Peri	Control	72	primaria	no fumador	16	1	1	no	no	NA	NA	NA	no	si	19	10	si	28	negativo
-11907	Peri	Control	66	primaria	no fumador	19	3	4-10	no	no	NA	NA	NA	si	si	19	2	si	35	negativo
-11908	Peri	Caso	49	primaria	no fumador	14	5	4-10	NA	si	18	41	17	no	si	14	10	si	44	positivo
-11909	Peri	Control	51	primaria	no fumador	17	3	2-3	no	no	NA	NA	NA	no	si	17	4	si	26	NA
-11910	Peri	Caso	50	primaria	no fumador	17	1	1	no	no	NA	NA	NA	no	si	17	4	si	40	negativo
-11911	Peri	Control	37	secundaria	no fumador	24	1	1	no	no	NA	NA	NA	no	si	24	1	si	23	negativo
-11912	Peri	Caso	62	primaria	no fumador	15	1	1	no	no	NA	NA	NA	no	si	18	7	no	NA	positivo
-11913	Peri	Control	62	primaria	no fumador	17	1	2-3	no	si	37	NA	NA	no	si	18	8	si	54	negativo
-11914	Peri	Caso	45	primaria	no fumador	18	2	2-3	NA	si	38	38	1	no	si	18	5	si	32	positivo
-11915	Peri	Control	47	primaria	no fumador	15	2	2-3	no	si	37	39	2	no	si	15	9	no	NA	negativo
-11916	Peri	Caso	47	primaria	no fumador	16	1	1	no	si	30	39	7	no	si	16	9	si	30	positivo
-11917	Peri	Control	46	ninguno	no fumador	16	3	2-3	NA	si	38	40	2	no	si	16	8	si	26	positivo
-11918	Peri	Control	44	secundaria	fumador	25	1	1	no	no	NA	NA	NA	no	si	28	3	si	34	negativo
-11919	Peri	Caso	38	ninguno	no fumador	15	2	2-3	no	no	NA	NA	NA	no	si	23	5	si	34	positivo
-11920	Peri	Control	53	secundaria	no fumador	15	2	2-3	no	no	NA	NA	NA	no	si	16	6	si	28	negativo
-11921	Peri	Caso	46	secundaria	no fumador	16	2	2-3	NA	no	NA	NA	NA	no	si	16	3	si	31	positivo
-11922	Peri	Control	38	primaria	no fumador	22	1	1	no	si	22	29	7	no	si	29	3	si	30	negativo
-11923	Peri	Caso	65	ninguno	no fumador	15	2	4-10	no	no	NA	NA	NA	si	si	21	5	si	22	positivo
-11924	Peri	Control	36	secundaria	no fumador	20	1	1	no	si	34	36	3	no	si	21	4	si	24	positivo
-11925	Peri	Caso	63	ninguno	no fumador	14	4	4-10	no	no	NA	NA	NA	no	si	17	9	no	NA	positivo
-11926	Peri	Control	48	primaria	no fumador	15	1	1	no	no	NA	NA	NA	no	si	16	9	no	NA	negativo
-11927	Peri	Control	58	primaria	no fumador	22	1	1	no	no	NA	NA	NA	no	si	23	11	si	52	negativo
-11928	Peri	Caso	42	secundaria	no fumador	21	1	2-3	no	no	NA	NA	NA	no	si	21	3	si	41	positivo
-11929	Peri	Control	38	ticnico	fumador	24	1	1	no	si	37	38	1	si	si	25	4	si	24	negativo
-11930	Peri	Caso	36	universitario	ex-fumador	6	3	4-10	NA	si	22	27	4	si	si	27	3	no	NA	positivo
-11931	Peri	Caso	52	primaria	no fumador	16	1	1	NA	si	25	25	1	si	si	24	8	si	52	positivo
-11932	Peri	Control	61	secundaria	no fumador	17	1	1	NA	no	NA	NA	NA	no	si	18	6	si	35	negativo
-11933	Peri	Caso	74	primaria	no fumador	25	1	1	no	no	NA	NA	NA	no	si	25	3	si	74	positivo
-11934	Peri	Control	53	ninguno	no fumador	22	1	1	no	no	NA	NA	NA	no	si	23	6	no	NA	negativo
-11935	Peri	Caso	65	primaria	no fumador	16	3	4-10	no	no	NA	NA	NA	no	si	16	12	no	NA	positivo
-11936	Peri	Control	62	ninguno	no fumador	15	1	2-3	no	no	NA	NA	NA	no	si	15	2	si	47	positivo
-11937	Peri	Caso	57	ninguno	no fumador	14	1	>=100	NA	si	23	25	2	si	si	22	3	si	37	positivo
-11938	Peri	Control	34	secundaria	no fumador	26	1	1	no	no	NA	NA	NA	no	si	27	5	no	NA	negativo
-11939	Peri	Caso	33	secundaria	no fumador	18	2	2-3	NA	no	NA	NA	NA	no	si	20	2	si	31	positivo
-11940	Peri	Control	55	ninguno	no fumador	23	1	1	no	no	NA	NA	NA	no	si	24	4	no	NA	negativo
-11941	Peri	Caso	47	primaria	no fumador	15	3	2-3	no	no	NA	NA	NA	no	si	15	6	si	25	positivo
-11942	Peri	Caso	53	ninguno	no fumador	18	2	2-3	no	no	NA	NA	NA	si	si	18	6	no	NA	positivo
-11943	Peri	Control	31	universitario	no fumador	22	1	2-3	no	no	NA	NA	NA	si	si	31	1	si	31	negativo
-11944	Peri	Caso	51	secundaria	fumador	19	1	2-3	NA	si	25	35	10	si	si	20	3	si	50	positivo
-11945	Peri	Control	40	secundaria	no fumador	16	2	4-10	NA	no	NA	NA	NA	no	si	18	9	si	32	negativo
-11946	Peri	Caso	46	secundaria	fumador	21	1	1	NA	no	NA	NA	NA	no	si	21	4	si	26	positivo
-11947	Peri	Control	33	secundaria	no fumador	16	1	2-3	NA	no	NA	NA	NA	si	si	23	1	NA	NA	negativo
-11948	Peri	Control	65	ninguno	no fumador	17	2	4-10	no	no	NA	NA	NA	no	si	18	5	no	NA	positivo
-11949	Peri	Caso	45	primaria	no fumador	17	2	2-3	NA	no	NA	NA	NA	no	si	18	1	si	31	positivo
-11950	Peri	Control	49	primaria	no fumador	15	2	2-3	no	no	NA	NA	NA	no	si	15	1	si	23	positivo
-11951	Peri	Caso	73	primaria	fumador	17	1	1	NA	no	NA	NA	NA	no	si	17	7	si	73	positivo
-11952	Peri	Caso	68	ninguno	no fumador	19	2	4-10	NA	no	NA	NA	NA	no	si	22	10	no	NA	positivo
-11953	Peri	Control	43	secundaria	no fumador	22	1	1	no	si	23	26	3	no	si	30	2	si	25	negativo
-11954	Peri	Control	39	primaria	no fumador	17	2	2-3	NA	no	NA	NA	NA	si	si	19	4	si	26	negativo
-11955	Peri	Caso	42	primaria	no fumador	21	1	1	no	no	NA	NA	NA	no	si	21	4	no	NA	positivo
-11956	Peri	Control	58	primaria	no fumador	17	2	2-3	no	no	NA	NA	NA	no	si	18	4	no	NA	negativo
-11957	Peri	Caso	36	secundaria	no fumador	15	3	2-3	no	no	NA	NA	NA	no	si	16	8	si	18	positivo
-11958	Peri	Control	67	primaria	no fumador	15	2	2-3	no	no	NA	NA	NA	no	si	15	9	si	40	negativo
-11959	Peri	Caso	72	ninguno	no fumador	15	2	2-3	no	no	NA	NA	NA	no	si	15	8	si	72	positivo
-11960	Peri	Caso	62	primaria	no fumador	18	2	2-3	no	no	NA	NA	NA	no	si	19	15	si	40	positivo
-11961	Peri	Caso	39	ninguno	no fumador	16	3	2-3	no	no	NA	NA	NA	no	si	16	10	no	NA	positivo
-11962	Peri	Control	32	primaria	no fumador	20	1	1	NA	si	28	32	4	si	si	21	3	si	21	negativo
-11963	Peri	Caso	52	ninguno	no fumador	18	2	2-3	no	no	NA	NA	NA	no	si	19	5	no	NA	positivo
-11964	Peri	Control	59	ninguno	no fumador	15	1	1	no	no	NA	NA	NA	no	si	18	17	no	NA	positivo
-11965	Peri	Caso	63	primaria	no fumador	19	3	2-3	no	no	NA	NA	NA	no	si	21	11	si	63	positivo
-11966	Peri	Caso	55	primaria	no fumador	14	2	2-3	no	no	NA	NA	NA	no	si	15	11	si	55	positivo
-11967	Peri	Control	56	primaria	no fumador	19	2	2-3	no	no	NA	NA	NA	no	si	20	11	no	NA	negativo
-11968	Peri	Caso	39	primaria	fumador	12	1	2-3	no	no	NA	NA	NA	si	si	16	4	si	32	positivo
-11969	Peri	Caso	62	ninguno	no fumador	16	1	1	no	no	NA	NA	NA	no	si	22	3	si	62	positivo
-11970	Peri	Control	44	primaria	no fumador	16	2	2-3	NA	si	37	37	1	si	si	17	12	si	33	NA
-11971	Peri	Caso	54	secundaria	ex-fumador	26	1	2-3	no	no	NA	NA	NA	no	si	32	1	si	35	negativo
-11972	Peri	Control	58	secundaria	no fumador	20	1	1	no	no	NA	NA	NA	no	si	21	6	si	55	negativo
-11973	Peri	Caso	69	ninguno	no fumador	15	1	1	no	no	NA	NA	NA	no	si	18	8	NA	NA	positivo
-11974	Peri	Control	41	ninguno	no fumador	8	2	2-3	NA	no	NA	NA	NA	no	si	20	6	no	NA	positivo
-11975	Peri	Caso	40	secundaria	no fumador	20	1	1	no	no	NA	NA	NA	no	si	21	2	si	22	positivo
-11976	Peri	Control	43	primaria	no fumador	18	1	1	no	no	NA	NA	NA	no	si	20	4	si	25	negativo
-11977	Peri	Control	56	primaria	no fumador	25	1	1	NA	no	NA	NA	NA	no	si	28	7	si	31	negativo
-11978	Peri	Caso	60	primaria	no fumador	18	2	2-3	no	no	NA	NA	NA	no	si	23	12	si	57	positivo
-11979	Peri	Control	51	primaria	no fumador	17	1	1	no	si	31	42	11	no	si	17	7	si	45	negativo
-11980	Peri	Caso	37	secundaria	no fumador	20	1	1	no	si	37	37	1	no	si	23	1	si	27	positivo
-11981	Peri	Control	51	ticnico	ex-fumador	22	1	1	no	no	NA	NA	NA	si	si	28	2	si	25	negativo
-11982	Peri	Caso	48	secundaria	no fumador	14	3	2-3	no	si	23	36	13	no	si	15	7	si	34	positivo
-11983	Peri	Control	54	primaria	no fumador	17	1	1	NA	no	NA	NA	NA	no	si	18	13	no	NA	negativo
-11984	Peri	Caso	46	secundaria	no fumador	19	1	1	no	si	36	46	10	no	si	20	7	si	40	positivo
-11985	Peri	Control	53	primaria	ex-fumador	25	1	1	no	si	31	31	1	no	si	26	8	si	34	negativo
-11986	Peri	Caso	69	primaria	no fumador	18	1	1	no	no	NA	NA	NA	no	si	19	12	si	57	positivo
-11987	Peri	Control	64	secundaria	no fumador	26	1	1	no	no	NA	NA	NA	no	si	28	4	si	37	negativo
-11988	Peri	Caso	39	primaria	no fumador	14	1	2-3	no	no	NA	NA	NA	no	si	19	5	si	20	positivo
-11989	Peri	Control	60	primaria	no fumador	22	1	1	no	no	NA	NA	NA	si	si	23	3	si	50	negativo
-11990	Peri	Control	78	ninguno	no fumador	16	1	2-3	no	no	NA	NA	NA	no	si	16	11	si	40	negativo
-11991	Peri	Caso	63	ninguno	no fumador	14	1	2-3	no	no	NA	NA	NA	no	si	20	15	si	63	positivo
-11992	Peri	Caso	36	secundaria	no fumador	17	2	2-3	no	si	24	35	6	no	si	18	5	si	24	positivo
-11993	Peri	Control	52	primaria	no fumador	14	2	2-3	NA	no	NA	NA	NA	si	si	16	15	si	40	negativo
-11994	Peri	Caso	59	ninguno	no fumador	24	1	1	no	no	NA	NA	NA	no	si	25	4	no	NA	positivo
-11995	Peri	Control	42	primaria	no fumador	15	3	4-10	NA	si	18	32	11	si	si	20	12	si	21	negativo
-11996	Peri	Caso	49	ninguno	no fumador	14	2	2-3	no	si	37	38	1	no	si	15	8	no	NA	positivo
-11997	Peri	Control	54	primaria	no fumador	16	1	2-3	no	no	NA	NA	NA	si	si	17	7	si	39	negativo
-11998	Peri	Caso	66	ninguno	no fumador	18	2	2-3	no	no	NA	NA	NA	no	si	20	4	si	28	positivo
-11999	Peri	Control	40	secundaria	no fumador	19	1	2-3	no	no	NA	NA	NA	no	si	19	1	si	28	negativo
-12000	Peri	Control	53	primaria	no fumador	18	1	1	no	no	NA	NA	NA	no	si	19	8	no	NA	NA
-12001	Peri	Caso	52	ninguno	no fumador	15	1	1	no	no	NA	NA	NA	no	si	15	4	si	21	positivo
-12002	Peri	Caso	65	primaria	no fumador	18	3	4-10	no	no	NA	NA	NA	no	si	19	8	si	65	positivo
-12003	Peri	Caso	46	ninguno	no fumador	16	3	2-3	no	si	16	44	27	no	si	19	8	si	42	positivo
-12004	Peri	Caso	39	secundaria	no fumador	15	2	2-3	no	si	34	39	4	no	si	16	5	si	28	positivo
-12005	Peri	Control	35	primaria	no fumador	13	2	4-10	NA	si	14	21	7	no	si	15	5	si	27	NA
-12006	Peri	Caso	78	ninguno	no fumador	22	2	2-3	no	no	NA	NA	NA	no	si	25	10	no	NA	positivo
-12007	Peri	Control	68	primaria	no fumador	29	1	1	no	no	NA	NA	NA	no	no	NA	NA	si	25	positivo
-12008	Peri	Caso	49	primaria	no fumador	19	1	1	NA	no	NA	NA	NA	no	si	20	7	no	NA	positivo
-12009	Peri	Control	37	ticnico	no fumador	21	1	1	no	no	NA	NA	NA	no	si	22	3	si	22	negativo
-12010	Peri	Caso	39	primaria	no fumador	14	1	2-3	NA	si	21	31	10	no	si	15	8	si	18	positivo
-12011	Peri	Control	67	primaria	no fumador	36	1	1	no	no	NA	NA	NA	no	si	37	4	si	51	negativo
-12012	Peri	Control	68	primaria	no fumador	23	3	2-3	no	no	NA	NA	NA	no	si	23	8	si	46	negativo
-12013	Peri	Control	30	primaria	no fumador	20	1	2-3	no	si	29	30	1	no	si	26	1	si	26	negativo
-12014	Peri	Caso	37	secundaria	no fumador	16	2	4-10	NA	no	NA	NA	NA	no	si	18	2	si	37	positivo
-12015	Peri	Caso	48	ticnico	no fumador	25	1	2-3	no	no	NA	NA	NA	no	si	31	2	si	31	positivo
-12016	Peri	Caso	59	primaria	ex-fumador	15	1	2-3	no	no	NA	NA	NA	no	si	16	6	no	NA	positivo
-12017	Peri	Control	35	universitario	no fumador	20	1	1	no	no	NA	NA	NA	no	si	20	5	si	20	NA
-12018	Peri	Caso	84	primaria	no fumador	15	2	2-3	no	no	NA	NA	NA	no	si	15	7	si	60	positivo
-12019	Peri	Caso	37	ninguno	no fumador	17	1	1	NA	no	NA	NA	NA	no	si	18	8	si	19	positivo
-12020	Peri	Control	42	primaria	no fumador	16	2	2-3	no	no	NA	NA	NA	no	si	20	8	si	22	negativo
-12021	Peri	Caso	44	ninguno	no fumador	12	3	4-10	no	no	NA	NA	NA	no	si	13	3	no	NA	positivo
-12022	Peri	Caso	40	ninguno	no fumador	11	1	2-3	NA	no	NA	NA	NA	no	si	21	5	si	27	positivo
-12023	Peri	Caso	60	ninguno	no fumador	15	2	2-3	no	no	NA	NA	NA	no	si	16	5	no	NA	positivo
-12024	Peri	Control	33	secundaria	no fumador	17	1	1	NA	si	28	33	5	no	si	18	3	si	24	negativo
-12025	Peri	Caso	48	secundaria	fumador	20	1	4-10	no	si	20	48	28	no	si	22	2	si	23	positivo
-12026	Peri	Control	82	primaria	no fumador	27	1	1	NA	no	NA	NA	NA	no	si	28	5	no	NA	negativo
-12027	Peri	Caso	47	primaria	no fumador	17	1	2-3	NA	si	33	45	12	no	si	20	9	no	NA	positivo
-12028	Peri	Control	21	ticnico	no fumador	19	1	2-3	no	no	NA	NA	NA	si	no	NA	NA	no	NA	negativo
-12029	Peri	Caso	49	secundaria	no fumador	26	3	2-3	no	si	35	35	1	no	si	39	2	si	37	positivo
-12030	Peri	Control	71	primaria	no fumador	17	1	1	no	no	NA	NA	NA	no	si	18	15	no	NA	negativo
-12031	Peri	Caso	46	secundaria	ex-fumador	16	1	4-10	no	si	23	27	4	no	si	17	4	si	28	positivo
-12032	Peri	Control	35	secundaria	no fumador	16	2	2-3	no	no	NA	NA	NA	no	si	19	2	si	24	NA
-12033	Peri	Caso	38	primaria	no fumador	13	2	2-3	no	no	NA	NA	NA	no	si	15	9	si	22	positivo
-12034	Peri	Caso	28	secundaria	no fumador	15	1	1	NA	si	16	27	8	no	si	16	5	si	16	positivo
-12035	Peri	Control	60	primaria	no fumador	31	1	1	no	no	NA	NA	NA	no	si	32	9	si	48	NA
-12036	Peri	Caso	52	ninguno	no fumador	16	2	2-3	no	no	NA	NA	NA	no	si	17	11	si	50	positivo
-12037	Peri	Control	28	secundaria	no fumador	17	1	2-3	no	no	NA	NA	NA	no	si	17	1	no	NA	positivo
-12038	Peri	Caso	53	ninguno	no fumador	19	1	1	NA	no	NA	NA	NA	no	si	19	5	si	50	positivo
-12039	Peri	Control	39	primaria	no fumador	21	3	4-10	NA	no	NA	NA	NA	no	si	27	4	si	27	negativo
-12040	Peri	Caso	35	primaria	no fumador	13	2	2-3	NA	no	NA	NA	NA	no	si	15	12	si	32	positivo
-12041	Peri	Caso	53	primaria	no fumador	17	1	1	no	si	31	31	1	si	si	19	8	si	25	positivo
-12042	Peri	Control	42	primaria	no fumador	20	2	2-3	no	no	NA	NA	NA	no	si	22	4	si	20	negativo
-12043	Peri	Caso	28	primaria	no fumador	17	1	2-3	NA	si	26	28	2	no	si	17	3	si	17	positivo
-12044	Peri	Control	29	secundaria	no fumador	19	1	1	no	si	26	26	1	si	si	22	3	si	22	negativo
-12045	Peri	Caso	43	primaria	no fumador	18	2	4-10	NA	no	NA	NA	NA	si	si	32	2	si	36	positivo
-12046	Peri	Control	55	ninguno	no fumador	17	1	4-10	no	no	NA	NA	NA	no	si	19	5	si	28	NA
-12047	Peri	Caso	41	primaria	no fumador	14	2	2-3	no	si	14	26	12	no	si	14	1	si	26	positivo
-12048	Peri	Control	33	secundaria	fumador	16	3	4-10	no	si	20	33	13	no	si	20	4	si	24	negativo
-12049	Peri	Caso	54	secundaria	no fumador	15	2	2-3	no	si	23	42	13	no	si	17	7	si	30	positivo
-12050	Peri	Control	42	secundaria	no fumador	14	3	2-3	no	no	NA	NA	NA	no	si	22	5	si	25	negativo
-12051	Peri	Control	33	secundaria	no fumador	6	2	4-10	no	si	25	27	2	si	si	18	4	si	18	negativo
-12052	Peri	Caso	60	ninguno	no fumador	12	1	2-3	no	no	NA	NA	NA	no	si	19	12	no	NA	positivo
-12053	Peri	Control	49	primaria	no fumador	16	4	>=100	NA	no	NA	NA	NA	no	si	18	11	si	18	positivo
-12054	Peri	Caso	50	ninguno	no fumador	14	1	1	NA	no	NA	NA	NA	no	si	17	11	si	34	positivo
-12055	Peri	Caso	43	ninguno	no fumador	15	1	1	no	no	NA	NA	NA	no	si	19	9	si	43	positivo
-12056	Peri	Control	51	primaria	no fumador	19	1	1	no	no	NA	NA	NA	no	si	20	5	si	40	negativo
-12057	Peri	Caso	45	primaria	no fumador	12	1	2-3	no	si	26	36	10	si	si	16	8	si	26	positivo
-12058	Peri	Control	44	primaria	no fumador	18	2	2-3	no	no	NA	NA	NA	no	si	20	4	si	22	negativo
-12059	Peri	Caso	61	ninguno	no fumador	15	1	2-3	no	no	NA	NA	NA	no	si	16	11	si	38	negativo
-12060	Peri	Control	70	primaria	no fumador	18	1	1	no	no	NA	NA	NA	no	si	20	7	no	NA	negativo
-12061	Peri	Caso	54	secundaria	no fumador	19	1	2-3	no	no	NA	NA	NA	no	si	22	6	si	28	positivo
-12062	Peri	Caso	60	primaria	no fumador	16	1	1	no	no	NA	NA	NA	no	si	16	9	si	38	positivo
-12063	Peri	Control	48	primaria	no fumador	20	2	2-3	no	no	NA	NA	NA	no	si	21	6	si	36	positivo
-12064	Peri	Control	53	primaria	no fumador	23	1	2-3	no	no	NA	NA	NA	no	si	25	3	si	40	NA
-12065	Peri	Caso	72	ninguno	no fumador	14	4	4-10	no	no	NA	NA	NA	no	si	18	7	no	NA	positivo
-12066	Peri	Caso	43	primaria	no fumador	19	1	1	no	si	32	36	4	no	si	20	6	si	32	positivo
-12067	Peri	Control	49	primaria	no fumador	16	1	1	no	no	NA	NA	NA	no	si	16	10	si	33	negativo
-12068	Peri	Control	43	primaria	no fumador	12	1	1	NA	no	NA	NA	NA	si	si	17	5	si	38	negativo
-12069	Peri	Caso	48	primaria	no fumador	18	2	2-3	NA	no	NA	NA	NA	no	si	20	8	no	NA	positivo
-12070	Peri	Control	37	secundaria	no fumador	18	3	2-3	no	no	NA	NA	NA	no	si	30	3	si	35	negativo
-12071	Peri	Caso	45	ninguno	no fumador	14	2	2-3	no	si	26	34	6	no	si	16	8	si	20	positivo
-12072	Peri	Control	68	primaria	no fumador	22	1	1	no	no	NA	NA	NA	no	si	26	4	si	35	positivo
-12073	Peri	Caso	74	primaria	no fumador	20	1	1	no	no	NA	NA	NA	no	si	21	8	no	NA	positivo
-12074	Peri	Control	53	primaria	no fumador	19	2	2-3	NA	no	NA	NA	NA	no	si	20	7	si	51	negativo
-12075	Peri	Caso	57	ninguno	no fumador	19	2	2-3	no	no	NA	NA	NA	no	si	19	11	si	45	positivo
-12076	Peri	Control	59	ninguno	no fumador	17	2	2-3	no	no	NA	NA	NA	no	si	19	11	no	NA	positivo
-12077	Peri	Caso	64	ninguno	no fumador	13	2	2-3	NA	no	NA	NA	NA	no	si	15	4	no	NA	positivo
-12078	Peri	Control	64	primaria	no fumador	14	2	2-3	no	no	NA	NA	NA	no	si	14	8	si	42	negativo
-12079	Peri	Caso	46	primaria	no fumador	15	1	2-3	no	si	30	34	4	si	si	16	7	si	34	positivo
-12080	Peri	Control	46	primaria	no fumador	15	1	2-3	no	no	NA	NA	NA	no	no	NA	NA	si	20	negativo
-12081	Peri	Caso	45	primaria	no fumador	14	1	2-3	no	no	NA	NA	NA	no	si	14	2	si	41	positivo
-12082	Peri	Caso	46	ninguno	no fumador	15	3	2-3	no	no	NA	NA	NA	no	si	16	5	no	NA	positivo
-12083	Peri	Control	31	primaria	no fumador	17	1	2-3	no	no	NA	NA	NA	no	si	18	4	no	NA	negativo
-12084	Peri	Control	47	secundaria	no fumador	18	2	2-3	no	no	NA	NA	NA	si	si	27	3	no	NA	negativo
-12085	Peri	Caso	42	primaria	no fumador	22	1	2-3	no	si	26	38	10	no	si	26	2	si	25	positivo
-12086	Peri	Control	44	secundaria	no fumador	16	3	4-10	NA	no	NA	NA	NA	no	si	19	4	si	35	positivo
-12087	Peri	Caso	48	primaria	no fumador	15	1	2-3	NA	no	NA	NA	NA	no	si	18	8	si	45	positivo
-12088	Peri	Control	42	ticnico	ex-fumador	20	3	4-10	no	si	27	41	14	no	si	27	3	si	32	NA
-12089	Peri	Caso	28	secundaria	no fumador	20	1	2-3	NA	si	25	27	2	no	si	21	3	si	21	positivo
-12090	Peri	Control	49	primaria	no fumador	16	1	2-3	NA	no	NA	NA	NA	no	si	21	2	si	34	NA
-12091	Peri	Caso	61	primaria	no fumador	14	1	1	no	no	NA	NA	NA	no	si	24	10	si	40	positivo
-12092	Peri	Control	41	primaria	no fumador	13	1	2-3	NA	si	35	35	1	no	si	23	4	si	23	positivo
-12093	Peri	Control	67	secundaria	no fumador	19	2	4-10	no	no	NA	NA	NA	si	si	21	6	no	NA	positivo
-12094	Peri	Caso	41	primaria	no fumador	28	1	1	no	si	35	35	1	no	si	29	2	si	29	positivo
-12095	Peri	Control	60	ninguno	no fumador	16	2	2-3	no	no	NA	NA	NA	no	si	20	7	no	NA	NA
-12096	Peri	Caso	43	ninguno	no fumador	16	1	1	NA	si	23	23	1	no	si	17	5	si	24	positivo
-12097	Peri	Control	53	primaria	no fumador	20	1	1	NA	no	NA	NA	NA	no	si	22	4	si	25	positivo
-12098	Peri	Control	53	ninguno	no fumador	15	2	2-3	no	no	NA	NA	NA	no	si	23	6	si	40	negativo
-12099	Peri	Control	52	primaria	no fumador	18	1	1	no	si	42	45	3	no	si	18	6	si	46	positivo
-12100	Peri	Caso	51	primaria	no fumador	14	1	1	NA	no	NA	NA	NA	no	si	15	2	no	NA	negativo
-12101	Peri	Control	61	secundaria	no fumador	25	1	2-3	no	no	NA	NA	NA	no	si	28	10	si	49	negativo
-12102	Peri	Control	43	ninguno	no fumador	13	5	4-10	no	no	NA	NA	NA	no	si	15	8	no	NA	negativo
-12103	Peri	Caso	62	primaria	no fumador	14	4	4-10	no	si	39	45	6	no	si	24	7	si	40	positivo
-12104	Peri	Control	34	primaria	no fumador	12	2	2-3	NA	no	NA	NA	NA	no	si	17	8	si	20	negativo
-12105	Peri	Caso	50	secundaria	no fumador	10	1	2-3	no	no	NA	NA	NA	si	si	29	4	si	29	positivo
-12106	Peri	Control	50	primaria	no fumador	19	1	1	no	no	NA	NA	NA	no	si	19	8	no	NA	negativo
-12107	Peri	Control	36	primaria	no fumador	21	1	1	no	no	NA	NA	NA	si	si	21	7	si	29	negativo
-12108	Peri	Control	57	secundaria	no fumador	22	1	1	NA	no	NA	NA	NA	si	si	24	2	si	30	negativo
-12109	Peri	Caso	56	primaria	no fumador	25	1	2-3	no	no	NA	NA	NA	no	no	NA	NA	si	32	positivo
-12110	Peri	Caso	33	ticnico	no fumador	19	2	2-3	no	no	NA	NA	NA	no	si	30	3	si	25	positivo
-12111	Peri	Control	70	ninguno	no fumador	17	2	2-3	NA	no	NA	NA	NA	no	si	18	11	no	NA	NA
-12112	Peri	Caso	61	primaria	no fumador	19	1	1	no	no	NA	NA	NA	no	si	21	9	si	61	positivo
-12113	Peri	Control	46	ninguno	no fumador	17	1	1	no	no	NA	NA	NA	no	si	18	9	si	48	negativo
-12114	Peri	Control	41	secundaria	no fumador	19	3	2-3	no	no	NA	NA	NA	no	si	20	7	si	21	positivo
-12115	Peri	Caso	63	universitario	no fumador	30	1	1	NA	no	NA	NA	NA	si	no	NA	NA	si	30	negativo
-12116	Peri	Control	41	secundaria	no fumador	15	1	1	no	no	NA	NA	NA	no	si	15	8	no	NA	negativo
-12117	Peri	Caso	49	primaria	no fumador	20	2	2-3	NA	no	NA	NA	NA	no	si	29	4	si	29	positivo
-12118	Peri	Control	65	primaria	no fumador	13	1	2-3	no	no	NA	NA	NA	no	si	14	6	si	55	positivo
-12119	Peri	Control	40	ticnico	no fumador	27	1	1	no	no	NA	NA	NA	si	si	29	2	si	27	negativo
-12120	Peri	Caso	36	primaria	no fumador	9	1	2-3	no	no	NA	NA	NA	no	si	15	5	si	15	positivo
-12121	Peri	Control	46	primaria	no fumador	15	1	2-3	NA	si	43	45	2	si	si	19	14	si	36	negativo
-12122	Peri	Caso	56	ninguno	no fumador	18	1	1	no	no	NA	NA	NA	no	si	18	8	no	NA	positivo
-12123	Peri	Control	66	primaria	no fumador	15	2	2-3	NA	no	NA	NA	NA	no	si	19	7	no	NA	positivo
-12124	Peri	Control	37	secundaria	no fumador	22	1	1	no	no	NA	NA	NA	no	si	23	3	si	25	negativo
-12125	Peri	Caso	50	primaria	no fumador	16	2	2-3	no	si	24	24	1	no	si	16	5	si	40	positivo
-12126	Peri	Control	37	primaria	no fumador	16	4	4-10	no	no	NA	NA	NA	no	si	19	8	si	19	negativo
-12127	Peri	Caso	40	secundaria	no fumador	14	3	4-10	NA	no	NA	NA	NA	no	si	16	3	si	38	positivo
-12128	Peri	Caso	42	secundaria	no fumador	15	1	2-3	NA	si	19	20	1	no	si	17	7	si	36	positivo
-12129	Peri	Control	38	secundaria	no fumador	16	1	2-3	NA	si	27	38	11	no	si	16	4	si	16	negativo
-12130	Peri	Caso	41	primaria	no fumador	17	2	2-3	NA	no	NA	NA	NA	no	si	18	10	si	21	positivo
-12131	Peri	Control	35	secundaria	no fumador	24	2	4-10	no	si	36	37	1	no	si	25	2	no	NA	negativo
-12132	Peri	Caso	45	secundaria	no fumador	18	4	4-10	NA	si	28	42	14	no	si	18	8	si	27	positivo
-12133	Peri	Control	54	primaria	no fumador	16	2	4-10	NA	no	NA	NA	NA	no	si	19	7	si	19	negativo
-12134	Peri	Caso	53	primaria	no fumador	20	3	4-10	no	no	NA	NA	NA	no	si	23	5	si	40	negativo
-12135	Peri	Control	35	secundaria	no fumador	26	1	1	no	no	NA	NA	NA	no	si	27	2	si	30	negativo
-12136	Peri	Caso	59	primaria	no fumador	15	1	1	NA	no	NA	NA	NA	no	si	16	12	si	36	negativo
-12137	Peri	Caso	47	primaria	no fumador	18	1	1	NA	no	NA	NA	NA	no	si	20	7	si	23	positivo
-12138	Peri	Caso	47	primaria	no fumador	26	3	2-3	no	no	NA	NA	NA	no	si	29	3	no	NA	positivo
-12139	Peri	Control	38	ticnico	no fumador	18	1	1	no	si	18	30	12	no	si	30	4	si	34	negativo
-12140	Peri	Control	64	primaria	no fumador	19	3	4-10	NA	no	NA	NA	NA	no	si	23	4	si	58	negativo
-12141	Peri	Caso	52	primaria	no fumador	14	2	4-10	NA	si	35	42	7	no	si	24	5	NA	NA	positivo
-12142	Peri	Caso	55	ninguno	no fumador	17	1	1	no	no	NA	NA	NA	si	si	17	7	no	NA	positivo
-12143	Peri	Caso	47	universitario	no fumador	38	1	1	no	no	NA	NA	NA	no	si	40	1	si	39	positivo
-12144	Peri	Control	32	universitario	no fumador	18	1	1	no	no	NA	NA	NA	si	si	25	2	si	25	negativo
-12145	Peri	Control	72	secundaria	no fumador	20	1	2-3	no	no	NA	NA	NA	no	si	22	15	si	71	negativo
-12146	Peri	Caso	64	primaria	no fumador	15	4	4-10	no	no	NA	NA	NA	no	si	17	7	si	64	positivo
-12147	Peri	Control	42	secundaria	no fumador	21	3	4-10	NA	no	NA	NA	NA	no	si	22	4	si	34	negativo
-12148	Peri	Caso	43	ticnico	no fumador	25	1	2-3	no	no	NA	NA	NA	no	si	26	2	no	NA	positivo
-12149	Peri	Control	33	primaria	no fumador	15	1	4-10	no	no	NA	NA	NA	si	si	16	8	si	16	positivo
-12150	Peri	Caso	43	ticnico	no fumador	21	1	1	no	no	NA	NA	NA	no	si	22	5	si	22	negativo
-12151	Peri	Control	67	ninguno	no fumador	16	1	1	no	no	NA	NA	NA	no	si	18	12	no	NA	negativo
-12152	Peri	Caso	36	secundaria	no fumador	18	4	4-10	NA	si	21	36	15	no	si	19	5	no	NA	positivo
-12153	Peri	Caso	59	ninguno	no fumador	14	2	2-3	no	no	NA	NA	NA	no	si	25	9	no	NA	positivo
-12154	Peri	Caso	46	secundaria	ex-fumador	22	2	2-3	no	si	34	36	2	no	si	28	4	si	36	positivo
-12155	Peri	Control	52	primaria	no fumador	16	2	2-3	no	no	NA	NA	NA	no	si	17	10	si	40	negativo
-12156	Peri	Caso	37	primaria	no fumador	14	2	2-3	no	no	NA	NA	NA	si	si	17	5	no	NA	positivo
-12157	Peri	Control	48	universitario	no fumador	26	1	1	no	no	NA	NA	NA	no	si	29	2	si	43	positivo
-12158	Peri	Caso	37	secundaria	ex-fumador	16	2	2-3	no	si	30	35	5	si	si	17	6	si	31	positivo
-12159	Peri	Control	40	secundaria	no fumador	15	2	2-3	no	no	NA	NA	NA	no	si	16	8	si	19	negativo
-12160	Peri	Caso	54	primaria	no fumador	16	1	1	NA	no	NA	NA	NA	no	si	19	14	si	54	positivo
-12161	Peri	Control	63	ninguno	no fumador	16	3	2-3	no	no	NA	NA	NA	no	si	16	3	si	41	negativo
-12162	Peri	Caso	34	ticnico	no fumador	17	1	2-3	NA	no	NA	NA	NA	no	si	22	2	si	22	NA
-12163	Peri	Control	64	primaria	no fumador	23	2	2-3	no	no	NA	NA	NA	no	si	24	10	si	54	negativo
-12164	Peri	Caso	59	secundaria	no fumador	17	1	1	no	no	NA	NA	NA	no	si	18	7	si	59	positivo
-12165	Peri	Control	43	secundaria	no fumador	23	1	2-3	no	no	NA	NA	NA	no	si	27	4	si	32	negativo
-12166	Peri	Control	48	secundaria	no fumador	19	2	2-3	no	no	NA	NA	NA	no	si	22	4	si	35	negativo
-12167	Peri	Caso	38	secundaria	fumador	19	4	4-10	NA	no	NA	NA	NA	no	si	20	6	si	21	positivo
-12168	Peri	Control	61	primaria	no fumador	19	2	2-3	no	no	NA	NA	NA	no	si	20	6	si	28	negativo
-12169	Peri	Caso	33	primaria	no fumador	18	2	2-3	no	si	23	33	9	no	si	18	4	si	33	positivo
-12170	Peri	Control	57	secundaria	no fumador	20	2	2-3	no	no	NA	NA	NA	no	si	23	6	si	44	negativo
-12171	Peri	Caso	64	primaria	no fumador	18	2	2-3	NA	no	NA	NA	NA	no	si	27	1	si	41	positivo
-12172	Peri	Caso	38	secundaria	ex-fumador	21	2	4-10	NA	no	NA	NA	NA	no	si	21	4	si	30	positivo
-12173	Peri	Control	44	universitario	no fumador	23	1	1	no	no	NA	NA	NA	si	si	25	4	si	24	negativo
-12174	Peri	Caso	45	secundaria	no fumador	18	4	4-10	NA	si	29	32	3	no	si	20	6	si	41	positivo
-12175	Peri	Caso	48	secundaria	no fumador	19	1	2-3	no	no	NA	NA	NA	si	si	24	2	si	35	positivo
-12176	Peri	Control	57	secundaria	no fumador	17	1	1	NA	no	NA	NA	NA	no	si	21	7	si	40	negativo
-12177	Peri	Caso	66	primaria	no fumador	17	1	2-3	NA	no	NA	NA	NA	no	si	20	10	si	65	positivo
-12178	Peri	Control	54	primaria	no fumador	16	1	1	no	no	NA	NA	NA	no	si	20	15	si	53	negativo
-12179	Peri	Caso	61	ninguno	no fumador	17	1	1	no	no	NA	NA	NA	no	si	17	7	no	NA	positivo
-12180	Peri	Control	61	secundaria	no fumador	22	1	1	no	no	NA	NA	NA	no	si	25	6	si	42	negativo
-12181	Peri	Caso	37	primaria	no fumador	18	1	2-3	no	no	NA	NA	NA	no	si	18	4	si	37	positivo
-12182	Peri	Control	43	ninguno	no fumador	15	1	2-3	NA	no	NA	NA	NA	no	si	18	8	si	40	negativo
-12183	Peri	Caso	42	secundaria	no fumador	20	2	4-10	no	no	NA	NA	NA	no	si	21	3	si	32	positivo
-12184	Peri	Control	49	ninguno	no fumador	12	2	2-3	NA	no	NA	NA	NA	no	si	14	6	no	NA	negativo
-12185	Peri	Caso	40	ninguno	no fumador	15	1	1	no	no	NA	NA	NA	no	si	20	5	si	35	positivo
-12186	Peri	Control	65	ninguno	no fumador	15	2	2-3	no	no	NA	NA	NA	no	si	20	7	si	63	negativo
-12187	Peri	Caso	55	ninguno	no fumador	15	1	1	no	no	NA	NA	NA	no	si	19	9	no	NA	positivo
-12188	Peri	Control	55	primaria	no fumador	18	2	2-3	no	no	NA	NA	NA	no	si	20	10	si	20	positivo
-12189	Peri	Caso	40	primaria	no fumador	13	2	4-10	NA	no	NA	NA	NA	no	si	14	11	si	14	positivo
-12190	Peri	Caso	37	primaria	no fumador	14	2	4-10	no	no	NA	NA	NA	no	si	15	5	no	NA	NA
-12191	Peri	Control	41	ticnico	no fumador	25	1	1	no	no	NA	NA	NA	no	si	27	3	si	33	negativo
-12192	Peri	Caso	36	secundaria	no fumador	18	2	2-3	no	no	NA	NA	NA	no	si	18	6	si	28	positivo
-12193	Peri	Control	46	ticnico	no fumador	27	1	1	no	si	27	30	3	no	si	30	3	si	30	negativo
-12194	Peri	Caso	68	primaria	no fumador	14	2	2-3	no	no	NA	NA	NA	no	si	20	11	si	55	positivo
-12195	Peri	Caso	34	secundaria	ex-fumador	6	3	4-10	NA	si	22	24	2	si	si	21	4	no	NA	positivo
-12196	Peri	Caso	55	primaria	no fumador	15	2	2-3	NA	no	NA	NA	NA	no	si	16	6	si	35	positivo
-12197	Peri	Control	56	secundaria	no fumador	20	1	1	NA	no	NA	NA	NA	no	si	21	4	si	38	negativo
-12198	Peri	Caso	36	secundaria	no fumador	14	5	4-10	no	no	NA	NA	NA	no	si	22	3	si	33	positivo
-12199	Peri	Caso	55	ninguno	no fumador	17	2	2-3	no	no	NA	NA	NA	no	si	28	4	si	NA	positivo
-12200	Peri	Control	40	ticnico	no fumador	14	3	4-10	NA	si	18	26	2	no	si	17	6	si	18	negativo
-12201	Peri	Caso	72	ninguno	no fumador	16	1	1	no	no	NA	NA	NA	no	si	17	4	si	72	positivo
-12202	Peri	Caso	63	primaria	no fumador	21	3	4-10	no	no	NA	NA	NA	no	si	21	9	si	50	positivo
-12203	Peri	Control	51	primaria	no fumador	19	1	1	no	no	NA	NA	NA	no	si	19	3	si	31	negativo
-12204	Peri	Caso	46	secundaria	no fumador	16	3	2-3	NA	si	25	26	1	no	si	16	9	si	25	positivo
-12205	Peri	Control	51	universitario	no fumador	24	4	4-10	no	no	NA	NA	NA	no	si	38	3	si	34	NA
-12206	Peri	Control	59	ninguno	no fumador	14	5	11-20	no	no	NA	NA	NA	no	si	16	9	si	30	NA
-12207	Peri	Caso	68	ninguno	no fumador	28	1	1	NA	no	NA	NA	NA	si	si	28	8	no	NA	positivo
-12208	Peri	Caso	60	ninguno	no fumador	14	2	2-3	no	no	NA	NA	NA	no	si	16	7	no	NA	positivo
-12209	Peri	Control	57	universitario	no fumador	33	1	1	no	no	NA	NA	NA	no	si	35	1	si	34	negativo
-12210	Peri	Control	42	ninguno	no fumador	18	2	2-3	NA	no	NA	NA	NA	no	si	18	11	si	NA	negativo
-12211	Peri	Control	47	primaria	no fumador	15	1	2-3	NA	si	32	36	4	no	si	24	3	si	35	negativo
-12212	Espaia	Caso	46	ninguno	no fumador	22	1	1	si	no	NA	NA	NA	si	si	23	6	si	46	NA
-12213	Espaia	Caso	58	primaria	no fumador	21	3	2-3	no	no	NA	NA	NA	si	si	28	1	si	37	NA
-12216	Espaia	Caso	69	ninguno	no fumador	23	2	2-3	no	no	NA	NA	NA	no	no	NA	NA	si	69	NA
-12221	Espaia	Caso	30	primaria	fumador	18	2	11-20	si	si	18	29	9	si	si	20	4	si	30	NA
-12225	Espaia	Caso	70	primaria	no fumador	19	1	1	si	no	NA	NA	NA	no	si	19	2	si	70	NA
-12226	Espaia	Caso	55	primaria	no fumador	27	1	1	no	si	36	45	9	no	si	28	4	si	55	positivo
-12227	Espaia	Caso	32	secundaria	fumador	16	2	2-3	no	no	NA	NA	NA	si	si	21	2	si	32	NA
-12229	Espaia	Caso	22	primaria	fumador	16	1	1	si	si	17	20	3	no	si	17	3	si	NA	positivo
-12230	Espaia	Caso	53	primaria	no fumador	18	1	1	si	no	NA	NA	NA	si	si	19	8	si	53	NA
-12232	Espaia	Caso	46	ninguno	no fumador	24	1	1	si	no	NA	NA	NA	no	si	25	3	si	46	positivo
-12235	Espaia	Caso	44	ninguno	no fumador	20	1	1	si	si	29	44	13	no	si	21	8	si	44	negativo
-12236	Espaia	Caso	38	primaria	no fumador	17	1	1	no	no	NA	NA	NA	no	si	18	4	si	38	NA
-12239	Espaia	Caso	32	ticnico	no fumador	18	1	1	no	si	31	32	1	no	si	19	5	si	32	NA
-12240	Espaia	Caso	40	universitario	no fumador	26	1	1	no	si	26	40	14	si	si	28	2	si	40	positivo
-12242	Espaia	Caso	40	primaria	fumador	17	3	4-10	si	si	17	33	11	si	si	38	1	si	35	NA
-12249	Espaia	Caso	68	primaria	no fumador	18	1	1	no	no	NA	NA	NA	no	si	18	3	NA	NA	positivo
-12250	Espaia	Caso	53	primaria	no fumador	18	1	1	si	no	NA	NA	NA	si	si	19	7	si	53	positivo
-12254	Espaia	Caso	45	primaria	no fumador	25	1	1	no	no	NA	NA	NA	si	si	26	3	si	45	positivo
-12255	Espaia	Caso	35	primaria	no fumador	18	1	1	no	no	NA	NA	NA	no	si	21	1	si	35	positivo
-12256	Espaia	Caso	52	ninguno	no fumador	16	1	1	no	si	38	48	10	no	si	23	9	si	52	positivo
-12257	Espaia	Caso	49	secundaria	no fumador	21	1	2-3	no	no	NA	NA	NA	si	si	24	2	si	49	positivo
-12260	Espaia	Caso	65	primaria	no fumador	22	1	1	no	no	NA	NA	NA	no	si	23	2	si	65	NA
-12265	Espaia	Caso	56	primaria	no fumador	21	1	1	si	no	NA	NA	NA	si	si	23	1	si	56	positivo
-12269	Espaia	Caso	53	ninguno	no fumador	17	1	1	no	no	NA	NA	NA	si	si	18	4	si	44	positivo
-12270	Espaia	Caso	74	primaria	no fumador	27	1	1	no	no	NA	NA	NA	no	si	28	2	NA	NA	positivo
-12275	Espaia	Caso	73	primaria	no fumador	25	1	1	si	no	NA	NA	NA	si	si	26	8	si	71	negativo
-12276	Espaia	Caso	53	primaria	no fumador	22	1	1	si	no	NA	NA	NA	no	si	23	2	si	53	positivo
-12277	Espaia	Caso	63	ninguno	no fumador	15	1	1	no	no	NA	NA	NA	si	si	17	8	si	63	positivo
-12278	Espaia	Caso	69	primaria	no fumador	17	1	2-3	no	no	NA	NA	NA	si	si	17	6	si	69	positivo
-12286	Espaia	Caso	35	ticnico	fumador	22	1	1	si	si	22	30	8	si	si	23	2	si	26	NA
-12287	Espaia	Caso	56	primaria	no fumador	15	4	11-20	si	si	33	37	4	no	si	17	6	si	35	NA
-12288	Espaia	Caso	65	primaria	no fumador	18	2	2-3	si	no	NA	NA	NA	si	si	19	5	si	65	positivo
-12289	Espaia	Caso	41	primaria	no fumador	20	1	1	no	si	28	41	12	no	si	21	4	si	40	positivo
-12290	Espaia	Caso	47	primaria	no fumador	24	1	1	no	si	24	37	13	no	si	25	5	si	NA	positivo
-12291	Espaia	Caso	39	primaria	no fumador	21	2	2-3	si	si	30	39	7	no	si	23	3	si	39	NA
-12293	Espaia	Caso	35	secundaria	fumador	17	2	2-3	si	no	NA	NA	NA	no	si	27	2	si	35	NA
-12294	Espaia	Control	44	primaria	no fumador	22	1	1	no	si	24	33	9	si	si	23	4	si	44	NA
-12295	Espaia	Control	32	secundaria	no fumador	22	2	2-3	si	si	22	24	2	no	si	24	1	si	24	NA
-12296	Espaia	Control	38	ninguno	ex-fumador	28	1	2-3	si	no	NA	NA	NA	no	si	36	1	no	NA	NA
-12297	Espaia	Control	37	ticnico	ex-fumador	20	1	2-3	si	si	25	36	10	no	si	24	1	si	37	NA
-12298	Espaia	Control	56	primaria	no fumador	24	1	1	no	no	NA	NA	NA	no	si	26	2	si	56	NA
-12299	Espaia	Control	61	primaria	no fumador	19	1	1	no	no	NA	NA	NA	si	si	20	1	si	61	NA
-12300	Espaia	Control	68	primaria	no fumador	27	1	1	si	no	NA	NA	NA	no	si	27	4	si	68	NA
-12301	Espaia	Control	69	ninguno	no fumador	34	1	1	si	no	NA	NA	NA	si	si	35	2	si	69	NA
-12302	Espaia	Control	62	ticnico	no fumador	22	1	1	si	no	NA	NA	NA	no	si	22	6	no	NA	NA
-12303	Espaia	Control	66	ninguno	no fumador	19	1	1	no	no	NA	NA	NA	no	si	20	2	si	66	NA
-12304	Espaia	Control	23	secundaria	fumador	20	1	1	no	no	NA	NA	NA	no	si	21	1	no	NA	negativo
-12305	Espaia	Control	71	primaria	no fumador	24	1	1	no	no	NA	NA	NA	no	si	25	2	no	NA	positivo
-12306	Espaia	Control	50	primaria	no fumador	22	1	1	no	si	22	50	26	no	si	22	3	si	50	NA
-12307	Espaia	Control	74	primaria	no fumador	26	1	1	si	no	NA	NA	NA	no	si	29	5	no	NA	negativo
-12308	Espaia	Control	54	ninguno	no fumador	23	1	1	no	no	NA	NA	NA	no	no	NA	NA	si	50	NA
-12309	Espaia	Control	50	secundaria	no fumador	21	1	1	si	no	NA	NA	NA	no	si	22	4	si	50	negativo
-12310	Espaia	Control	24	ticnico	no fumador	18	2	2-3	si	si	18	22	2	si	si	22	1	si	19	negativo
-12311	Espaia	Control	36	primaria	no fumador	20	1	1	si	si	27	36	8	no	si	23	3	si	35	negativo
-12312	Espaia	Control	38	ticnico	no fumador	25	1	1	si	si	25	38	13	si	si	26	2	si	35	negativo
-12313	Espaia	Control	54	primaria	no fumador	28	1	1	si	no	NA	NA	NA	no	si	29	2	si	49	positivo
-12314	Espaia	Control	57	primaria	no fumador	23	1	1	no	no	NA	NA	NA	no	si	24	1	no	NA	positivo
-12315	Espaia	Control	48	primaria	no fumador	27	1	1	si	no	NA	NA	NA	no	si	28	2	si	29	positivo
-12316	Espaia	Control	69	primaria	no fumador	19	2	2-3	no	no	NA	NA	NA	no	si	22	3	no	NA	negativo
-12317	Espaia	Control	43	primaria	no fumador	19	1	1	si	no	NA	NA	NA	si	si	19	4	si	42	negativo
-12318	Espaia	Control	44	primaria	no fumador	23	1	1	no	no	NA	NA	NA	no	si	24	2	no	NA	negativo
-12319	Espaia	Control	67	ninguno	no fumador	34	1	1	no	no	NA	NA	NA	no	si	35	3	si	35	negativo
-12320	Espaia	Control	67	primaria	no fumador	21	1	1	no	no	NA	NA	NA	no	si	21	2	no	NA	negativo
-12321	Espaia	Control	71	primaria	no fumador	19	1	1	no	no	NA	NA	NA	no	si	24	3	si	50	NA
-12322	Espaia	Caso	71	ninguno	no fumador	18	1	1	no	no	NA	NA	NA	si	si	21	2	no	NA	NA
-12325	Espaia	Caso	55	primaria	no fumador	20	1	2-3	no	si	32	55	23	si	si	22	3	no	NA	NA
-12328	Espaia	Caso	62	primaria	no fumador	28	1	1	si	no	NA	NA	NA	no	si	30	3	si	58	negativo
-12329	Espaia	Caso	35	ninguno	no fumador	19	1	1	si	no	NA	NA	NA	si	si	22	4	si	35	negativo
-12330	Espaia	Caso	49	ninguno	no fumador	21	2	2-3	si	no	NA	NA	NA	no	si	21	6	si	48	positivo
-12331	Espaia	Caso	60	ninguno	no fumador	21	1	1	si	no	NA	NA	NA	no	si	24	10	si	59	positivo
-12332	Espaia	Caso	36	ninguno	fumador	14	5	2-3	si	no	NA	NA	NA	si	si	18	10	si	35	positivo
-12333	Espaia	Caso	68	primaria	no fumador	23	1	1	si	no	NA	NA	NA	si	si	24	9	si	67	positivo
-12337	Espaia	Caso	31	universitario	no fumador	19	1	1	no	si	19	28	9	no	si	19	5	si	29	NA
-12342	Espaia	Caso	57	ninguno	no fumador	19	1	1	no	no	NA	NA	NA	no	si	20	7	si	56	positivo
-12343	Espaia	Caso	44	ninguno	no fumador	14	1	1	no	si	14	44	30	no	si	16	7	si	44	NA
-12344	Espaia	Caso	62	ninguno	no fumador	21	1	1	no	no	NA	NA	NA	no	si	23	5	si	61	positivo
-12348	Espaia	Caso	74	ninguno	no fumador	19	1	1	no	no	NA	NA	NA	no	si	20	11	si	NA	NA
-12349	Espaia	Caso	30	primaria	no fumador	17	1	1	si	si	17	30	11	no	si	18	3	si	NA	negativo
-12350	Espaia	Caso	69	ninguno	no fumador	18	1	1	si	no	NA	NA	NA	no	si	18	9	si	69	NA
-12353	Espaia	Caso	60	ninguno	no fumador	22	1	1	si	no	NA	NA	NA	no	si	24	8	si	59	positivo
-12354	Espaia	Caso	54	ninguno	no fumador	17	1	1	no	no	NA	NA	NA	no	si	20	4	si	44	NA
-12363	Espaia	Caso	43	primaria	fumador	25	1	1	no	si	25	43	18	no	si	28	2	si	43	positivo
-12366	Espaia	Caso	62	primaria	no fumador	32	1	1	no	no	NA	NA	NA	no	si	30	3	si	62	negativo
-12368	Espaia	Caso	53	ninguno	no fumador	19	1	1	si	si	19	49	30	si	si	19	4	si	52	NA
-12369	Espaia	Caso	40	ninguno	fumador	25	1	1	si	no	NA	NA	NA	no	si	27	5	si	36	NA
-12371	Espaia	Caso	54	ticnico	no fumador	21	1	1	si	no	NA	NA	NA	si	si	23	6	si	53	NA
-12372	Espaia	Caso	51	secundaria	no fumador	18	1	2-3	si	si	30	40	10	si	si	NA	NA	si	NA	positivo
-12375	Espaia	Caso	67	ninguno	no fumador	20	1	1	si	no	NA	NA	NA	no	si	23	8	si	57	positivo
-12376	Espaia	Caso	45	ninguno	no fumador	18	1	1	no	si	18	45	26	no	si	20	8	si	45	positivo
-12380	Espaia	Caso	68	ninguno	no fumador	19	2	2-3	no	no	NA	NA	NA	no	si	NA	NA	si	NA	NA
-12384	Espaia	Caso	62	primaria	no fumador	26	1	1	si	no	NA	NA	NA	no	si	27	3	si	62	NA
-12385	Espaia	Caso	56	ninguno	no fumador	23	1	1	no	no	NA	NA	NA	si	si	25	4	si	56	positivo
-12386	Espaia	Caso	59	ninguno	no fumador	27	1	1	si	no	NA	NA	NA	no	si	28	5	si	45	negativo
-12387	Espaia	Caso	50	ninguno	no fumador	19	1	1	no	no	NA	NA	NA	si	si	19	6	si	50	NA
-12388	Espaia	Caso	43	ninguno	no fumador	15	2	2-3	si	si	28	41	13	no	si	15	11	si	43	NA
-12389	Espaia	Caso	73	ninguno	no fumador	25	1	1	no	no	NA	NA	NA	no	si	27	5	si	73	positivo
-12390	Espaia	Caso	64	secundaria	no fumador	26	1	1	no	no	NA	NA	NA	si	no	NA	NA	si	64	NA
-12391	Espaia	Caso	44	ninguno	no fumador	25	1	1	si	no	NA	NA	NA	si	si	36	2	si	44	NA
-12392	Espaia	Caso	55	primaria	no fumador	36	1	1	no	no	NA	NA	NA	no	si	35	5	si	55	negativo
-12393	Espaia	Caso	34	ninguno	ex-fumador	20	1	1	si	no	NA	NA	NA	si	si	22	2	si	34	NA
-12394	Espaia	Caso	57	primaria	ex-fumador	19	1	1	si	no	NA	NA	NA	no	si	21	4	no	NA	NA
-12400	Espaia	Caso	60	ninguno	no fumador	19	1	1	no	no	NA	NA	NA	no	si	19	9	si	59	NA
-12403	Espaia	Control	56	primaria	no fumador	26	1	1	si	no	NA	NA	NA	no	si	29	2	no	NA	NA
-12404	Espaia	Control	66	ninguno	no fumador	25	1	1	no	no	NA	NA	NA	no	si	28	2	no	NA	NA
-12405	Espaia	Control	53	ninguno	no fumador	30	1	1	no	no	NA	NA	NA	no	si	31	2	si	51	NA
-12406	Espaia	Control	55	ninguno	no fumador	26	1	1	si	no	NA	NA	NA	si	si	26	2	no	NA	NA
-12407	Espaia	Control	52	secundaria	no fumador	26	1	1	no	si	26	50	23	no	si	28	4	si	46	NA
-12408	Espaia	Control	41	primaria	no fumador	22	1	1	si	si	22	41	19	no	si	23	4	si	37	NA
-12409	Espaia	Control	49	primaria	no fumador	25	1	1	si	no	NA	NA	NA	no	si	26	3	si	45	NA
-12410	Espaia	Control	63	ninguno	no fumador	19	1	1	si	no	NA	NA	NA	no	si	20	2	no	NA	NA
-12411	Espaia	Control	68	ninguno	no fumador	26	1	1	si	no	NA	NA	NA	no	si	27	6	no	NA	NA
-12412	Espaia	Control	55	ninguno	no fumador	23	1	1	no	no	NA	NA	NA	no	si	23	3	no	NA	NA
-12413	Espaia	Control	62	ninguno	no fumador	24	1	1	si	no	NA	NA	NA	si	si	26	3	no	NA	NA
-12414	Espaia	Control	49	ninguno	no fumador	18	1	1	no	si	18	49	30	no	si	20	6	no	NA	negativo
-12415	Espaia	Control	61	ninguno	no fumador	18	1	1	no	no	NA	NA	NA	si	si	20	3	no	NA	negativo
-12416	Espaia	Control	53	ninguno	no fumador	21	1	1	si	no	NA	NA	NA	si	si	22	4	si	47	negativo
-12417	Espaia	Control	54	ninguno	no fumador	22	1	1	si	no	NA	NA	NA	no	si	24	4	no	NA	negativo
-12418	Espaia	Control	43	secundaria	no fumador	21	1	1	si	no	NA	NA	NA	no	si	22	3	no	NA	negativo
-12419	Espaia	Control	74	ninguno	no fumador	26	1	1	si	no	NA	NA	NA	no	si	27	1	no	NA	NA
-12420	Espaia	Control	39	secundaria	ex-fumador	25	2	2-3	si	no	NA	NA	NA	si	no	NA	NA	no	NA	positivo
-12421	Espaia	Control	69	ninguno	no fumador	25	1	1	no	no	NA	NA	NA	no	si	27	6	no	NA	negativo
-12422	Espaia	Control	73	ninguno	no fumador	30	1	1	no	no	NA	NA	NA	no	si	30	3	no	NA	negativo
-12423	Espaia	Control	58	primaria	no fumador	26	1	1	no	no	NA	NA	NA	no	si	27	2	no	NA	negativo
-12424	Espaia	Control	71	primaria	no fumador	24	1	1	no	no	NA	NA	NA	no	si	24	5	no	NA	NA
-12425	Espaia	Control	65	primaria	no fumador	NA	NA	NA	no	no	NA	NA	NA	no	no	NA	NA	no	NA	negativo
-12426	Espaia	Control	42	primaria	no fumador	24	1	1	si	si	24	42	18	si	si	26	3	no	NA	NA
-12427	Espaia	Control	56	primaria	no fumador	26	1	1	no	no	NA	NA	NA	no	si	27	1	si	27	NA
-12428	Espaia	Control	53	primaria	no fumador	31	1	1	no	no	NA	NA	NA	no	si	31	5	si	31	negativo
-12429	Espaia	Control	51	primaria	no fumador	24	1	1	no	si	35	45	10	si	si	25	4	no	NA	NA
-12430	Espaia	Control	39	primaria	no fumador	26	1	2-3	si	no	NA	NA	NA	si	si	27	1	no	NA	NA
-12431	Espaia	Control	57	ninguno	fumador	20	1	1	no	no	NA	NA	NA	no	si	21	4	si	57	negativo
-12432	Espaia	Control	73	primaria	no fumador	35	1	1	no	no	NA	NA	NA	no	si	35	2	no	NA	NA
-12433	Espaia	Control	73	secundaria	no fumador	NA	NA	NA	no	no	NA	NA	NA	no	no	NA	NA	no	NA	NA
-12434	Espaia	Control	46	primaria	no fumador	23	1	1	no	si	27	38	11	si	si	24	5	si	35	NA
-12435	Espaia	Control	48	ninguno	no fumador	25	1	1	si	no	NA	NA	NA	no	si	25	2	si	33	negativo
-12436	Espaia	Control	58	ninguno	no fumador	24	1	1	no	no	NA	NA	NA	no	si	25	5	no	NA	NA
-12437	Espaia	Control	56	primaria	no fumador	25	1	1	no	si	47	48	1	si	si	26	6	si	42	NA
-12438	Espaia	Control	54	ninguno	no fumador	19	1	1	si	no	NA	NA	NA	no	si	22	4	no	NA	negativo
-12439	Espaia	Control	59	secundaria	no fumador	25	1	1	no	no	NA	NA	NA	no	si	25	3	si	55	negativo
-12440	Espaia	Control	43	ninguno	no fumador	18	1	1	si	no	NA	NA	NA	no	si	18	13	si	36	negativo
-12441	Espaia	Control	59	ninguno	no fumador	26	1	1	si	no	NA	NA	NA	si	si	27	10	no	NA	negativo
-12442	Espaia	Control	33	primaria	no fumador	23	1	1	si	si	23	33	10	no	si	25	3	si	29	negativo
-12443	Espaia	Control	24	primaria	no fumador	21	NA	4-10	si	si	21	24	3	si	no	NA	NA	si	22	NA
-12444	Espaia	Control	47	primaria	no fumador	20	1	1	no	si	31	36	5	no	si	20	5	no	NA	NA
-12445	Espaia	Control	52	primaria	no fumador	26	1	1	si	no	NA	NA	NA	no	si	35	1	no	NA	NA
-12446	Espaia	Control	59	primaria	ex-fumador	28	1	1	si	si	46	59	13	si	si	28	6	no	NA	NA
-12447	Espaia	Control	36	primaria	fumador	18	1	1	no	si	21	35	14	no	si	20	3	si	30	NA
-12448	Espaia	Control	62	ninguno	no fumador	25	1	1	no	no	NA	NA	NA	si	si	26	5	no	NA	NA
-12449	Espaia	Control	69	primaria	no fumador	22	1	1	no	no	NA	NA	NA	no	si	23	5	no	NA	NA
-12450	Espaia	Control	45	primaria	ex-fumador	23	1	1	si	no	NA	NA	NA	no	no	NA	NA	si	36	NA
-12451	Espaia	Control	43	primaria	no fumador	NA	NA	NA	si	no	NA	NA	NA	no	no	NA	NA	no	NA	NA
-12452	Espaia	Control	57	secundaria	no fumador	26	1	1	si	no	NA	NA	NA	si	si	31	4	no	NA	NA
-12453	Espaia	Control	49	primaria	no fumador	23	1	1	si	no	NA	NA	NA	no	si	25	2	no	NA	NA
-12454	Espaia	Control	67	primaria	no fumador	22	1	1	si	no	NA	NA	NA	si	si	23	2	no	NA	NA
-12455	Espaia	Control	64	ninguno	no fumador	23	1	1	no	no	NA	NA	NA	no	si	24	6	no	NA	NA
-12456	Espaia	Control	51	primaria	no fumador	26	1	1	no	no	NA	NA	NA	no	si	26	3	no	NA	NA
-12461	Espaia	Caso	71	primaria	no fumador	23	1	1	si	no	NA	NA	NA	no	si	23	5	si	71	NA
-12462	Espaia	Control	56	primaria	no fumador	21	1	1	si	no	NA	NA	NA	no	si	24	2	no	NA	NA
-12467	Espaia	Caso	36	primaria	fumador	22	1	1	no	no	NA	NA	NA	si	si	24	4	si	36	NA
-12472	Espaia	Caso	48	primaria	no fumador	19	1	1	si	no	NA	NA	NA	si	si	20	5	si	48	NA
-12483	Espaia	Caso	61	ticnico	fumador	22	1	1	no	no	NA	NA	NA	no	si	24	4	si	49	NA
-12484	Espaia	Caso	56	primaria	no fumador	24	1	1	si	no	NA	NA	NA	no	si	25	3	si	55	NA
-12492	Espaia	Caso	70	primaria	no fumador	33	1	1	si	no	NA	NA	NA	no	si	34	2	si	NA	NA
-12493	Espaia	Caso	66	primaria	no fumador	39	2	2-3	si	no	NA	NA	NA	no	si	40	1	si	65	negativo
-12494	Espaia	Caso	59	primaria	fumador	19	3	>=100	si	no	NA	NA	NA	no	si	19	1	si	59	NA
-12497	Espaia	Caso	30	secundaria	fumador	17	2	4-10	si	si	17	30	11	no	si	24	1	si	25	NA
-12499	Espaia	Caso	59	primaria	no fumador	21	1	1	si	no	NA	NA	NA	no	si	23	2	si	48	negativo
-12502	Espaia	Caso	50	primaria	no fumador	32	1	1	si	no	NA	NA	NA	no	si	33	2	si	50	NA
-12503	Espaia	Caso	61	primaria	no fumador	34	1	1	si	si	40	54	14	no	si	35	5	si	60	positivo
-12504	Espaia	Caso	63	ninguno	no fumador	22	1	1	si	no	NA	NA	NA	no	si	24	3	si	63	NA
-12507	Espaia	Caso	39	secundaria	no fumador	25	3	2-3	si	si	36	37	1	no	no	NA	NA	si	34	NA
-12517	Espaia	Caso	38	primaria	fumador	24	3	2-3	no	si	24	38	12	no	si	24	2	si	37	negativo
-12518	Espaia	Caso	55	primaria	no fumador	22	1	1	si	no	NA	NA	NA	si	si	22	4	no	NA	NA
-12519	Espaia	Caso	51	primaria	no fumador	18	1	2-3	si	no	NA	NA	NA	si	si	19	5	si	51	positivo
-12522	Espaia	Caso	45	primaria	no fumador	28	1	1	si	no	NA	NA	NA	no	si	33	4	si	NA	NA
-12525	Espaia	Caso	47	primaria	fumador	20	1	2-3	si	no	NA	NA	NA	no	si	21	1	si	46	NA
-12527	Espaia	Control	34	primaria	fumador	19	1	1	si	si	21	34	11	no	si	20	2	si	24	NA
-12528	Espaia	Control	33	secundaria	fumador	20	3	4-10	si	si	25	33	6	si	si	28	1	si	28	NA
-12529	Espaia	Control	37	primaria	fumador	25	1	1	si	no	NA	NA	NA	no	si	28	2	no	NA	negativo
-12530	Espaia	Control	39	secundaria	ex-fumador	20	2	4-10	si	no	NA	NA	NA	si	si	21	2	si	27	NA
-12531	Espaia	Control	45	primaria	no fumador	20	1	2-3	si	si	42	45	3	no	si	23	3	si	31	negativo
-12532	Espaia	Control	41	primaria	no fumador	24	1	1	si	si	24	41	15	no	si	26	3	si	32	NA
-12533	Espaia	Control	46	primaria	no fumador	28	1	1	si	no	NA	NA	NA	no	no	NA	NA	si	NA	NA
-12534	Espaia	Control	44	primaria	no fumador	21	1	1	si	si	30	37	7	no	si	22	7	si	42	NA
-12535	Espaia	Control	50	primaria	no fumador	24	1	1	si	no	NA	NA	NA	si	si	34	1	si	30	NA
-12536	Espaia	Control	64	primaria	no fumador	23	1	1	no	no	NA	NA	NA	no	si	24	8	si	55	negativo
-12537	Espaia	Control	64	primaria	no fumador	34	1	1	si	no	NA	NA	NA	no	si	35	3	no	NA	negativo
-12538	Espaia	Control	61	primaria	no fumador	24	1	1	si	no	NA	NA	NA	no	si	25	6	no	NA	NA
-12540	Espaia	Caso	66	ninguno	no fumador	20	1	1	si	no	NA	NA	NA	no	si	21	15	si	66	positivo
-12541	Espaia	Caso	56	primaria	no fumador	32	1	1	si	no	NA	NA	NA	no	si	35	3	si	56	positivo
-12542	Espaia	Caso	50	primaria	fumador	22	1	1	no	si	32	41	9	no	si	23	5	si	50	positivo
-12549	Espaia	Control	46	primaria	no fumador	23	1	1	si	no	NA	NA	NA	no	si	24	3	no	NA	negativo
-12550	Espaia	Caso	42	ninguno	fumador	20	1	1	si	si	20	42	21	si	si	22	3	si	40	positivo
-12551	Espaia	Caso	57	primaria	no fumador	30	1	2-3	si	no	NA	NA	NA	no	si	34	1	si	57	positivo
-12560	Espaia	Caso	38	primaria	no fumador	19	2	2-3	si	si	19	32	12	no	si	19	6	si	31	NA
-12565	Espaia	Caso	39	primaria	no fumador	25	1	1	si	no	NA	NA	NA	si	si	26	3	si	39	positivo
-12571	Espaia	Caso	72	ninguno	no fumador	33	1	1	no	no	NA	NA	NA	no	si	34	2	NA	NA	positivo
-12577	Espaia	Caso	42	ninguno	no fumador	22	1	1	si	no	NA	NA	NA	si	si	23	4	si	41	NA
-12581	Espaia	Caso	50	primaria	no fumador	29	1	1	si	si	36	48	11	no	si	30	5	NA	NA	positivo
-12582	Espaia	Caso	43	primaria	fumador	27	1	1	si	no	NA	NA	NA	si	si	28	2	si	30	NA
-12588	Espaia	Caso	33	ticnico	no fumador	21	1	1	si	si	21	25	4	no	si	29	2	si	24	negativo
-12591	Espaia	Caso	51	primaria	fumador	20	1	1	si	no	NA	NA	NA	si	si	21	5	si	51	positivo
-12601	Espaia	Caso	56	primaria	no fumador	24	1	1	no	no	NA	NA	NA	no	si	29	2	si	46	positivo
-12603	Espaia	Caso	63	primaria	no fumador	28	1	1	si	no	NA	NA	NA	si	si	31	2	no	NA	positivo
-12614	Espaia	Caso	32	primaria	fumador	17	1	1	no	no	NA	NA	NA	no	si	17	2	si	32	positivo
-12619	Espaia	Caso	43	primaria	no fumador	25	3	4-10	si	si	25	35	8	si	no	NA	NA	si	36	positivo
-12623	Espaia	Caso	64	primaria	fumador	30	1	1	si	no	NA	NA	NA	no	no	NA	NA	si	64	positivo
-12626	Espaia	Control	48	primaria	no fumador	23	1	1	si	si	28	48	20	no	si	24	5	si	44	negativo
-12627	Espaia	Control	40	primaria	no fumador	28	1	1	si	no	NA	NA	NA	si	si	30	2	no	NA	negativo
-12628	Espaia	Control	42	ticnico	no fumador	23	1	1	si	si	31	38	7	no	si	24	2	si	35	negativo
-12629	Espaia	Control	51	secundaria	no fumador	29	1	1	si	si	38	38	1	no	si	30	4	si	48	negativo
-12630	Espaia	Control	56	primaria	no fumador	30	1	1	si	no	NA	NA	NA	no	si	31	3	no	NA	negativo
-12631	Espaia	Control	51	ticnico	fumador	32	1	1	no	si	32	47	15	no	si	34	2	si	45	negativo
-12632	Espaia	Control	39	primaria	no fumador	24	1	1	si	si	25	28	3	no	si	25	3	si	38	negativo
-12633	Espaia	Control	64	ninguno	no fumador	25	2	2-3	no	no	NA	NA	NA	no	si	26	1	no	NA	NA
-12634	Espaia	Control	44	primaria	no fumador	18	1	1	no	no	NA	NA	NA	no	si	19	6	no	NA	NA
-12635	Espaia	Control	34	primaria	fumador	17	1	1	no	si	17	34	16	no	si	17	2	no	NA	NA
-12636	Espaia	Control	44	primaria	no fumador	25	1	1	si	no	NA	NA	NA	no	si	29	1	no	NA	NA
-12637	Espaia	Control	65	primaria	no fumador	26	1	1	no	no	NA	NA	NA	no	si	27	3	no	NA	NA
-12643	Espaia	Caso	51	ninguno	no fumador	21	1	1	si	no	NA	NA	NA	no	si	24	2	si	50	NA
-12654	Espaia	Caso	67	primaria	no fumador	42	1	1	si	no	NA	NA	NA	no	no	NA	NA	NA	NA	negativo
-12655	Espaia	Caso	61	primaria	no fumador	17	1	1	si	no	NA	NA	NA	no	si	18	7	si	61	positivo
-12658	Espaia	Caso	64	ninguno	no fumador	19	1	1	no	no	NA	NA	NA	si	si	22	1	NA	NA	positivo
-12660	Espaia	Caso	32	primaria	fumador	20	1	1	no	si	20	32	12	no	si	22	2	si	22	positivo
-12661	Espaia	Caso	60	ninguno	no fumador	24	1	1	si	no	NA	NA	NA	si	si	25	8	si	60	positivo
-12663	Espaia	Caso	49	primaria	no fumador	22	1	1	si	no	NA	NA	NA	no	si	23	2	si	49	NA
-12664	Espaia	Caso	41	secundaria	no fumador	22	3	>=100	no	si	22	39	12	si	si	23	3	si	23	positivo
-12665	Espaia	Caso	30	ticnico	fumador	20	1	1	si	si	26	30	4	no	si	26	2	si	30	positivo
-12672	Espaia	Caso	40	ninguno	no fumador	23	1	1	si	no	NA	NA	NA	no	si	24	5	si	31	positivo
-12675	Espaia	Caso	28	ninguno	fumador	15	1	2-3	no	si	23	28	5	no	si	15	4	si	28	NA
-12677	Espaia	Caso	50	ninguno	no fumador	18	1	1	no	no	NA	NA	NA	no	si	23	8	si	42	positivo
-12681	Espaia	Caso	51	primaria	no fumador	22	1	1	si	no	NA	NA	NA	si	si	23	6	si	51	positivo
-12690	Espaia	Caso	57	primaria	no fumador	21	1	1	si	no	NA	NA	NA	no	si	22	3	si	56	positivo
-12692	Espaia	Caso	43	primaria	no fumador	16	1	1	no	no	NA	NA	NA	no	si	18	8	si	43	NA
-12700	Espaia	Caso	39	ninguno	no fumador	17	1	1	no	no	NA	NA	NA	si	si	18	5	si	39	NA
-12704	Espaia	Caso	38	primaria	no fumador	18	1	1	si	si	20	34	14	no	si	19	2	si	35	positivo
-12705	Espaia	Caso	70	ninguno	no fumador	19	1	1	no	no	NA	NA	NA	no	si	20	5	no	NA	NA
-12706	Espaia	Caso	43	ninguno	no fumador	19	1	1	no	no	NA	NA	NA	no	si	21	2	si	42	NA
-12707	Espaia	Caso	32	ticnico	fumador	20	3	4-10	si	si	26	32	3	no	si	21	4	si	30	NA
-12708	Espaia	Caso	70	ninguno	no fumador	24	1	1	no	no	NA	NA	NA	si	si	25	4	si	70	positivo
-12709	Espaia	Caso	37	ninguno	no fumador	17	1	1	no	si	17	37	19	no	si	22	3	no	NA	NA
-12710	Espaia	Caso	66	ninguno	no fumador	18	1	1	no	no	NA	NA	NA	no	si	18	5	si	66	positivo
-12711	Espaia	Caso	64	ninguno	no fumador	14	1	2-3	si	no	NA	NA	NA	no	si	14	1	si	64	positivo
-12718	Espaia	Caso	57	ninguno	no fumador	NA	NA	NA	no	no	NA	NA	NA	no	no	NA	NA	si	57	negativo
-12719	Espaia	Caso	66	ninguno	no fumador	25	1	1	si	no	NA	NA	NA	no	si	25	4	si	66	NA
-12722	Espaia	Caso	43	ninguno	no fumador	20	1	1	si	no	NA	NA	NA	no	si	22	3	si	42	NA
-12723	Espaia	Caso	64	ninguno	no fumador	21	1	1	si	no	NA	NA	NA	no	si	21	3	si	61	positivo
-12724	Espaia	Control	75	ninguno	no fumador	22	1	1	si	no	NA	NA	NA	no	si	31	5	no	NA	NA
-12725	Espaia	Control	65	ninguno	no fumador	27	1	1	no	no	NA	NA	NA	no	si	28	2	no	NA	negativo
-12726	Espaia	Control	41	ninguno	no fumador	21	1	1	si	si	29	30	1	no	si	22	8	si	NA	negativo
-12727	Espaia	Control	40	ticnico	no fumador	NA	NA	NA	si	no	NA	NA	NA	no	no	NA	NA	no	NA	NA
-12728	Espaia	Control	67	primaria	no fumador	NA	1	1	si	no	NA	NA	NA	no	no	NA	NA	no	NA	negativo
-12729	Espaia	Control	59	ninguno	no fumador	24	1	1	no	no	NA	NA	NA	no	si	26	1	no	NA	NA
-12730	Espaia	Control	70	ninguno	no fumador	28	1	1	si	no	NA	NA	NA	no	si	29	2	no	NA	negativo
-12731	Espaia	Control	60	ninguno	no fumador	17	1	1	no	no	NA	NA	NA	no	si	31	10	no	NA	positivo
-12732	Espaia	Control	53	primaria	no fumador	21	1	1	si	si	33	49	15	no	si	20	9	no	NA	negativo
-12733	Espaia	Control	53	primaria	no fumador	26	1	1	si	no	NA	NA	NA	no	si	27	3	no	NA	negativo
-12734	Espaia	Control	44	ninguno	no fumador	21	1	1	si	no	NA	NA	NA	no	si	25	2	no	NA	negativo
-12735	Espaia	Control	65	primaria	no fumador	26	1	1	si	no	NA	NA	NA	si	si	24	2	no	NA	NA
-12736	Espaia	Control	35	primaria	no fumador	22	1	1	si	no	NA	NA	NA	si	si	23	2	si	32	negativo
-12737	Espaia	Control	37	primaria	no fumador	22	1	1	no	no	NA	NA	NA	no	si	23	2	no	NA	negativo
-12738	Espaia	Control	35	ticnico	fumador	20	1	1	si	si	20	35	15	no	si	21	4	si	23	negativo
-12739	Espaia	Control	43	secundaria	no fumador	23	1	1	si	no	NA	NA	NA	si	si	24	2	no	NA	negativo
-12740	Espaia	Control	47	ninguno	no fumador	25	1	1	no	si	28	35	7	no	si	27	2	si	45	negativo
-12741	Espaia	Control	56	ninguno	no fumador	24	1	1	si	no	NA	NA	NA	no	si	31	1	no	NA	NA
-12742	Espaia	Control	38	primaria	no fumador	23	1	1	no	no	NA	NA	NA	no	si	25	2	no	NA	NA
-12743	Espaia	Control	38	primaria	no fumador	21	1	1	si	no	NA	NA	NA	no	si	23	3	no	NA	negativo
-12744	Espaia	Control	40	ninguno	no fumador	24	1	1	no	no	NA	NA	NA	no	si	26	2	no	NA	NA
-12745	Espaia	Control	38	primaria	no fumador	24	1	1	no	no	NA	NA	NA	no	si	26	3	no	NA	NA
-12746	Espaia	Control	63	ninguno	no fumador	19	1	1	no	no	NA	NA	NA	no	si	20	2	no	NA	NA
-12747	Espaia	Control	69	ninguno	no fumador	18	1	1	no	no	NA	NA	NA	no	si	21	4	no	NA	negativo
-12748	Espaia	Control	73	ninguno	no fumador	17	1	1	no	no	NA	NA	NA	no	si	24	2	no	NA	NA
-12749	Espaia	Control	37	primaria	no fumador	22	1	1	si	si	25	27	2	no	si	23	4	si	28	NA
-12750	Espaia	Control	40	primaria	no fumador	27	1	1	si	no	NA	NA	NA	si	si	28	3	no	NA	negativo
-12751	Espaia	Caso	64	primaria	no fumador	30	1	1	si	no	NA	NA	NA	no	si	31	5	no	NA	positivo
-12752	Espaia	Caso	58	primaria	no fumador	23	1	1	si	no	NA	NA	NA	si	si	25	2	si	58	NA
-12753	Espaia	Caso	49	ninguno	no fumador	21	1	1	si	no	NA	NA	NA	no	si	28	1	no	NA	positivo
-12754	Espaia	Caso	71	primaria	no fumador	31	1	1	no	no	NA	NA	NA	no	si	29	3	NA	NA	positivo
-12759	Espaia	Caso	69	primaria	no fumador	22	1	1	si	no	NA	NA	NA	no	no	NA	NA	NA	NA	positivo
-12762	Espaia	Caso	44	primaria	fumador	18	2	>=100	no	no	NA	NA	NA	si	si	18	3	NA	NA	positivo
-12766	Espaia	Caso	28	primaria	no fumador	19	2	2-3	no	no	NA	NA	NA	si	si	25	2	si	28	NA
-12776	Espaia	Caso	30	primaria	no fumador	16	1	1	no	no	NA	NA	NA	no	si	17	4	si	24	positivo
-12783	Espaia	Caso	52	primaria	no fumador	20	1	2-3	si	no	NA	NA	NA	si	si	20	6	si	52	positivo
-12786	Espaia	Caso	71	primaria	no fumador	34	1	1	no	no	NA	NA	NA	no	si	35	4	si	71	positivo
-12793	Espaia	Caso	34	ninguno	fumador	18	1	1	si	no	NA	NA	NA	no	si	19	2	si	33	positivo
-12794	Espaia	Control	73	primaria	no fumador	NA	NA	NA	no	no	NA	NA	NA	no	no	NA	NA	no	NA	NA
-12795	Espaia	Control	53	primaria	ex-fumador	24	1	2-3	no	no	NA	NA	NA	si	si	25	2	no	NA	negativo
-12796	Espaia	Control	50	primaria	no fumador	23	1	1	no	no	NA	NA	NA	no	si	24	3	no	NA	negativo
-12797	Espaia	Control	63	primaria	no fumador	27	1	1	si	no	NA	NA	NA	no	si	28	4	no	NA	negativo
-12798	Espaia	Control	47	primaria	no fumador	25	1	1	no	no	NA	NA	NA	no	si	26	4	si	38	negativo
-12799	Espaia	Control	51	primaria	no fumador	23	1	1	no	no	NA	NA	NA	no	si	25	4	no	NA	negativo
-12800	Espaia	Control	59	primaria	no fumador	19	1	1	no	no	NA	NA	NA	no	si	21	4	si	40	negativo
-12801	Espaia	Control	58	primaria	no fumador	26	1	1	si	no	NA	NA	NA	no	si	26	3	no	NA	negativo
-12802	Espaia	Control	63	primaria	no fumador	24	1	1	no	no	NA	NA	NA	no	si	25	5	no	NA	negativo
-12803	Espaia	Control	32	secundaria	fumador	23	2	2-3	no	si	26	32	6	si	si	29	2	si	28	negativo
-12804	Espaia	Control	63	primaria	no fumador	23	1	1	si	no	NA	NA	NA	no	si	24	7	no	NA	negativo
-12805	Espaia	Control	57	primaria	no fumador	24	1	1	no	no	NA	NA	NA	no	si	25	6	si	44	negativo
-12806	Espaia	Control	69	primaria	no fumador	23	1	1	si	no	NA	NA	NA	no	si	24	4	no	NA	NA
-12807	Espaia	Caso	40	primaria	no fumador	21	1	1	si	si	32	40	8	no	si	22	4	si	32	positivo
-12808	Espaia	Caso	28	secundaria	fumador	17	1	1	si	si	17	28	11	no	si	17	3	si	28	NA
-12811	Espaia	Caso	59	ninguno	no fumador	26	1	1	no	no	NA	NA	NA	no	si	34	5	no	NA	positivo
-12813	Espaia	Caso	53	primaria	no fumador	22	1	2-3	si	no	NA	NA	NA	si	si	26	5	si	53	negativo
-12818	Espaia	Caso	71	ninguno	no fumador	27	1	1	si	no	NA	NA	NA	no	no	NA	NA	si	71	positivo
-12821	Espaia	Caso	51	primaria	no fumador	28	1	1	no	si	28	43	15	si	si	32	3	si	51	positivo
-12830	Espaia	Caso	64	primaria	no fumador	27	1	1	no	no	NA	NA	NA	no	si	27	4	no	NA	positivo
-12833	Espaia	Caso	51	primaria	fumador	28	NA	2-3	si	no	NA	NA	NA	no	si	29	2	no	NA	NA
-12836	Espaia	Control	61	primaria	no fumador	29	1	1	si	no	NA	NA	NA	no	si	30	6	no	NA	negativo
-12837	Espaia	Control	37	ninguno	no fumador	23	1	1	si	no	NA	NA	NA	no	si	26	2	no	NA	positivo
-12838	Espaia	Control	57	primaria	no fumador	32	1	1	si	no	NA	NA	NA	no	si	32	2	no	NA	negativo
-12839	Espaia	Control	46	primaria	no fumador	31	1	1	si	no	NA	NA	NA	si	si	32	5	no	NA	negativo
-12840	Espaia	Control	52	primaria	no fumador	29	1	1	si	no	NA	NA	NA	no	si	29	1	si	50	negativo
-12841	Espaia	Control	54	primaria	no fumador	24	1	1	si	no	NA	NA	NA	si	si	25	3	no	NA	negativo
-12842	Espaia	Control	67	primaria	no fumador	20	1	1	si	no	NA	NA	NA	no	si	26	8	no	NA	negativo
-12843	Espaia	Control	42	secundaria	no fumador	25	1	1	si	si	25	35	10	no	si	26	2	no	NA	negativo
-12848	Espaia	Caso	64	ninguno	no fumador	18	2	2-3	si	no	NA	NA	NA	no	si	20	3	si	64	positivo
-12853	Espaia	Caso	53	primaria	no fumador	22	1	1	si	si	33	43	10	no	si	25	7	si	27	NA
-12856	Espaia	Caso	45	ninguno	no fumador	24	1	1	si	no	NA	NA	NA	si	si	26	4	si	45	positivo
-12859	Espaia	Caso	52	primaria	no fumador	21	1	1	si	no	NA	NA	NA	si	si	22	4	si	52	positivo
-12862	Espaia	Caso	62	primaria	no fumador	22	1	1	no	no	NA	NA	NA	no	si	24	6	si	52	positivo
-12863	Espaia	Caso	45	primaria	no fumador	23	1	11-20	si	no	NA	NA	NA	no	si	26	1	si	27	positivo
-12866	Espaia	Caso	38	primaria	fumador	23	1	1	si	no	NA	NA	NA	no	si	24	3	NA	NA	NA
-12871	Espaia	Caso	62	primaria	no fumador	20	1	1	no	no	NA	NA	NA	no	si	20	7	si	62	positivo
-12872	Espaia	Caso	37	primaria	ex-fumador	17	1	1	si	si	17	35	18	si	si	18	3	si	37	positivo
-12873	Espaia	Caso	66	primaria	no fumador	24	1	2-3	si	no	NA	NA	NA	no	si	25	3	si	36	positivo
-12877	Espaia	Caso	54	primaria	no fumador	29	1	1	si	no	NA	NA	NA	no	si	29	4	si	53	positivo
-12878	Espaia	Caso	51	primaria	no fumador	21	1	1	si	no	NA	NA	NA	no	si	23	3	si	51	positivo
-12880	Espaia	Caso	54	primaria	fumador	29	1	1	si	no	NA	NA	NA	si	si	30	3	no	NA	NA
-12886	Espaia	Caso	62	primaria	no fumador	24	1	1	no	no	NA	NA	NA	no	si	25	5	si	62	positivo
-12889	Espaia	Caso	52	primaria	no fumador	23	1	1	si	no	NA	NA	NA	no	no	NA	NA	si	52	positivo
-12890	Espaia	Caso	44	primaria	no fumador	19	1	1	si	si	19	44	25	no	si	20	3	si	40	positivo
-12891	Espaia	Caso	35	primaria	fumador	20	1	1	si	si	20	35	15	no	si	20	2	no	NA	positivo
-12894	Espaia	Caso	48	primaria	fumador	18	2	2-3	no	no	NA	NA	NA	no	si	19	3	no	NA	positivo
-12895	Espaia	Caso	74	primaria	no fumador	25	2	2-3	si	no	NA	NA	NA	no	si	28	2	si	74	NA
-12896	Espaia	Caso	67	primaria	no fumador	26	1	1	si	no	NA	NA	NA	no	si	27	1	no	NA	positivo
-12898	Espaia	Caso	50	primaria	no fumador	25	1	1	no	no	NA	NA	NA	no	si	26	3	si	50	positivo
-12901	Espaia	Caso	73	secundaria	no fumador	52	1	1	no	no	NA	NA	NA	no	si	52	1	no	NA	positivo
-12906	Espaia	Caso	47	primaria	no fumador	19	1	1	si	si	19	47	28	si	si	21	6	si	47	NA
-12909	Espaia	Caso	32	secundaria	fumador	18	1	2-3	si	si	20	32	12	no	si	21	4	si	32	negativo
-12914	Espaia	Caso	61	primaria	no fumador	25	NA	1	si	no	NA	NA	NA	no	no	NA	NA	si	60	positivo
-12915	Espaia	Caso	66	primaria	no fumador	18	2	2-3	no	no	NA	NA	NA	no	si	19	3	si	66	positivo
-12918	Espaia	Caso	63	ninguno	no fumador	19	1	2-3	no	no	NA	NA	NA	no	si	NA	NA	si	62	NA
-12922	Espaia	Caso	52	primaria	no fumador	22	1	1	no	no	NA	NA	NA	si	si	23	5	si	52	positivo
-12923	Espaia	Caso	53	primaria	no fumador	21	1	1	no	no	NA	NA	NA	si	si	22	3	no	NA	negativo
-12927	Espaia	Caso	63	primaria	fumador	NA	NA	NA	si	no	NA	NA	NA	no	no	NA	NA	no	NA	negativo
-12928	Espaia	Caso	61	primaria	no fumador	17	2	2-3	no	no	NA	NA	NA	no	si	18	4	no	NA	positivo
-12929	Espaia	Caso	34	universitario	fumador	20	3	4-10	si	si	22	30	7	no	si	21	2	si	31	positivo
-12930	Espaia	Caso	44	primaria	ex-fumador	23	2	2-3	no	no	NA	NA	NA	no	si	26	3	si	43	positivo
-12931	Espaia	Caso	55	primaria	no fumador	22	2	2-3	si	no	NA	NA	NA	no	si	23	4	si	54	positivo
-12932	Espaia	Caso	33	secundaria	no fumador	18	1	1	si	si	20	33	12	no	si	19	6	si	26	NA
-12935	Espaia	Caso	66	primaria	no fumador	20	1	1	no	no	NA	NA	NA	no	si	21	8	si	66	positivo
-12938	Espaia	Control	53	primaria	no fumador	24	1	1	si	no	NA	NA	NA	no	si	26	2	no	NA	negativo
-12939	Espaia	Control	43	primaria	no fumador	31	1	1	si	no	NA	NA	NA	si	si	33	2	no	NA	NA
-12940	Espaia	Control	57	primaria	no fumador	27	1	1	no	no	NA	NA	NA	no	si	28	1	si	56	negativo
-12941	Espaia	Control	62	primaria	no fumador	28	1	1	no	no	NA	NA	NA	no	si	30	1	no	NA	negativo
-12942	Espaia	Control	38	primaria	ex-fumador	20	2	2-3	si	si	22	35	5	no	no	NA	NA	si	23	NA
-12943	Espaia	Control	64	ninguno	no fumador	20	1	1	si	no	NA	NA	NA	no	si	29	2	si	45	negativo
-12944	Espaia	Control	37	secundaria	no fumador	24	1	1	si	no	NA	NA	NA	no	si	25	2	no	NA	NA
-12945	Espaia	Control	65	primaria	no fumador	24	1	1	no	no	NA	NA	NA	no	si	26	6	si	38	negativo
-12946	Espaia	Control	54	primaria	ex-fumador	46	1	1	si	no	NA	NA	NA	no	no	NA	NA	no	NA	negativo
-12947	Espaia	Control	62	primaria	no fumador	24	1	1	si	no	NA	NA	NA	no	si	30	2	no	NA	negativo
-12948	Espaia	Control	52	ninguno	no fumador	19	1	1	no	no	NA	NA	NA	no	si	24	3	no	NA	negativo
-12949	Espaia	Control	34	primaria	no fumador	18	1	1	si	si	19	28	9	no	si	19	2	si	33	negativo
-12950	Espaia	Control	47	primaria	no fumador	25	1	1	si	no	NA	NA	NA	no	si	26	3	no	NA	NA
-12951	Espaia	Control	74	primaria	no fumador	27	1	1	si	no	NA	NA	NA	no	si	28	3	no	NA	NA
-12952	Espaia	Control	58	primaria	fumador	22	1	1	si	no	NA	NA	NA	si	si	23	2	no	NA	negativo
-12953	Espaia	Control	31	primaria	fumador	18	1	1	no	no	NA	NA	NA	si	no	NA	NA	no	NA	negativo
-12954	Espaia	Control	61	primaria	no fumador	27	1	1	no	no	NA	NA	NA	no	si	30	2	si	58	negativo
-12955	Espaia	Control	43	primaria	no fumador	27	1	1	si	no	NA	NA	NA	si	si	27	2	no	NA	negativo
-12956	Espaia	Control	53	primaria	fumador	27	1	1	si	no	NA	NA	NA	no	si	28	5	no	NA	negativo
-12957	Espaia	Control	66	primaria	no fumador	32	1	1	no	no	NA	NA	NA	no	si	31	3	no	NA	negativo
-12958	Espaia	Control	65	primaria	no fumador	NA	NA	NA	si	no	NA	NA	NA	no	no	NA	NA	no	NA	NA
-12959	Espaia	Control	32	secundaria	no fumador	22	1	1	si	no	NA	NA	NA	si	si	25	2	no	NA	negativo
-12960	Espaia	Control	43	primaria	no fumador	23	1	1	no	no	NA	NA	NA	no	si	29	2	si	38	negativo
-12961	Espaia	Control	35	secundaria	fumador	21	1	1	si	no	NA	NA	NA	si	si	22	2	si	32	negativo
-12962	Espaia	Control	54	primaria	no fumador	26	1	1	si	no	NA	NA	NA	no	no	NA	NA	NA	NA	negativo
-12963	Espaia	Control	68	primaria	no fumador	22	1	1	si	no	NA	NA	NA	no	si	23	12	no	NA	NA
+11900	Peru	Caso	54	secundaria	no fumador	9	3	2-3	NA	si	21	21	1	no	si	20	10	si	26	positivo
+11901	Peru	Control	64	primaria	no fumador	23	1	1	no	no	NA	NA	NA	no	si	24	6	si	35	positivo
+11902	Peru	Caso	42	secundaria	no fumador	19	1	1	no	si	20	32	8	no	si	19	2	si	21	positivo
+11903	Peru	Caso	47	primaria	no fumador	21	2	2-3	no	no	NA	NA	NA	no	si	23	6	si	35	positivo
+11904	Peru	Control	69	primaria	no fumador	23	1	1	no	no	NA	NA	NA	no	si	23	11	si	65	negativo
+11905	Peru	Caso	41	ticnico	no fumador	15	3	2-3	no	si	24	41	5	no	si	19	8	si	24	positivo
+11906	Peru	Control	72	primaria	no fumador	16	1	1	no	no	NA	NA	NA	no	si	19	10	si	28	negativo
+11907	Peru	Control	66	primaria	no fumador	19	3	4-10	no	no	NA	NA	NA	si	si	19	2	si	35	negativo
+11908	Peru	Caso	49	primaria	no fumador	14	5	4-10	NA	si	18	41	17	no	si	14	10	si	44	positivo
+11909	Peru	Control	51	primaria	no fumador	17	3	2-3	no	no	NA	NA	NA	no	si	17	4	si	26	NA
+11910	Peru	Caso	50	primaria	no fumador	17	1	1	no	no	NA	NA	NA	no	si	17	4	si	40	negativo
+11911	Peru	Control	37	secundaria	no fumador	24	1	1	no	no	NA	NA	NA	no	si	24	1	si	23	negativo
+11912	Peru	Caso	62	primaria	no fumador	15	1	1	no	no	NA	NA	NA	no	si	18	7	no	NA	positivo
+11913	Peru	Control	62	primaria	no fumador	17	1	2-3	no	si	37	NA	NA	no	si	18	8	si	54	negativo
+11914	Peru	Caso	45	primaria	no fumador	18	2	2-3	NA	si	38	38	1	no	si	18	5	si	32	positivo
+11915	Peru	Control	47	primaria	no fumador	15	2	2-3	no	si	37	39	2	no	si	15	9	no	NA	negativo
+11916	Peru	Caso	47	primaria	no fumador	16	1	1	no	si	30	39	7	no	si	16	9	si	30	positivo
+11917	Peru	Control	46	ninguno	no fumador	16	3	2-3	NA	si	38	40	2	no	si	16	8	si	26	positivo
+11918	Peru	Control	44	secundaria	fumador	25	1	1	no	no	NA	NA	NA	no	si	28	3	si	34	negativo
+11919	Peru	Caso	38	ninguno	no fumador	15	2	2-3	no	no	NA	NA	NA	no	si	23	5	si	34	positivo
+11920	Peru	Control	53	secundaria	no fumador	15	2	2-3	no	no	NA	NA	NA	no	si	16	6	si	28	negativo
+11921	Peru	Caso	46	secundaria	no fumador	16	2	2-3	NA	no	NA	NA	NA	no	si	16	3	si	31	positivo
+11922	Peru	Control	38	primaria	no fumador	22	1	1	no	si	22	29	7	no	si	29	3	si	30	negativo
+11923	Peru	Caso	65	ninguno	no fumador	15	2	4-10	no	no	NA	NA	NA	si	si	21	5	si	22	positivo
+11924	Peru	Control	36	secundaria	no fumador	20	1	1	no	si	34	36	3	no	si	21	4	si	24	positivo
+11925	Peru	Caso	63	ninguno	no fumador	14	4	4-10	no	no	NA	NA	NA	no	si	17	9	no	NA	positivo
+11926	Peru	Control	48	primaria	no fumador	15	1	1	no	no	NA	NA	NA	no	si	16	9	no	NA	negativo
+11927	Peru	Control	58	primaria	no fumador	22	1	1	no	no	NA	NA	NA	no	si	23	11	si	52	negativo
+11928	Peru	Caso	42	secundaria	no fumador	21	1	2-3	no	no	NA	NA	NA	no	si	21	3	si	41	positivo
+11929	Peru	Control	38	ticnico	fumador	24	1	1	no	si	37	38	1	si	si	25	4	si	24	negativo
+11930	Peru	Caso	36	universitario	ex-fumador	6	3	4-10	NA	si	22	27	4	si	si	27	3	no	NA	positivo
+11931	Peru	Caso	52	primaria	no fumador	16	1	1	NA	si	25	25	1	si	si	24	8	si	52	positivo
+11932	Peru	Control	61	secundaria	no fumador	17	1	1	NA	no	NA	NA	NA	no	si	18	6	si	35	negativo
+11933	Peru	Caso	74	primaria	no fumador	25	1	1	no	no	NA	NA	NA	no	si	25	3	si	74	positivo
+11934	Peru	Control	53	ninguno	no fumador	22	1	1	no	no	NA	NA	NA	no	si	23	6	no	NA	negativo
+11935	Peru	Caso	65	primaria	no fumador	16	3	4-10	no	no	NA	NA	NA	no	si	16	12	no	NA	positivo
+11936	Peru	Control	62	ninguno	no fumador	15	1	2-3	no	no	NA	NA	NA	no	si	15	2	si	47	positivo
+11937	Peru	Caso	57	ninguno	no fumador	14	1	>=100	NA	si	23	25	2	si	si	22	3	si	37	positivo
+11938	Peru	Control	34	secundaria	no fumador	26	1	1	no	no	NA	NA	NA	no	si	27	5	no	NA	negativo
+11939	Peru	Caso	33	secundaria	no fumador	18	2	2-3	NA	no	NA	NA	NA	no	si	20	2	si	31	positivo
+11940	Peru	Control	55	ninguno	no fumador	23	1	1	no	no	NA	NA	NA	no	si	24	4	no	NA	negativo
+11941	Peru	Caso	47	primaria	no fumador	15	3	2-3	no	no	NA	NA	NA	no	si	15	6	si	25	positivo
+11942	Peru	Caso	53	ninguno	no fumador	18	2	2-3	no	no	NA	NA	NA	si	si	18	6	no	NA	positivo
+11943	Peru	Control	31	universitario	no fumador	22	1	2-3	no	no	NA	NA	NA	si	si	31	1	si	31	negativo
+11944	Peru	Caso	51	secundaria	fumador	19	1	2-3	NA	si	25	35	10	si	si	20	3	si	50	positivo
+11945	Peru	Control	40	secundaria	no fumador	16	2	4-10	NA	no	NA	NA	NA	no	si	18	9	si	32	negativo
+11946	Peru	Caso	46	secundaria	fumador	21	1	1	NA	no	NA	NA	NA	no	si	21	4	si	26	positivo
+11947	Peru	Control	33	secundaria	no fumador	16	1	2-3	NA	no	NA	NA	NA	si	si	23	1	NA	NA	negativo
+11948	Peru	Control	65	ninguno	no fumador	17	2	4-10	no	no	NA	NA	NA	no	si	18	5	no	NA	positivo
+11949	Peru	Caso	45	primaria	no fumador	17	2	2-3	NA	no	NA	NA	NA	no	si	18	1	si	31	positivo
+11950	Peru	Control	49	primaria	no fumador	15	2	2-3	no	no	NA	NA	NA	no	si	15	1	si	23	positivo
+11951	Peru	Caso	73	primaria	fumador	17	1	1	NA	no	NA	NA	NA	no	si	17	7	si	73	positivo
+11952	Peru	Caso	68	ninguno	no fumador	19	2	4-10	NA	no	NA	NA	NA	no	si	22	10	no	NA	positivo
+11953	Peru	Control	43	secundaria	no fumador	22	1	1	no	si	23	26	3	no	si	30	2	si	25	negativo
+11954	Peru	Control	39	primaria	no fumador	17	2	2-3	NA	no	NA	NA	NA	si	si	19	4	si	26	negativo
+11955	Peru	Caso	42	primaria	no fumador	21	1	1	no	no	NA	NA	NA	no	si	21	4	no	NA	positivo
+11956	Peru	Control	58	primaria	no fumador	17	2	2-3	no	no	NA	NA	NA	no	si	18	4	no	NA	negativo
+11957	Peru	Caso	36	secundaria	no fumador	15	3	2-3	no	no	NA	NA	NA	no	si	16	8	si	18	positivo
+11958	Peru	Control	67	primaria	no fumador	15	2	2-3	no	no	NA	NA	NA	no	si	15	9	si	40	negativo
+11959	Peru	Caso	72	ninguno	no fumador	15	2	2-3	no	no	NA	NA	NA	no	si	15	8	si	72	positivo
+11960	Peru	Caso	62	primaria	no fumador	18	2	2-3	no	no	NA	NA	NA	no	si	19	15	si	40	positivo
+11961	Peru	Caso	39	ninguno	no fumador	16	3	2-3	no	no	NA	NA	NA	no	si	16	10	no	NA	positivo
+11962	Peru	Control	32	primaria	no fumador	20	1	1	NA	si	28	32	4	si	si	21	3	si	21	negativo
+11963	Peru	Caso	52	ninguno	no fumador	18	2	2-3	no	no	NA	NA	NA	no	si	19	5	no	NA	positivo
+11964	Peru	Control	59	ninguno	no fumador	15	1	1	no	no	NA	NA	NA	no	si	18	17	no	NA	positivo
+11965	Peru	Caso	63	primaria	no fumador	19	3	2-3	no	no	NA	NA	NA	no	si	21	11	si	63	positivo
+11966	Peru	Caso	55	primaria	no fumador	14	2	2-3	no	no	NA	NA	NA	no	si	15	11	si	55	positivo
+11967	Peru	Control	56	primaria	no fumador	19	2	2-3	no	no	NA	NA	NA	no	si	20	11	no	NA	negativo
+11968	Peru	Caso	39	primaria	fumador	12	1	2-3	no	no	NA	NA	NA	si	si	16	4	si	32	positivo
+11969	Peru	Caso	62	ninguno	no fumador	16	1	1	no	no	NA	NA	NA	no	si	22	3	si	62	positivo
+11970	Peru	Control	44	primaria	no fumador	16	2	2-3	NA	si	37	37	1	si	si	17	12	si	33	NA
+11971	Peru	Caso	54	secundaria	ex-fumador	26	1	2-3	no	no	NA	NA	NA	no	si	32	1	si	35	negativo
+11972	Peru	Control	58	secundaria	no fumador	20	1	1	no	no	NA	NA	NA	no	si	21	6	si	55	negativo
+11973	Peru	Caso	69	ninguno	no fumador	15	1	1	no	no	NA	NA	NA	no	si	18	8	NA	NA	positivo
+11974	Peru	Control	41	ninguno	no fumador	8	2	2-3	NA	no	NA	NA	NA	no	si	20	6	no	NA	positivo
+11975	Peru	Caso	40	secundaria	no fumador	20	1	1	no	no	NA	NA	NA	no	si	21	2	si	22	positivo
+11976	Peru	Control	43	primaria	no fumador	18	1	1	no	no	NA	NA	NA	no	si	20	4	si	25	negativo
+11977	Peru	Control	56	primaria	no fumador	25	1	1	NA	no	NA	NA	NA	no	si	28	7	si	31	negativo
+11978	Peru	Caso	60	primaria	no fumador	18	2	2-3	no	no	NA	NA	NA	no	si	23	12	si	57	positivo
+11979	Peru	Control	51	primaria	no fumador	17	1	1	no	si	31	42	11	no	si	17	7	si	45	negativo
+11980	Peru	Caso	37	secundaria	no fumador	20	1	1	no	si	37	37	1	no	si	23	1	si	27	positivo
+11981	Peru	Control	51	ticnico	ex-fumador	22	1	1	no	no	NA	NA	NA	si	si	28	2	si	25	negativo
+11982	Peru	Caso	48	secundaria	no fumador	14	3	2-3	no	si	23	36	13	no	si	15	7	si	34	positivo
+11983	Peru	Control	54	primaria	no fumador	17	1	1	NA	no	NA	NA	NA	no	si	18	13	no	NA	negativo
+11984	Peru	Caso	46	secundaria	no fumador	19	1	1	no	si	36	46	10	no	si	20	7	si	40	positivo
+11985	Peru	Control	53	primaria	ex-fumador	25	1	1	no	si	31	31	1	no	si	26	8	si	34	negativo
+11986	Peru	Caso	69	primaria	no fumador	18	1	1	no	no	NA	NA	NA	no	si	19	12	si	57	positivo
+11987	Peru	Control	64	secundaria	no fumador	26	1	1	no	no	NA	NA	NA	no	si	28	4	si	37	negativo
+11988	Peru	Caso	39	primaria	no fumador	14	1	2-3	no	no	NA	NA	NA	no	si	19	5	si	20	positivo
+11989	Peru	Control	60	primaria	no fumador	22	1	1	no	no	NA	NA	NA	si	si	23	3	si	50	negativo
+11990	Peru	Control	78	ninguno	no fumador	16	1	2-3	no	no	NA	NA	NA	no	si	16	11	si	40	negativo
+11991	Peru	Caso	63	ninguno	no fumador	14	1	2-3	no	no	NA	NA	NA	no	si	20	15	si	63	positivo
+11992	Peru	Caso	36	secundaria	no fumador	17	2	2-3	no	si	24	35	6	no	si	18	5	si	24	positivo
+11993	Peru	Control	52	primaria	no fumador	14	2	2-3	NA	no	NA	NA	NA	si	si	16	15	si	40	negativo
+11994	Peru	Caso	59	ninguno	no fumador	24	1	1	no	no	NA	NA	NA	no	si	25	4	no	NA	positivo
+11995	Peru	Control	42	primaria	no fumador	15	3	4-10	NA	si	18	32	11	si	si	20	12	si	21	negativo
+11996	Peru	Caso	49	ninguno	no fumador	14	2	2-3	no	si	37	38	1	no	si	15	8	no	NA	positivo
+11997	Peru	Control	54	primaria	no fumador	16	1	2-3	no	no	NA	NA	NA	si	si	17	7	si	39	negativo
+11998	Peru	Caso	66	ninguno	no fumador	18	2	2-3	no	no	NA	NA	NA	no	si	20	4	si	28	positivo
+11999	Peru	Control	40	secundaria	no fumador	19	1	2-3	no	no	NA	NA	NA	no	si	19	1	si	28	negativo
+12000	Peru	Control	53	primaria	no fumador	18	1	1	no	no	NA	NA	NA	no	si	19	8	no	NA	NA
+12001	Peru	Caso	52	ninguno	no fumador	15	1	1	no	no	NA	NA	NA	no	si	15	4	si	21	positivo
+12002	Peru	Caso	65	primaria	no fumador	18	3	4-10	no	no	NA	NA	NA	no	si	19	8	si	65	positivo
+12003	Peru	Caso	46	ninguno	no fumador	16	3	2-3	no	si	16	44	27	no	si	19	8	si	42	positivo
+12004	Peru	Caso	39	secundaria	no fumador	15	2	2-3	no	si	34	39	4	no	si	16	5	si	28	positivo
+12005	Peru	Control	35	primaria	no fumador	13	2	4-10	NA	si	14	21	7	no	si	15	5	si	27	NA
+12006	Peru	Caso	78	ninguno	no fumador	22	2	2-3	no	no	NA	NA	NA	no	si	25	10	no	NA	positivo
+12007	Peru	Control	68	primaria	no fumador	29	1	1	no	no	NA	NA	NA	no	no	NA	NA	si	25	positivo
+12008	Peru	Caso	49	primaria	no fumador	19	1	1	NA	no	NA	NA	NA	no	si	20	7	no	NA	positivo
+12009	Peru	Control	37	ticnico	no fumador	21	1	1	no	no	NA	NA	NA	no	si	22	3	si	22	negativo
+12010	Peru	Caso	39	primaria	no fumador	14	1	2-3	NA	si	21	31	10	no	si	15	8	si	18	positivo
+12011	Peru	Control	67	primaria	no fumador	36	1	1	no	no	NA	NA	NA	no	si	37	4	si	51	negativo
+12012	Peru	Control	68	primaria	no fumador	23	3	2-3	no	no	NA	NA	NA	no	si	23	8	si	46	negativo
+12013	Peru	Control	30	primaria	no fumador	20	1	2-3	no	si	29	30	1	no	si	26	1	si	26	negativo
+12014	Peru	Caso	37	secundaria	no fumador	16	2	4-10	NA	no	NA	NA	NA	no	si	18	2	si	37	positivo
+12015	Peru	Caso	48	ticnico	no fumador	25	1	2-3	no	no	NA	NA	NA	no	si	31	2	si	31	positivo
+12016	Peru	Caso	59	primaria	ex-fumador	15	1	2-3	no	no	NA	NA	NA	no	si	16	6	no	NA	positivo
+12017	Peru	Control	35	universitario	no fumador	20	1	1	no	no	NA	NA	NA	no	si	20	5	si	20	NA
+12018	Peru	Caso	84	primaria	no fumador	15	2	2-3	no	no	NA	NA	NA	no	si	15	7	si	60	positivo
+12019	Peru	Caso	37	ninguno	no fumador	17	1	1	NA	no	NA	NA	NA	no	si	18	8	si	19	positivo
+12020	Peru	Control	42	primaria	no fumador	16	2	2-3	no	no	NA	NA	NA	no	si	20	8	si	22	negativo
+12021	Peru	Caso	44	ninguno	no fumador	12	3	4-10	no	no	NA	NA	NA	no	si	13	3	no	NA	positivo
+12022	Peru	Caso	40	ninguno	no fumador	11	1	2-3	NA	no	NA	NA	NA	no	si	21	5	si	27	positivo
+12023	Peru	Caso	60	ninguno	no fumador	15	2	2-3	no	no	NA	NA	NA	no	si	16	5	no	NA	positivo
+12024	Peru	Control	33	secundaria	no fumador	17	1	1	NA	si	28	33	5	no	si	18	3	si	24	negativo
+12025	Peru	Caso	48	secundaria	fumador	20	1	4-10	no	si	20	48	28	no	si	22	2	si	23	positivo
+12026	Peru	Control	82	primaria	no fumador	27	1	1	NA	no	NA	NA	NA	no	si	28	5	no	NA	negativo
+12027	Peru	Caso	47	primaria	no fumador	17	1	2-3	NA	si	33	45	12	no	si	20	9	no	NA	positivo
+12028	Peru	Control	21	ticnico	no fumador	19	1	2-3	no	no	NA	NA	NA	si	no	NA	NA	no	NA	negativo
+12029	Peru	Caso	49	secundaria	no fumador	26	3	2-3	no	si	35	35	1	no	si	39	2	si	37	positivo
+12030	Peru	Control	71	primaria	no fumador	17	1	1	no	no	NA	NA	NA	no	si	18	15	no	NA	negativo
+12031	Peru	Caso	46	secundaria	ex-fumador	16	1	4-10	no	si	23	27	4	no	si	17	4	si	28	positivo
+12032	Peru	Control	35	secundaria	no fumador	16	2	2-3	no	no	NA	NA	NA	no	si	19	2	si	24	NA
+12033	Peru	Caso	38	primaria	no fumador	13	2	2-3	no	no	NA	NA	NA	no	si	15	9	si	22	positivo
+12034	Peru	Caso	28	secundaria	no fumador	15	1	1	NA	si	16	27	8	no	si	16	5	si	16	positivo
+12035	Peru	Control	60	primaria	no fumador	31	1	1	no	no	NA	NA	NA	no	si	32	9	si	48	NA
+12036	Peru	Caso	52	ninguno	no fumador	16	2	2-3	no	no	NA	NA	NA	no	si	17	11	si	50	positivo
+12037	Peru	Control	28	secundaria	no fumador	17	1	2-3	no	no	NA	NA	NA	no	si	17	1	no	NA	positivo
+12038	Peru	Caso	53	ninguno	no fumador	19	1	1	NA	no	NA	NA	NA	no	si	19	5	si	50	positivo
+12039	Peru	Control	39	primaria	no fumador	21	3	4-10	NA	no	NA	NA	NA	no	si	27	4	si	27	negativo
+12040	Peru	Caso	35	primaria	no fumador	13	2	2-3	NA	no	NA	NA	NA	no	si	15	12	si	32	positivo
+12041	Peru	Caso	53	primaria	no fumador	17	1	1	no	si	31	31	1	si	si	19	8	si	25	positivo
+12042	Peru	Control	42	primaria	no fumador	20	2	2-3	no	no	NA	NA	NA	no	si	22	4	si	20	negativo
+12043	Peru	Caso	28	primaria	no fumador	17	1	2-3	NA	si	26	28	2	no	si	17	3	si	17	positivo
+12044	Peru	Control	29	secundaria	no fumador	19	1	1	no	si	26	26	1	si	si	22	3	si	22	negativo
+12045	Peru	Caso	43	primaria	no fumador	18	2	4-10	NA	no	NA	NA	NA	si	si	32	2	si	36	positivo
+12046	Peru	Control	55	ninguno	no fumador	17	1	4-10	no	no	NA	NA	NA	no	si	19	5	si	28	NA
+12047	Peru	Caso	41	primaria	no fumador	14	2	2-3	no	si	14	26	12	no	si	14	1	si	26	positivo
+12048	Peru	Control	33	secundaria	fumador	16	3	4-10	no	si	20	33	13	no	si	20	4	si	24	negativo
+12049	Peru	Caso	54	secundaria	no fumador	15	2	2-3	no	si	23	42	13	no	si	17	7	si	30	positivo
+12050	Peru	Control	42	secundaria	no fumador	14	3	2-3	no	no	NA	NA	NA	no	si	22	5	si	25	negativo
+12051	Peru	Control	33	secundaria	no fumador	6	2	4-10	no	si	25	27	2	si	si	18	4	si	18	negativo
+12052	Peru	Caso	60	ninguno	no fumador	12	1	2-3	no	no	NA	NA	NA	no	si	19	12	no	NA	positivo
+12053	Peru	Control	49	primaria	no fumador	16	4	>=100	NA	no	NA	NA	NA	no	si	18	11	si	18	positivo
+12054	Peru	Caso	50	ninguno	no fumador	14	1	1	NA	no	NA	NA	NA	no	si	17	11	si	34	positivo
+12055	Peru	Caso	43	ninguno	no fumador	15	1	1	no	no	NA	NA	NA	no	si	19	9	si	43	positivo
+12056	Peru	Control	51	primaria	no fumador	19	1	1	no	no	NA	NA	NA	no	si	20	5	si	40	negativo
+12057	Peru	Caso	45	primaria	no fumador	12	1	2-3	no	si	26	36	10	si	si	16	8	si	26	positivo
+12058	Peru	Control	44	primaria	no fumador	18	2	2-3	no	no	NA	NA	NA	no	si	20	4	si	22	negativo
+12059	Peru	Caso	61	ninguno	no fumador	15	1	2-3	no	no	NA	NA	NA	no	si	16	11	si	38	negativo
+12060	Peru	Control	70	primaria	no fumador	18	1	1	no	no	NA	NA	NA	no	si	20	7	no	NA	negativo
+12061	Peru	Caso	54	secundaria	no fumador	19	1	2-3	no	no	NA	NA	NA	no	si	22	6	si	28	positivo
+12062	Peru	Caso	60	primaria	no fumador	16	1	1	no	no	NA	NA	NA	no	si	16	9	si	38	positivo
+12063	Peru	Control	48	primaria	no fumador	20	2	2-3	no	no	NA	NA	NA	no	si	21	6	si	36	positivo
+12064	Peru	Control	53	primaria	no fumador	23	1	2-3	no	no	NA	NA	NA	no	si	25	3	si	40	NA
+12065	Peru	Caso	72	ninguno	no fumador	14	4	4-10	no	no	NA	NA	NA	no	si	18	7	no	NA	positivo
+12066	Peru	Caso	43	primaria	no fumador	19	1	1	no	si	32	36	4	no	si	20	6	si	32	positivo
+12067	Peru	Control	49	primaria	no fumador	16	1	1	no	no	NA	NA	NA	no	si	16	10	si	33	negativo
+12068	Peru	Control	43	primaria	no fumador	12	1	1	NA	no	NA	NA	NA	si	si	17	5	si	38	negativo
+12069	Peru	Caso	48	primaria	no fumador	18	2	2-3	NA	no	NA	NA	NA	no	si	20	8	no	NA	positivo
+12070	Peru	Control	37	secundaria	no fumador	18	3	2-3	no	no	NA	NA	NA	no	si	30	3	si	35	negativo
+12071	Peru	Caso	45	ninguno	no fumador	14	2	2-3	no	si	26	34	6	no	si	16	8	si	20	positivo
+12072	Peru	Control	68	primaria	no fumador	22	1	1	no	no	NA	NA	NA	no	si	26	4	si	35	positivo
+12073	Peru	Caso	74	primaria	no fumador	20	1	1	no	no	NA	NA	NA	no	si	21	8	no	NA	positivo
+12074	Peru	Control	53	primaria	no fumador	19	2	2-3	NA	no	NA	NA	NA	no	si	20	7	si	51	negativo
+12075	Peru	Caso	57	ninguno	no fumador	19	2	2-3	no	no	NA	NA	NA	no	si	19	11	si	45	positivo
+12076	Peru	Control	59	ninguno	no fumador	17	2	2-3	no	no	NA	NA	NA	no	si	19	11	no	NA	positivo
+12077	Peru	Caso	64	ninguno	no fumador	13	2	2-3	NA	no	NA	NA	NA	no	si	15	4	no	NA	positivo
+12078	Peru	Control	64	primaria	no fumador	14	2	2-3	no	no	NA	NA	NA	no	si	14	8	si	42	negativo
+12079	Peru	Caso	46	primaria	no fumador	15	1	2-3	no	si	30	34	4	si	si	16	7	si	34	positivo
+12080	Peru	Control	46	primaria	no fumador	15	1	2-3	no	no	NA	NA	NA	no	no	NA	NA	si	20	negativo
+12081	Peru	Caso	45	primaria	no fumador	14	1	2-3	no	no	NA	NA	NA	no	si	14	2	si	41	positivo
+12082	Peru	Caso	46	ninguno	no fumador	15	3	2-3	no	no	NA	NA	NA	no	si	16	5	no	NA	positivo
+12083	Peru	Control	31	primaria	no fumador	17	1	2-3	no	no	NA	NA	NA	no	si	18	4	no	NA	negativo
+12084	Peru	Control	47	secundaria	no fumador	18	2	2-3	no	no	NA	NA	NA	si	si	27	3	no	NA	negativo
+12085	Peru	Caso	42	primaria	no fumador	22	1	2-3	no	si	26	38	10	no	si	26	2	si	25	positivo
+12086	Peru	Control	44	secundaria	no fumador	16	3	4-10	NA	no	NA	NA	NA	no	si	19	4	si	35	positivo
+12087	Peru	Caso	48	primaria	no fumador	15	1	2-3	NA	no	NA	NA	NA	no	si	18	8	si	45	positivo
+12088	Peru	Control	42	ticnico	ex-fumador	20	3	4-10	no	si	27	41	14	no	si	27	3	si	32	NA
+12089	Peru	Caso	28	secundaria	no fumador	20	1	2-3	NA	si	25	27	2	no	si	21	3	si	21	positivo
+12090	Peru	Control	49	primaria	no fumador	16	1	2-3	NA	no	NA	NA	NA	no	si	21	2	si	34	NA
+12091	Peru	Caso	61	primaria	no fumador	14	1	1	no	no	NA	NA	NA	no	si	24	10	si	40	positivo
+12092	Peru	Control	41	primaria	no fumador	13	1	2-3	NA	si	35	35	1	no	si	23	4	si	23	positivo
+12093	Peru	Control	67	secundaria	no fumador	19	2	4-10	no	no	NA	NA	NA	si	si	21	6	no	NA	positivo
+12094	Peru	Caso	41	primaria	no fumador	28	1	1	no	si	35	35	1	no	si	29	2	si	29	positivo
+12095	Peru	Control	60	ninguno	no fumador	16	2	2-3	no	no	NA	NA	NA	no	si	20	7	no	NA	NA
+12096	Peru	Caso	43	ninguno	no fumador	16	1	1	NA	si	23	23	1	no	si	17	5	si	24	positivo
+12097	Peru	Control	53	primaria	no fumador	20	1	1	NA	no	NA	NA	NA	no	si	22	4	si	25	positivo
+12098	Peru	Control	53	ninguno	no fumador	15	2	2-3	no	no	NA	NA	NA	no	si	23	6	si	40	negativo
+12099	Peru	Control	52	primaria	no fumador	18	1	1	no	si	42	45	3	no	si	18	6	si	46	positivo
+12100	Peru	Caso	51	primaria	no fumador	14	1	1	NA	no	NA	NA	NA	no	si	15	2	no	NA	negativo
+12101	Peru	Control	61	secundaria	no fumador	25	1	2-3	no	no	NA	NA	NA	no	si	28	10	si	49	negativo
+12102	Peru	Control	43	ninguno	no fumador	13	5	4-10	no	no	NA	NA	NA	no	si	15	8	no	NA	negativo
+12103	Peru	Caso	62	primaria	no fumador	14	4	4-10	no	si	39	45	6	no	si	24	7	si	40	positivo
+12104	Peru	Control	34	primaria	no fumador	12	2	2-3	NA	no	NA	NA	NA	no	si	17	8	si	20	negativo
+12105	Peru	Caso	50	secundaria	no fumador	10	1	2-3	no	no	NA	NA	NA	si	si	29	4	si	29	positivo
+12106	Peru	Control	50	primaria	no fumador	19	1	1	no	no	NA	NA	NA	no	si	19	8	no	NA	negativo
+12107	Peru	Control	36	primaria	no fumador	21	1	1	no	no	NA	NA	NA	si	si	21	7	si	29	negativo
+12108	Peru	Control	57	secundaria	no fumador	22	1	1	NA	no	NA	NA	NA	si	si	24	2	si	30	negativo
+12109	Peru	Caso	56	primaria	no fumador	25	1	2-3	no	no	NA	NA	NA	no	no	NA	NA	si	32	positivo
+12110	Peru	Caso	33	ticnico	no fumador	19	2	2-3	no	no	NA	NA	NA	no	si	30	3	si	25	positivo
+12111	Peru	Control	70	ninguno	no fumador	17	2	2-3	NA	no	NA	NA	NA	no	si	18	11	no	NA	NA
+12112	Peru	Caso	61	primaria	no fumador	19	1	1	no	no	NA	NA	NA	no	si	21	9	si	61	positivo
+12113	Peru	Control	46	ninguno	no fumador	17	1	1	no	no	NA	NA	NA	no	si	18	9	si	48	negativo
+12114	Peru	Control	41	secundaria	no fumador	19	3	2-3	no	no	NA	NA	NA	no	si	20	7	si	21	positivo
+12115	Peru	Caso	63	universitario	no fumador	30	1	1	NA	no	NA	NA	NA	si	no	NA	NA	si	30	negativo
+12116	Peru	Control	41	secundaria	no fumador	15	1	1	no	no	NA	NA	NA	no	si	15	8	no	NA	negativo
+12117	Peru	Caso	49	primaria	no fumador	20	2	2-3	NA	no	NA	NA	NA	no	si	29	4	si	29	positivo
+12118	Peru	Control	65	primaria	no fumador	13	1	2-3	no	no	NA	NA	NA	no	si	14	6	si	55	positivo
+12119	Peru	Control	40	ticnico	no fumador	27	1	1	no	no	NA	NA	NA	si	si	29	2	si	27	negativo
+12120	Peru	Caso	36	primaria	no fumador	9	1	2-3	no	no	NA	NA	NA	no	si	15	5	si	15	positivo
+12121	Peru	Control	46	primaria	no fumador	15	1	2-3	NA	si	43	45	2	si	si	19	14	si	36	negativo
+12122	Peru	Caso	56	ninguno	no fumador	18	1	1	no	no	NA	NA	NA	no	si	18	8	no	NA	positivo
+12123	Peru	Control	66	primaria	no fumador	15	2	2-3	NA	no	NA	NA	NA	no	si	19	7	no	NA	positivo
+12124	Peru	Control	37	secundaria	no fumador	22	1	1	no	no	NA	NA	NA	no	si	23	3	si	25	negativo
+12125	Peru	Caso	50	primaria	no fumador	16	2	2-3	no	si	24	24	1	no	si	16	5	si	40	positivo
+12126	Peru	Control	37	primaria	no fumador	16	4	4-10	no	no	NA	NA	NA	no	si	19	8	si	19	negativo
+12127	Peru	Caso	40	secundaria	no fumador	14	3	4-10	NA	no	NA	NA	NA	no	si	16	3	si	38	positivo
+12128	Peru	Caso	42	secundaria	no fumador	15	1	2-3	NA	si	19	20	1	no	si	17	7	si	36	positivo
+12129	Peru	Control	38	secundaria	no fumador	16	1	2-3	NA	si	27	38	11	no	si	16	4	si	16	negativo
+12130	Peru	Caso	41	primaria	no fumador	17	2	2-3	NA	no	NA	NA	NA	no	si	18	10	si	21	positivo
+12131	Peru	Control	35	secundaria	no fumador	24	2	4-10	no	si	36	37	1	no	si	25	2	no	NA	negativo
+12132	Peru	Caso	45	secundaria	no fumador	18	4	4-10	NA	si	28	42	14	no	si	18	8	si	27	positivo
+12133	Peru	Control	54	primaria	no fumador	16	2	4-10	NA	no	NA	NA	NA	no	si	19	7	si	19	negativo
+12134	Peru	Caso	53	primaria	no fumador	20	3	4-10	no	no	NA	NA	NA	no	si	23	5	si	40	negativo
+12135	Peru	Control	35	secundaria	no fumador	26	1	1	no	no	NA	NA	NA	no	si	27	2	si	30	negativo
+12136	Peru	Caso	59	primaria	no fumador	15	1	1	NA	no	NA	NA	NA	no	si	16	12	si	36	negativo
+12137	Peru	Caso	47	primaria	no fumador	18	1	1	NA	no	NA	NA	NA	no	si	20	7	si	23	positivo
+12138	Peru	Caso	47	primaria	no fumador	26	3	2-3	no	no	NA	NA	NA	no	si	29	3	no	NA	positivo
+12139	Peru	Control	38	ticnico	no fumador	18	1	1	no	si	18	30	12	no	si	30	4	si	34	negativo
+12140	Peru	Control	64	primaria	no fumador	19	3	4-10	NA	no	NA	NA	NA	no	si	23	4	si	58	negativo
+12141	Peru	Caso	52	primaria	no fumador	14	2	4-10	NA	si	35	42	7	no	si	24	5	NA	NA	positivo
+12142	Peru	Caso	55	ninguno	no fumador	17	1	1	no	no	NA	NA	NA	si	si	17	7	no	NA	positivo
+12143	Peru	Caso	47	universitario	no fumador	38	1	1	no	no	NA	NA	NA	no	si	40	1	si	39	positivo
+12144	Peru	Control	32	universitario	no fumador	18	1	1	no	no	NA	NA	NA	si	si	25	2	si	25	negativo
+12145	Peru	Control	72	secundaria	no fumador	20	1	2-3	no	no	NA	NA	NA	no	si	22	15	si	71	negativo
+12146	Peru	Caso	64	primaria	no fumador	15	4	4-10	no	no	NA	NA	NA	no	si	17	7	si	64	positivo
+12147	Peru	Control	42	secundaria	no fumador	21	3	4-10	NA	no	NA	NA	NA	no	si	22	4	si	34	negativo
+12148	Peru	Caso	43	ticnico	no fumador	25	1	2-3	no	no	NA	NA	NA	no	si	26	2	no	NA	positivo
+12149	Peru	Control	33	primaria	no fumador	15	1	4-10	no	no	NA	NA	NA	si	si	16	8	si	16	positivo
+12150	Peru	Caso	43	ticnico	no fumador	21	1	1	no	no	NA	NA	NA	no	si	22	5	si	22	negativo
+12151	Peru	Control	67	ninguno	no fumador	16	1	1	no	no	NA	NA	NA	no	si	18	12	no	NA	negativo
+12152	Peru	Caso	36	secundaria	no fumador	18	4	4-10	NA	si	21	36	15	no	si	19	5	no	NA	positivo
+12153	Peru	Caso	59	ninguno	no fumador	14	2	2-3	no	no	NA	NA	NA	no	si	25	9	no	NA	positivo
+12154	Peru	Caso	46	secundaria	ex-fumador	22	2	2-3	no	si	34	36	2	no	si	28	4	si	36	positivo
+12155	Peru	Control	52	primaria	no fumador	16	2	2-3	no	no	NA	NA	NA	no	si	17	10	si	40	negativo
+12156	Peru	Caso	37	primaria	no fumador	14	2	2-3	no	no	NA	NA	NA	si	si	17	5	no	NA	positivo
+12157	Peru	Control	48	universitario	no fumador	26	1	1	no	no	NA	NA	NA	no	si	29	2	si	43	positivo
+12158	Peru	Caso	37	secundaria	ex-fumador	16	2	2-3	no	si	30	35	5	si	si	17	6	si	31	positivo
+12159	Peru	Control	40	secundaria	no fumador	15	2	2-3	no	no	NA	NA	NA	no	si	16	8	si	19	negativo
+12160	Peru	Caso	54	primaria	no fumador	16	1	1	NA	no	NA	NA	NA	no	si	19	14	si	54	positivo
+12161	Peru	Control	63	ninguno	no fumador	16	3	2-3	no	no	NA	NA	NA	no	si	16	3	si	41	negativo
+12162	Peru	Caso	34	ticnico	no fumador	17	1	2-3	NA	no	NA	NA	NA	no	si	22	2	si	22	NA
+12163	Peru	Control	64	primaria	no fumador	23	2	2-3	no	no	NA	NA	NA	no	si	24	10	si	54	negativo
+12164	Peru	Caso	59	secundaria	no fumador	17	1	1	no	no	NA	NA	NA	no	si	18	7	si	59	positivo
+12165	Peru	Control	43	secundaria	no fumador	23	1	2-3	no	no	NA	NA	NA	no	si	27	4	si	32	negativo
+12166	Peru	Control	48	secundaria	no fumador	19	2	2-3	no	no	NA	NA	NA	no	si	22	4	si	35	negativo
+12167	Peru	Caso	38	secundaria	fumador	19	4	4-10	NA	no	NA	NA	NA	no	si	20	6	si	21	positivo
+12168	Peru	Control	61	primaria	no fumador	19	2	2-3	no	no	NA	NA	NA	no	si	20	6	si	28	negativo
+12169	Peru	Caso	33	primaria	no fumador	18	2	2-3	no	si	23	33	9	no	si	18	4	si	33	positivo
+12170	Peru	Control	57	secundaria	no fumador	20	2	2-3	no	no	NA	NA	NA	no	si	23	6	si	44	negativo
+12171	Peru	Caso	64	primaria	no fumador	18	2	2-3	NA	no	NA	NA	NA	no	si	27	1	si	41	positivo
+12172	Peru	Caso	38	secundaria	ex-fumador	21	2	4-10	NA	no	NA	NA	NA	no	si	21	4	si	30	positivo
+12173	Peru	Control	44	universitario	no fumador	23	1	1	no	no	NA	NA	NA	si	si	25	4	si	24	negativo
+12174	Peru	Caso	45	secundaria	no fumador	18	4	4-10	NA	si	29	32	3	no	si	20	6	si	41	positivo
+12175	Peru	Caso	48	secundaria	no fumador	19	1	2-3	no	no	NA	NA	NA	si	si	24	2	si	35	positivo
+12176	Peru	Control	57	secundaria	no fumador	17	1	1	NA	no	NA	NA	NA	no	si	21	7	si	40	negativo
+12177	Peru	Caso	66	primaria	no fumador	17	1	2-3	NA	no	NA	NA	NA	no	si	20	10	si	65	positivo
+12178	Peru	Control	54	primaria	no fumador	16	1	1	no	no	NA	NA	NA	no	si	20	15	si	53	negativo
+12179	Peru	Caso	61	ninguno	no fumador	17	1	1	no	no	NA	NA	NA	no	si	17	7	no	NA	positivo
+12180	Peru	Control	61	secundaria	no fumador	22	1	1	no	no	NA	NA	NA	no	si	25	6	si	42	negativo
+12181	Peru	Caso	37	primaria	no fumador	18	1	2-3	no	no	NA	NA	NA	no	si	18	4	si	37	positivo
+12182	Peru	Control	43	ninguno	no fumador	15	1	2-3	NA	no	NA	NA	NA	no	si	18	8	si	40	negativo
+12183	Peru	Caso	42	secundaria	no fumador	20	2	4-10	no	no	NA	NA	NA	no	si	21	3	si	32	positivo
+12184	Peru	Control	49	ninguno	no fumador	12	2	2-3	NA	no	NA	NA	NA	no	si	14	6	no	NA	negativo
+12185	Peru	Caso	40	ninguno	no fumador	15	1	1	no	no	NA	NA	NA	no	si	20	5	si	35	positivo
+12186	Peru	Control	65	ninguno	no fumador	15	2	2-3	no	no	NA	NA	NA	no	si	20	7	si	63	negativo
+12187	Peru	Caso	55	ninguno	no fumador	15	1	1	no	no	NA	NA	NA	no	si	19	9	no	NA	positivo
+12188	Peru	Control	55	primaria	no fumador	18	2	2-3	no	no	NA	NA	NA	no	si	20	10	si	20	positivo
+12189	Peru	Caso	40	primaria	no fumador	13	2	4-10	NA	no	NA	NA	NA	no	si	14	11	si	14	positivo
+12190	Peru	Caso	37	primaria	no fumador	14	2	4-10	no	no	NA	NA	NA	no	si	15	5	no	NA	NA
+12191	Peru	Control	41	ticnico	no fumador	25	1	1	no	no	NA	NA	NA	no	si	27	3	si	33	negativo
+12192	Peru	Caso	36	secundaria	no fumador	18	2	2-3	no	no	NA	NA	NA	no	si	18	6	si	28	positivo
+12193	Peru	Control	46	ticnico	no fumador	27	1	1	no	si	27	30	3	no	si	30	3	si	30	negativo
+12194	Peru	Caso	68	primaria	no fumador	14	2	2-3	no	no	NA	NA	NA	no	si	20	11	si	55	positivo
+12195	Peru	Caso	34	secundaria	ex-fumador	6	3	4-10	NA	si	22	24	2	si	si	21	4	no	NA	positivo
+12196	Peru	Caso	55	primaria	no fumador	15	2	2-3	NA	no	NA	NA	NA	no	si	16	6	si	35	positivo
+12197	Peru	Control	56	secundaria	no fumador	20	1	1	NA	no	NA	NA	NA	no	si	21	4	si	38	negativo
+12198	Peru	Caso	36	secundaria	no fumador	14	5	4-10	no	no	NA	NA	NA	no	si	22	3	si	33	positivo
+12199	Peru	Caso	55	ninguno	no fumador	17	2	2-3	no	no	NA	NA	NA	no	si	28	4	si	NA	positivo
+12200	Peru	Control	40	ticnico	no fumador	14	3	4-10	NA	si	18	26	2	no	si	17	6	si	18	negativo
+12201	Peru	Caso	72	ninguno	no fumador	16	1	1	no	no	NA	NA	NA	no	si	17	4	si	72	positivo
+12202	Peru	Caso	63	primaria	no fumador	21	3	4-10	no	no	NA	NA	NA	no	si	21	9	si	50	positivo
+12203	Peru	Control	51	primaria	no fumador	19	1	1	no	no	NA	NA	NA	no	si	19	3	si	31	negativo
+12204	Peru	Caso	46	secundaria	no fumador	16	3	2-3	NA	si	25	26	1	no	si	16	9	si	25	positivo
+12205	Peru	Control	51	universitario	no fumador	24	4	4-10	no	no	NA	NA	NA	no	si	38	3	si	34	NA
+12206	Peru	Control	59	ninguno	no fumador	14	5	11-20	no	no	NA	NA	NA	no	si	16	9	si	30	NA
+12207	Peru	Caso	68	ninguno	no fumador	28	1	1	NA	no	NA	NA	NA	si	si	28	8	no	NA	positivo
+12208	Peru	Caso	60	ninguno	no fumador	14	2	2-3	no	no	NA	NA	NA	no	si	16	7	no	NA	positivo
+12209	Peru	Control	57	universitario	no fumador	33	1	1	no	no	NA	NA	NA	no	si	35	1	si	34	negativo
+12210	Peru	Control	42	ninguno	no fumador	18	2	2-3	NA	no	NA	NA	NA	no	si	18	11	si	NA	negativo
+12211	Peru	Control	47	primaria	no fumador	15	1	2-3	NA	si	32	36	4	no	si	24	3	si	35	negativo
+12212	Espana	Caso	46	ninguno	no fumador	22	1	1	si	no	NA	NA	NA	si	si	23	6	si	46	NA
+12213	Espana	Caso	58	primaria	no fumador	21	3	2-3	no	no	NA	NA	NA	si	si	28	1	si	37	NA
+12216	Espana	Caso	69	ninguno	no fumador	23	2	2-3	no	no	NA	NA	NA	no	no	NA	NA	si	69	NA
+12221	Espana	Caso	30	primaria	fumador	18	2	11-20	si	si	18	29	9	si	si	20	4	si	30	NA
+12225	Espana	Caso	70	primaria	no fumador	19	1	1	si	no	NA	NA	NA	no	si	19	2	si	70	NA
+12226	Espana	Caso	55	primaria	no fumador	27	1	1	no	si	36	45	9	no	si	28	4	si	55	positivo
+12227	Espana	Caso	32	secundaria	fumador	16	2	2-3	no	no	NA	NA	NA	si	si	21	2	si	32	NA
+12229	Espana	Caso	22	primaria	fumador	16	1	1	si	si	17	20	3	no	si	17	3	si	NA	positivo
+12230	Espana	Caso	53	primaria	no fumador	18	1	1	si	no	NA	NA	NA	si	si	19	8	si	53	NA
+12232	Espana	Caso	46	ninguno	no fumador	24	1	1	si	no	NA	NA	NA	no	si	25	3	si	46	positivo
+12235	Espana	Caso	44	ninguno	no fumador	20	1	1	si	si	29	44	13	no	si	21	8	si	44	negativo
+12236	Espana	Caso	38	primaria	no fumador	17	1	1	no	no	NA	NA	NA	no	si	18	4	si	38	NA
+12239	Espana	Caso	32	ticnico	no fumador	18	1	1	no	si	31	32	1	no	si	19	5	si	32	NA
+12240	Espana	Caso	40	universitario	no fumador	26	1	1	no	si	26	40	14	si	si	28	2	si	40	positivo
+12242	Espana	Caso	40	primaria	fumador	17	3	4-10	si	si	17	33	11	si	si	38	1	si	35	NA
+12249	Espana	Caso	68	primaria	no fumador	18	1	1	no	no	NA	NA	NA	no	si	18	3	NA	NA	positivo
+12250	Espana	Caso	53	primaria	no fumador	18	1	1	si	no	NA	NA	NA	si	si	19	7	si	53	positivo
+12254	Espana	Caso	45	primaria	no fumador	25	1	1	no	no	NA	NA	NA	si	si	26	3	si	45	positivo
+12255	Espana	Caso	35	primaria	no fumador	18	1	1	no	no	NA	NA	NA	no	si	21	1	si	35	positivo
+12256	Espana	Caso	52	ninguno	no fumador	16	1	1	no	si	38	48	10	no	si	23	9	si	52	positivo
+12257	Espana	Caso	49	secundaria	no fumador	21	1	2-3	no	no	NA	NA	NA	si	si	24	2	si	49	positivo
+12260	Espana	Caso	65	primaria	no fumador	22	1	1	no	no	NA	NA	NA	no	si	23	2	si	65	NA
+12265	Espana	Caso	56	primaria	no fumador	21	1	1	si	no	NA	NA	NA	si	si	23	1	si	56	positivo
+12269	Espana	Caso	53	ninguno	no fumador	17	1	1	no	no	NA	NA	NA	si	si	18	4	si	44	positivo
+12270	Espana	Caso	74	primaria	no fumador	27	1	1	no	no	NA	NA	NA	no	si	28	2	NA	NA	positivo
+12275	Espana	Caso	73	primaria	no fumador	25	1	1	si	no	NA	NA	NA	si	si	26	8	si	71	negativo
+12276	Espana	Caso	53	primaria	no fumador	22	1	1	si	no	NA	NA	NA	no	si	23	2	si	53	positivo
+12277	Espana	Caso	63	ninguno	no fumador	15	1	1	no	no	NA	NA	NA	si	si	17	8	si	63	positivo
+12278	Espana	Caso	69	primaria	no fumador	17	1	2-3	no	no	NA	NA	NA	si	si	17	6	si	69	positivo
+12286	Espana	Caso	35	ticnico	fumador	22	1	1	si	si	22	30	8	si	si	23	2	si	26	NA
+12287	Espana	Caso	56	primaria	no fumador	15	4	11-20	si	si	33	37	4	no	si	17	6	si	35	NA
+12288	Espana	Caso	65	primaria	no fumador	18	2	2-3	si	no	NA	NA	NA	si	si	19	5	si	65	positivo
+12289	Espana	Caso	41	primaria	no fumador	20	1	1	no	si	28	41	12	no	si	21	4	si	40	positivo
+12290	Espana	Caso	47	primaria	no fumador	24	1	1	no	si	24	37	13	no	si	25	5	si	NA	positivo
+12291	Espana	Caso	39	primaria	no fumador	21	2	2-3	si	si	30	39	7	no	si	23	3	si	39	NA
+12293	Espana	Caso	35	secundaria	fumador	17	2	2-3	si	no	NA	NA	NA	no	si	27	2	si	35	NA
+12294	Espana	Control	44	primaria	no fumador	22	1	1	no	si	24	33	9	si	si	23	4	si	44	NA
+12295	Espana	Control	32	secundaria	no fumador	22	2	2-3	si	si	22	24	2	no	si	24	1	si	24	NA
+12296	Espana	Control	38	ninguno	ex-fumador	28	1	2-3	si	no	NA	NA	NA	no	si	36	1	no	NA	NA
+12297	Espana	Control	37	ticnico	ex-fumador	20	1	2-3	si	si	25	36	10	no	si	24	1	si	37	NA
+12298	Espana	Control	56	primaria	no fumador	24	1	1	no	no	NA	NA	NA	no	si	26	2	si	56	NA
+12299	Espana	Control	61	primaria	no fumador	19	1	1	no	no	NA	NA	NA	si	si	20	1	si	61	NA
+12300	Espana	Control	68	primaria	no fumador	27	1	1	si	no	NA	NA	NA	no	si	27	4	si	68	NA
+12301	Espana	Control	69	ninguno	no fumador	34	1	1	si	no	NA	NA	NA	si	si	35	2	si	69	NA
+12302	Espana	Control	62	ticnico	no fumador	22	1	1	si	no	NA	NA	NA	no	si	22	6	no	NA	NA
+12303	Espana	Control	66	ninguno	no fumador	19	1	1	no	no	NA	NA	NA	no	si	20	2	si	66	NA
+12304	Espana	Control	23	secundaria	fumador	20	1	1	no	no	NA	NA	NA	no	si	21	1	no	NA	negativo
+12305	Espana	Control	71	primaria	no fumador	24	1	1	no	no	NA	NA	NA	no	si	25	2	no	NA	positivo
+12306	Espana	Control	50	primaria	no fumador	22	1	1	no	si	22	50	26	no	si	22	3	si	50	NA
+12307	Espana	Control	74	primaria	no fumador	26	1	1	si	no	NA	NA	NA	no	si	29	5	no	NA	negativo
+12308	Espana	Control	54	ninguno	no fumador	23	1	1	no	no	NA	NA	NA	no	no	NA	NA	si	50	NA
+12309	Espana	Control	50	secundaria	no fumador	21	1	1	si	no	NA	NA	NA	no	si	22	4	si	50	negativo
+12310	Espana	Control	24	ticnico	no fumador	18	2	2-3	si	si	18	22	2	si	si	22	1	si	19	negativo
+12311	Espana	Control	36	primaria	no fumador	20	1	1	si	si	27	36	8	no	si	23	3	si	35	negativo
+12312	Espana	Control	38	ticnico	no fumador	25	1	1	si	si	25	38	13	si	si	26	2	si	35	negativo
+12313	Espana	Control	54	primaria	no fumador	28	1	1	si	no	NA	NA	NA	no	si	29	2	si	49	positivo
+12314	Espana	Control	57	primaria	no fumador	23	1	1	no	no	NA	NA	NA	no	si	24	1	no	NA	positivo
+12315	Espana	Control	48	primaria	no fumador	27	1	1	si	no	NA	NA	NA	no	si	28	2	si	29	positivo
+12316	Espana	Control	69	primaria	no fumador	19	2	2-3	no	no	NA	NA	NA	no	si	22	3	no	NA	negativo
+12317	Espana	Control	43	primaria	no fumador	19	1	1	si	no	NA	NA	NA	si	si	19	4	si	42	negativo
+12318	Espana	Control	44	primaria	no fumador	23	1	1	no	no	NA	NA	NA	no	si	24	2	no	NA	negativo
+12319	Espana	Control	67	ninguno	no fumador	34	1	1	no	no	NA	NA	NA	no	si	35	3	si	35	negativo
+12320	Espana	Control	67	primaria	no fumador	21	1	1	no	no	NA	NA	NA	no	si	21	2	no	NA	negativo
+12321	Espana	Control	71	primaria	no fumador	19	1	1	no	no	NA	NA	NA	no	si	24	3	si	50	NA
+12322	Espana	Caso	71	ninguno	no fumador	18	1	1	no	no	NA	NA	NA	si	si	21	2	no	NA	NA
+12325	Espana	Caso	55	primaria	no fumador	20	1	2-3	no	si	32	55	23	si	si	22	3	no	NA	NA
+12328	Espana	Caso	62	primaria	no fumador	28	1	1	si	no	NA	NA	NA	no	si	30	3	si	58	negativo
+12329	Espana	Caso	35	ninguno	no fumador	19	1	1	si	no	NA	NA	NA	si	si	22	4	si	35	negativo
+12330	Espana	Caso	49	ninguno	no fumador	21	2	2-3	si	no	NA	NA	NA	no	si	21	6	si	48	positivo
+12331	Espana	Caso	60	ninguno	no fumador	21	1	1	si	no	NA	NA	NA	no	si	24	10	si	59	positivo
+12332	Espana	Caso	36	ninguno	fumador	14	5	2-3	si	no	NA	NA	NA	si	si	18	10	si	35	positivo
+12333	Espana	Caso	68	primaria	no fumador	23	1	1	si	no	NA	NA	NA	si	si	24	9	si	67	positivo
+12337	Espana	Caso	31	universitario	no fumador	19	1	1	no	si	19	28	9	no	si	19	5	si	29	NA
+12342	Espana	Caso	57	ninguno	no fumador	19	1	1	no	no	NA	NA	NA	no	si	20	7	si	56	positivo
+12343	Espana	Caso	44	ninguno	no fumador	14	1	1	no	si	14	44	30	no	si	16	7	si	44	NA
+12344	Espana	Caso	62	ninguno	no fumador	21	1	1	no	no	NA	NA	NA	no	si	23	5	si	61	positivo
+12348	Espana	Caso	74	ninguno	no fumador	19	1	1	no	no	NA	NA	NA	no	si	20	11	si	NA	NA
+12349	Espana	Caso	30	primaria	no fumador	17	1	1	si	si	17	30	11	no	si	18	3	si	NA	negativo
+12350	Espana	Caso	69	ninguno	no fumador	18	1	1	si	no	NA	NA	NA	no	si	18	9	si	69	NA
+12353	Espana	Caso	60	ninguno	no fumador	22	1	1	si	no	NA	NA	NA	no	si	24	8	si	59	positivo
+12354	Espana	Caso	54	ninguno	no fumador	17	1	1	no	no	NA	NA	NA	no	si	20	4	si	44	NA
+12363	Espana	Caso	43	primaria	fumador	25	1	1	no	si	25	43	18	no	si	28	2	si	43	positivo
+12366	Espana	Caso	62	primaria	no fumador	32	1	1	no	no	NA	NA	NA	no	si	30	3	si	62	negativo
+12368	Espana	Caso	53	ninguno	no fumador	19	1	1	si	si	19	49	30	si	si	19	4	si	52	NA
+12369	Espana	Caso	40	ninguno	fumador	25	1	1	si	no	NA	NA	NA	no	si	27	5	si	36	NA
+12371	Espana	Caso	54	ticnico	no fumador	21	1	1	si	no	NA	NA	NA	si	si	23	6	si	53	NA
+12372	Espana	Caso	51	secundaria	no fumador	18	1	2-3	si	si	30	40	10	si	si	NA	NA	si	NA	positivo
+12375	Espana	Caso	67	ninguno	no fumador	20	1	1	si	no	NA	NA	NA	no	si	23	8	si	57	positivo
+12376	Espana	Caso	45	ninguno	no fumador	18	1	1	no	si	18	45	26	no	si	20	8	si	45	positivo
+12380	Espana	Caso	68	ninguno	no fumador	19	2	2-3	no	no	NA	NA	NA	no	si	NA	NA	si	NA	NA
+12384	Espana	Caso	62	primaria	no fumador	26	1	1	si	no	NA	NA	NA	no	si	27	3	si	62	NA
+12385	Espana	Caso	56	ninguno	no fumador	23	1	1	no	no	NA	NA	NA	si	si	25	4	si	56	positivo
+12386	Espana	Caso	59	ninguno	no fumador	27	1	1	si	no	NA	NA	NA	no	si	28	5	si	45	negativo
+12387	Espana	Caso	50	ninguno	no fumador	19	1	1	no	no	NA	NA	NA	si	si	19	6	si	50	NA
+12388	Espana	Caso	43	ninguno	no fumador	15	2	2-3	si	si	28	41	13	no	si	15	11	si	43	NA
+12389	Espana	Caso	73	ninguno	no fumador	25	1	1	no	no	NA	NA	NA	no	si	27	5	si	73	positivo
+12390	Espana	Caso	64	secundaria	no fumador	26	1	1	no	no	NA	NA	NA	si	no	NA	NA	si	64	NA
+12391	Espana	Caso	44	ninguno	no fumador	25	1	1	si	no	NA	NA	NA	si	si	36	2	si	44	NA
+12392	Espana	Caso	55	primaria	no fumador	36	1	1	no	no	NA	NA	NA	no	si	35	5	si	55	negativo
+12393	Espana	Caso	34	ninguno	ex-fumador	20	1	1	si	no	NA	NA	NA	si	si	22	2	si	34	NA
+12394	Espana	Caso	57	primaria	ex-fumador	19	1	1	si	no	NA	NA	NA	no	si	21	4	no	NA	NA
+12400	Espana	Caso	60	ninguno	no fumador	19	1	1	no	no	NA	NA	NA	no	si	19	9	si	59	NA
+12403	Espana	Control	56	primaria	no fumador	26	1	1	si	no	NA	NA	NA	no	si	29	2	no	NA	NA
+12404	Espana	Control	66	ninguno	no fumador	25	1	1	no	no	NA	NA	NA	no	si	28	2	no	NA	NA
+12405	Espana	Control	53	ninguno	no fumador	30	1	1	no	no	NA	NA	NA	no	si	31	2	si	51	NA
+12406	Espana	Control	55	ninguno	no fumador	26	1	1	si	no	NA	NA	NA	si	si	26	2	no	NA	NA
+12407	Espana	Control	52	secundaria	no fumador	26	1	1	no	si	26	50	23	no	si	28	4	si	46	NA
+12408	Espana	Control	41	primaria	no fumador	22	1	1	si	si	22	41	19	no	si	23	4	si	37	NA
+12409	Espana	Control	49	primaria	no fumador	25	1	1	si	no	NA	NA	NA	no	si	26	3	si	45	NA
+12410	Espana	Control	63	ninguno	no fumador	19	1	1	si	no	NA	NA	NA	no	si	20	2	no	NA	NA
+12411	Espana	Control	68	ninguno	no fumador	26	1	1	si	no	NA	NA	NA	no	si	27	6	no	NA	NA
+12412	Espana	Control	55	ninguno	no fumador	23	1	1	no	no	NA	NA	NA	no	si	23	3	no	NA	NA
+12413	Espana	Control	62	ninguno	no fumador	24	1	1	si	no	NA	NA	NA	si	si	26	3	no	NA	NA
+12414	Espana	Control	49	ninguno	no fumador	18	1	1	no	si	18	49	30	no	si	20	6	no	NA	negativo
+12415	Espana	Control	61	ninguno	no fumador	18	1	1	no	no	NA	NA	NA	si	si	20	3	no	NA	negativo
+12416	Espana	Control	53	ninguno	no fumador	21	1	1	si	no	NA	NA	NA	si	si	22	4	si	47	negativo
+12417	Espana	Control	54	ninguno	no fumador	22	1	1	si	no	NA	NA	NA	no	si	24	4	no	NA	negativo
+12418	Espana	Control	43	secundaria	no fumador	21	1	1	si	no	NA	NA	NA	no	si	22	3	no	NA	negativo
+12419	Espana	Control	74	ninguno	no fumador	26	1	1	si	no	NA	NA	NA	no	si	27	1	no	NA	NA
+12420	Espana	Control	39	secundaria	ex-fumador	25	2	2-3	si	no	NA	NA	NA	si	no	NA	NA	no	NA	positivo
+12421	Espana	Control	69	ninguno	no fumador	25	1	1	no	no	NA	NA	NA	no	si	27	6	no	NA	negativo
+12422	Espana	Control	73	ninguno	no fumador	30	1	1	no	no	NA	NA	NA	no	si	30	3	no	NA	negativo
+12423	Espana	Control	58	primaria	no fumador	26	1	1	no	no	NA	NA	NA	no	si	27	2	no	NA	negativo
+12424	Espana	Control	71	primaria	no fumador	24	1	1	no	no	NA	NA	NA	no	si	24	5	no	NA	NA
+12425	Espana	Control	65	primaria	no fumador	NA	NA	NA	no	no	NA	NA	NA	no	no	NA	NA	no	NA	negativo
+12426	Espana	Control	42	primaria	no fumador	24	1	1	si	si	24	42	18	si	si	26	3	no	NA	NA
+12427	Espana	Control	56	primaria	no fumador	26	1	1	no	no	NA	NA	NA	no	si	27	1	si	27	NA
+12428	Espana	Control	53	primaria	no fumador	31	1	1	no	no	NA	NA	NA	no	si	31	5	si	31	negativo
+12429	Espana	Control	51	primaria	no fumador	24	1	1	no	si	35	45	10	si	si	25	4	no	NA	NA
+12430	Espana	Control	39	primaria	no fumador	26	1	2-3	si	no	NA	NA	NA	si	si	27	1	no	NA	NA
+12431	Espana	Control	57	ninguno	fumador	20	1	1	no	no	NA	NA	NA	no	si	21	4	si	57	negativo
+12432	Espana	Control	73	primaria	no fumador	35	1	1	no	no	NA	NA	NA	no	si	35	2	no	NA	NA
+12433	Espana	Control	73	secundaria	no fumador	NA	NA	NA	no	no	NA	NA	NA	no	no	NA	NA	no	NA	NA
+12434	Espana	Control	46	primaria	no fumador	23	1	1	no	si	27	38	11	si	si	24	5	si	35	NA
+12435	Espana	Control	48	ninguno	no fumador	25	1	1	si	no	NA	NA	NA	no	si	25	2	si	33	negativo
+12436	Espana	Control	58	ninguno	no fumador	24	1	1	no	no	NA	NA	NA	no	si	25	5	no	NA	NA
+12437	Espana	Control	56	primaria	no fumador	25	1	1	no	si	47	48	1	si	si	26	6	si	42	NA
+12438	Espana	Control	54	ninguno	no fumador	19	1	1	si	no	NA	NA	NA	no	si	22	4	no	NA	negativo
+12439	Espana	Control	59	secundaria	no fumador	25	1	1	no	no	NA	NA	NA	no	si	25	3	si	55	negativo
+12440	Espana	Control	43	ninguno	no fumador	18	1	1	si	no	NA	NA	NA	no	si	18	13	si	36	negativo
+12441	Espana	Control	59	ninguno	no fumador	26	1	1	si	no	NA	NA	NA	si	si	27	10	no	NA	negativo
+12442	Espana	Control	33	primaria	no fumador	23	1	1	si	si	23	33	10	no	si	25	3	si	29	negativo
+12443	Espana	Control	24	primaria	no fumador	21	NA	4-10	si	si	21	24	3	si	no	NA	NA	si	22	NA
+12444	Espana	Control	47	primaria	no fumador	20	1	1	no	si	31	36	5	no	si	20	5	no	NA	NA
+12445	Espana	Control	52	primaria	no fumador	26	1	1	si	no	NA	NA	NA	no	si	35	1	no	NA	NA
+12446	Espana	Control	59	primaria	ex-fumador	28	1	1	si	si	46	59	13	si	si	28	6	no	NA	NA
+12447	Espana	Control	36	primaria	fumador	18	1	1	no	si	21	35	14	no	si	20	3	si	30	NA
+12448	Espana	Control	62	ninguno	no fumador	25	1	1	no	no	NA	NA	NA	si	si	26	5	no	NA	NA
+12449	Espana	Control	69	primaria	no fumador	22	1	1	no	no	NA	NA	NA	no	si	23	5	no	NA	NA
+12450	Espana	Control	45	primaria	ex-fumador	23	1	1	si	no	NA	NA	NA	no	no	NA	NA	si	36	NA
+12451	Espana	Control	43	primaria	no fumador	NA	NA	NA	si	no	NA	NA	NA	no	no	NA	NA	no	NA	NA
+12452	Espana	Control	57	secundaria	no fumador	26	1	1	si	no	NA	NA	NA	si	si	31	4	no	NA	NA
+12453	Espana	Control	49	primaria	no fumador	23	1	1	si	no	NA	NA	NA	no	si	25	2	no	NA	NA
+12454	Espana	Control	67	primaria	no fumador	22	1	1	si	no	NA	NA	NA	si	si	23	2	no	NA	NA
+12455	Espana	Control	64	ninguno	no fumador	23	1	1	no	no	NA	NA	NA	no	si	24	6	no	NA	NA
+12456	Espana	Control	51	primaria	no fumador	26	1	1	no	no	NA	NA	NA	no	si	26	3	no	NA	NA
+12461	Espana	Caso	71	primaria	no fumador	23	1	1	si	no	NA	NA	NA	no	si	23	5	si	71	NA
+12462	Espana	Control	56	primaria	no fumador	21	1	1	si	no	NA	NA	NA	no	si	24	2	no	NA	NA
+12467	Espana	Caso	36	primaria	fumador	22	1	1	no	no	NA	NA	NA	si	si	24	4	si	36	NA
+12472	Espana	Caso	48	primaria	no fumador	19	1	1	si	no	NA	NA	NA	si	si	20	5	si	48	NA
+12483	Espana	Caso	61	ticnico	fumador	22	1	1	no	no	NA	NA	NA	no	si	24	4	si	49	NA
+12484	Espana	Caso	56	primaria	no fumador	24	1	1	si	no	NA	NA	NA	no	si	25	3	si	55	NA
+12492	Espana	Caso	70	primaria	no fumador	33	1	1	si	no	NA	NA	NA	no	si	34	2	si	NA	NA
+12493	Espana	Caso	66	primaria	no fumador	39	2	2-3	si	no	NA	NA	NA	no	si	40	1	si	65	negativo
+12494	Espana	Caso	59	primaria	fumador	19	3	>=100	si	no	NA	NA	NA	no	si	19	1	si	59	NA
+12497	Espana	Caso	30	secundaria	fumador	17	2	4-10	si	si	17	30	11	no	si	24	1	si	25	NA
+12499	Espana	Caso	59	primaria	no fumador	21	1	1	si	no	NA	NA	NA	no	si	23	2	si	48	negativo
+12502	Espana	Caso	50	primaria	no fumador	32	1	1	si	no	NA	NA	NA	no	si	33	2	si	50	NA
+12503	Espana	Caso	61	primaria	no fumador	34	1	1	si	si	40	54	14	no	si	35	5	si	60	positivo
+12504	Espana	Caso	63	ninguno	no fumador	22	1	1	si	no	NA	NA	NA	no	si	24	3	si	63	NA
+12507	Espana	Caso	39	secundaria	no fumador	25	3	2-3	si	si	36	37	1	no	no	NA	NA	si	34	NA
+12517	Espana	Caso	38	primaria	fumador	24	3	2-3	no	si	24	38	12	no	si	24	2	si	37	negativo
+12518	Espana	Caso	55	primaria	no fumador	22	1	1	si	no	NA	NA	NA	si	si	22	4	no	NA	NA
+12519	Espana	Caso	51	primaria	no fumador	18	1	2-3	si	no	NA	NA	NA	si	si	19	5	si	51	positivo
+12522	Espana	Caso	45	primaria	no fumador	28	1	1	si	no	NA	NA	NA	no	si	33	4	si	NA	NA
+12525	Espana	Caso	47	primaria	fumador	20	1	2-3	si	no	NA	NA	NA	no	si	21	1	si	46	NA
+12527	Espana	Control	34	primaria	fumador	19	1	1	si	si	21	34	11	no	si	20	2	si	24	NA
+12528	Espana	Control	33	secundaria	fumador	20	3	4-10	si	si	25	33	6	si	si	28	1	si	28	NA
+12529	Espana	Control	37	primaria	fumador	25	1	1	si	no	NA	NA	NA	no	si	28	2	no	NA	negativo
+12530	Espana	Control	39	secundaria	ex-fumador	20	2	4-10	si	no	NA	NA	NA	si	si	21	2	si	27	NA
+12531	Espana	Control	45	primaria	no fumador	20	1	2-3	si	si	42	45	3	no	si	23	3	si	31	negativo
+12532	Espana	Control	41	primaria	no fumador	24	1	1	si	si	24	41	15	no	si	26	3	si	32	NA
+12533	Espana	Control	46	primaria	no fumador	28	1	1	si	no	NA	NA	NA	no	no	NA	NA	si	NA	NA
+12534	Espana	Control	44	primaria	no fumador	21	1	1	si	si	30	37	7	no	si	22	7	si	42	NA
+12535	Espana	Control	50	primaria	no fumador	24	1	1	si	no	NA	NA	NA	si	si	34	1	si	30	NA
+12536	Espana	Control	64	primaria	no fumador	23	1	1	no	no	NA	NA	NA	no	si	24	8	si	55	negativo
+12537	Espana	Control	64	primaria	no fumador	34	1	1	si	no	NA	NA	NA	no	si	35	3	no	NA	negativo
+12538	Espana	Control	61	primaria	no fumador	24	1	1	si	no	NA	NA	NA	no	si	25	6	no	NA	NA
+12540	Espana	Caso	66	ninguno	no fumador	20	1	1	si	no	NA	NA	NA	no	si	21	15	si	66	positivo
+12541	Espana	Caso	56	primaria	no fumador	32	1	1	si	no	NA	NA	NA	no	si	35	3	si	56	positivo
+12542	Espana	Caso	50	primaria	fumador	22	1	1	no	si	32	41	9	no	si	23	5	si	50	positivo
+12549	Espana	Control	46	primaria	no fumador	23	1	1	si	no	NA	NA	NA	no	si	24	3	no	NA	negativo
+12550	Espana	Caso	42	ninguno	fumador	20	1	1	si	si	20	42	21	si	si	22	3	si	40	positivo
+12551	Espana	Caso	57	primaria	no fumador	30	1	2-3	si	no	NA	NA	NA	no	si	34	1	si	57	positivo
+12560	Espana	Caso	38	primaria	no fumador	19	2	2-3	si	si	19	32	12	no	si	19	6	si	31	NA
+12565	Espana	Caso	39	primaria	no fumador	25	1	1	si	no	NA	NA	NA	si	si	26	3	si	39	positivo
+12571	Espana	Caso	72	ninguno	no fumador	33	1	1	no	no	NA	NA	NA	no	si	34	2	NA	NA	positivo
+12577	Espana	Caso	42	ninguno	no fumador	22	1	1	si	no	NA	NA	NA	si	si	23	4	si	41	NA
+12581	Espana	Caso	50	primaria	no fumador	29	1	1	si	si	36	48	11	no	si	30	5	NA	NA	positivo
+12582	Espana	Caso	43	primaria	fumador	27	1	1	si	no	NA	NA	NA	si	si	28	2	si	30	NA
+12588	Espana	Caso	33	ticnico	no fumador	21	1	1	si	si	21	25	4	no	si	29	2	si	24	negativo
+12591	Espana	Caso	51	primaria	fumador	20	1	1	si	no	NA	NA	NA	si	si	21	5	si	51	positivo
+12601	Espana	Caso	56	primaria	no fumador	24	1	1	no	no	NA	NA	NA	no	si	29	2	si	46	positivo
+12603	Espana	Caso	63	primaria	no fumador	28	1	1	si	no	NA	NA	NA	si	si	31	2	no	NA	positivo
+12614	Espana	Caso	32	primaria	fumador	17	1	1	no	no	NA	NA	NA	no	si	17	2	si	32	positivo
+12619	Espana	Caso	43	primaria	no fumador	25	3	4-10	si	si	25	35	8	si	no	NA	NA	si	36	positivo
+12623	Espana	Caso	64	primaria	fumador	30	1	1	si	no	NA	NA	NA	no	no	NA	NA	si	64	positivo
+12626	Espana	Control	48	primaria	no fumador	23	1	1	si	si	28	48	20	no	si	24	5	si	44	negativo
+12627	Espana	Control	40	primaria	no fumador	28	1	1	si	no	NA	NA	NA	si	si	30	2	no	NA	negativo
+12628	Espana	Control	42	ticnico	no fumador	23	1	1	si	si	31	38	7	no	si	24	2	si	35	negativo
+12629	Espana	Control	51	secundaria	no fumador	29	1	1	si	si	38	38	1	no	si	30	4	si	48	negativo
+12630	Espana	Control	56	primaria	no fumador	30	1	1	si	no	NA	NA	NA	no	si	31	3	no	NA	negativo
+12631	Espana	Control	51	ticnico	fumador	32	1	1	no	si	32	47	15	no	si	34	2	si	45	negativo
+12632	Espana	Control	39	primaria	no fumador	24	1	1	si	si	25	28	3	no	si	25	3	si	38	negativo
+12633	Espana	Control	64	ninguno	no fumador	25	2	2-3	no	no	NA	NA	NA	no	si	26	1	no	NA	NA
+12634	Espana	Control	44	primaria	no fumador	18	1	1	no	no	NA	NA	NA	no	si	19	6	no	NA	NA
+12635	Espana	Control	34	primaria	fumador	17	1	1	no	si	17	34	16	no	si	17	2	no	NA	NA
+12636	Espana	Control	44	primaria	no fumador	25	1	1	si	no	NA	NA	NA	no	si	29	1	no	NA	NA
+12637	Espana	Control	65	primaria	no fumador	26	1	1	no	no	NA	NA	NA	no	si	27	3	no	NA	NA
+12643	Espana	Caso	51	ninguno	no fumador	21	1	1	si	no	NA	NA	NA	no	si	24	2	si	50	NA
+12654	Espana	Caso	67	primaria	no fumador	42	1	1	si	no	NA	NA	NA	no	no	NA	NA	NA	NA	negativo
+12655	Espana	Caso	61	primaria	no fumador	17	1	1	si	no	NA	NA	NA	no	si	18	7	si	61	positivo
+12658	Espana	Caso	64	ninguno	no fumador	19	1	1	no	no	NA	NA	NA	si	si	22	1	NA	NA	positivo
+12660	Espana	Caso	32	primaria	fumador	20	1	1	no	si	20	32	12	no	si	22	2	si	22	positivo
+12661	Espana	Caso	60	ninguno	no fumador	24	1	1	si	no	NA	NA	NA	si	si	25	8	si	60	positivo
+12663	Espana	Caso	49	primaria	no fumador	22	1	1	si	no	NA	NA	NA	no	si	23	2	si	49	NA
+12664	Espana	Caso	41	secundaria	no fumador	22	3	>=100	no	si	22	39	12	si	si	23	3	si	23	positivo
+12665	Espana	Caso	30	ticnico	fumador	20	1	1	si	si	26	30	4	no	si	26	2	si	30	positivo
+12672	Espana	Caso	40	ninguno	no fumador	23	1	1	si	no	NA	NA	NA	no	si	24	5	si	31	positivo
+12675	Espana	Caso	28	ninguno	fumador	15	1	2-3	no	si	23	28	5	no	si	15	4	si	28	NA
+12677	Espana	Caso	50	ninguno	no fumador	18	1	1	no	no	NA	NA	NA	no	si	23	8	si	42	positivo
+12681	Espana	Caso	51	primaria	no fumador	22	1	1	si	no	NA	NA	NA	si	si	23	6	si	51	positivo
+12690	Espana	Caso	57	primaria	no fumador	21	1	1	si	no	NA	NA	NA	no	si	22	3	si	56	positivo
+12692	Espana	Caso	43	primaria	no fumador	16	1	1	no	no	NA	NA	NA	no	si	18	8	si	43	NA
+12700	Espana	Caso	39	ninguno	no fumador	17	1	1	no	no	NA	NA	NA	si	si	18	5	si	39	NA
+12704	Espana	Caso	38	primaria	no fumador	18	1	1	si	si	20	34	14	no	si	19	2	si	35	positivo
+12705	Espana	Caso	70	ninguno	no fumador	19	1	1	no	no	NA	NA	NA	no	si	20	5	no	NA	NA
+12706	Espana	Caso	43	ninguno	no fumador	19	1	1	no	no	NA	NA	NA	no	si	21	2	si	42	NA
+12707	Espana	Caso	32	ticnico	fumador	20	3	4-10	si	si	26	32	3	no	si	21	4	si	30	NA
+12708	Espana	Caso	70	ninguno	no fumador	24	1	1	no	no	NA	NA	NA	si	si	25	4	si	70	positivo
+12709	Espana	Caso	37	ninguno	no fumador	17	1	1	no	si	17	37	19	no	si	22	3	no	NA	NA
+12710	Espana	Caso	66	ninguno	no fumador	18	1	1	no	no	NA	NA	NA	no	si	18	5	si	66	positivo
+12711	Espana	Caso	64	ninguno	no fumador	14	1	2-3	si	no	NA	NA	NA	no	si	14	1	si	64	positivo
+12718	Espana	Caso	57	ninguno	no fumador	NA	NA	NA	no	no	NA	NA	NA	no	no	NA	NA	si	57	negativo
+12719	Espana	Caso	66	ninguno	no fumador	25	1	1	si	no	NA	NA	NA	no	si	25	4	si	66	NA
+12722	Espana	Caso	43	ninguno	no fumador	20	1	1	si	no	NA	NA	NA	no	si	22	3	si	42	NA
+12723	Espana	Caso	64	ninguno	no fumador	21	1	1	si	no	NA	NA	NA	no	si	21	3	si	61	positivo
+12724	Espana	Control	75	ninguno	no fumador	22	1	1	si	no	NA	NA	NA	no	si	31	5	no	NA	NA
+12725	Espana	Control	65	ninguno	no fumador	27	1	1	no	no	NA	NA	NA	no	si	28	2	no	NA	negativo
+12726	Espana	Control	41	ninguno	no fumador	21	1	1	si	si	29	30	1	no	si	22	8	si	NA	negativo
+12727	Espana	Control	40	ticnico	no fumador	NA	NA	NA	si	no	NA	NA	NA	no	no	NA	NA	no	NA	NA
+12728	Espana	Control	67	primaria	no fumador	NA	1	1	si	no	NA	NA	NA	no	no	NA	NA	no	NA	negativo
+12729	Espana	Control	59	ninguno	no fumador	24	1	1	no	no	NA	NA	NA	no	si	26	1	no	NA	NA
+12730	Espana	Control	70	ninguno	no fumador	28	1	1	si	no	NA	NA	NA	no	si	29	2	no	NA	negativo
+12731	Espana	Control	60	ninguno	no fumador	17	1	1	no	no	NA	NA	NA	no	si	31	10	no	NA	positivo
+12732	Espana	Control	53	primaria	no fumador	21	1	1	si	si	33	49	15	no	si	20	9	no	NA	negativo
+12733	Espana	Control	53	primaria	no fumador	26	1	1	si	no	NA	NA	NA	no	si	27	3	no	NA	negativo
+12734	Espana	Control	44	ninguno	no fumador	21	1	1	si	no	NA	NA	NA	no	si	25	2	no	NA	negativo
+12735	Espana	Control	65	primaria	no fumador	26	1	1	si	no	NA	NA	NA	si	si	24	2	no	NA	NA
+12736	Espana	Control	35	primaria	no fumador	22	1	1	si	no	NA	NA	NA	si	si	23	2	si	32	negativo
+12737	Espana	Control	37	primaria	no fumador	22	1	1	no	no	NA	NA	NA	no	si	23	2	no	NA	negativo
+12738	Espana	Control	35	ticnico	fumador	20	1	1	si	si	20	35	15	no	si	21	4	si	23	negativo
+12739	Espana	Control	43	secundaria	no fumador	23	1	1	si	no	NA	NA	NA	si	si	24	2	no	NA	negativo
+12740	Espana	Control	47	ninguno	no fumador	25	1	1	no	si	28	35	7	no	si	27	2	si	45	negativo
+12741	Espana	Control	56	ninguno	no fumador	24	1	1	si	no	NA	NA	NA	no	si	31	1	no	NA	NA
+12742	Espana	Control	38	primaria	no fumador	23	1	1	no	no	NA	NA	NA	no	si	25	2	no	NA	NA
+12743	Espana	Control	38	primaria	no fumador	21	1	1	si	no	NA	NA	NA	no	si	23	3	no	NA	negativo
+12744	Espana	Control	40	ninguno	no fumador	24	1	1	no	no	NA	NA	NA	no	si	26	2	no	NA	NA
+12745	Espana	Control	38	primaria	no fumador	24	1	1	no	no	NA	NA	NA	no	si	26	3	no	NA	NA
+12746	Espana	Control	63	ninguno	no fumador	19	1	1	no	no	NA	NA	NA	no	si	20	2	no	NA	NA
+12747	Espana	Control	69	ninguno	no fumador	18	1	1	no	no	NA	NA	NA	no	si	21	4	no	NA	negativo
+12748	Espana	Control	73	ninguno	no fumador	17	1	1	no	no	NA	NA	NA	no	si	24	2	no	NA	NA
+12749	Espana	Control	37	primaria	no fumador	22	1	1	si	si	25	27	2	no	si	23	4	si	28	NA
+12750	Espana	Control	40	primaria	no fumador	27	1	1	si	no	NA	NA	NA	si	si	28	3	no	NA	negativo
+12751	Espana	Caso	64	primaria	no fumador	30	1	1	si	no	NA	NA	NA	no	si	31	5	no	NA	positivo
+12752	Espana	Caso	58	primaria	no fumador	23	1	1	si	no	NA	NA	NA	si	si	25	2	si	58	NA
+12753	Espana	Caso	49	ninguno	no fumador	21	1	1	si	no	NA	NA	NA	no	si	28	1	no	NA	positivo
+12754	Espana	Caso	71	primaria	no fumador	31	1	1	no	no	NA	NA	NA	no	si	29	3	NA	NA	positivo
+12759	Espana	Caso	69	primaria	no fumador	22	1	1	si	no	NA	NA	NA	no	no	NA	NA	NA	NA	positivo
+12762	Espana	Caso	44	primaria	fumador	18	2	>=100	no	no	NA	NA	NA	si	si	18	3	NA	NA	positivo
+12766	Espana	Caso	28	primaria	no fumador	19	2	2-3	no	no	NA	NA	NA	si	si	25	2	si	28	NA
+12776	Espana	Caso	30	primaria	no fumador	16	1	1	no	no	NA	NA	NA	no	si	17	4	si	24	positivo
+12783	Espana	Caso	52	primaria	no fumador	20	1	2-3	si	no	NA	NA	NA	si	si	20	6	si	52	positivo
+12786	Espana	Caso	71	primaria	no fumador	34	1	1	no	no	NA	NA	NA	no	si	35	4	si	71	positivo
+12793	Espana	Caso	34	ninguno	fumador	18	1	1	si	no	NA	NA	NA	no	si	19	2	si	33	positivo
+12794	Espana	Control	73	primaria	no fumador	NA	NA	NA	no	no	NA	NA	NA	no	no	NA	NA	no	NA	NA
+12795	Espana	Control	53	primaria	ex-fumador	24	1	2-3	no	no	NA	NA	NA	si	si	25	2	no	NA	negativo
+12796	Espana	Control	50	primaria	no fumador	23	1	1	no	no	NA	NA	NA	no	si	24	3	no	NA	negativo
+12797	Espana	Control	63	primaria	no fumador	27	1	1	si	no	NA	NA	NA	no	si	28	4	no	NA	negativo
+12798	Espana	Control	47	primaria	no fumador	25	1	1	no	no	NA	NA	NA	no	si	26	4	si	38	negativo
+12799	Espana	Control	51	primaria	no fumador	23	1	1	no	no	NA	NA	NA	no	si	25	4	no	NA	negativo
+12800	Espana	Control	59	primaria	no fumador	19	1	1	no	no	NA	NA	NA	no	si	21	4	si	40	negativo
+12801	Espana	Control	58	primaria	no fumador	26	1	1	si	no	NA	NA	NA	no	si	26	3	no	NA	negativo
+12802	Espana	Control	63	primaria	no fumador	24	1	1	no	no	NA	NA	NA	no	si	25	5	no	NA	negativo
+12803	Espana	Control	32	secundaria	fumador	23	2	2-3	no	si	26	32	6	si	si	29	2	si	28	negativo
+12804	Espana	Control	63	primaria	no fumador	23	1	1	si	no	NA	NA	NA	no	si	24	7	no	NA	negativo
+12805	Espana	Control	57	primaria	no fumador	24	1	1	no	no	NA	NA	NA	no	si	25	6	si	44	negativo
+12806	Espana	Control	69	primaria	no fumador	23	1	1	si	no	NA	NA	NA	no	si	24	4	no	NA	NA
+12807	Espana	Caso	40	primaria	no fumador	21	1	1	si	si	32	40	8	no	si	22	4	si	32	positivo
+12808	Espana	Caso	28	secundaria	fumador	17	1	1	si	si	17	28	11	no	si	17	3	si	28	NA
+12811	Espana	Caso	59	ninguno	no fumador	26	1	1	no	no	NA	NA	NA	no	si	34	5	no	NA	positivo
+12813	Espana	Caso	53	primaria	no fumador	22	1	2-3	si	no	NA	NA	NA	si	si	26	5	si	53	negativo
+12818	Espana	Caso	71	ninguno	no fumador	27	1	1	si	no	NA	NA	NA	no	no	NA	NA	si	71	positivo
+12821	Espana	Caso	51	primaria	no fumador	28	1	1	no	si	28	43	15	si	si	32	3	si	51	positivo
+12830	Espana	Caso	64	primaria	no fumador	27	1	1	no	no	NA	NA	NA	no	si	27	4	no	NA	positivo
+12833	Espana	Caso	51	primaria	fumador	28	NA	2-3	si	no	NA	NA	NA	no	si	29	2	no	NA	NA
+12836	Espana	Control	61	primaria	no fumador	29	1	1	si	no	NA	NA	NA	no	si	30	6	no	NA	negativo
+12837	Espana	Control	37	ninguno	no fumador	23	1	1	si	no	NA	NA	NA	no	si	26	2	no	NA	positivo
+12838	Espana	Control	57	primaria	no fumador	32	1	1	si	no	NA	NA	NA	no	si	32	2	no	NA	negativo
+12839	Espana	Control	46	primaria	no fumador	31	1	1	si	no	NA	NA	NA	si	si	32	5	no	NA	negativo
+12840	Espana	Control	52	primaria	no fumador	29	1	1	si	no	NA	NA	NA	no	si	29	1	si	50	negativo
+12841	Espana	Control	54	primaria	no fumador	24	1	1	si	no	NA	NA	NA	si	si	25	3	no	NA	negativo
+12842	Espana	Control	67	primaria	no fumador	20	1	1	si	no	NA	NA	NA	no	si	26	8	no	NA	negativo
+12843	Espana	Control	42	secundaria	no fumador	25	1	1	si	si	25	35	10	no	si	26	2	no	NA	negativo
+12848	Espana	Caso	64	ninguno	no fumador	18	2	2-3	si	no	NA	NA	NA	no	si	20	3	si	64	positivo
+12853	Espana	Caso	53	primaria	no fumador	22	1	1	si	si	33	43	10	no	si	25	7	si	27	NA
+12856	Espana	Caso	45	ninguno	no fumador	24	1	1	si	no	NA	NA	NA	si	si	26	4	si	45	positivo
+12859	Espana	Caso	52	primaria	no fumador	21	1	1	si	no	NA	NA	NA	si	si	22	4	si	52	positivo
+12862	Espana	Caso	62	primaria	no fumador	22	1	1	no	no	NA	NA	NA	no	si	24	6	si	52	positivo
+12863	Espana	Caso	45	primaria	no fumador	23	1	11-20	si	no	NA	NA	NA	no	si	26	1	si	27	positivo
+12866	Espana	Caso	38	primaria	fumador	23	1	1	si	no	NA	NA	NA	no	si	24	3	NA	NA	NA
+12871	Espana	Caso	62	primaria	no fumador	20	1	1	no	no	NA	NA	NA	no	si	20	7	si	62	positivo
+12872	Espana	Caso	37	primaria	ex-fumador	17	1	1	si	si	17	35	18	si	si	18	3	si	37	positivo
+12873	Espana	Caso	66	primaria	no fumador	24	1	2-3	si	no	NA	NA	NA	no	si	25	3	si	36	positivo
+12877	Espana	Caso	54	primaria	no fumador	29	1	1	si	no	NA	NA	NA	no	si	29	4	si	53	positivo
+12878	Espana	Caso	51	primaria	no fumador	21	1	1	si	no	NA	NA	NA	no	si	23	3	si	51	positivo
+12880	Espana	Caso	54	primaria	fumador	29	1	1	si	no	NA	NA	NA	si	si	30	3	no	NA	NA
+12886	Espana	Caso	62	primaria	no fumador	24	1	1	no	no	NA	NA	NA	no	si	25	5	si	62	positivo
+12889	Espana	Caso	52	primaria	no fumador	23	1	1	si	no	NA	NA	NA	no	no	NA	NA	si	52	positivo
+12890	Espana	Caso	44	primaria	no fumador	19	1	1	si	si	19	44	25	no	si	20	3	si	40	positivo
+12891	Espana	Caso	35	primaria	fumador	20	1	1	si	si	20	35	15	no	si	20	2	no	NA	positivo
+12894	Espana	Caso	48	primaria	fumador	18	2	2-3	no	no	NA	NA	NA	no	si	19	3	no	NA	positivo
+12895	Espana	Caso	74	primaria	no fumador	25	2	2-3	si	no	NA	NA	NA	no	si	28	2	si	74	NA
+12896	Espana	Caso	67	primaria	no fumador	26	1	1	si	no	NA	NA	NA	no	si	27	1	no	NA	positivo
+12898	Espana	Caso	50	primaria	no fumador	25	1	1	no	no	NA	NA	NA	no	si	26	3	si	50	positivo
+12901	Espana	Caso	73	secundaria	no fumador	52	1	1	no	no	NA	NA	NA	no	si	52	1	no	NA	positivo
+12906	Espana	Caso	47	primaria	no fumador	19	1	1	si	si	19	47	28	si	si	21	6	si	47	NA
+12909	Espana	Caso	32	secundaria	fumador	18	1	2-3	si	si	20	32	12	no	si	21	4	si	32	negativo
+12914	Espana	Caso	61	primaria	no fumador	25	NA	1	si	no	NA	NA	NA	no	no	NA	NA	si	60	positivo
+12915	Espana	Caso	66	primaria	no fumador	18	2	2-3	no	no	NA	NA	NA	no	si	19	3	si	66	positivo
+12918	Espana	Caso	63	ninguno	no fumador	19	1	2-3	no	no	NA	NA	NA	no	si	NA	NA	si	62	NA
+12922	Espana	Caso	52	primaria	no fumador	22	1	1	no	no	NA	NA	NA	si	si	23	5	si	52	positivo
+12923	Espana	Caso	53	primaria	no fumador	21	1	1	no	no	NA	NA	NA	si	si	22	3	no	NA	negativo
+12927	Espana	Caso	63	primaria	fumador	NA	NA	NA	si	no	NA	NA	NA	no	no	NA	NA	no	NA	negativo
+12928	Espana	Caso	61	primaria	no fumador	17	2	2-3	no	no	NA	NA	NA	no	si	18	4	no	NA	positivo
+12929	Espana	Caso	34	universitario	fumador	20	3	4-10	si	si	22	30	7	no	si	21	2	si	31	positivo
+12930	Espana	Caso	44	primaria	ex-fumador	23	2	2-3	no	no	NA	NA	NA	no	si	26	3	si	43	positivo
+12931	Espana	Caso	55	primaria	no fumador	22	2	2-3	si	no	NA	NA	NA	no	si	23	4	si	54	positivo
+12932	Espana	Caso	33	secundaria	no fumador	18	1	1	si	si	20	33	12	no	si	19	6	si	26	NA
+12935	Espana	Caso	66	primaria	no fumador	20	1	1	no	no	NA	NA	NA	no	si	21	8	si	66	positivo
+12938	Espana	Control	53	primaria	no fumador	24	1	1	si	no	NA	NA	NA	no	si	26	2	no	NA	negativo
+12939	Espana	Control	43	primaria	no fumador	31	1	1	si	no	NA	NA	NA	si	si	33	2	no	NA	NA
+12940	Espana	Control	57	primaria	no fumador	27	1	1	no	no	NA	NA	NA	no	si	28	1	si	56	negativo
+12941	Espana	Control	62	primaria	no fumador	28	1	1	no	no	NA	NA	NA	no	si	30	1	no	NA	negativo
+12942	Espana	Control	38	primaria	ex-fumador	20	2	2-3	si	si	22	35	5	no	no	NA	NA	si	23	NA
+12943	Espana	Control	64	ninguno	no fumador	20	1	1	si	no	NA	NA	NA	no	si	29	2	si	45	negativo
+12944	Espana	Control	37	secundaria	no fumador	24	1	1	si	no	NA	NA	NA	no	si	25	2	no	NA	NA
+12945	Espana	Control	65	primaria	no fumador	24	1	1	no	no	NA	NA	NA	no	si	26	6	si	38	negativo
+12946	Espana	Control	54	primaria	ex-fumador	46	1	1	si	no	NA	NA	NA	no	no	NA	NA	no	NA	negativo
+12947	Espana	Control	62	primaria	no fumador	24	1	1	si	no	NA	NA	NA	no	si	30	2	no	NA	negativo
+12948	Espana	Control	52	ninguno	no fumador	19	1	1	no	no	NA	NA	NA	no	si	24	3	no	NA	negativo
+12949	Espana	Control	34	primaria	no fumador	18	1	1	si	si	19	28	9	no	si	19	2	si	33	negativo
+12950	Espana	Control	47	primaria	no fumador	25	1	1	si	no	NA	NA	NA	no	si	26	3	no	NA	NA
+12951	Espana	Control	74	primaria	no fumador	27	1	1	si	no	NA	NA	NA	no	si	28	3	no	NA	NA
+12952	Espana	Control	58	primaria	fumador	22	1	1	si	no	NA	NA	NA	si	si	23	2	no	NA	negativo
+12953	Espana	Control	31	primaria	fumador	18	1	1	no	no	NA	NA	NA	si	no	NA	NA	no	NA	negativo
+12954	Espana	Control	61	primaria	no fumador	27	1	1	no	no	NA	NA	NA	no	si	30	2	si	58	negativo
+12955	Espana	Control	43	primaria	no fumador	27	1	1	si	no	NA	NA	NA	si	si	27	2	no	NA	negativo
+12956	Espana	Control	53	primaria	fumador	27	1	1	si	no	NA	NA	NA	no	si	28	5	no	NA	negativo
+12957	Espana	Control	66	primaria	no fumador	32	1	1	no	no	NA	NA	NA	no	si	31	3	no	NA	negativo
+12958	Espana	Control	65	primaria	no fumador	NA	NA	NA	si	no	NA	NA	NA	no	no	NA	NA	no	NA	NA
+12959	Espana	Control	32	secundaria	no fumador	22	1	1	si	no	NA	NA	NA	si	si	25	2	no	NA	negativo
+12960	Espana	Control	43	primaria	no fumador	23	1	1	no	no	NA	NA	NA	no	si	29	2	si	38	negativo
+12961	Espana	Control	35	secundaria	fumador	21	1	1	si	no	NA	NA	NA	si	si	22	2	si	32	negativo
+12962	Espana	Control	54	primaria	no fumador	26	1	1	si	no	NA	NA	NA	no	no	NA	NA	NA	NA	negativo
+12963	Espana	Control	68	primaria	no fumador	22	1	1	si	no	NA	NA	NA	no	si	23	12	no	NA	NA
 12964	Colombia	Caso	49	primaria	no fumador	22	1	1	si	no	NA	NA	NA	no	si	22	5	si	NA	NA
 12965	Colombia	Control	51	primaria	fumador	23	1	2-3	si	no	NA	NA	NA	no	si	24	7	si	35	negativo
 12969	Colombia	Caso	65	ninguno	fumador	14	1	1	si	no	NA	NA	NA	no	si	15	7	no	NA	NA
