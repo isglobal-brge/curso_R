@@ -1,0 +1,1134 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>9 Creación y personalización de tablas descriptivas | Curso de R</title>
+  <meta name="description" content="9 Creación y personalización de tablas descriptivas | Curso de R" />
+  <meta name="generator" content="bookdown 0.20 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="9 Creación y personalización de tablas descriptivas | Curso de R" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="9 Creación y personalización de tablas descriptivas | Curso de R" />
+  
+  
+  
+
+<meta name="author" content="Juan R González" />
+
+
+<meta name="date" content="2021-01-18" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="r-markdown.html"/>
+
+<script src="libs/header-attrs-2.3/header-attrs.js"></script>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
+<script src="libs/kePrint-0.0.1/kePrint.js"></script>
+<link href="libs/lightable-0.0.1/lightable.css" rel="stylesheet" />
+
+
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Aprendizaje Automático 1</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Introducción</a></li>
+<li class="chapter" data-level="2" data-path="importar.html"><a href="importar.html"><i class="fa fa-check"></i><b>2</b> Importar datos a R</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="importar.html"><a href="importar.html#directorio-de-trabajo"><i class="fa fa-check"></i><b>2.1</b> Directorio de trabajo</a></li>
+<li class="chapter" data-level="2.2" data-path="importar.html"><a href="importar.html#importar-datos-de-texto"><i class="fa fa-check"></i><b>2.2</b> Importar datos de texto</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="manejo-de-datos.html"><a href="manejo-de-datos.html"><i class="fa fa-check"></i><b>3</b> Manejo de datos</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="manejo-de-datos.html"><a href="manejo-de-datos.html#visualización-de-datos"><i class="fa fa-check"></i><b>3.1</b> Visualización de datos</a></li>
+<li class="chapter" data-level="3.2" data-path="manejo-de-datos.html"><a href="manejo-de-datos.html#creación-de-variables"><i class="fa fa-check"></i><b>3.2</b> Creación de variables</a></li>
+<li class="chapter" data-level="3.3" data-path="manejo-de-datos.html"><a href="manejo-de-datos.html#recodificación-de-variables"><i class="fa fa-check"></i><b>3.3</b> Recodificación de variables</a></li>
+<li class="chapter" data-level="3.4" data-path="manejo-de-datos.html"><a href="manejo-de-datos.html#filtrado-de-datos"><i class="fa fa-check"></i><b>3.4</b> Filtrado de datos</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="estadística-descriptiva.html"><a href="estadística-descriptiva.html"><i class="fa fa-check"></i><b>4</b> Estadística descriptiva</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="estadística-descriptiva.html"><a href="estadística-descriptiva.html#variables-categóricas"><i class="fa fa-check"></i><b>4.1</b> Variables categóricas</a></li>
+<li class="chapter" data-level="4.2" data-path="estadística-descriptiva.html"><a href="estadística-descriptiva.html#tabla-de-contingencia"><i class="fa fa-check"></i><b>4.2</b> Tabla de contingencia</a></li>
+<li class="chapter" data-level="4.3" data-path="estadística-descriptiva.html"><a href="estadística-descriptiva.html#variables-continuas"><i class="fa fa-check"></i><b>4.3</b> Variables continuas</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="pruebas-de-hipótesis.html"><a href="pruebas-de-hipótesis.html"><i class="fa fa-check"></i><b>5</b> Pruebas de Hipótesis</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="pruebas-de-hipótesis.html"><a href="pruebas-de-hipótesis.html#prueba-de-hipótesis-para-la-media-mu-de-una-población-normal"><i class="fa fa-check"></i><b>5.1</b> Prueba de hipótesis para la media, <span class="math inline">\(\mu\)</span>, de una población normal</a>
+<ul>
+<li class="chapter" data-level="" data-path="pruebas-de-hipótesis.html"><a href="pruebas-de-hipótesis.html#ejemplo"><i class="fa fa-check"></i>Ejemplo</a></li>
+</ul></li>
+<li class="chapter" data-level="5.2" data-path="pruebas-de-hipótesis.html"><a href="pruebas-de-hipótesis.html#prueba-de-hipótesis-para-la-proporción-p-de-una-población"><i class="fa fa-check"></i><b>5.2</b> Prueba de hipótesis para la proporción <span class="math inline">\(p\)</span> de una población</a>
+<ul>
+<li class="chapter" data-level="5.2.1" data-path="pruebas-de-hipótesis.html"><a href="pruebas-de-hipótesis.html#prueba-de-wald"><i class="fa fa-check"></i><b>5.2.1</b> Prueba de Wald</a></li>
+<li class="chapter" data-level="5.2.2" data-path="pruebas-de-hipótesis.html"><a href="pruebas-de-hipótesis.html#prueba-chi2-de-pearson"><i class="fa fa-check"></i><b>5.2.2</b> Prueba <span class="math inline">\(\chi^2\)</span> de Pearson</a></li>
+<li class="chapter" data-level="" data-path="pruebas-de-hipótesis.html"><a href="pruebas-de-hipótesis.html#ejemplo-1"><i class="fa fa-check"></i>Ejemplo</a></li>
+<li class="chapter" data-level="5.2.3" data-path="pruebas-de-hipótesis.html"><a href="pruebas-de-hipótesis.html#prueba-binomial-exacta"><i class="fa fa-check"></i><b>5.2.3</b> Prueba binomial exacta</a></li>
+</ul></li>
+<li class="chapter" data-level="5.3" data-path="pruebas-de-hipótesis.html"><a href="pruebas-de-hipótesis.html#prueba-de-hipótesis-para-la-razón-de-varianzas-sigma_12-sigma_22"><i class="fa fa-check"></i><b>5.3</b> Prueba de hipótesis para la razón de varianzas <span class="math inline">\(\sigma_1^2 / \sigma_2^2\)</span></a>
+<ul>
+<li class="chapter" data-level="" data-path="pruebas-de-hipótesis.html"><a href="pruebas-de-hipótesis.html#ejemplo-2"><i class="fa fa-check"></i>Ejemplo</a></li>
+</ul></li>
+<li class="chapter" data-level="5.4" data-path="pruebas-de-hipótesis.html"><a href="pruebas-de-hipótesis.html#prueba-de-hipótesis-para-la-igualdad-de-medias-mu_a-mu_b"><i class="fa fa-check"></i><b>5.4</b> Prueba de hipótesis para la igualdad de medias <span class="math inline">\(\mu_A = \mu_B\)</span></a>
+<ul>
+<li class="chapter" data-level="" data-path="pruebas-de-hipótesis.html"><a href="pruebas-de-hipótesis.html#ejemplo-3"><i class="fa fa-check"></i>Ejemplo</a></li>
+</ul></li>
+<li class="chapter" data-level="5.5" data-path="pruebas-de-hipótesis.html"><a href="pruebas-de-hipótesis.html#prueba-de-hipótesis-para-la-igualdad-de-más-de-dos-medias-anova"><i class="fa fa-check"></i><b>5.5</b> Prueba de hipótesis para la igualdad de más de dos medias (ANOVA)</a>
+<ul>
+<li class="chapter" data-level="" data-path="pruebas-de-hipótesis.html"><a href="pruebas-de-hipótesis.html#ejemplo-4"><i class="fa fa-check"></i>Ejemplo</a></li>
+</ul></li>
+<li class="chapter" data-level="5.6" data-path="pruebas-de-hipótesis.html"><a href="pruebas-de-hipótesis.html#prueba-de-hipótesis-para-la-igualdad-de-proporciones-p_a-p_b"><i class="fa fa-check"></i><b>5.6</b> Prueba de hipótesis para la igualdad de proporciones <span class="math inline">\(p_A = p_B\)</span></a>
+<ul>
+<li class="chapter" data-level="" data-path="pruebas-de-hipótesis.html"><a href="pruebas-de-hipótesis.html#ejemplo-5"><i class="fa fa-check"></i>Ejemplo</a></li>
+</ul></li>
+<li class="chapter" data-level="5.7" data-path="pruebas-de-hipótesis.html"><a href="pruebas-de-hipótesis.html#pruebas-no-paramétricas"><i class="fa fa-check"></i><b>5.7</b> Pruebas no paramétricas</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="modelos-de-regresión.html"><a href="modelos-de-regresión.html"><i class="fa fa-check"></i><b>6</b> Modelos de regresión</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="modelos-de-regresión.html"><a href="modelos-de-regresión.html#regresión-lineal"><i class="fa fa-check"></i><b>6.1</b> Regresión lineal</a>
+<ul>
+<li class="chapter" data-level="6.1.1" data-path="modelos-de-regresión.html"><a href="modelos-de-regresión.html#modelo-lineal-simple"><i class="fa fa-check"></i><b>6.1.1</b> Modelo lineal simple</a></li>
+<li class="chapter" data-level="6.1.2" data-path="modelos-de-regresión.html"><a href="modelos-de-regresión.html#regresión-lineal-multivariante"><i class="fa fa-check"></i><b>6.1.2</b> Regresión lineal multivariante</a></li>
+<li class="chapter" data-level="6.1.3" data-path="modelos-de-regresión.html"><a href="modelos-de-regresión.html#ajuste-de-un-modelo-lineal"><i class="fa fa-check"></i><b>6.1.3</b> Ajuste de un modelo lineal</a></li>
+<li class="chapter" data-level="6.1.4" data-path="modelos-de-regresión.html"><a href="modelos-de-regresión.html#interpretación-de-coeficientes"><i class="fa fa-check"></i><b>6.1.4</b> Interpretación de coeficientes</a></li>
+<li class="chapter" data-level="6.1.5" data-path="modelos-de-regresión.html"><a href="modelos-de-regresión.html#inferencia-en-el-contexto-de-regresión"><i class="fa fa-check"></i><b>6.1.5</b> Inferencia en el contexto de regresión</a></li>
+<li class="chapter" data-level="6.1.6" data-path="modelos-de-regresión.html"><a href="modelos-de-regresión.html#asunciones-de-un-modelo-de-regresión"><i class="fa fa-check"></i><b>6.1.6</b> Asunciones de un modelo de regresión</a></li>
+</ul></li>
+<li class="chapter" data-level="6.2" data-path="modelos-de-regresión.html"><a href="modelos-de-regresión.html#regresión-logística"><i class="fa fa-check"></i><b>6.2</b> Regresión logística</a>
+<ul>
+<li class="chapter" data-level="6.2.1" data-path="modelos-de-regresión.html"><a href="modelos-de-regresión.html#interpretación-de-los-coeficientes"><i class="fa fa-check"></i><b>6.2.1</b> Interpretación de los coeficientes</a></li>
+</ul></li>
+<li class="chapter" data-level="6.3" data-path="modelos-de-regresión.html"><a href="modelos-de-regresión.html#creación-de-modelos"><i class="fa fa-check"></i><b>6.3</b> Creación de modelos</a>
+<ul>
+<li class="chapter" data-level="6.3.1" data-path="modelos-de-regresión.html"><a href="modelos-de-regresión.html#selección-paso-a-paso-stepwise"><i class="fa fa-check"></i><b>6.3.1</b> Selección paso a paso (stepwise)</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="gráficos.html"><a href="gráficos.html"><i class="fa fa-check"></i><b>7</b> Gráficos</a>
+<ul>
+<li class="chapter" data-level="7.1" data-path="gráficos.html"><a href="gráficos.html#gráficos-para-una-variable-cuantitativa"><i class="fa fa-check"></i><b>7.1</b> Gráficos para una variable cuantitativa</a>
+<ul>
+<li class="chapter" data-level="7.1.1" data-path="gráficos.html"><a href="gráficos.html#función-stem"><i class="fa fa-check"></i><b>7.1.1</b> Función <code>stem ()</code></a></li>
+<li class="chapter" data-level="" data-path="pruebas-de-hipótesis.html"><a href="pruebas-de-hipótesis.html#ejemplo"><i class="fa fa-check"></i>Ejemplo</a></li>
+<li class="chapter" data-level="7.1.2" data-path="gráficos.html"><a href="gráficos.html#función-boxplot"><i class="fa fa-check"></i><b>7.1.2</b> Función <code>boxplot ()</code></a></li>
+<li class="chapter" data-level="" data-path="pruebas-de-hipótesis.html"><a href="pruebas-de-hipótesis.html#ejemplo-1"><i class="fa fa-check"></i>Ejemplo 1</a></li>
+<li class="chapter" data-level="" data-path="pruebas-de-hipótesis.html"><a href="pruebas-de-hipótesis.html#ejemplo-2"><i class="fa fa-check"></i>Ejemplo 2</a></li>
+<li class="chapter" data-level="7.1.3" data-path="gráficos.html"><a href="gráficos.html#función-hist"><i class="fa fa-check"></i><b>7.1.3</b> Función <code>hist ()</code></a></li>
+<li class="chapter" data-level="" data-path="pruebas-de-hipótesis.html"><a href="pruebas-de-hipótesis.html#ejemplo-3"><i class="fa fa-check"></i>Ejemplo</a></li>
+<li class="chapter" data-level="7.1.4" data-path="gráficos.html"><a href="gráficos.html#función-density"><i class="fa fa-check"></i><b>7.1.4</b> Función <code>density ()</code></a></li>
+<li class="chapter" data-level="" data-path="pruebas-de-hipótesis.html"><a href="pruebas-de-hipótesis.html#ejemplo-4"><i class="fa fa-check"></i>Ejemplo</a></li>
+</ul></li>
+<li class="chapter" data-level="7.2" data-path="gráficos.html"><a href="gráficos.html#gráficos-para-dos-variables-cuantitativas"><i class="fa fa-check"></i><b>7.2</b> Gráficos para dos variables cuantitativas</a>
+<ul>
+<li class="chapter" data-level="7.2.1" data-path="gráficos.html"><a href="gráficos.html#función-plot"><i class="fa fa-check"></i><b>7.2.1</b> Función <code>plot ()</code></a></li>
+<li class="chapter" data-level="" data-path="gráficos.html"><a href="gráficos.html#ejemplos"><i class="fa fa-check"></i>Ejemplos</a></li>
+<li class="chapter" data-level="7.2.2" data-path="gráficos.html"><a href="gráficos.html#función-pairs"><i class="fa fa-check"></i><b>7.2.2</b> Función <code>pairs ()</code></a></li>
+<li class="chapter" data-level="" data-path="pruebas-de-hipótesis.html"><a href="pruebas-de-hipótesis.html#ejemplo-5"><i class="fa fa-check"></i>Ejemplo</a></li>
+</ul></li>
+<li class="chapter" data-level="7.3" data-path="gráficos.html"><a href="gráficos.html#gráficos-para-variables-categóricas"><i class="fa fa-check"></i><b>7.3</b> Gráficos para variables categóricas</a>
+<ul>
+<li class="chapter" data-level="7.3.1" data-path="gráficos.html"><a href="gráficos.html#función-barplot"><i class="fa fa-check"></i><b>7.3.1</b> Función <code>barplot ()</code></a></li>
+<li class="chapter" data-level="" data-path="gráficos.html"><a href="gráficos.html#ejemplo-6"><i class="fa fa-check"></i>Ejemplo</a></li>
+<li class="chapter" data-level="" data-path="gráficos.html"><a href="gráficos.html#ejemplo-7"><i class="fa fa-check"></i>Ejemplo</a></li>
+<li class="chapter" data-level="7.3.2" data-path="gráficos.html"><a href="gráficos.html#la-función-pie"><i class="fa fa-check"></i><b>7.3.2</b> La función <code>pie ()</code></a></li>
+<li class="chapter" data-level="" data-path="gráficos.html"><a href="gráficos.html#ejemplo-8"><i class="fa fa-check"></i>Ejemplo</a></li>
+<li class="chapter" data-level="7.3.3" data-path="gráficos.html"><a href="gráficos.html#función-dotchart"><i class="fa fa-check"></i><b>7.3.3</b> Función <code>dotchart ()</code></a></li>
+<li class="chapter" data-level="" data-path="gráficos.html"><a href="gráficos.html#ejemplo-9"><i class="fa fa-check"></i>Ejemplo</a></li>
+</ul></li>
+<li class="chapter" data-level="7.4" data-path="gráficos.html"><a href="gráficos.html#la-librería-lattice"><i class="fa fa-check"></i><b>7.4</b> La librería <code>lattice</code></a>
+<ul>
+<li class="chapter" data-level="" data-path="gráficos.html"><a href="gráficos.html#ejemplos-1"><i class="fa fa-check"></i>Ejemplos</a></li>
+<li class="chapter" data-level="" data-path="gráficos.html"><a href="gráficos.html#ejemplos-2"><i class="fa fa-check"></i>Ejemplos</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="r-markdown.html"><a href="r-markdown.html"><i class="fa fa-check"></i><b>8</b> R Markdown</a>
+<ul>
+<li class="chapter" data-level="8.1" data-path="index.html"><a href="index.html#introducción"><i class="fa fa-check"></i><b>8.1</b> Introducción</a></li>
+<li class="chapter" data-level="8.2" data-path="r-markdown.html"><a href="r-markdown.html#por-qué-r-markdown"><i class="fa fa-check"></i><b>8.2</b> ¿Por qué R Markdown?</a></li>
+<li class="chapter" data-level="8.3" data-path="r-markdown.html"><a href="r-markdown.html#flujo-de-trabajo"><i class="fa fa-check"></i><b>8.3</b> Flujo de trabajo</a></li>
+<li class="chapter" data-level="8.4" data-path="r-markdown.html"><a href="r-markdown.html#cómo-crear-un-fichero-.rmd"><i class="fa fa-check"></i><b>8.4</b> ¿Cómo crear un fichero <code>.Rmd</code>?</a></li>
+<li class="chapter" data-level="8.5" data-path="r-markdown.html"><a href="r-markdown.html#cabeceras-yaml"><i class="fa fa-check"></i><b>8.5</b> Cabeceras YAML</a></li>
+<li class="chapter" data-level="8.6" data-path="r-markdown.html"><a href="r-markdown.html#sintáxis-básica-de-markdown"><i class="fa fa-check"></i><b>8.6</b> Sintáxis básica de Markdown</a></li>
+<li class="chapter" data-level="8.7" data-path="r-markdown.html"><a href="r-markdown.html#insertar-código-de-r"><i class="fa fa-check"></i><b>8.7</b> Insertar código de R</a>
+<ul>
+<li class="chapter" data-level="8.7.1" data-path="r-markdown.html"><a href="r-markdown.html#código-de-r-en-línea"><i class="fa fa-check"></i><b>8.7.1</b> Código de R en línea</a></li>
+<li class="chapter" data-level="8.7.2" data-path="r-markdown.html"><a href="r-markdown.html#bloques-chunks-de-código-r"><i class="fa fa-check"></i><b>8.7.2</b> Bloques (<em>chunks</em>) de código R</a></li>
+</ul></li>
+<li class="chapter" data-level="8.8" data-path="r-markdown.html"><a href="r-markdown.html#opciones-de-los-bloques-de-código-r"><i class="fa fa-check"></i><b>8.8</b> Opciones de los bloques de código R</a></li>
+<li class="chapter" data-level="8.9" data-path="r-markdown.html"><a href="r-markdown.html#figuras"><i class="fa fa-check"></i><b>8.9</b> Figuras</a></li>
+<li class="chapter" data-level="8.10" data-path="r-markdown.html"><a href="r-markdown.html#tablas"><i class="fa fa-check"></i><b>8.10</b> Tablas</a></li>
+<li class="chapter" data-level="8.11" data-path="r-markdown.html"><a href="r-markdown.html#tabla-de-contenidos"><i class="fa fa-check"></i><b>8.11</b> Tabla de contenidos</a></li>
+<li class="chapter" data-level="8.12" data-path="r-markdown.html"><a href="r-markdown.html#caching"><i class="fa fa-check"></i><b>8.12</b> <em>Caching</em></a></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="creación-y-personalización-de-tablas-descriptivas.html"><a href="creación-y-personalización-de-tablas-descriptivas.html"><i class="fa fa-check"></i><b>9</b> Creación y personalización de tablas descriptivas</a>
+<ul>
+<li class="chapter" data-level="9.1" data-path="index.html"><a href="index.html#introducción"><i class="fa fa-check"></i><b>9.1</b> Introducción</a></li>
+<li class="chapter" data-level="9.2" data-path="creación-y-personalización-de-tablas-descriptivas.html"><a href="creación-y-personalización-de-tablas-descriptivas.html#estadísticas-descriptivas-y-tests-estadísticos"><i class="fa fa-check"></i><b>9.2</b> Estadísticas descriptivas y tests estadísticos</a>
+<ul>
+<li class="chapter" data-level="" data-path="creación-y-personalización-de-tablas-descriptivas.html"><a href="creación-y-personalización-de-tablas-descriptivas.html#seleccionamos-las-varialbes-y-los-métodos"><i class="fa fa-check"></i>Seleccionamos las varialbes y los métodos</a></li>
+<li class="chapter" data-level="" data-path="creación-y-personalización-de-tablas-descriptivas.html"><a href="creación-y-personalización-de-tablas-descriptivas.html#mostrar-resultados"><i class="fa fa-check"></i>Mostrar resultados</a></li>
+<li class="chapter" data-level="" data-path="creación-y-personalización-de-tablas-descriptivas.html"><a href="creación-y-personalización-de-tablas-descriptivas.html#crear-tabla-descriptiva"><i class="fa fa-check"></i>Crear tabla descriptiva</a></li>
+<li class="chapter" data-level="" data-path="creación-y-personalización-de-tablas-descriptivas.html"><a href="creación-y-personalización-de-tablas-descriptivas.html#visualización"><i class="fa fa-check"></i>Visualización</a></li>
+</ul></li>
+<li class="chapter" data-level="9.3" data-path="creación-y-personalización-de-tablas-descriptivas.html"><a href="creación-y-personalización-de-tablas-descriptivas.html#modelos-estadísticos-or-y-hr"><i class="fa fa-check"></i><b>9.3</b> Modelos estadísticos (OR y HR)</a>
+<ul>
+<li class="chapter" data-level="" data-path="creación-y-personalización-de-tablas-descriptivas.html"><a href="creación-y-personalización-de-tablas-descriptivas.html#odds-ratio"><i class="fa fa-check"></i>Odds ratio</a></li>
+<li class="chapter" data-level="" data-path="creación-y-personalización-de-tablas-descriptivas.html"><a href="creación-y-personalización-de-tablas-descriptivas.html#hazard-ratio"><i class="fa fa-check"></i>Hazard ratio</a></li>
+</ul></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Curso de R</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="creación-y-personalización-de-tablas-descriptivas" class="section level1" number="9">
+<h1><span class="header-section-number">9</span> Creación y personalización de tablas descriptivas</h1>
+<div id="introducción" class="section level2" number="9.1">
+<h2><span class="header-section-number">9.1</span> Introducción</h2>
+<p>Tal y como hemos visto en este curso, en muchos estudios biomédicos necesitamos llevar a cabo análisis descriptivos y de asociación para muchas variables con la intención de crear (a mano) tablas como esta que se pueden encontrar en los artículos científicos:</p>
+<div class="figure">
+<img src="figures/table3.png" alt="" />
+<p class="caption">Baseline comparisons of a case control study</p>
+</div>
+<div class="figure">
+<img src="figures/table4.png" alt="" />
+<p class="caption">Odds ratio summarization of main risk factors</p>
+</div>
+<p>Estos análisis se hacen con las mismas instrucciones de R y esto puede ser tedioso. Además copiar y pegar los resultados en una tabla puede llevar a errores. Finalmente, tener que volver a crear la tabla porque los datos han sido depurados o se han eliminado/añadido casos también puede conllevar a una pérdida de tiempo innecesaria.</p>
+<p>Para evitar estos problemas, podemos usar la librería
+<code>compareGroups</code> que está accesible en R y que podemos instalar mediante:</p>
+<div class="sourceCode" id="cb189"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb189-1"><a href="creación-y-personalización-de-tablas-descriptivas.html#cb189-1"></a><span class="kw">install.packages</span>(<span class="st">&quot;compareGroups&quot;</span>)</span></code></pre></div>
+<p>Esta librería consiste en tres funciones clave:</p>
+<ol style="list-style-type: decimal">
+<li><p><code>compareGroups ()</code>: genera los cálculos</p></li>
+<li><p><code>createTable ()</code>: crea la tabla descriptiva creada con <code>compareGroups ()</code>. Se puede customizar excluyendo categorías de las variables, cambiando el número de decimales, etc.</p></li>
+<li><p><code>export2... ()</code>: exporta las tablas a EXCEL, Word, LaTeX, Rmarkdown, etc.</p></li>
+</ol>
+<p>Para ilustrar cómo realizar nuestros análisis usando <code>compareGroups</code> utilizaremos una base de datos del estudio <a href="http://www.cat.isciii.es/ISCIII/es/contenidos/fd-el-instituto/fd-comunicacion/fd-noticias/PREDIMED-2013.pdf">PREDIMED</a> que es un estudio longitudinal que contiene distintas variables iniciales de los participantes, así como eventos ocurridos durante un período de seguimiento de 7 años (variables <code>event</code> y <code>tevent</code>). Cada individuo ha sido asignado a una dieta de tres intervenciones al azar (variable <code>group</code>).</p>
+<p>Los datos están accesibles con la librería y se pueden cargar tras cargar la libería con:</p>
+<div class="sourceCode" id="cb190"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb190-1"><a href="creación-y-personalización-de-tablas-descriptivas.html#cb190-1"></a><span class="kw">library</span>(compareGroups)</span>
+<span id="cb190-2"><a href="creación-y-personalización-de-tablas-descriptivas.html#cb190-2"></a><span class="kw">data</span>(predimed)</span></code></pre></div>
+<p>Las variables son:</p>
+<div class="sourceCode" id="cb191"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb191-1"><a href="creación-y-personalización-de-tablas-descriptivas.html#cb191-1"></a><span class="kw">head</span>(predimed)</span></code></pre></div>
+<pre><code>           group    sex age   smoke   bmi waist       wth htn diab
+1        Control   Male  58  Former 33.53   122 0.7530864  No   No
+2        Control   Male  77 Current 31.05   119 0.7300614 Yes  Yes
+4  MedDiet + VOO Female  72  Former 30.86   106 0.6543210  No  Yes
+5 MedDiet + Nuts   Male  71  Former 27.68   118 0.6941177 Yes   No
+6  MedDiet + VOO Female  79   Never 35.94   129 0.8062500 Yes   No
+8        Control   Male  63  Former 41.66   143 0.8033708 Yes  Yes
+  hyperchol famhist hormo p14  toevent event
+1       Yes      No    No  10 5.374401   Yes
+2        No      No    No  10 6.097194    No
+4        No     Yes    No   8 5.946612    No
+5       Yes      No    No   8 2.907598   Yes
+6       Yes      No    No   9 4.761123    No
+8       Yes      No  &lt;NA&gt;   9 3.148528   Yes</code></pre>
+</div>
+<div id="estadísticas-descriptivas-y-tests-estadísticos" class="section level2" number="9.2">
+<h2><span class="header-section-number">9.2</span> Estadísticas descriptivas y tests estadísticos</h2>
+<div id="seleccionamos-las-varialbes-y-los-métodos" class="section level3 unnumbered" number="">
+<h3>Seleccionamos las varialbes y los métodos</h3>
+<p>Calculamos todos los descriptivos y las pruebas de hipótesis de las variables seleccionadas mediante la función <code>compareGroups ()</code>.</p>
+<p>Las variables se seleccionan haciendo uso del entorno de fórmulas estándar R. Las variables descritas se colocan en al lado derecho de <code>~</code> separadas por el signo <code>+</code>, mientras que la variable que indica los grupos se coloca en el lado izquierdo de la fórmula. Para seleccionar todas las variables podemos usar <code>.</code> y para eliminar variables, <code>-</code>.</p>
+<p>Debemos tener en cuenta que no se permiten transformaciones en el entorno de fórmulas. Si es necesario, deben realizarse antes de llamar a la función <code>compareGroups ()</code>.</p>
+<p>Cada variable es descrita en función del tipo (numérica o categórica). El argumento <code>method</code> fuerza a que los análisis de una variable se haga asumiendo que la variable es:</p>
+<ul>
+<li>method = 1 normalmente distribuida;</li>
+<li>method = 2 continua no normal;</li>
+<li>method = 3 variable categórica; y</li>
+<li>method = NA, lleva a cabo un test de normalidad y decide si la variable es normal o no (valor por defecto).</li>
+</ul>
+<p>Así, si quisiéramos describir todas (<code>.</code>) las variables de nuestros datos menos la variable <code>toevent</code> (<code>- toevent</code>) y que el programa decidiera qué variables son normales o no (<code>method = NA</code>) excepto para la variable <code>wtn</code> y <code>p14</code> que queremos que se reporten con la mediana y los cuartiles en vez de la media y desviación estandard, ejecutaríamos</p>
+<div class="sourceCode" id="cb193"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb193-1"><a href="creación-y-personalización-de-tablas-descriptivas.html#cb193-1"></a>res &lt;-<span class="st"> </span><span class="kw">compareGroups</span>(group <span class="op">~</span><span class="st"> </span>. <span class="op">-</span><span class="st"> </span>toevent, <span class="dt">data =</span> predimed, <span class="dt">method =</span> <span class="kw">c</span>(<span class="dt">wtn =</span> <span class="dv">2</span>, <span class="dt">p14 =</span> <span class="dv">2</span>))</span>
+<span id="cb193-2"><a href="creación-y-personalización-de-tablas-descriptivas.html#cb193-2"></a>res</span></code></pre></div>
+<pre><code>
+
+-------- Summary of results by groups of &#39;Intervention group&#39;---------
+
+
+   var                             N    p.value 
+1  Sex                             6324 &lt;0.001**
+2  Age                             6324 0.003** 
+3  Smoking                         6324 0.444   
+4  Body mass index                 6324 &lt;0.001**
+5  Waist circumference             6324 0.045** 
+6  Waist-to-height ratio           6324 &lt;0.001**
+7  Hypertension                    6324 0.249   
+8  Type-2 diabetes                 6324 0.017** 
+9  Dyslipidemia                    6324 0.423   
+10 Family history of premature CHD 6324 0.581   
+11 Hormone-replacement therapy     5661 0.850   
+12 MeDiet Adherence score          6324 &lt;0.001**
+13 AMI, stroke, or CV Death        6324 0.064*  
+   method                selection
+1  categorical           ALL      
+2  continuous normal     ALL      
+3  categorical           ALL      
+4  continuous normal     ALL      
+5  continuous normal     ALL      
+6  continuous normal     ALL      
+7  categorical           ALL      
+8  categorical           ALL      
+9  categorical           ALL      
+10 categorical           ALL      
+11 categorical           ALL      
+12 continuous non-normal ALL      
+13 categorical           ALL      
+-----
+Signif. codes:  0 &#39;**&#39; 0.05 &#39;*&#39; 0.1 &#39; &#39; 1 </code></pre>
+<p>En esta tabla vemos el número de indiviudos sin valores faltantes (missings) para cada variable, el p-valor correspondiente al test de normalidad y el tipo de variable que considera para el análisis.</p>
+</div>
+<div id="mostrar-resultados" class="section level3 unnumbered" number="">
+<h3>Mostrar resultados</h3>
+<p>Si queremos ver las descriptivas de cada variable, basta con usar la función <code>summary ()</code>. Veamos esta descriptiva para las dos primeras variables</p>
+<div class="sourceCode" id="cb195"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb195-1"><a href="creación-y-personalización-de-tablas-descriptivas.html#cb195-1"></a><span class="kw">summary</span>(res[<span class="dv">1</span><span class="op">:</span><span class="dv">2</span>])</span></code></pre></div>
+<pre><code>
+ --- Descriptives of each row-variable by groups of &#39;Intervention group&#39; ---
+
+------------------- 
+row-variable: Sex 
+
+               Male Female Male%    Female%  p.overall p.trend 
+[ALL]          2679 3645   42.36243 57.63757                   
+Control        812  1230   39.76494 60.23506 8.1e-05   0.388386
+MedDiet + Nuts 968  1132   46.09524 53.90476                   
+MedDiet + VOO  899  1283   41.20073 58.79927                   
+               p.Control vs MedDiet + Nuts
+[ALL]                                     
+Control        0.000133                   
+MedDiet + Nuts                            
+MedDiet + VOO                             
+               p.Control vs MedDiet + VOO
+[ALL]                                    
+Control        0.358324                  
+MedDiet + Nuts                           
+MedDiet + VOO                            
+               p.MedDiet + Nuts vs MedDiet + VOO
+[ALL]                                           
+Control        0.002076                         
+MedDiet + Nuts                                  
+MedDiet + VOO                                   
+
+------------------- 
+row-variable: Age 
+
+               N    mean     sd       lower    upper    p.overall
+[ALL]          6324 67.0117  6.17499  66.85948 67.16392          
+Control        2042 67.34231 6.27992  67.06977 67.61485 0.002666 
+MedDiet + Nuts 2100 66.6819  6.016395 66.42444 66.93937          
+MedDiet + VOO  2182 67.01971 6.212578 66.75889 67.28052          
+               p.trend  p.Control vs MedDiet + Nuts
+[ALL]                                              
+Control        0.101163 0.001672                   
+MedDiet + Nuts                                     
+MedDiet + VOO                                      
+               p.Control vs MedDiet + VOO
+[ALL]                                    
+Control        0.20596                   
+MedDiet + Nuts                           
+MedDiet + VOO                            
+               p.MedDiet + Nuts vs MedDiet + VOO
+[ALL]                                           
+Control        0.172672                         
+MedDiet + Nuts                                  
+MedDiet + VOO                                   </code></pre>
+</div>
+<div id="crear-tabla-descriptiva" class="section level3 unnumbered" number="">
+<h3>Crear tabla descriptiva</h3>
+<p>Podemos crear la tabla descriptiva aplicando la función <code>createTable ()</code> al objeto que hemos obtenido tras usar la función <code>compareGroups ()</code> (<code>res</code>). Usando <code>createTable ()</code> podemos personalizar cómo se muestran las variables categóricas (sólo por intervalo o frecuencias absolutas o ambas) mediante el argumento <code>type</code>.</p>
+<p>El argumento <code>hide.no</code> es útil para ocultar el nivel “no” para las variables binarias.</p>
+<p>Si solo desea mostrar la categoría “Female”, podemos usar el argumento <code>hide</code> para la variable <code>sex</code> que indicará qué categoría se oculta Este argumento también se aplica a variables categóricas con más de dos categorías.</p>
+<p>Para especificar el número de dígitos decimales que se mostrarán, utilizamos el argumento <code>digits</code>. En el siguiente ejemplo, la variable <code>p14</code> no tendrá decimales y la variable <code>hormo</code> solo uno.</p>
+<p>Finalmente, si desea mostrar cuántas personas tienen valores faltantes (missing) en cada variable usaremos <code>hide.n = TRUE</code>.</p>
+<div class="sourceCode" id="cb197"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb197-1"><a href="creación-y-personalización-de-tablas-descriptivas.html#cb197-1"></a>restab &lt;-<span class="st"> </span><span class="kw">createTable</span>(res, <span class="dt">digits =</span> <span class="kw">c</span>(<span class="dt">p14 =</span> <span class="dv">0</span>, <span class="dt">hormo=</span><span class="dv">1</span>), <span class="dt">type =</span> <span class="dv">1</span>, </span>
+<span id="cb197-2"><a href="creación-y-personalización-de-tablas-descriptivas.html#cb197-2"></a>                      <span class="dt">hide =</span> <span class="kw">c</span>(<span class="dt">sex =</span> <span class="st">&quot;Male&quot;</span>), <span class="dt">hide.no =</span> <span class="st">&quot;no&quot;</span>, <span class="dt">show.n =</span> <span class="ot">TRUE</span>)</span>
+<span id="cb197-3"><a href="creación-y-personalización-de-tablas-descriptivas.html#cb197-3"></a>restab</span></code></pre></div>
+<pre><code>
+--------Summary descriptives table by &#39;Intervention group&#39;---------
+
+_______________________________________________________________________________________ 
+                                  Control   MedDiet + Nuts MedDiet + VOO p.overall  N   
+                                  N=2042        N=2100        N=2182                    
+¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯ 
+Sex: Female                        60.2%        53.9%          58.8%      &lt;0.001   6324 
+Age                             67.3 (6.28)  66.7 (6.02)    67.0 (6.21)    0.003   6324 
+Smoking:                                                                   0.444   6324 
+    Never                          62.8%        60.0%          61.9%                    
+    Current                        13.2%        14.1%          13.4%                    
+    Former                         24.0%        26.0%          24.7%                    
+Body mass index                 30.3 (3.96)  29.7 (3.77)    29.9 (3.71)   &lt;0.001   6324 
+Waist circumference             101 (10.8)    100 (10.6)    100 (10.4)     0.045   6324 
+Waist-to-height ratio           0.63 (0.07)  0.62 (0.06)    0.63 (0.06)   &lt;0.001   6324 
+Hypertension                       83.8%        82.8%          81.9%       0.249   6324 
+Type-2 diabetes                    47.5%        45.2%          49.6%       0.017   6324 
+Dyslipidemia                       72.4%        73.3%          71.5%       0.423   6324 
+Family history of premature CHD    22.6%        21.9%          23.2%       0.581   6324 
+Hormone-replacement therapy        1.7%          1.6%          1.8%        0.850   5661 
+MeDiet Adherence score           8 [7;10]      9 [8;10]      9 [8;10]     &lt;0.001   6324 
+AMI, stroke, or CV Death           4.75%        3.33%          3.90%       0.064   6324 
+¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯ </code></pre>
+<p>Si queremos cambiar algunas cabecereas, como por ejemplo “p-values” en vez de “p.overall” podemos usar el argumento <code>header.labels</code></p>
+<div class="sourceCode" id="cb199"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb199-1"><a href="creación-y-personalización-de-tablas-descriptivas.html#cb199-1"></a><span class="kw">print</span>(restab, <span class="dt">header.labels =</span> <span class="kw">c</span>(<span class="dt">p.overall =</span> <span class="st">&quot;p-value&quot;</span>))</span></code></pre></div>
+<pre><code>
+--------Summary descriptives table by &#39;Intervention group&#39;---------
+
+_____________________________________________________________________________________ 
+                                  Control   MedDiet + Nuts MedDiet + VOO p-value  N   
+                                  N=2042        N=2100        N=2182                  
+¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯ 
+Sex: Female                        60.2%        53.9%          58.8%     &lt;0.001  6324 
+Age                             67.3 (6.28)  66.7 (6.02)    67.0 (6.21)   0.003  6324 
+Smoking:                                                                  0.444  6324 
+    Never                          62.8%        60.0%          61.9%                  
+    Current                        13.2%        14.1%          13.4%                  
+    Former                         24.0%        26.0%          24.7%                  
+Body mass index                 30.3 (3.96)  29.7 (3.77)    29.9 (3.71)  &lt;0.001  6324 
+Waist circumference             101 (10.8)    100 (10.6)    100 (10.4)    0.045  6324 
+Waist-to-height ratio           0.63 (0.07)  0.62 (0.06)    0.63 (0.06)  &lt;0.001  6324 
+Hypertension                       83.8%        82.8%          81.9%      0.249  6324 
+Type-2 diabetes                    47.5%        45.2%          49.6%      0.017  6324 
+Dyslipidemia                       72.4%        73.3%          71.5%      0.423  6324 
+Family history of premature CHD    22.6%        21.9%          23.2%      0.581  6324 
+Hormone-replacement therapy        1.7%          1.6%          1.8%       0.850  5661 
+MeDiet Adherence score           8 [7;10]      9 [8;10]      9 [8;10]    &lt;0.001  6324 
+AMI, stroke, or CV Death           4.75%        3.33%          3.90%      0.064  6324 
+¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯ </code></pre>
+<p>También podemos crear tablas descriptivas que no estén separadas por una variable grupal. Basta con dejar el lado izquierdo de <code>~</code> vacío.</p>
+<div class="sourceCode" id="cb201"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb201-1"><a href="creación-y-personalización-de-tablas-descriptivas.html#cb201-1"></a>resNoGroups &lt;-<span class="st"> </span><span class="kw">compareGroups</span>(<span class="op">~</span><span class="st"> </span>. , predimed)</span>
+<span id="cb201-2"><a href="creación-y-personalización-de-tablas-descriptivas.html#cb201-2"></a>restabNoGroups &lt;-<span class="st"> </span><span class="kw">createTable</span>(resNoGroups, <span class="dt">hide.no =</span> <span class="st">&quot;no&quot;</span>)</span>
+<span id="cb201-3"><a href="creación-y-personalización-de-tablas-descriptivas.html#cb201-3"></a><span class="kw">print</span>(restabNoGroups, <span class="dt">header.labels =</span> <span class="kw">c</span>(<span class="st">&quot;all&quot;</span> =<span class="st"> &quot;Entire cohort&quot;</span>))</span></code></pre></div>
+<pre><code>
+--------Summary descriptives table ---------
+
+__________________________________________________ 
+                                Entire cohort  N   
+                                   N=6324          
+¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯ 
+Intervention group:                           6324 
+    Control                     2042 (32.3%)       
+    MedDiet + Nuts              2100 (33.2%)       
+    MedDiet + VOO               2182 (34.5%)       
+Sex:                                          6324 
+    Male                        2679 (42.4%)       
+    Female                      3645 (57.6%)       
+Age                              67.0 (6.17)  6324 
+Smoking:                                      6324 
+    Never                       3892 (61.5%)       
+    Current                      858 (13.6%)       
+    Former                      1574 (24.9%)       
+Body mass index                  30.0 (3.82)  6324 
+Waist circumference              100 (10.6)   6324 
+Waist-to-height ratio            0.63 (0.07)  6324 
+Hypertension                    5235 (82.8%)  6324 
+Type-2 diabetes                 3002 (47.5%)  6324 
+Dyslipidemia                    4578 (72.4%)  6324 
+Family history of premature CHD 1429 (22.6%)  6324 
+Hormone-replacement therapy      97 (1.71%)   5661 
+MeDiet Adherence score           8.68 (1.94)  6324 
+follow-up to main event (years)  4.36 (1.69)  6324 
+AMI, stroke, or CV Death         252 (3.98%)  6324 
+¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯ </code></pre>
+</div>
+<div id="visualización" class="section level3 unnumbered" number="">
+<h3>Visualización</h3>
+<p>Finalmente, con <code>compareGroups</code> también podemos resumir los datos de forma gráfica mediante la función genérica <code>plot ()</code>. Por ejemplo, podemos visualizar las dos primeras variables con</p>
+<div class="sourceCode" id="cb203"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb203-1"><a href="creación-y-personalización-de-tablas-descriptivas.html#cb203-1"></a><span class="kw">plot</span>(res[<span class="dv">1</span><span class="op">:</span><span class="dv">2</span>])</span></code></pre></div>
+<p><img src="fig/unnamed-chunk-127-1.png" width="672" /><img src="fig/unnamed-chunk-127-2.png" width="672" /></p>
+<p>Los símbolos <code>[ ]</code> se utilizan para seleccionar aquellas variables que queremos visualizar. Podemos seleccionarlas con la posición <code>1:2</code> o con el nombre <code>c("sex", "age")</code></p>
+<p>También podemos ver la distribución según la variable grupal</p>
+<div class="sourceCode" id="cb204"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb204-1"><a href="creación-y-personalización-de-tablas-descriptivas.html#cb204-1"></a><span class="kw">plot</span>(res[<span class="dv">1</span><span class="op">:</span><span class="dv">2</span>], <span class="dt">bivar =</span> <span class="ot">TRUE</span>)</span></code></pre></div>
+<p><img src="fig/unnamed-chunk-128-1.png" width="672" /><img src="fig/unnamed-chunk-128-2.png" width="672" /></p>
+</div>
+</div>
+<div id="modelos-estadísticos-or-y-hr" class="section level2" number="9.3">
+<h2><span class="header-section-number">9.3</span> Modelos estadísticos (OR y HR)</h2>
+<div id="odds-ratio" class="section level3 unnumbered" number="">
+<h3>Odds ratio</h3>
+<p>Para los estudios de casos y controles, puede ser interesante calcular la <em>odds ratio</em> (OR) para cada variable entre casos y controles. Aunque el estudio PREDIMED no es un caso-control, usaremos variable <code>event</code> como si fuese una variable caso-control. La forma más sencilla de obtener una tabla similar a la que hay en los artículos científicos es:</p>
+<div class="sourceCode" id="cb205"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb205-1"><a href="creación-y-personalización-de-tablas-descriptivas.html#cb205-1"></a>resOR &lt;-<span class="st"> </span><span class="kw">compareGroups</span>(event <span class="op">~</span><span class="st"> </span>. <span class="op">-</span><span class="st"> </span>toevent, predimed)</span>
+<span id="cb205-2"><a href="creación-y-personalización-de-tablas-descriptivas.html#cb205-2"></a>restabOR &lt;-<span class="st"> </span><span class="kw">createTable</span>(resOR, <span class="dt">show.ratio =</span> <span class="ot">TRUE</span>,</span>
+<span id="cb205-3"><a href="creación-y-personalización-de-tablas-descriptivas.html#cb205-3"></a>                        <span class="dt">show.p.overall =</span> <span class="ot">FALSE</span>)</span>
+<span id="cb205-4"><a href="creación-y-personalización-de-tablas-descriptivas.html#cb205-4"></a>restabOR</span></code></pre></div>
+<pre><code>
+--------Summary descriptives table by &#39;AMI, stroke, or CV Death&#39;---------
+
+__________________________________________________________________________________ 
+                                      No          Yes            OR        p.ratio 
+                                    N=6072       N=252                             
+¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯ 
+Intervention group:                                                                
+    Control                      1945 (32.0%) 97 (38.5%)        Ref.        Ref.   
+    MedDiet + Nuts               2030 (33.4%) 70 (27.8%)  0.69 [0.50;0.95]  0.021  
+    MedDiet + VOO                2097 (34.5%) 85 (33.7%)  0.81 [0.60;1.09]  0.173  
+Sex:                                                                               
+    Male                         2528 (41.6%) 151 (59.9%)       Ref.        Ref.   
+    Female                       3544 (58.4%) 101 (40.1%) 0.48 [0.37;0.62] &lt;0.001  
+Age                              66.9 (6.14)  69.4 (6.65) 1.07 [1.04;1.09] &lt;0.001  
+Smoking:                                                                           
+    Never                        3778 (62.2%) 114 (45.2%)       Ref.        Ref.   
+    Current                      809 (13.3%)  49 (19.4%)  2.01 [1.41;2.82] &lt;0.001  
+    Former                       1485 (24.5%) 89 (35.3%)  1.99 [1.49;2.64] &lt;0.001  
+Body mass index                  30.0 (3.81)  29.8 (3.92) 0.98 [0.95;1.02]  0.365  
+Waist circumference               100 (10.6)  102 (10.6)  1.01 [1.00;1.03]  0.016  
+Waist-to-height ratio            0.63 (0.07)  0.63 (0.07) 3.64 [0.55;23.9]  0.178  
+Hypertension:                                                                      
+    No                           1047 (17.2%) 42 (16.7%)        Ref.        Ref.   
+    Yes                          5025 (82.8%) 210 (83.3%) 1.04 [0.75;1.48]  0.826  
+Type-2 diabetes:                                                                   
+    No                           3231 (53.2%) 91 (36.1%)        Ref.        Ref.   
+    Yes                          2841 (46.8%) 161 (63.9%) 2.01 [1.55;2.62] &lt;0.001  
+Dyslipidemia:                                                                      
+    No                           1645 (27.1%) 101 (40.1%)       Ref.        Ref.   
+    Yes                          4427 (72.9%) 151 (59.9%) 0.56 [0.43;0.72] &lt;0.001  
+Family history of premature CHD:                                                   
+    No                           4694 (77.3%) 201 (79.8%)       Ref.        Ref.   
+    Yes                          1378 (22.7%) 51 (20.2%)  0.87 [0.63;1.18]  0.363  
+Hormone-replacement therapy:                                                       
+    No                           5341 (98.2%) 223 (99.6%)       Ref.        Ref.   
+    Yes                           96 (1.77%)   1 (0.45%)  0.29 [0.01;1.27]  0.117  
+MeDiet Adherence score           8.70 (1.94)  8.24 (1.94) 0.89 [0.84;0.95] &lt;0.001  
+¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯ </code></pre>
+<p>Esta función se puede personalizar. Por ejemplo el argumento <code>fact.ratio</code> nos permite determinar la interpretación de la OR según el incremento de la variable independiente (<code>fact.ratio = c(waist=10)</code>). También podemos cambiar las cabeceras de la tabla como hemos explicado anteriormente. Para más posibilidades ver los argumentos en <code>?compareGroups</code>.</p>
+<div class="sourceCode" id="cb207"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb207-1"><a href="creación-y-personalización-de-tablas-descriptivas.html#cb207-1"></a>resOR &lt;-<span class="st"> </span><span class="kw">compareGroups</span>(event <span class="op">~</span><span class="st"> </span>. <span class="op">-</span><span class="st"> </span>toevent, predimed, </span>
+<span id="cb207-2"><a href="creación-y-personalización-de-tablas-descriptivas.html#cb207-2"></a>                       <span class="dt">fact.ratio =</span> <span class="kw">c</span>(<span class="dt">waist=</span><span class="dv">10</span>))</span>
+<span id="cb207-3"><a href="creación-y-personalización-de-tablas-descriptivas.html#cb207-3"></a>restabOR &lt;-<span class="st"> </span><span class="kw">createTable</span>(resOR, <span class="dt">show.ratio =</span> <span class="ot">TRUE</span>,</span>
+<span id="cb207-4"><a href="creación-y-personalización-de-tablas-descriptivas.html#cb207-4"></a>                        <span class="dt">show.p.overall =</span> <span class="ot">FALSE</span>, </span>
+<span id="cb207-5"><a href="creación-y-personalización-de-tablas-descriptivas.html#cb207-5"></a>                        <span class="dt">hide.no =</span> <span class="st">&quot;no&quot;</span>, </span>
+<span id="cb207-6"><a href="creación-y-personalización-de-tablas-descriptivas.html#cb207-6"></a>                        <span class="dt">hide =</span> <span class="kw">c</span>(<span class="dt">sex =</span> <span class="st">&quot;Male&quot;</span>), <span class="dt">type=</span><span class="dv">1</span>)</span>
+<span id="cb207-7"><a href="creación-y-personalización-de-tablas-descriptivas.html#cb207-7"></a><span class="kw">print</span>(restabOR, <span class="dt">header.labels =</span> <span class="kw">c</span>(<span class="dt">p.ratio =</span> <span class="st">&quot;p-value&quot;</span>))</span></code></pre></div>
+<pre><code>
+--------Summary descriptives table by &#39;AMI, stroke, or CV Death&#39;---------
+
+________________________________________________________________________________ 
+                                    No          Yes            OR        p-value 
+                                  N=6072       N=252                             
+¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯ 
+Intervention group:                                                              
+    Control                        32.0%       38.5%          Ref.        Ref.   
+    MedDiet + Nuts                 33.4%       27.8%    0.69 [0.50;0.95]  0.021  
+    MedDiet + VOO                  34.5%       33.7%    0.81 [0.60;1.09]  0.173  
+Sex: Female                        58.4%       40.1%    0.48 [0.37;0.62] &lt;0.001  
+Age                             66.9 (6.14) 69.4 (6.65) 1.07 [1.04;1.09] &lt;0.001  
+Smoking:                                                                         
+    Never                          62.2%       45.2%          Ref.        Ref.   
+    Current                        13.3%       19.4%    2.01 [1.41;2.82] &lt;0.001  
+    Former                         24.5%       35.3%    1.99 [1.49;2.64] &lt;0.001  
+Body mass index                 30.0 (3.81) 29.8 (3.92) 0.98 [0.95;1.02]  0.365  
+Waist circumference             100 (10.6)  102 (10.6)  1.15 [1.03;1.30]  0.016  
+Waist-to-height ratio           0.63 (0.07) 0.63 (0.07) 3.64 [0.55;23.9]  0.178  
+Hypertension                       82.8%       83.3%    1.04 [0.75;1.48]  0.826  
+Type-2 diabetes                    46.8%       63.9%    2.01 [1.55;2.62] &lt;0.001  
+Dyslipidemia                       72.9%       59.9%    0.56 [0.43;0.72] &lt;0.001  
+Family history of premature CHD    22.7%       20.2%    0.87 [0.63;1.18]  0.363  
+Hormone-replacement therapy        1.77%       0.45%    0.29 [0.01;1.27]  0.117  
+MeDiet Adherence score          8.70 (1.94) 8.24 (1.94) 0.89 [0.84;0.95] &lt;0.001  
+¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯ </code></pre>
+</div>
+<div id="hazard-ratio" class="section level3 unnumbered" number="">
+<h3>Hazard ratio</h3>
+<p>Cuando analizamos estudios de cohortes, solemos estar interesados en calcular los <em>hazard ratio</em> (HR) en vez de OR ya que de esta manera tenemos en cuenta el tiempo transcurrido hasta el evento y los posibles valores censurados (análisis de supervivencia).</p>
+<p>Para llevar a cabo estos análisis con <code>compareGroups</code> primero debemos calcular la variable tiempo hasta el evento como una variable de supervivencia mediante la función <code>Surv</code> de la librería <code>survival</code> (que no hace falta instalar porque ya está en R).</p>
+<div class="sourceCode" id="cb209"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb209-1"><a href="creación-y-personalización-de-tablas-descriptivas.html#cb209-1"></a><span class="kw">library</span>(survival)</span>
+<span id="cb209-2"><a href="creación-y-personalización-de-tablas-descriptivas.html#cb209-2"></a>predimed &lt;-<span class="st"> </span><span class="kw">mutate</span>(predimed, </span>
+<span id="cb209-3"><a href="creación-y-personalización-de-tablas-descriptivas.html#cb209-3"></a>                   <span class="dt">eventSurv =</span> <span class="kw">Surv</span>(toevent, event <span class="op">==</span><span class="st"> &quot;Yes&quot;</span>))</span></code></pre></div>
+<p>Tras esto, podemos usar esta variable a lado izquierdo de <code>~</code> y usar una sintaxis similar a la que usamos para calcualr OR simplemente cambiando <code>event</code> por <code>eventSurv</code>.</p>
+<div class="sourceCode" id="cb210"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb210-1"><a href="creación-y-personalización-de-tablas-descriptivas.html#cb210-1"></a>resHZ &lt;-<span class="st"> </span><span class="kw">compareGroups</span>(eventSurv <span class="op">~</span><span class="st"> </span>. <span class="op">-</span><span class="st"> </span>toevent, predimed)</span>
+<span id="cb210-2"><a href="creación-y-personalización-de-tablas-descriptivas.html#cb210-2"></a>restabHZ &lt;-<span class="st"> </span><span class="kw">createTable</span>(resOR, <span class="dt">show.ratio =</span> <span class="ot">TRUE</span>,</span>
+<span id="cb210-3"><a href="creación-y-personalización-de-tablas-descriptivas.html#cb210-3"></a>                        <span class="dt">show.p.overall =</span> <span class="ot">FALSE</span>)</span>
+<span id="cb210-4"><a href="creación-y-personalización-de-tablas-descriptivas.html#cb210-4"></a>restabHZ</span></code></pre></div>
+<pre><code>
+--------Summary descriptives table by &#39;AMI, stroke, or CV Death&#39;---------
+
+__________________________________________________________________________________ 
+                                      No          Yes            OR        p.ratio 
+                                    N=6072       N=252                             
+¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯ 
+Intervention group:                                                                
+    Control                      1945 (32.0%) 97 (38.5%)        Ref.        Ref.   
+    MedDiet + Nuts               2030 (33.4%) 70 (27.8%)  0.69 [0.50;0.95]  0.021  
+    MedDiet + VOO                2097 (34.5%) 85 (33.7%)  0.81 [0.60;1.09]  0.173  
+Sex:                                                                               
+    Male                         2528 (41.6%) 151 (59.9%)       Ref.        Ref.   
+    Female                       3544 (58.4%) 101 (40.1%) 0.48 [0.37;0.62] &lt;0.001  
+Age                              66.9 (6.14)  69.4 (6.65) 1.07 [1.04;1.09] &lt;0.001  
+Smoking:                                                                           
+    Never                        3778 (62.2%) 114 (45.2%)       Ref.        Ref.   
+    Current                      809 (13.3%)  49 (19.4%)  2.01 [1.41;2.82] &lt;0.001  
+    Former                       1485 (24.5%) 89 (35.3%)  1.99 [1.49;2.64] &lt;0.001  
+Body mass index                  30.0 (3.81)  29.8 (3.92) 0.98 [0.95;1.02]  0.365  
+Waist circumference               100 (10.6)  102 (10.6)  1.15 [1.03;1.30]  0.016  
+Waist-to-height ratio            0.63 (0.07)  0.63 (0.07) 3.64 [0.55;23.9]  0.178  
+Hypertension:                                                                      
+    No                           1047 (17.2%) 42 (16.7%)        Ref.        Ref.   
+    Yes                          5025 (82.8%) 210 (83.3%) 1.04 [0.75;1.48]  0.826  
+Type-2 diabetes:                                                                   
+    No                           3231 (53.2%) 91 (36.1%)        Ref.        Ref.   
+    Yes                          2841 (46.8%) 161 (63.9%) 2.01 [1.55;2.62] &lt;0.001  
+Dyslipidemia:                                                                      
+    No                           1645 (27.1%) 101 (40.1%)       Ref.        Ref.   
+    Yes                          4427 (72.9%) 151 (59.9%) 0.56 [0.43;0.72] &lt;0.001  
+Family history of premature CHD:                                                   
+    No                           4694 (77.3%) 201 (79.8%)       Ref.        Ref.   
+    Yes                          1378 (22.7%) 51 (20.2%)  0.87 [0.63;1.18]  0.363  
+Hormone-replacement therapy:                                                       
+    No                           5341 (98.2%) 223 (99.6%)       Ref.        Ref.   
+    Yes                           96 (1.77%)   1 (0.45%)  0.29 [0.01;1.27]  0.117  
+MeDiet Adherence score           8.70 (1.94)  8.24 (1.94) 0.89 [0.84;0.95] &lt;0.001  
+¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯ </code></pre>
+<p>Las tablas creadas se pueden exportar a Word (<code>export2word ()</code>), CSV (<code>export2csv ()</code>) y otros formatos (pdf, LaTeX, Mardown). Si usamos <code>export2md ()</code> lo exportaremos a Markdown y si ponemos esto en un documento de R Mardown la visualización de la tabla será mucho mejor. Por ejemplo</p>
+<div class="sourceCode" id="cb212"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb212-1"><a href="creación-y-personalización-de-tablas-descriptivas.html#cb212-1"></a><span class="kw">export2md</span>(restabOR)</span></code></pre></div>
+<table class="table table-striped table-condensed" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<caption>
+<span id="tab:unnamed-chunk-133">Table 9.1: </span>Summary descriptives table by groups of `AMI, stroke, or CV Death’
+</caption>
+<thead>
+<tr>
+<th style="text-align:left;">
+</th>
+<th style="text-align:center;">
+No
+</th>
+<th style="text-align:center;">
+Yes
+</th>
+<th style="text-align:center;">
+OR
+</th>
+<th style="text-align:center;">
+p.ratio
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;font-style: italic;border-bottom: 1px solid grey">
+</td>
+<td style="text-align:center;font-style: italic;border-bottom: 1px solid grey">
+N=6072
+</td>
+<td style="text-align:center;font-style: italic;border-bottom: 1px solid grey">
+N=252
+</td>
+<td style="text-align:center;font-style: italic;border-bottom: 1px solid grey">
+</td>
+<td style="text-align:center;font-style: italic;border-bottom: 1px solid grey">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Intervention group:
+</td>
+<td style="text-align:center;">
+</td>
+<td style="text-align:center;">
+</td>
+<td style="text-align:center;">
+</td>
+<td style="text-align:center;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left:  2em;" indentlevel="1">
+Control
+</td>
+<td style="text-align:center;">
+32.0%
+</td>
+<td style="text-align:center;">
+38.5%
+</td>
+<td style="text-align:center;">
+Ref.
+</td>
+<td style="text-align:center;">
+Ref.
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left:  2em;" indentlevel="1">
+MedDiet + Nuts
+</td>
+<td style="text-align:center;">
+33.4%
+</td>
+<td style="text-align:center;">
+27.8%
+</td>
+<td style="text-align:center;">
+0.69 [0.50;0.95]
+</td>
+<td style="text-align:center;">
+0.021
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left:  2em;" indentlevel="1">
+MedDiet + VOO
+</td>
+<td style="text-align:center;">
+34.5%
+</td>
+<td style="text-align:center;">
+33.7%
+</td>
+<td style="text-align:center;">
+0.81 [0.60;1.09]
+</td>
+<td style="text-align:center;">
+0.173
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Sex: Female
+</td>
+<td style="text-align:center;">
+58.4%
+</td>
+<td style="text-align:center;">
+40.1%
+</td>
+<td style="text-align:center;">
+0.48 [0.37;0.62]
+</td>
+<td style="text-align:center;">
+&lt;0.001
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Age
+</td>
+<td style="text-align:center;">
+66.9 (6.14)
+</td>
+<td style="text-align:center;">
+69.4 (6.65)
+</td>
+<td style="text-align:center;">
+1.07 [1.04;1.09]
+</td>
+<td style="text-align:center;">
+&lt;0.001
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Smoking:
+</td>
+<td style="text-align:center;">
+</td>
+<td style="text-align:center;">
+</td>
+<td style="text-align:center;">
+</td>
+<td style="text-align:center;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left:  2em;" indentlevel="1">
+Never
+</td>
+<td style="text-align:center;">
+62.2%
+</td>
+<td style="text-align:center;">
+45.2%
+</td>
+<td style="text-align:center;">
+Ref.
+</td>
+<td style="text-align:center;">
+Ref.
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left:  2em;" indentlevel="1">
+Current
+</td>
+<td style="text-align:center;">
+13.3%
+</td>
+<td style="text-align:center;">
+19.4%
+</td>
+<td style="text-align:center;">
+2.01 [1.41;2.82]
+</td>
+<td style="text-align:center;">
+&lt;0.001
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left:  2em;" indentlevel="1">
+Former
+</td>
+<td style="text-align:center;">
+24.5%
+</td>
+<td style="text-align:center;">
+35.3%
+</td>
+<td style="text-align:center;">
+1.99 [1.49;2.64]
+</td>
+<td style="text-align:center;">
+&lt;0.001
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Body mass index
+</td>
+<td style="text-align:center;">
+30.0 (3.81)
+</td>
+<td style="text-align:center;">
+29.8 (3.92)
+</td>
+<td style="text-align:center;">
+0.98 [0.95;1.02]
+</td>
+<td style="text-align:center;">
+0.365
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Waist circumference
+</td>
+<td style="text-align:center;">
+100 (10.6)
+</td>
+<td style="text-align:center;">
+102 (10.6)
+</td>
+<td style="text-align:center;">
+1.15 [1.03;1.30]
+</td>
+<td style="text-align:center;">
+0.016
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Waist-to-height ratio
+</td>
+<td style="text-align:center;">
+0.63 (0.07)
+</td>
+<td style="text-align:center;">
+0.63 (0.07)
+</td>
+<td style="text-align:center;">
+3.64 [0.55;23.9]
+</td>
+<td style="text-align:center;">
+0.178
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Hypertension
+</td>
+<td style="text-align:center;">
+82.8%
+</td>
+<td style="text-align:center;">
+83.3%
+</td>
+<td style="text-align:center;">
+1.04 [0.75;1.48]
+</td>
+<td style="text-align:center;">
+0.826
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Type-2 diabetes
+</td>
+<td style="text-align:center;">
+46.8%
+</td>
+<td style="text-align:center;">
+63.9%
+</td>
+<td style="text-align:center;">
+2.01 [1.55;2.62]
+</td>
+<td style="text-align:center;">
+&lt;0.001
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Dyslipidemia
+</td>
+<td style="text-align:center;">
+72.9%
+</td>
+<td style="text-align:center;">
+59.9%
+</td>
+<td style="text-align:center;">
+0.56 [0.43;0.72]
+</td>
+<td style="text-align:center;">
+&lt;0.001
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Family history of premature CHD
+</td>
+<td style="text-align:center;">
+22.7%
+</td>
+<td style="text-align:center;">
+20.2%
+</td>
+<td style="text-align:center;">
+0.87 [0.63;1.18]
+</td>
+<td style="text-align:center;">
+0.363
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Hormone-replacement therapy
+</td>
+<td style="text-align:center;">
+1.77%
+</td>
+<td style="text-align:center;">
+0.45%
+</td>
+<td style="text-align:center;">
+0.29 [0.01;1.27]
+</td>
+<td style="text-align:center;">
+0.117
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+MeDiet Adherence score
+</td>
+<td style="text-align:center;">
+8.70 (1.94)
+</td>
+<td style="text-align:center;">
+8.24 (1.94)
+</td>
+<td style="text-align:center;">
+0.89 [0.84;0.95]
+</td>
+<td style="text-align:center;">
+&lt;0.001
+</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+
+
+
+
+
+
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="r-markdown.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/isglobal-brge/Aprendizaje_Automatico_1/tree/master/docs08-comparegroups.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["_main.pdf", "_main.epub"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>
