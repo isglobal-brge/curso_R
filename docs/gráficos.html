@@ -24,7 +24,7 @@
 <meta name="author" content="Juan R González" />
 
 
-<meta name="date" content="2021-01-18" />
+<meta name="date" content="2021-01-28" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -405,10 +405,9 @@ NULL</code></pre>
 <p><img src="fig/unnamed-chunk-76-1.png" width="672" /></p>
 <p>podemos cambiar el color usando el argumento <code>col</code> e indicando el nombre de un color de la amplia paleta de colores que hay en R y que puede verse con la función <code>colors()</code>. Aquí mostramos los 10 primeros</p>
 <div class="sourceCode" id="cb137"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb137-1"><a href="gráficos.html#cb137-1"></a><span class="kw">head</span>(<span class="kw">colors</span>(), <span class="dt">n=</span><span class="dv">10</span>)</span></code></pre></div>
-<pre><code> [1] &quot;white&quot;         &quot;aliceblue&quot;     &quot;antiquewhite&quot; 
- [4] &quot;antiquewhite1&quot; &quot;antiquewhite2&quot; &quot;antiquewhite3&quot;
- [7] &quot;antiquewhite4&quot; &quot;aquamarine&quot;    &quot;aquamarine1&quot;  
-[10] &quot;aquamarine2&quot;  </code></pre>
+<pre><code> [1] &quot;white&quot;         &quot;aliceblue&quot;     &quot;antiquewhite&quot;  &quot;antiquewhite1&quot;
+ [5] &quot;antiquewhite2&quot; &quot;antiquewhite3&quot; &quot;antiquewhite4&quot; &quot;aquamarine&quot;   
+ [9] &quot;aquamarine1&quot;   &quot;aquamarine2&quot;  </code></pre>
 <div class="sourceCode" id="cb139"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb139-1"><a href="gráficos.html#cb139-1"></a><span class="kw">par</span>(<span class="dt">mfrow=</span><span class="kw">c</span>(<span class="dv">1</span>,<span class="dv">2</span>))</span>
 <span id="cb139-2"><a href="gráficos.html#cb139-2"></a><span class="kw">boxplot</span>(<span class="dt">x=</span>multicentric<span class="op">$</span>edademba, <span class="dt">ylab=</span><span class="st">&#39;Edad primer embarazo&#39;</span>, <span class="dt">col=</span><span class="st">&#39;blue&#39;</span>)</span>
 <span id="cb139-3"><a href="gráficos.html#cb139-3"></a><span class="kw">boxplot</span>(<span class="dt">x=</span>multicentric<span class="op">$</span>edademba, <span class="dt">xlab=</span><span class="st">&#39;Edad primer embarazo&#39;</span>, <span class="dt">horizontal=</span><span class="ot">TRUE</span>, <span class="dt">col=</span><span class="st">&#39;red&#39;</span>)</span></code></pre></div>
@@ -529,34 +528,34 @@ NULL</code></pre>
 4         Audi     100 Midsize      30.8  37.7      44.6       19
 5          BMW    535i Midsize      23.7  30.0      36.2       22
 6        Buick Century Midsize      14.2  15.7      17.3       22
-  MPG.highway            AirBags DriveTrain Cylinders EngineSize
-1          31               None      Front         4        1.8
-2          25 Driver &amp; Passenger      Front         6        3.2
-3          26        Driver only      Front         6        2.8
-4          26 Driver &amp; Passenger      Front         6        2.8
-5          30        Driver only       Rear         4        3.5
-6          31        Driver only      Front         4        2.2
-  Horsepower  RPM Rev.per.mile Man.trans.avail Fuel.tank.capacity
-1        140 6300         2890             Yes               13.2
-2        200 5500         2335             Yes               18.0
-3        172 5500         2280             Yes               16.9
-4        172 5500         2535             Yes               21.1
-5        208 5700         2545             Yes               21.1
-6        110 5200         2565              No               16.4
-  Passengers Length Wheelbase Width Turn.circle Rear.seat.room
-1          5    177       102    68          37           26.5
-2          5    195       115    71          38           30.0
-3          5    180       102    67          37           28.0
-4          6    193       106    70          37           31.0
-5          4    186       109    69          39           27.0
-6          6    189       105    69          41           28.0
-  Luggage.room Weight  Origin          Make
-1           11   2705 non-USA Acura Integra
-2           15   3560 non-USA  Acura Legend
-3           14   3375 non-USA       Audi 90
-4           17   3405 non-USA      Audi 100
-5           13   3640 non-USA      BMW 535i
-6           16   2880     USA Buick Century</code></pre>
+  MPG.highway            AirBags DriveTrain Cylinders EngineSize Horsepower
+1          31               None      Front         4        1.8        140
+2          25 Driver &amp; Passenger      Front         6        3.2        200
+3          26        Driver only      Front         6        2.8        172
+4          26 Driver &amp; Passenger      Front         6        2.8        172
+5          30        Driver only       Rear         4        3.5        208
+6          31        Driver only      Front         4        2.2        110
+   RPM Rev.per.mile Man.trans.avail Fuel.tank.capacity Passengers Length
+1 6300         2890             Yes               13.2          5    177
+2 5500         2335             Yes               18.0          5    195
+3 5500         2280             Yes               16.9          5    180
+4 5500         2535             Yes               21.1          6    193
+5 5700         2545             Yes               21.1          4    186
+6 5200         2565              No               16.4          6    189
+  Wheelbase Width Turn.circle Rear.seat.room Luggage.room Weight  Origin
+1       102    68          37           26.5           11   2705 non-USA
+2       115    71          38           30.0           15   3560 non-USA
+3       102    67          37           28.0           14   3375 non-USA
+4       106    70          37           31.0           17   3405 non-USA
+5       109    69          39           27.0           13   3640 non-USA
+6       105    69          41           28.0           16   2880     USA
+           Make
+1 Acura Integra
+2  Acura Legend
+3       Audi 90
+4      Audi 100
+5      BMW 535i
+6 Buick Century</code></pre>
 <p>Vemos que tenemos información sobre distintas variables que incluyen el modelo de coche, el precio, el motor, y otras más. Se puede ver la información ejecutando <code>?Cars93</code>.</p>
 <p>Empezaremos haciendo un gráfico para ver cómo varía el peso de los coches en función del tamaño del motor</p>
 <div class="sourceCode" id="cb150"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb150-1"><a href="gráficos.html#cb150-1"></a><span class="kw">plot</span>(Cars93<span class="op">$</span>Weight, Cars93<span class="op">$</span>EngineSize)</span></code></pre></div>

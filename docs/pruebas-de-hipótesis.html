@@ -24,7 +24,7 @@
 <meta name="author" content="Juan R González" />
 
 
-<meta name="date" content="2021-01-18" />
+<meta name="date" content="2021-01-28" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -490,8 +490,8 @@ sample estimates:
 	Exact binomial test
 
 data:  1575 and 2910
-number of successes = 1575, number of trials = 2910,
-p-value = 0.3421
+number of successes = 1575, number of trials = 2910, p-value =
+0.3421
 alternative hypothesis: true probability of success is not equal to 0.55
 95 percent confidence interval:
  0.5229268 0.5594644
@@ -515,8 +515,7 @@ Para realizar este tipo de prueba se puede usar la función <code>var.test</code
 	F test to compare two variances
 
 data:  edad1sex by status
-F = 0.78849, num df = 1485, denom df = 1402, p-value =
-6.426e-06
+F = 0.78849, num df = 1485, denom df = 1402, p-value = 6.426e-06
 alternative hypothesis: true ratio of variances is not equal to 1
 95 percent confidence interval:
  0.7110839 0.8741965
@@ -646,8 +645,7 @@ Data Frame: multicentric
 <p>y otra, usando la función <code>chisq.test</code>, pero que no devuelve la tabla ni los porcentajes.</p>
 <div class="sourceCode" id="cb98"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb98-1"><a href="pruebas-de-hipótesis.html#cb98-1"></a><span class="kw">chisq.test</span>(multicentric<span class="op">$</span>vph, multicentric<span class="op">$</span>status)</span></code></pre></div>
 <pre><code>
-	Pearson&#39;s Chi-squared test with Yates&#39; continuity
-	correction
+	Pearson&#39;s Chi-squared test with Yates&#39; continuity correction
 
 data:  multicentric$vph and multicentric$status
 X-squared = 1541.6, df = 1, p-value &lt; 2.2e-16</code></pre>
@@ -686,8 +684,7 @@ alternative hypothesis: true location shift is not equal to 0</code></pre>
 	Kruskal-Wallis rank sum test
 
 data:  edad1sex by fumar
-Kruskal-Wallis chi-squared = 31.373, df = 2, p-value =
-1.54e-07</code></pre>
+Kruskal-Wallis chi-squared = 31.373, df = 2, p-value = 1.54e-07</code></pre>
 <p>Al igual que con ANOVA, debemos realizar tests a posteriori para ver entre qué grupos hay differencias. Para el caso no paramétrico, esto lo podemos hacer con el test de Nemenyi que está implementado en la librería <code>DescTools</code> que primero debemos instalar con la instrucción <code>install.packages("DescTools")</code>. Al igual que en el caso del ANOVA, usaremos el método propuesto por Tukey. La instrucción es la siguiente. Notemos que la variable grupal (argumento <code>g</code>) debe ser factor, por eso usamos la función <code>as.factor()</code>:</p>
 <div class="sourceCode" id="cb106"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb106-1"><a href="pruebas-de-hipótesis.html#cb106-1"></a><span class="kw">library</span>(DescTools)</span>
 <span id="cb106-2"><a href="pruebas-de-hipótesis.html#cb106-2"></a>pvals &lt;-<span class="st"> </span><span class="kw">NemenyiTest</span>(<span class="dt">x =</span> multicentric<span class="op">$</span>edad1sex,</span>

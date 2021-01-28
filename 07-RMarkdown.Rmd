@@ -3,9 +3,9 @@
 
 ## Introducción
 
-Este documento es una adaptación del material que puede encontrarse en [este repositorio de github](https://github.com/marschmi/R Markdown_May11_2016).
+Este documento es una adaptación del material que puede encontrarse en [este repositorio de github](https://github.com/marschmi/rmarkdown_May11_2016).
 
-[R Markdown](https://R Markdown.rstudio.com/) es una variante de Markdown que facilita la creación de documentos, presentaciones e informes dinámicos dentro de RStudio. Tiene fragmentos de código R incrustados para usar con **knitr** para facilitar la creación de **informes reproducibles** (en formato web o pdf) en el sentido de que se pueden regenerar automáticamente cuando se modifica el código o los datos de los que partimos en los análisis.
+[R Markdown](https://rmarkdown.rstudio.com/) es una variante de Markdown que facilita la creación de documentos, presentaciones e informes dinámicos dentro de RStudio. Tiene fragmentos de código R incrustados para usar con **knitr** para facilitar la creación de **informes reproducibles** (en formato web o pdf) en el sentido de que se pueden regenerar automáticamente cuando se modifica el código o los datos de los que partimos en los análisis.
 
 - R Markdown permite combinar Markdown con imágenes, enlaces, tablas, LaTeX y código de distintos programas. 
 - RStudio facilita la creación de documentos desde R Markdown.
@@ -23,7 +23,7 @@ R Markdown procesa (renderizar, del inglés render/rendering) muchos tipos difer
 
 Si bien hay muchos tipos diferentes de documentos procesados en R Markdown, nos centraremos principalmente en los archivos de salida HTML, ya que suelen ser muy útiles y flexibles para la investigación científica, crear materiales suplementarios o incluso material docente como este *bookdown*.
 
-![Tipos de documentos generados con R Markdown](figures/R Markdown.png)
+![Tipos de documentos generados con R Markdown](figures/rmarkdown.png)
 
 
 ## ¿Por qué R Markdown?
@@ -60,7 +60,7 @@ Brevemente, para hacer un informe:
 - Insertar el código R en fragmentos de código o código en línea.
 - Procesar la salida del documento.
 
-![Tipos de documentos generados con R Markdown](figures/workflow_R Markdown.png)
+![Tipos de documentos generados con R Markdown](figures/workflow_rmarkdown.png)
 
 
 **Descripción general de los pasos que sigue R Markdown para llegar al documento procesado/renderizado**:
@@ -72,7 +72,7 @@ Brevemente, para hacer un informe:
 3. Pasar el archivo .md a **pandoc**, que creará el documento  final (por ejemplo, html, Microsoft Word, pdf, etc.).
      - [Pandoc](https://pandoc.org/) es un conversor de documentos universal y permite la conversión de un tipo de documento (en este caso: .Rmd) a otro (en este caso: HTML)
      
-![Como se procesa/renderiza un documento Rmd](figures/render_R Markdown.png)
+![Como se procesa/renderiza un documento Rmd](figures/render_rmarkdown.png)
 
 
 Si bien esto puede parecer complicado, podemos presionar el botón "Knit" en la parte superior de RStudio como aparece en esta imagen:
@@ -82,18 +82,18 @@ Si bien esto puede parecer complicado, podemos presionar el botón "Knit" en la 
 o podemos ejecutar el siguiente código
 
 ```{r eval=FALSE}
-R Markdown::render("nombre_fichero.Rmd", "html_document")
+rmarkdown::render("nombre_fichero.Rmd", "html_document")
 ```
 
 ## ¿Cómo crear un fichero `.Rmd`?
 
 1. En la barra de menú, hacer clic en **File -> New File -> R Markdown...** o simplemente hacer click en el signo más verde en la esquina superior izquierda de RStudio.
 
-![](figures/R Markdown_1.png)
+![](figures/rmarkdown_1.png)
 
 2. A continuación aparecerá la siguiente ventana emergente. Dentro de esta ventana, elija el tipo de documento que se quiere crear seleccionando los botones de opción. Nota: ¡esto se puede cambiar fácilmente más tarde!
 
-![](figures/R Markdown_2.png)
+![](figures/rmarkdown_2.png)
 
 3. Hacer click en **OK**
 
@@ -125,7 +125,7 @@ Nos centraremos en los archivos HTML. Sin embargo, se puede jugar con la creaci�
 
 ## Sintáxis básica de Markdown
 
-Se puede ver esta [Guia de Referencia de RMardown](https://rstudio.com/wp-content/uploads/2015/03/R Markdown-spanish.pdf) que está en castellano. 
+Se puede ver esta [Guia de Referencia de RMardown](https://rstudio.com/wp-content/uploads/2015/03/rmarkdown-spanish.pdf) que está en castellano. 
 
 Podemos listar los más frecuentes en esta figura. A la izquierda vemos lo que escribimos en el documento `.Rmd` y a la derecha vemos lo que aparecerá en el documento HTML.
 
@@ -254,7 +254,7 @@ boxplot(dat, col='red', xlab='Datos simulados')
 
 ## Tablas
 
-Escribir tablas a mano en Markdown puede resultar tedioso. En este curso no haremos esto porque lo que haremos será crear tablas a partir de resultados que podemos obtener de R (automático). Si desea obtener más información sobre las tablas de Markdown, se puede consultar [la documentación sobre tablas](https://R Markdown.rstudio.com/authoring_pandoc_markdown.html#tables) en el manual de R Markdown original.
+Escribir tablas a mano en Markdown puede resultar tedioso. En este curso no haremos esto porque lo que haremos será crear tablas a partir de resultados que podemos obtener de R (automático). Si desea obtener más información sobre las tablas de Markdown, se puede consultar [la documentación sobre tablas](https://rmarkdown.rstudio.com/authoring_pandoc_markdown.html#tables) en el manual de R Markdown original.
 
 Hay algunos tipos de tablas que se pueden crear que son muy útiles: `kable`, `pander` y `xtable`. La última es muy útil para aquellos que trabajen con LaTeX. Nos centraremos en las dos primeras.
 

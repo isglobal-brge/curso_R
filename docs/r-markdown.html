@@ -24,7 +24,7 @@
 <meta name="author" content="Juan R González" />
 
 
-<meta name="date" content="2021-01-18" />
+<meta name="date" content="2021-01-28" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -302,8 +302,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <h1><span class="header-section-number">8</span> R Markdown</h1>
 <div id="introducción" class="section level2" number="8.1">
 <h2><span class="header-section-number">8.1</span> Introducción</h2>
-<p>Este documento es una adaptación del material que puede encontrarse en <a href="https://github.com/marschmi/R%20Markdown_May11_2016">este repositorio de github</a>.</p>
-<p><a href="https://R%20Markdown.rstudio.com/">R Markdown</a> es una variante de Markdown que facilita la creación de documentos, presentaciones e informes dinámicos dentro de RStudio. Tiene fragmentos de código R incrustados para usar con <strong>knitr</strong> para facilitar la creación de <strong>informes reproducibles</strong> (en formato web o pdf) en el sentido de que se pueden regenerar automáticamente cuando se modifica el código o los datos de los que partimos en los análisis.</p>
+<p>Este documento es una adaptación del material que puede encontrarse en <a href="https://github.com/marschmi/rmarkdown_May11_2016">este repositorio de github</a>.</p>
+<p><a href="https://rmarkdown.rstudio.com/">R Markdown</a> es una variante de Markdown que facilita la creación de documentos, presentaciones e informes dinámicos dentro de RStudio. Tiene fragmentos de código R incrustados para usar con <strong>knitr</strong> para facilitar la creación de <strong>informes reproducibles</strong> (en formato web o pdf) en el sentido de que se pueden regenerar automáticamente cuando se modifica el código o los datos de los que partimos en los análisis.</p>
 <ul>
 <li>R Markdown permite combinar Markdown con imágenes, enlaces, tablas, LaTeX y código de distintos programas.</li>
 <li>RStudio facilita la creación de documentos desde R Markdown.</li>
@@ -320,7 +320,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul>
 <p>Si bien hay muchos tipos diferentes de documentos procesados en R Markdown, nos centraremos principalmente en los archivos de salida HTML, ya que suelen ser muy útiles y flexibles para la investigación científica, crear materiales suplementarios o incluso material docente como este <em>bookdown</em>.</p>
 <div class="figure">
-<img src="figures/R%20Markdown.png" alt="" />
+<img src="figures/rmarkdown.png" alt="" />
 <p class="caption">Tipos de documentos generados con R Markdown</p>
 </div>
 </div>
@@ -362,7 +362,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li>Procesar la salida del documento.</li>
 </ul>
 <div class="figure">
-<img src="figures/workflow_R%20Markdown.png" alt="" />
+<img src="figures/workflow_rmarkdown.png" alt="" />
 <p class="caption">Tipos de documentos generados con R Markdown</p>
 </div>
 <p><strong>Descripción general de los pasos que sigue R Markdown para llegar al documento procesado/renderizado</strong>:</p>
@@ -378,7 +378,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul></li>
 </ol>
 <div class="figure">
-<img src="figures/render_R%20Markdown.png" alt="" />
+<img src="figures/render_rmarkdown.png" alt="" />
 <p class="caption">Como se procesa/renderiza un documento Rmd</p>
 </div>
 <p>Si bien esto puede parecer complicado, podemos presionar el botón “Knit” en la parte superior de RStudio como aparece en esta imagen:</p>
@@ -387,18 +387,18 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p class="caption">Como se procesa/renderiza un documento Rmd</p>
 </div>
 <p>o podemos ejecutar el siguiente código</p>
-<div class="sourceCode" id="cb180"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb180-1"><a href="r-markdown.html#cb180-1"></a>R Markdown<span class="op">::</span><span class="kw">render</span>(<span class="st">&quot;nombre_fichero.Rmd&quot;</span>, <span class="st">&quot;html_document&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb180"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb180-1"><a href="r-markdown.html#cb180-1"></a>rmarkdown<span class="op">::</span><span class="kw">render</span>(<span class="st">&quot;nombre_fichero.Rmd&quot;</span>, <span class="st">&quot;html_document&quot;</span>)</span></code></pre></div>
 </div>
 <div id="cómo-crear-un-fichero-.rmd" class="section level2" number="8.4">
 <h2><span class="header-section-number">8.4</span> ¿Cómo crear un fichero <code>.Rmd</code>?</h2>
 <ol style="list-style-type: decimal">
 <li>En la barra de menú, hacer clic en <strong>File -&gt; New File -&gt; R Markdown…</strong> o simplemente hacer click en el signo más verde en la esquina superior izquierda de RStudio.</li>
 </ol>
-<p><img src="figures/R%20Markdown_1.png" /></p>
+<p><img src="figures/rmarkdown_1.png" /></p>
 <ol start="2" style="list-style-type: decimal">
 <li>A continuación aparecerá la siguiente ventana emergente. Dentro de esta ventana, elija el tipo de documento que se quiere crear seleccionando los botones de opción. Nota: ¡esto se puede cambiar fácilmente más tarde!</li>
 </ol>
-<p><img src="figures/R%20Markdown_2.png" /></p>
+<p><img src="figures/rmarkdown_2.png" /></p>
 <ol start="3" style="list-style-type: decimal">
 <li>Hacer click en <strong>OK</strong></li>
 </ol>
@@ -425,7 +425,7 @@ output:  html_document
 </div>
 <div id="sintáxis-básica-de-markdown" class="section level2" number="8.6">
 <h2><span class="header-section-number">8.6</span> Sintáxis básica de Markdown</h2>
-<p>Se puede ver esta <a href="https://rstudio.com/wp-content/uploads/2015/03/R%20Markdown-spanish.pdf">Guia de Referencia de RMardown</a> que está en castellano.</p>
+<p>Se puede ver esta <a href="https://rstudio.com/wp-content/uploads/2015/03/rmarkdown-spanish.pdf">Guia de Referencia de RMardown</a> que está en castellano.</p>
 <p>Podemos listar los más frecuentes en esta figura. A la izquierda vemos lo que escribimos en el documento <code>.Rmd</code> y a la derecha vemos lo que aparecerá en el documento HTML.</p>
 <div class="figure">
 <img src="figures/chuleta_markdown.png" alt="" />
@@ -517,7 +517,7 @@ output:  html_document
 </div>
 <div id="tablas" class="section level2" number="8.10">
 <h2><span class="header-section-number">8.10</span> Tablas</h2>
-<p>Escribir tablas a mano en Markdown puede resultar tedioso. En este curso no haremos esto porque lo que haremos será crear tablas a partir de resultados que podemos obtener de R (automático). Si desea obtener más información sobre las tablas de Markdown, se puede consultar <a href="https://R%20Markdown.rstudio.com/authoring_pandoc_markdown.html#tables">la documentación sobre tablas</a> en el manual de R Markdown original.</p>
+<p>Escribir tablas a mano en Markdown puede resultar tedioso. En este curso no haremos esto porque lo que haremos será crear tablas a partir de resultados que podemos obtener de R (automático). Si desea obtener más información sobre las tablas de Markdown, se puede consultar <a href="https://rmarkdown.rstudio.com/authoring_pandoc_markdown.html#tables">la documentación sobre tablas</a> en el manual de R Markdown original.</p>
 <p>Hay algunos tipos de tablas que se pueden crear que son muy útiles: <code>kable</code>, <code>pander</code> y <code>xtable</code>. La última es muy útil para aquellos que trabajen con LaTeX. Nos centraremos en las dos primeras.</p>
 <ul>
 <li><p><code>kable</code>: Está dentro de la librería <code>knitr</code>, no tiene muchos argumentos, pero produce tablas muy visuales de forma sencilla.</p></li>

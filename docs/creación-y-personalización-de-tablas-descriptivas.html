@@ -24,7 +24,7 @@
 <meta name="author" content="Juan R González" />
 
 
-<meta name="date" content="2021-01-18" />
+<meta name="date" content="2021-01-28" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -364,34 +364,34 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 -------- Summary of results by groups of &#39;Intervention group&#39;---------
 
 
-   var                             N    p.value 
-1  Sex                             6324 &lt;0.001**
-2  Age                             6324 0.003** 
-3  Smoking                         6324 0.444   
-4  Body mass index                 6324 &lt;0.001**
-5  Waist circumference             6324 0.045** 
-6  Waist-to-height ratio           6324 &lt;0.001**
-7  Hypertension                    6324 0.249   
-8  Type-2 diabetes                 6324 0.017** 
-9  Dyslipidemia                    6324 0.423   
-10 Family history of premature CHD 6324 0.581   
-11 Hormone-replacement therapy     5661 0.850   
-12 MeDiet Adherence score          6324 &lt;0.001**
-13 AMI, stroke, or CV Death        6324 0.064*  
-   method                selection
-1  categorical           ALL      
-2  continuous normal     ALL      
-3  categorical           ALL      
-4  continuous normal     ALL      
-5  continuous normal     ALL      
-6  continuous normal     ALL      
-7  categorical           ALL      
-8  categorical           ALL      
-9  categorical           ALL      
-10 categorical           ALL      
-11 categorical           ALL      
-12 continuous non-normal ALL      
-13 categorical           ALL      
+   var                             N    p.value  method               
+1  Sex                             6324 &lt;0.001** categorical          
+2  Age                             6324 0.003**  continuous normal    
+3  Smoking                         6324 0.444    categorical          
+4  Body mass index                 6324 &lt;0.001** continuous normal    
+5  Waist circumference             6324 0.045**  continuous normal    
+6  Waist-to-height ratio           6324 &lt;0.001** continuous normal    
+7  Hypertension                    6324 0.249    categorical          
+8  Type-2 diabetes                 6324 0.017**  categorical          
+9  Dyslipidemia                    6324 0.423    categorical          
+10 Family history of premature CHD 6324 0.581    categorical          
+11 Hormone-replacement therapy     5661 0.850    categorical          
+12 MeDiet Adherence score          6324 &lt;0.001** continuous non-normal
+13 AMI, stroke, or CV Death        6324 0.064*   categorical          
+   selection
+1  ALL      
+2  ALL      
+3  ALL      
+4  ALL      
+5  ALL      
+6  ALL      
+7  ALL      
+8  ALL      
+9  ALL      
+10 ALL      
+11 ALL      
+12 ALL      
+13 ALL      
 -----
 Signif. codes:  0 &#39;**&#39; 0.05 &#39;*&#39; 0.1 &#39; &#39; 1 </code></pre>
 <p>En esta tabla vemos el número de indiviudos sin valores faltantes (missings) para cada variable, el p-valor correspondiente al test de normalidad y el tipo de variable que considera para el análisis.</p>
@@ -411,16 +411,11 @@ row-variable: Sex
 Control        812  1230   39.76494 60.23506 8.1e-05   0.388386
 MedDiet + Nuts 968  1132   46.09524 53.90476                   
 MedDiet + VOO  899  1283   41.20073 58.79927                   
-               p.Control vs MedDiet + Nuts
-[ALL]                                     
-Control        0.000133                   
-MedDiet + Nuts                            
-MedDiet + VOO                             
-               p.Control vs MedDiet + VOO
-[ALL]                                    
-Control        0.358324                  
-MedDiet + Nuts                           
-MedDiet + VOO                            
+               p.Control vs MedDiet + Nuts p.Control vs MedDiet + VOO
+[ALL]                                                                
+Control        0.000133                    0.358324                  
+MedDiet + Nuts                                                       
+MedDiet + VOO                                                        
                p.MedDiet + Nuts vs MedDiet + VOO
 [ALL]                                           
 Control        0.002076                         
@@ -430,21 +425,16 @@ MedDiet + VOO
 ------------------- 
 row-variable: Age 
 
-               N    mean     sd       lower    upper    p.overall
-[ALL]          6324 67.0117  6.17499  66.85948 67.16392          
-Control        2042 67.34231 6.27992  67.06977 67.61485 0.002666 
-MedDiet + Nuts 2100 66.6819  6.016395 66.42444 66.93937          
-MedDiet + VOO  2182 67.01971 6.212578 66.75889 67.28052          
-               p.trend  p.Control vs MedDiet + Nuts
-[ALL]                                              
-Control        0.101163 0.001672                   
-MedDiet + Nuts                                     
-MedDiet + VOO                                      
-               p.Control vs MedDiet + VOO
-[ALL]                                    
-Control        0.20596                   
-MedDiet + Nuts                           
-MedDiet + VOO                            
+               N    mean     sd       lower    upper    p.overall p.trend 
+[ALL]          6324 67.0117  6.17499  66.85948 67.16392                   
+Control        2042 67.34231 6.27992  67.06977 67.61485 0.002666  0.101163
+MedDiet + Nuts 2100 66.6819  6.016395 66.42444 66.93937                   
+MedDiet + VOO  2182 67.01971 6.212578 66.75889 67.28052                   
+               p.Control vs MedDiet + Nuts p.Control vs MedDiet + VOO
+[ALL]                                                                
+Control        0.001672                    0.20596                   
+MedDiet + Nuts                                                       
+MedDiet + VOO                                                        
                p.MedDiet + Nuts vs MedDiet + VOO
 [ALL]                                           
 Control        0.172672                         
