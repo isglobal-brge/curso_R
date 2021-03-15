@@ -26,7 +26,7 @@ freq(multicentric$status, report.nas = FALSE, headings = FALSE)
 
 Si queremos que lo haga para todas las variables categóricas, funciona así de simple
 
-```{r}
+```{r error = TRUE}
 freq(multicentric, report.nas = FALSE, headings = FALSE)
 ```
 

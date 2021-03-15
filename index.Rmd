@@ -3,7 +3,6 @@ title: "Curso de R"
 author: "Juan R González"
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
-output: bookdown::html_gitbook
 documentclass: book
 encoding: latin1
 ---
