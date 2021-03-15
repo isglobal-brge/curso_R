@@ -1,0 +1,6 @@
+book_filename: "cursoR-bookdown"
+output_dir: "docs"
+delete_merged_file: true
+language:
+  ui:
+    

@@ -24,7 +24,7 @@
 <meta name="author" content="Juan R González" />
 
 
-<meta name="date" content="2021-01-28" />
+<meta name="date" content="2021-03-15" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -327,20 +327,20 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb190-2"><a href="creación-y-personalización-de-tablas-descriptivas.html#cb190-2"></a><span class="kw">data</span>(predimed)</span></code></pre></div>
 <p>Las variables son:</p>
 <div class="sourceCode" id="cb191"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb191-1"><a href="creación-y-personalización-de-tablas-descriptivas.html#cb191-1"></a><span class="kw">head</span>(predimed)</span></code></pre></div>
-<pre><code>           group    sex age   smoke   bmi waist       wth htn diab
-1        Control   Male  58  Former 33.53   122 0.7530864  No   No
-2        Control   Male  77 Current 31.05   119 0.7300614 Yes  Yes
-4  MedDiet + VOO Female  72  Former 30.86   106 0.6543210  No  Yes
-5 MedDiet + Nuts   Male  71  Former 27.68   118 0.6941177 Yes   No
-6  MedDiet + VOO Female  79   Never 35.94   129 0.8062500 Yes   No
-8        Control   Male  63  Former 41.66   143 0.8033708 Yes  Yes
-  hyperchol famhist hormo p14  toevent event
-1       Yes      No    No  10 5.374401   Yes
-2        No      No    No  10 6.097194    No
-4        No     Yes    No   8 5.946612    No
-5       Yes      No    No   8 2.907598   Yes
-6       Yes      No    No   9 4.761123    No
-8       Yes      No  &lt;NA&gt;   9 3.148528   Yes</code></pre>
+<pre><code>           group    sex age   smoke   bmi waist       wth htn
+1        Control   Male  58  Former 33.53   122 0.7530864  No
+2        Control   Male  77 Current 31.05   119 0.7300614 Yes
+4  MedDiet + VOO Female  72  Former 30.86   106 0.6543210  No
+5 MedDiet + Nuts   Male  71  Former 27.68   118 0.6941177 Yes
+6  MedDiet + VOO Female  79   Never 35.94   129 0.8062500 Yes
+8        Control   Male  63  Former 41.66   143 0.8033708 Yes
+  diab hyperchol famhist hormo p14  toevent event
+1   No       Yes      No    No  10 5.374401   Yes
+2  Yes        No      No    No  10 6.097194    No
+4  Yes        No     Yes    No   8 5.946612    No
+5   No       Yes      No    No   8 2.907598   Yes
+6   No       Yes      No    No   9 4.761123    No
+8  Yes       Yes      No  &lt;NA&gt;   9 3.148528   Yes</code></pre>
 </div>
 <div id="estadísticas-descriptivas-y-tests-estadísticos" class="section level2" number="9.2">
 <h2><span class="header-section-number">9.2</span> Estadísticas descriptivas y tests estadísticos</h2>
@@ -364,34 +364,34 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 -------- Summary of results by groups of &#39;Intervention group&#39;---------
 
 
-   var                             N    p.value  method               
-1  Sex                             6324 &lt;0.001** categorical          
-2  Age                             6324 0.003**  continuous normal    
-3  Smoking                         6324 0.444    categorical          
-4  Body mass index                 6324 &lt;0.001** continuous normal    
-5  Waist circumference             6324 0.045**  continuous normal    
-6  Waist-to-height ratio           6324 &lt;0.001** continuous normal    
-7  Hypertension                    6324 0.249    categorical          
-8  Type-2 diabetes                 6324 0.017**  categorical          
-9  Dyslipidemia                    6324 0.423    categorical          
-10 Family history of premature CHD 6324 0.581    categorical          
-11 Hormone-replacement therapy     5661 0.850    categorical          
-12 MeDiet Adherence score          6324 &lt;0.001** continuous non-normal
-13 AMI, stroke, or CV Death        6324 0.064*   categorical          
-   selection
-1  ALL      
-2  ALL      
-3  ALL      
-4  ALL      
-5  ALL      
-6  ALL      
-7  ALL      
-8  ALL      
-9  ALL      
-10 ALL      
-11 ALL      
-12 ALL      
-13 ALL      
+   var                             N    p.value 
+1  Sex                             6324 &lt;0.001**
+2  Age                             6324 0.003** 
+3  Smoking                         6324 0.444   
+4  Body mass index                 6324 &lt;0.001**
+5  Waist circumference             6324 0.045** 
+6  Waist-to-height ratio           6324 &lt;0.001**
+7  Hypertension                    6324 0.249   
+8  Type-2 diabetes                 6324 0.017** 
+9  Dyslipidemia                    6324 0.423   
+10 Family history of premature CHD 6324 0.581   
+11 Hormone-replacement therapy     5661 0.850   
+12 MeDiet Adherence score          6324 &lt;0.001**
+13 AMI, stroke, or CV Death        6324 0.064*  
+   method                selection
+1  categorical           ALL      
+2  continuous normal     ALL      
+3  categorical           ALL      
+4  continuous normal     ALL      
+5  continuous normal     ALL      
+6  continuous normal     ALL      
+7  categorical           ALL      
+8  categorical           ALL      
+9  categorical           ALL      
+10 categorical           ALL      
+11 categorical           ALL      
+12 continuous non-normal ALL      
+13 categorical           ALL      
 -----
 Signif. codes:  0 &#39;**&#39; 0.05 &#39;*&#39; 0.1 &#39; &#39; 1 </code></pre>
 <p>En esta tabla vemos el número de indiviudos sin valores faltantes (missings) para cada variable, el p-valor correspondiente al test de normalidad y el tipo de variable que considera para el análisis.</p>
@@ -406,16 +406,21 @@ Signif. codes:  0 &#39;**&#39; 0.05 &#39;*&#39; 0.1 &#39; &#39; 1 </code></pre>
 ------------------- 
 row-variable: Sex 
 
-               Male Female Male%    Female%  p.overall p.trend 
-[ALL]          2679 3645   42.36243 57.63757                   
-Control        812  1230   39.76494 60.23506 8.1e-05   0.388386
-MedDiet + Nuts 968  1132   46.09524 53.90476                   
-MedDiet + VOO  899  1283   41.20073 58.79927                   
-               p.Control vs MedDiet + Nuts p.Control vs MedDiet + VOO
-[ALL]                                                                
-Control        0.000133                    0.358324                  
-MedDiet + Nuts                                                       
-MedDiet + VOO                                                        
+               Male Female Male%    Female%  p.overall
+[ALL]          2679 3645   42.36243 57.63757          
+Control        812  1230   39.76494 60.23506 8.1e-05  
+MedDiet + Nuts 968  1132   46.09524 53.90476          
+MedDiet + VOO  899  1283   41.20073 58.79927          
+               p.trend  p.Control vs MedDiet + Nuts
+[ALL]                                              
+Control        0.388386 0.000133                   
+MedDiet + Nuts                                     
+MedDiet + VOO                                      
+               p.Control vs MedDiet + VOO
+[ALL]                                    
+Control        0.358324                  
+MedDiet + Nuts                           
+MedDiet + VOO                            
                p.MedDiet + Nuts vs MedDiet + VOO
 [ALL]                                           
 Control        0.002076                         
@@ -425,16 +430,21 @@ MedDiet + VOO
 ------------------- 
 row-variable: Age 
 
-               N    mean     sd       lower    upper    p.overall p.trend 
-[ALL]          6324 67.0117  6.17499  66.85948 67.16392                   
-Control        2042 67.34231 6.27992  67.06977 67.61485 0.002666  0.101163
-MedDiet + Nuts 2100 66.6819  6.016395 66.42444 66.93937                   
-MedDiet + VOO  2182 67.01971 6.212578 66.75889 67.28052                   
-               p.Control vs MedDiet + Nuts p.Control vs MedDiet + VOO
-[ALL]                                                                
-Control        0.001672                    0.20596                   
-MedDiet + Nuts                                                       
-MedDiet + VOO                                                        
+               N    mean     sd       lower    upper   
+[ALL]          6324 67.0117  6.17499  66.85948 67.16392
+Control        2042 67.34231 6.27992  67.06977 67.61485
+MedDiet + Nuts 2100 66.6819  6.016395 66.42444 66.93937
+MedDiet + VOO  2182 67.01971 6.212578 66.75889 67.28052
+               p.overall p.trend  p.Control vs MedDiet + Nuts
+[ALL]                                                        
+Control        0.002666  0.101163 0.001672                   
+MedDiet + Nuts                                               
+MedDiet + VOO                                                
+               p.Control vs MedDiet + VOO
+[ALL]                                    
+Control        0.20596                   
+MedDiet + Nuts                           
+MedDiet + VOO                            
                p.MedDiet + Nuts vs MedDiet + VOO
 [ALL]                                           
 Control        0.172672                         
@@ -1097,7 +1107,7 @@ gitbook.start({
 "link": null,
 "text": null
 },
-"download": ["_main.pdf", "_main.epub"],
+"download": ["cursoR-bookdown.pdf", "cursoR-bookdown.epub"],
 "toc": {
 "collapse": "subsection"
 }

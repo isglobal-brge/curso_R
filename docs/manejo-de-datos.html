@@ -24,7 +24,7 @@
 <meta name="author" content="Juan R González" />
 
 
-<meta name="date" content="2021-01-28" />
+<meta name="date" content="2021-03-15" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -305,27 +305,27 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <h2><span class="header-section-number">3.1</span> Visualización de datos</h2>
 <p>Empezemos viendo qué datos tenemos. Para ello usaremos la función <code>head()</code></p>
 <div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="manejo-de-datos.html#cb4-1"></a><span class="kw">head</span>(multicentric)</span></code></pre></div>
-<pre><code>  ident   pais  status edad niveledu      fumar edad1sex regcompa totcompa
-1 10001 Brasil Control   64 primaria ex-fumador       16        2      2-3
-2 10002 Brasil    Caso   51 primaria    fumador       17        1        1
-3 10003 Brasil Control   48  ninguno    fumador       14        2      2-3
-4 10004 Brasil    Caso   49  ninguno no fumador       23        1        1
-5 10005 Brasil Control   41 primaria no fumador       23        1        1
-6 10006 Brasil    Caso   45 primaria    fumador       18        1        1
-  ets co edinico edfinco durco condon embara edademba nembara pap edad1pap
-1  si no      NA      NA    NA     no     si       16       9  si       40
-2  si no      NA      NA    NA     no     si       17      13  si       45
-3  no no      NA      NA    NA     no     si       14      11  no       NA
-4  no no      NA      NA    NA     no     si       23      13  no       NA
-5  no no      NA      NA    NA     no     si       24       3  si       30
-6  no si      22      38    14     no     si       18       5  si       33
-       vph
-1 negativo
-2 positivo
-3 positivo
-4 positivo
-5 negativo
-6 positivo</code></pre>
+<pre><code>  ident   pais  status edad niveledu      fumar edad1sex
+1 10001 Brasil Control   64 primaria ex-fumador       16
+2 10002 Brasil    Caso   51 primaria    fumador       17
+3 10003 Brasil Control   48  ninguno    fumador       14
+4 10004 Brasil    Caso   49  ninguno no fumador       23
+5 10005 Brasil Control   41 primaria no fumador       23
+6 10006 Brasil    Caso   45 primaria    fumador       18
+  regcompa totcompa ets co edinico edfinco durco condon
+1        2      2-3  si no      NA      NA    NA     no
+2        1        1  si no      NA      NA    NA     no
+3        2      2-3  no no      NA      NA    NA     no
+4        1        1  no no      NA      NA    NA     no
+5        1        1  no no      NA      NA    NA     no
+6        1        1  no si      22      38    14     no
+  embara edademba nembara pap edad1pap      vph
+1     si       16       9  si       40 negativo
+2     si       17      13  si       45 positivo
+3     si       14      11  no       NA positivo
+4     si       23      13  no       NA positivo
+5     si       24       3  si       30 negativo
+6     si       18       5  si       33 positivo</code></pre>
 <p>Para saber cuántos individuos y cuántas variables tenemos en nuestra base de datos podemos usar la función <code>dim()</code>. <code>nrow()</code> nos daría el número de individuos y <code>ncol()</code> el número de variables</p>
 <div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="manejo-de-datos.html#cb6-1"></a><span class="kw">dim</span>(multicentric)</span></code></pre></div>
 <pre><code>[1] 2910   21</code></pre>
@@ -359,10 +359,11 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
  $ vph     : chr  &quot;negativo&quot; &quot;positivo&quot; &quot;positivo&quot; &quot;positivo&quot; ...</code></pre>
 <p>Finalmente, si queremos saber el nombre de las variables que tenemos en nuestra base de datos usaríamos:</p>
 <div class="sourceCode" id="cb14"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb14-1"><a href="manejo-de-datos.html#cb14-1"></a><span class="kw">colnames</span>(multicentric)</span></code></pre></div>
-<pre><code> [1] &quot;ident&quot;    &quot;pais&quot;     &quot;status&quot;   &quot;edad&quot;     &quot;niveledu&quot; &quot;fumar&quot;   
- [7] &quot;edad1sex&quot; &quot;regcompa&quot; &quot;totcompa&quot; &quot;ets&quot;      &quot;co&quot;       &quot;edinico&quot; 
-[13] &quot;edfinco&quot;  &quot;durco&quot;    &quot;condon&quot;   &quot;embara&quot;   &quot;edademba&quot; &quot;nembara&quot; 
-[19] &quot;pap&quot;      &quot;edad1pap&quot; &quot;vph&quot;     </code></pre>
+<pre><code> [1] &quot;ident&quot;    &quot;pais&quot;     &quot;status&quot;   &quot;edad&quot;     &quot;niveledu&quot;
+ [6] &quot;fumar&quot;    &quot;edad1sex&quot; &quot;regcompa&quot; &quot;totcompa&quot; &quot;ets&quot;     
+[11] &quot;co&quot;       &quot;edinico&quot;  &quot;edfinco&quot;  &quot;durco&quot;    &quot;condon&quot;  
+[16] &quot;embara&quot;   &quot;edademba&quot; &quot;nembara&quot;  &quot;pap&quot;      &quot;edad1pap&quot;
+[21] &quot;vph&quot;     </code></pre>
 <p>Antes de explicar cómo crear nuevas variables, veamos algunos aspectos básicos de R en cuanto al acceso de las variables. Supongamos que queremos calcular cualquier estadístico descriptivo de alguna de las variables o ver un resumen de ella. Para esta tarea podemos utilizar distintas funciones de R que normalmente se ejecutan como <code>funcion()</code>. Dentro del paréntesis debemos indicarle cuál es la variable que queremos analizar. Para ello, utilizaremos el símbolo <code>$</code> [también podría usarse <code>[[ ]]</code> pero intentaremos evitar escribir demasiado código]. Así, por ejemplo, si queremos calcular la media de la primera relación sexual (variable <code>edad1sex</code>) bastaría con ejecutar</p>
 <div class="sourceCode" id="cb16"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb16-1"><a href="manejo-de-datos.html#cb16-1"></a><span class="kw">mean</span>(multicentric<span class="op">$</span>edad1sex, <span class="dt">na.rm=</span><span class="ot">TRUE</span>)</span></code></pre></div>
 <pre><code>[1] 19.72932</code></pre>
@@ -372,8 +373,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul>
 <div class="sourceCode" id="cb18"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb18-1"><a href="manejo-de-datos.html#cb18-1"></a><span class="kw">table</span>(multicentric<span class="op">$</span>pais)</span></code></pre></div>
 <pre><code>
-   Brasil  Colombia    Espana Filipinas Marruecos      Peru Tailandia 
-      347       323       376       636       332       312       584 </code></pre>
+   Brasil  Colombia    Espana Filipinas Marruecos      Peru 
+      347       323       376       636       332       312 
+Tailandia 
+      584 </code></pre>
 <ul>
 <li>Descriptiva de una variable continua. Ejemplo: edad de las participantes</li>
 </ul>
@@ -535,7 +538,7 @@ gitbook.start({
 "link": null,
 "text": null
 },
-"download": ["_main.pdf", "_main.epub"],
+"download": ["cursoR-bookdown.pdf", "cursoR-bookdown.epub"],
 "toc": {
 "collapse": "subsection"
 }
